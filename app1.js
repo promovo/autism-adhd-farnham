@@ -71,11 +71,11 @@ const home=`
   <div class="mock-section">
     <div class="mock-heading"><h2>Our experienced clinicians</h2><span></span></div>
     <div class="clinician-row">
-      <div><img src="https://static.wixstatic.com/media/1e4c48_b23db57b10ed4352a14f016983ee5424~mv2.png" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Clinical Director & Highly Specialist SLT</p></div>
-      <div><img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
-      <div><img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></div>
-      <div><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
-      <div><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></div>
+      <div><img src="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg/v1/fill/w_235,h_313,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Clinical Director & Highly Specialist SLT</p></div>
+      <div><img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg/v1/fill/w_235,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
+      <div><img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg/v1/fill/w_235,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></div>
+      <div><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg/v1/fill/w_235,h_291,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
+      <div><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg/v1/fill/w_235,h_306,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></div>
     </div>
     <div class="clinicians-cta"><a class="btn btn-outline" href="/our-team" data-link>Read more</a></div>
   </div>

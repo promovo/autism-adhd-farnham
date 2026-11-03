@@ -517,3 +517,25 @@ button.btn.btn-green,
     padding-left:18px!important;
   }
 }
+
+/* Clinician photos use the exact crops from the original site */
+.clinician-row img{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#fff!important;
+}
+.clinician-row h4{
+  font-size:calc(.72rem + 3px)!important;
+}
+
+/* Restore action bullets to previous position, reduce text by 2px */
+.action-card .action-copy ul{
+  font-size:calc(.64rem + 3px)!important;
+  line-height:1.55!important;
+  margin-left:0!important;
+  padding-left:17px!important;
+  margin-top:8px!important;
+}
