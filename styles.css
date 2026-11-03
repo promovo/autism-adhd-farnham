@@ -767,3 +767,30 @@ button.btn.btn-green,
   stroke-linecap:round;
   stroke-linejoin:round;
 }
+
+/* Child & Young Person route cards: align titles and links */
+.child-route-grid,
+.child-pathway-grid{
+  align-items:stretch!important;
+}
+.child-route-grid .card,
+.child-pathway-grid .card{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+}
+.child-route-grid .card h3,
+.child-pathway-grid .card h3{
+  min-height:3.1em;
+  display:flex;
+  align-items:flex-start;
+}
+.child-route-grid .card p,
+.child-pathway-grid .card p{
+  flex:1 1 auto;
+}
+.child-route-grid .card a.inline,
+.child-pathway-grid .card a.inline{
+  margin-top:auto!important;
+  display:inline-block;
+}
