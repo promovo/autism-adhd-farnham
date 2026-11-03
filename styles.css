@@ -588,3 +588,53 @@ button.btn.btn-green,
 .action-copy > .btn{
   display:inline-block;
 }
+
+/* Further fine-tune hero trust positions */
+.mock-hero .hero-trust > div:nth-child(2){
+  transform:translateX(-18px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-28px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(1),
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
+
+/* Lighten woodland imagery across the site without replacing it */
+.mock-hero,
+.page-hero{
+  background-blend-mode:screen,normal;
+}
+.mock-hero::before,
+.page-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:rgba(246,252,241,.10);
+  z-index:0;
+}
+.mock-hero,
+.page-hero{
+  position:relative;
+  isolation:isolate;
+}
+.mock-hero > *,
+.page-hero > *{
+  position:relative;
+  z-index:1;
+}
+
+/* Give woodland photos a lighter, clearer green treatment */
+.mock-hero{
+  filter:saturate(.82) brightness(1.10) contrast(1.03);
+}
+.page-hero{
+  filter:saturate(.84) brightness(1.08) contrast(1.03);
+}
+
+/* Correct Dr Chukwu crop while keeping all clinician boxes same size */
+.clinician-row img[alt="Dr Joseph Chukwu"]{
+  object-position:center 18%!important;
+}
