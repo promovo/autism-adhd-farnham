@@ -113,3 +113,16 @@ button{
 .btn-small{
   font-size:calc(0.76rem + 2px)!important;
 }
+
+/* Rebalance homepage hero title after oversized pass */
+.mock-hero .hero-copy h1{
+  font-size:clamp(3.6rem,5.6vw,5.4rem)!important;
+  line-height:.98!important;
+  max-width:760px!important;
+}
+@media(max-width:1050px){
+  .mock-hero .hero-copy h1{font-size:clamp(3.1rem,6vw,4.8rem)!important}
+}
+@media(max-width:760px){
+  .mock-hero .hero-copy h1{font-size:clamp(2.5rem,9vw,3.7rem)!important;line-height:1!important}
+}
