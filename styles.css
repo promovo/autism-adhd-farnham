@@ -151,3 +151,9 @@ button{
 @media(max-width:760px){
   .mock-hero .hero-copy h1{font-size:40px!important;line-height:1.04!important}
 }
+
+/* Gold button text uses site cream */
+.btn:not(.btn-outline):not(.btn-light):not(.btn-green),
+.btn-small:not(.btn-outline):not(.btn-light):not(.btn-green){
+  color:var(--cream)!important;
+}
