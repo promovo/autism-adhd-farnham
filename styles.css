@@ -357,3 +357,23 @@ button.btn.btn-green,
 .mock-hero .hero-trust > div:nth-child(4){
   transform:none!important;
 }
+
+/* Increase Learn More link size and strengthen card titles */
+.info-card b,
+.specialist-card b,
+.action-card b,
+.mock-section a:not(.btn) b,
+.specialist-wrap a:not(.btn) b{
+  font-size:calc(.61rem + 4px)!important;
+  font-weight:700!important;
+}
+
+.info-card h3,
+.specialist-card h3,
+.action-card h3,
+.card h3,
+.person h3,
+.why-grid h4,
+.clinician-row h4{
+  font-weight:700!important;
+}
