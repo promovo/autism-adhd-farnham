@@ -12,14 +12,13 @@ const home=`
       <a class="btn btn-outline" href="/adult-assessments" data-link>Choose Your Assessment</a>
       <a class="btn btn-outline" href="/contact" data-link>Contact Us</a>
     </div>
-  </div>
-</section>
-
-<section class="micro-trust">
-  <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7"/><path d="M10 39c1-9 6-14 14-14s13 5 14 14"/></svg><span><strong>Experienced</strong><small>NHS clinicians</small></span></div>
+    <div class="hero-trust">
+      <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7"/><path d="M10 39c1-9 6-14 14-14s13 5 14 14"/></svg><span><strong>Experienced</strong><small>NHS clinicians</small></span></div>
   <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24c-6-9-10-12-15-12-5 0-8 4-8 12s3 12 8 12c5 0 9-3 15-12Zm0 0c6-9 10-12 15-12 5 0 8 4 8 12s-3 12-8 12c-5 0-9-3-15-12Z"/></svg><span><strong>PDA profile</strong><small>recognised</small></span></div>
   <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 7c-9 0-15 6-15 15 0 5 2 9 6 12v7M29 13c5 2 7 6 7 11-2 1-4 3-5 6-2 5-5 7-10 7M18 42h11"/></svg><span><strong>Female presentation</strong><small>recognised</small></span></div>
   <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="11" width="34" height="30" rx="2"/><path d="M14 6v10M34 6v10M7 20h34M14 27h4M22 27h4M30 27h4M14 34h4M22 34h4"/></svg><span><strong>Typical wait time</strong><small>1–3 weeks</small></span></div>
+    </div>
+  </div>
 </section>
 
 <section class="mock-section">
