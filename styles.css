@@ -389,3 +389,21 @@ button.btn.btn-green,
 .action-card h3{
   margin-top:2px!important;
 }
+
+/* Fine-tune Female presentation by 1px and soften card title weight */
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-11px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
+
+.info-card h3,
+.specialist-card h3,
+.action-card h3,
+.card h3,
+.person h3,
+.why-grid h4,
+.clinician-row h4{
+  font-weight:600!important;
+}
