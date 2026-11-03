@@ -638,3 +638,16 @@ button.btn.btn-green,
 .clinician-row img[alt="Dr Joseph Chukwu"]{
   object-position:center 18%!important;
 }
+
+/* FAQ section headings: more space below the divider above */
+.faq-section,
+.faq-group{
+  padding-top:28px!important;
+  margin-top:28px!important;
+}
+.faq-section > h2,
+.faq-section > h3,
+.faq-group > h2,
+.faq-group > h3{
+  margin-top:12px!important;
+}
