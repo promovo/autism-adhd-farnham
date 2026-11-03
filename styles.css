@@ -126,3 +126,16 @@ button{
 @media(max-width:760px){
   .mock-hero .hero-copy h1{font-size:clamp(2.5rem,9vw,3.7rem)!important;line-height:1!important}
 }
+
+/* Reduce homepage hero title by 50% from previous balanced size */
+.mock-hero .hero-copy h1{
+  font-size:clamp(1.8rem,2.8vw,2.7rem)!important;
+  line-height:1.04!important;
+  max-width:760px!important;
+}
+@media(max-width:1050px){
+  .mock-hero .hero-copy h1{font-size:clamp(1.55rem,3vw,2.4rem)!important}
+}
+@media(max-width:760px){
+  .mock-hero .hero-copy h1{font-size:clamp(1.4rem,4.5vw,1.85rem)!important;line-height:1.05!important}
+}
