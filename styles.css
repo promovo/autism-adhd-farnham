@@ -794,3 +794,22 @@ button.btn.btn-green,
   margin-top:auto!important;
   display:inline-block;
 }
+
+/* FAQ internal category titles: larger gap after preceding FAQ/divider */
+.faq h2:not(:first-child),
+.faq h3:not(:first-child),
+.faq-section h2,
+.faq-section h3,
+.faq-group h2,
+.faq-group h3{
+  margin-top:42px!important;
+  padding-top:10px!important;
+}
+.faq details + h2,
+.faq details + h3,
+.faq-section details + h2,
+.faq-section details + h3,
+.faq-group details + h2,
+.faq-group details + h3{
+  margin-top:46px!important;
+}
