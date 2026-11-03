@@ -728,3 +728,42 @@ button.btn.btn-green,
 .fee-card .price{font-size:2rem!important;font-weight:600!important;margin:14px 0}
 .fees-availability .cta-row{margin-top:28px}
 @media(max-width:760px){.fees-grid{grid-template-columns:1fr!important}}
+
+/* Distinguish recurring 'Not sure where to start?' CTA from footer */
+.start-cta{
+  background:#dfe9dc!important;
+  color:#11386B!important;
+}
+.start-cta h2,
+.start-cta p,
+.start-cta a{
+  color:#11386B!important;
+}
+.start-cta .btn{
+  background:#d7a62d!important;
+  color:#faf8f2!important;
+}
+.start-cta .btn.btn-light,
+.start-cta .btn.btn-outline{
+  background:#faf8f2!important;
+  color:#11386B!important;
+}
+
+/* Adult Assessments - Why choose the clinic infographics */
+.adult-why-grid .card{
+  text-align:center;
+}
+.adult-why-icon{
+  display:flex;
+  justify-content:center;
+  margin-bottom:12px;
+}
+.adult-why-icon svg{
+  width:46px;
+  height:46px;
+  fill:none;
+  stroke:#5e7654;
+  stroke-width:2.4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
