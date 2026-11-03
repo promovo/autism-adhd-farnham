@@ -377,3 +377,15 @@ button.btn.btn-green,
 .clinician-row h4{
   font-weight:700!important;
 }
+
+/* Add more breathing room above titles inside homepage cards */
+.info-card,
+.specialist-card,
+.action-card{
+  padding-top:26px!important;
+}
+.info-card h3,
+.specialist-card h3,
+.action-card h3{
+  margin-top:2px!important;
+}
