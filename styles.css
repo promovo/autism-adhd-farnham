@@ -316,3 +316,16 @@ button.btn.btn-green,
   grid-template-columns:60px 1fr!important;
   align-items:start;
 }
+
+/* Add more space above homepage section titles */
+.mock-section{
+  padding-top:44px!important;
+}
+.specialist-wrap .mock-section,
+.clinicians-home .mock-section{
+  padding-top:44px!important;
+}
+.mock-heading{
+  margin-top:0!important;
+  margin-bottom:22px!important;
+}
