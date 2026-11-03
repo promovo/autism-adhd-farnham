@@ -265,3 +265,54 @@ button.btn.btn-green,
 .nav a:not(.btn){
   font-size:inherit!important;
 }
+
+/* Homepage spacing, icon scale and paragraph readability pass */
+
+/* Give the final trust item extra breathing room from Female presentation */
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:translateX(14px);
+}
+
+/* Increase pathway icons by 50% */
+.pathway-grid .line-icon svg{
+  width:51px!important;
+  height:51px!important;
+  stroke-width:2.4!important;
+}
+.pathway-grid .line-icon{
+  width:56px;
+  min-width:56px;
+}
+
+/* Increase homepage paragraph copy by another 2px */
+.mock-hero .hero-copy p{
+  font-size:calc(.82rem + 4px)!important;
+}
+.info-card p,
+.specialist-card p,
+.action-card p{
+  font-size:calc(.67rem + 4px)!important;
+  line-height:1.55!important;
+}
+.why-grid p{
+  font-size:calc(.58rem + 4px)!important;
+  line-height:1.5!important;
+}
+.clinician-row p{
+  font-size:calc(.57rem + 4px)!important;
+  line-height:1.45!important;
+}
+.mock-bottom-bar{
+  font-size:calc(.66rem + 2px)!important;
+}
+.mock-section > p,
+.specialist-wrap .mock-section > p,
+.clinicians-home .mock-section > p{
+  font-size:calc(1rem + 2px)!important;
+}
+
+/* Let larger pathway icons fit cleanly */
+.pathway-grid .info-card{
+  grid-template-columns:60px 1fr!important;
+  align-items:start;
+}
