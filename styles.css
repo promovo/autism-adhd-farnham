@@ -349,3 +349,11 @@ button.btn.btn-green,
 .mock-hero .hero-trust small{
   white-space:nowrap;
 }
+
+/* Fine-tune Female presentation position only */
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-10px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
