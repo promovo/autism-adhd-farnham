@@ -489,3 +489,31 @@ button.btn.btn-green,
   }
   .action-card .calendar-mini{grid-column:2}
 }
+
+/* Fine-tune hero trust positions: move PDA + Female left only */
+.mock-hero .hero-trust > div:nth-child(2),
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-10px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(1),
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
+
+/* Consultation box bullet list: larger and further left under icon */
+.action-card .action-copy ul{
+  font-size:calc(.64rem + 5px)!important;
+  line-height:1.6!important;
+  margin-top:12px!important;
+  margin-left:-66px!important;
+  padding-left:18px!important;
+}
+.action-card .action-copy ul li{
+  margin-bottom:4px!important;
+}
+@media(max-width:760px){
+  .action-card .action-copy ul{
+    margin-left:0!important;
+    padding-left:18px!important;
+  }
+}
