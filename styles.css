@@ -139,3 +139,15 @@ button{
 @media(max-width:760px){
   .mock-hero .hero-copy h1{font-size:clamp(1.4rem,4.5vw,1.85rem)!important;line-height:1.05!important}
 }
+
+/* Set homepage hero title minimum to 40px */
+.mock-hero .hero-copy h1{
+  font-size:clamp(40px,3vw,48px)!important;
+  line-height:1.03!important;
+}
+@media(max-width:1050px){
+  .mock-hero .hero-copy h1{font-size:clamp(40px,4vw,46px)!important}
+}
+@media(max-width:760px){
+  .mock-hero .hero-copy h1{font-size:40px!important;line-height:1.04!important}
+}
