@@ -64,6 +64,7 @@ const home=`
     <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M39 8C24 10 13 18 10 37c9 2 20-2 25-11 4-7 4-13 4-18Z"/><path d="M12 36c6-8 13-13 22-17"/></svg><h4>Personalised process</h4><p>Flexible, calm and centred around the individual.</p></div>
     <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="2"/><path d="M16 15h16M16 23h16M16 31h10"/><path d="m31 32 3 3 6-7"/></svg><h4>Clear reports and next steps</h4><p>Detailed recommendations and tailored signposting.</p></div>
   </div>
+  <div class="why-cta"><a class="btn" href="/contact" data-link>Get in touch</a></div>
 </section>
 
 <section class="clinicians-home">
@@ -76,8 +77,13 @@ const home=`
       <div><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
       <div><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></div>
     </div>
+    <div class="clinicians-cta"><a class="btn btn-outline" href="/our-team" data-link>Read more</a></div>
   </div>
 </section>
 
-<section class="mock-bottom-bar"><strong>Not sure where to start? Book a 15-minute consultation or get in touch.</strong><span>✉ lisa@autismassessmentsfarnham.co.uk</span><span>☎ 07387 697876</span></section>
+<section class="mock-bottom-bar">
+  <strong>Not sure where to start? Book a 15-minute consultation or get in touch.</strong>
+  <a href="mailto:lisa@autismassessmentsfarnham.co.uk">✉ lisa@autismassessmentsfarnham.co.uk</a>
+  <a href="tel:+447387697876">☎ 07387 697876</a>
+</section>
 `;

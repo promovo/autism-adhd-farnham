@@ -407,3 +407,85 @@ button.btn.btn-green,
 .clinician-row h4{
   font-weight:600!important;
 }
+
+/* Action cards: larger icons, bullets and wider buttons */
+.action-card .action-icon{
+  width:72px!important;
+  height:72px!important;
+  border-width:2px!important;
+  align-self:start;
+}
+.action-card .action-icon svg{
+  width:42px!important;
+  height:42px!important;
+  stroke-width:2.4!important;
+}
+.action-card{
+  grid-template-columns:82px 1fr auto!important;
+}
+.action-card.screening-card{
+  grid-template-columns:82px 1fr!important;
+}
+.action-card ul{
+  font-size:calc(.64rem + 3px)!important;
+  line-height:1.55!important;
+  padding-left:16px!important;
+  margin-left:0!important;
+}
+.action-card .btn{
+  min-width:170px;
+  text-align:center;
+  padding-left:24px!important;
+  padding-right:24px!important;
+}
+.action-card .dual-buttons{
+  gap:12px!important;
+}
+.action-card .dual-buttons .btn{
+  min-width:155px;
+}
+
+/* Why choose: larger infographics and headings */
+.why-grid svg{
+  width:42px!important;
+  height:42px!important;
+  stroke-width:2.5!important;
+  margin-bottom:10px!important;
+}
+.why-grid h4{
+  font-size:calc(.69rem + 3px)!important;
+  line-height:1.2!important;
+}
+.why-cta,
+.clinicians-cta{
+  display:flex;
+  justify-content:center;
+  margin-top:24px;
+}
+.why-cta .btn,
+.clinicians-cta .btn{
+  min-width:170px;
+  text-align:center;
+}
+
+/* Bottom contact strip: readable and clickable */
+.mock-bottom-bar{
+  font-size:calc(.66rem + 5px)!important;
+  flex-wrap:wrap;
+}
+.mock-bottom-bar a{
+  color:#11386B!important;
+  text-decoration:none;
+  font-weight:600;
+}
+.mock-bottom-bar a:hover{
+  text-decoration:underline;
+}
+
+@media(max-width:760px){
+  .action-card,
+  .action-card.screening-card{
+    grid-template-columns:72px 1fr!important;
+  }
+  .action-card .calendar-mini{grid-column:2}
+}
