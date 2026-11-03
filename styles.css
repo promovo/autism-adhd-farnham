@@ -179,3 +179,28 @@ button.btn.btn-green,
 .btn.btn-green{
   color:#faf8f2!important;
 }
+
+/* FINAL button hover system: yellow and cream only */
+.btn{
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.btn:not(.btn-outline):not(.btn-light):not(.btn-green):hover{
+  background:#faf8f2!important;
+  color:#11386B!important;
+  border-color:#d7a62d!important;
+  transform:translateY(-1px);
+}
+.btn-outline:hover,
+.btn-light:hover{
+  background:#d7a62d!important;
+  color:#faf8f2!important;
+  border-color:#d7a62d!important;
+  transform:translateY(-1px);
+}
+/* Suppress any old green button hover styling */
+.btn-green,
+.btn-green:hover{
+  background:#d7a62d!important;
+  color:#faf8f2!important;
+  border-color:#d7a62d!important;
+}
