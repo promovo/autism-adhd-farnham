@@ -257,3 +257,11 @@ button.btn.btn-green,
   .mock-hero .hero-trust strong,
   .mock-hero .hero-trust small{white-space:normal}
 }
+
+/* Increase main navigation text by 2px */
+.nav{
+  font-size:calc(.72rem + 2px)!important;
+}
+.nav a:not(.btn){
+  font-size:inherit!important;
+}
