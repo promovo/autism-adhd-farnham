@@ -539,3 +539,22 @@ button.btn.btn-green,
   padding-left:17px!important;
   margin-top:8px!important;
 }
+
+/* Keep all clinician photos visually uniform */
+.clinician-row img{
+  width:100%!important;
+  height:220px!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+  background:#fff!important;
+}
+.clinician-row>div{
+  display:flex;
+  flex-direction:column;
+}
+@media(max-width:1050px){
+  .clinician-row img{height:210px!important}
+}
+@media(max-width:760px){
+  .clinician-row img{height:260px!important}
+}
