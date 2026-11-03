@@ -81,3 +81,9 @@ h1,h2,h3,h4,h5,h6,
 @media(max-width:760px){
   .hero-trust{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
 }
+
+/* Vector header logo - transparent by construction */
+.brand{display:flex;align-items:center;background:transparent!important}
+.brand-logo-svg{display:block;width:290px;height:auto;max-width:34vw;background:transparent!important;overflow:visible}
+@media(max-width:1050px){.brand-logo-svg{width:245px;max-width:48vw}}
+@media(max-width:760px){.brand-logo-svg{width:215px;max-width:68vw}}
