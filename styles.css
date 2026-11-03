@@ -100,3 +100,16 @@ h1,h2,h3,h4,h5,h6,
 @media(max-width:760px){
   .mock-hero .hero-copy h1{font-size:clamp(2.8rem,11vw,4.3rem)!important;line-height:.98!important}
 }
+
+/* Increase button label size by 2px across the site */
+.btn,
+.btn-small,
+.btn-outline,
+.btn-light,
+.btn-green,
+button{
+  font-size:calc(0.76rem + 2px)!important;
+}
+.btn-small{
+  font-size:calc(0.76rem + 2px)!important;
+}
