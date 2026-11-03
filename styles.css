@@ -87,3 +87,16 @@ h1,h2,h3,h4,h5,h6,
 .brand-logo-svg{display:block;width:290px;height:auto;max-width:34vw;background:transparent!important;overflow:visible}
 @media(max-width:1050px){.brand-logo-svg{width:245px;max-width:48vw}}
 @media(max-width:760px){.brand-logo-svg{width:215px;max-width:68vw}}
+
+/* Definitive homepage hero title size override */
+.mock-hero .hero-copy h1{
+  font-size:clamp(4.6rem,7.4vw,7.2rem)!important;
+  line-height:.94!important;
+  max-width:820px!important;
+}
+@media(max-width:1050px){
+  .mock-hero .hero-copy h1{font-size:clamp(3.8rem,7vw,5.8rem)!important}
+}
+@media(max-width:760px){
+  .mock-hero .hero-copy h1{font-size:clamp(2.8rem,11vw,4.3rem)!important;line-height:.98!important}
+}
