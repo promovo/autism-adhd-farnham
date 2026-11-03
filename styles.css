@@ -558,3 +558,33 @@ button.btn.btn-green,
 @media(max-width:760px){
   .clinician-row img{height:260px!important}
 }
+
+/* Further shift Female presentation left only */
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-20px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(1),
+.mock-hero .hero-trust > div:nth-child(2),
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
+
+/* Left-align action buttons and add more bottom breathing room */
+.action-card{
+  padding-bottom:34px!important;
+}
+.action-copy .btn,
+.action-copy .dual-buttons{
+  margin-left:0!important;
+  justify-content:flex-start!important;
+  text-align:left;
+}
+.action-copy .dual-buttons{
+  display:flex!important;
+}
+.action-copy .dual-buttons .btn{
+  text-align:center!important;
+}
+.action-copy > .btn{
+  display:inline-block;
+}
