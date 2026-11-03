@@ -329,3 +329,23 @@ button.btn.btn-green,
   margin-top:0!important;
   margin-bottom:22px!important;
 }
+
+/* Equal spacing for all four hero trust items */
+.mock-hero .hero-trust{
+  display:grid!important;
+  grid-template-columns:repeat(4,1fr)!important;
+  column-gap:18px!important;
+  max-width:620px!important;
+}
+.mock-hero .hero-trust > div{
+  transform:none!important;
+  min-width:0;
+  justify-content:flex-start;
+}
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
+.mock-hero .hero-trust strong,
+.mock-hero .hero-trust small{
+  white-space:nowrap;
+}
