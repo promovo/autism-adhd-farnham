@@ -157,3 +157,25 @@ button{
 .btn-small:not(.btn-outline):not(.btn-light):not(.btn-green){
   color:var(--cream)!important;
 }
+
+/* FINAL button colour hierarchy */
+a.btn,
+button.btn,
+.btn{
+  color:#faf8f2!important;
+}
+a.btn.btn-outline,
+button.btn.btn-outline,
+.btn.btn-outline{
+  color:#11386B!important;
+}
+a.btn.btn-light,
+button.btn.btn-light,
+.btn.btn-light{
+  color:#11386B!important;
+}
+a.btn.btn-green,
+button.btn.btn-green,
+.btn.btn-green{
+  color:#faf8f2!important;
+}
