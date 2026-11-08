@@ -1488,3 +1488,17 @@ main > .mock-hero{
     padding-right:0!important;
   }
 }
+
+/* Hero: extend cream overlay further to the right */
+.mock-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250,248,242,.98) 0%,
+      rgba(250,248,242,.94) 44%,
+      rgba(250,248,242,.62) 60%,
+      rgba(250,248,242,.22) 74%,
+      rgba(250,248,242,0) 88%
+    ),
+    url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+}
