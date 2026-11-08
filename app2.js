@@ -82,7 +82,7 @@ const combined=(a)=>genericAssessment(a?'Combined Autism & ADHD Assessment for A
 const how=`${header('How Our Autism & ADHD Assessment Process Works','The exact pathway depends on whether the assessment is for Autism, ADHD or both, and whether it is for an adult or a child / young person. The first step is always the relevant pre-booking form.')}
 <section class="section how-page">
   <div class="section-lead"><div class="eyebrow">The assessment journey</div><h2>Six clear steps</h2></div>
-  <div class="steps process-steps">
+  <div class="steps process-steps unified-steps">
     <div class="step"><div><h3>Complete the pre-booking form</h3><p>Start with the relevant Adult or Child / Young Person pre-booking form. Lisa reviews the information manually before anything else happens.</p><div class="cta-row"><a class="btn" href="${adultForm}" target="_blank">Adult Pre-Booking Form</a><a class="btn" href="${childForm}" target="_blank">Child / Young Person Form</a></div></div></div>
     <div class="step"><div><h3>Lisa reviews your information</h3><p>Lisa considers the information provided and advises on the most appropriate next step, including whether a free 15-minute consultation would be useful.</p></div></div>
     <div class="step"><div><h3>Choose the appropriate pathway</h3><p>The clinic confirms whether the most appropriate route is Autism, ADHD or Combined, and whether the Adult or Child / Young Person pathway applies.</p></div></div>
