@@ -2508,3 +2508,43 @@ a.specialist-card:hover,
   transform:translateY(-2px)!important;
   box-shadow:0 8px 20px rgba(17,56,107,.12)!important;
 }
+
+
+/* =========================================================
+   NUMBERED PROCESS MARKERS — exact How It Works style site-wide
+   ========================================================= */
+.assessment-five-steps::before{
+  left:21px!important;
+  top:22px!important;
+  bottom:22px!important;
+  width:2px!important;
+  background:linear-gradient(#d7a62d 0%,#c7b86b 45%,#b9cfb2 100%)!important;
+}
+.assessment-step{
+  grid-template-columns:52px minmax(0,1fr)!important;
+  gap:18px!important;
+  padding:0 0 26px!important;
+}
+.assessment-step-number{
+  width:44px!important;
+  height:44px!important;
+  background:#d7a62d!important;
+  color:#11386B!important;
+  border:none!important;
+  box-shadow:0 0 0 6px #eef4e9!important;
+  font-size:1rem!important;
+  font-weight:700!important;
+  position:relative!important;
+  z-index:2!important;
+}
+@media(max-width:760px){
+  .assessment-five-steps::before{left:20px!important}
+  .assessment-step{
+    grid-template-columns:44px minmax(0,1fr)!important;
+    gap:14px!important;
+  }
+  .assessment-step-number{
+    width:40px!important;
+    height:40px!important;
+  }
+}
