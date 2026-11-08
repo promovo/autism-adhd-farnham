@@ -2451,3 +2451,49 @@ a.specialist-card:hover,
     height:40px!important;
   }
 }
+
+/* PDA profile: tighten section depth and match image to three-card stack */
+.pda-split{
+  align-items:start!important;
+  gap:28px!important;
+}
+.pda-cards{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:12px!important;
+  align-content:start!important;
+}
+.pda-cards .card{
+  margin:0!important;
+}
+.pda-photo{
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  align-self:start!important;
+}
+.pda-photo img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:none!important;
+  object-fit:cover!important;
+}
+
+/* Use the card stack as the visual height reference */
+.pda-split > div{
+  min-height:0!important;
+}
+.pda-split .pda-photo{
+  height:100%!important;
+}
+.pda-split .pda-photo img{
+  height:100%!important;
+}
+
+/* Remove excess bottom breathing room around the PDA split */
+.pda-page .section,
+.pda-section{
+  padding-bottom:36px!important;
+}
