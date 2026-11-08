@@ -44,7 +44,7 @@ const home=`
 
 <section class="homepage-post-support">
   <div class="post-support-image">
-    <img src="/assets/serene-green-healthcare-consultation-workspace.png" alt="Calm consultation workspace with forms, notebook and plants">
+    <img src="/assets/post-assessment-support.jpg" alt="Calm consultation workspace with forms, notebook and plants">
   </div>
   <div class="post-support-copy">
     <div class="eyebrow">After your assessment</div>
