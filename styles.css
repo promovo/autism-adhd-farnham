@@ -1526,3 +1526,11 @@ main > .mock-hero{
   padding-top:12px!important;
   margin-top:0!important;
 }
+
+/* Assessment pages: calm clinic space before reviews */
+.assessment-clinic-space{
+  background:#dfeadd!important;
+}
+.assessment-clinic-space .clinic-space-split{
+  align-items:center!important;
+}
