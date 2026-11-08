@@ -1239,3 +1239,64 @@ main > .mock-hero{
   .footer{grid-template-columns:1fr!important}
   .footer-bottom{grid-column:1}
 }
+
+/* Fees page refinement */
+.fees-prices{background:#eef4e9!important;padding-bottom:34px!important}
+.fees-current{
+  background:#dfeadd!important;
+  padding-top:28px!important;
+  padding-bottom:30px!important;
+}
+.fees-current-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:center;
+  max-width:1200px;
+  margin:0 auto;
+}
+.fees-current h2{
+  margin:0 0 6px!important;
+  font-size:clamp(1.7rem,2.6vw,2.35rem)!important;
+}
+.fees-current p{margin:0!important}
+.fees-current-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.fees-current-actions .btn{
+  margin-top:0!important;
+}
+.fees-support{
+  background:#edf3ea!important;
+  padding-top:38px!important;
+}
+.fee-card .price{
+  font-family:'Montserrat',Arial,sans-serif!important;
+  font-size:1.85rem!important;
+  font-weight:600!important;
+  line-height:1.1!important;
+  letter-spacing:-.02em!important;
+  color:#11386B!important;
+}
+.fee-card .support-price{
+  font-size:1.55rem!important;
+}
+.fees-support-grid .card{
+  display:flex;
+  flex-direction:column;
+}
+.fees-support-grid .card a.inline{
+  margin-top:auto;
+}
+@media(max-width:760px){
+  .fees-current-inner{flex-direction:column;align-items:flex-start}
+}
+
+/* Privacy page */
+.privacy-page{background:#eef4e9!important}
+.privacy-page.alt{background:#dfeadd!important}
+.privacy-block{max-width:1000px}
+.privacy-contact{margin-top:28px;max-width:620px}
