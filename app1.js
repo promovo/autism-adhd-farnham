@@ -8,7 +8,7 @@ const home=`
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
     <p class="hero-wait"><strong>Typical wait time: 1–3 weeks.</strong></p>
     <div class="hero-actions">
-      <a class="btn" href="/free-consultation" data-link>Book a 15-Minute Consultation</a>
+      <a class="btn" href="/free-consultation" data-link>Pre-booking first</a>
       <a class="btn btn-outline" href="/adult-assessments" data-link>Choose Your Assessment</a>
       <a class="btn btn-outline" href="/contact" data-link>Contact Us</a>
     </div>
