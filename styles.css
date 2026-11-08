@@ -1553,3 +1553,40 @@ main > .mock-hero{
   object-fit:cover!important;
   object-position:center!important;
 }
+
+/* PDA page: make image match full height of three stacked cards */
+.pda-split{
+  align-items:stretch!important;
+}
+.pda-split > div:first-child{
+  display:flex!important;
+}
+.pda-cards{
+  flex:1 1 auto!important;
+}
+.pda-photo{
+  min-height:0!important;
+  max-height:none!important;
+  height:100%!important;
+  align-self:stretch!important;
+}
+.pda-photo img{
+  min-height:0!important;
+  max-height:none!important;
+  height:100%!important;
+  width:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+
+/* Homepage hero buttons: gold/yellow */
+.mock-hero .btn{
+  background:#d7a62d!important;
+  border-color:#d7a62d!important;
+  color:#11386B!important;
+}
+.mock-hero .btn:hover{
+  background:#e2b542!important;
+  border-color:#e2b542!important;
+  color:#11386B!important;
+}
