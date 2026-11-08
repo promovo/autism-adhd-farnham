@@ -64,8 +64,31 @@ function updateSeo(path){
   const graph=[
     {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Surrey','South East England']},
     {'@type':'WebSite','@id':liveOrigin+'/#website',url:liveOrigin+'/',name:'Autism & ADHD Assessments Farnham'},
-    {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':liveOrigin+'/#clinic'}}
+    {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':liveOrigin+'/#clinic'}},
+    {'@type':'BreadcrumbList','@id':liveOrigin+data.canonical+'#breadcrumb',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Home',item:liveOrigin+'/'},
+      ...(data.canonical==='/'?[]:[{'@type':'ListItem',position:2,name:data.title.split('|')[0].trim(),item:liveOrigin+data.canonical}])
+    ]}
   ];
+  const serviceRoutes={
+    '/adult-autism-assessment':'Adult Autism Assessment',
+    '/adult-adhd-assessment':'Adult ADHD Assessment',
+    '/combined-adult-autism-adhd-assessment':'Combined Adult Autism and ADHD Assessment',
+    '/child-autism-assessment':'Child Autism Assessment',
+    '/child-adhd-assessment':'Child ADHD Assessment',
+    '/combined-child-autism-adhd-assessment':'Combined Child Autism and ADHD Assessment'
+  };
+  if(serviceRoutes[data.canonical]){
+    graph.push({'@type':'Service',name:serviceRoutes[data.canonical],url:liveOrigin+data.canonical,provider:{'@id':liveOrigin+'/#clinic'},areaServed:['Farnham','Surrey','South East England'],description:data.description});
+  }
+  if(data.canonical==='/faq'){
+    graph.push({'@type':'FAQPage',mainEntity:[
+      {'@type':'Question',name:'Do you assess both children and adults?',acceptedAnswer:{'@type':'Answer',text:'Yes. Autism assessments are available from age 2+. ADHD and combined Autism and ADHD assessments are available from age 5+.'}},
+      {'@type':'Question',name:'Do you recognise PDA and female presentations?',acceptedAnswer:{'@type':'Answer',text:'Yes. The clinic recognises demand-avoidant presentations and the way Autism and ADHD may present in girls and women.'}},
+      {'@type':'Question',name:'Do you prescribe ADHD medication?',acceptedAnswer:{'@type':'Answer',text:'No. The clinic assesses and diagnoses ADHD but does not prescribe medication.'}},
+      {'@type':'Question',name:'What is the current waiting time?',acceptedAnswer:{'@type':'Answer',text:'Typical availability is around 1–3 weeks, subject to clinician and pathway availability.'}}
+    ]});
+  }
   schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
 }
 function render(path){
