@@ -1720,3 +1720,129 @@ button{
     --type-lead:1.05rem;
   }
 }
+
+/* =========================================================
+   FINAL VISUAL POLISH — portrait consistency, spacing & depth
+   ========================================================= */
+
+/* Shared clinician portrait treatment across Home + Meet the Team */
+.clinician-row img,
+.team-profile img{
+  aspect-ratio:5/6!important;
+  object-fit:cover!important;
+  object-position:center 16%!important;
+  background:#f5f7f2!important;
+}
+
+/* Home portraits */
+.clinician-row img{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+}
+
+/* Team portraits retain consistent physical width */
+.team-profile img{
+  width:250px!important;
+  height:auto!important;
+}
+
+/* Fine-tune focal points so head heights feel consistent */
+.clinician-row img[alt="Lisa Mayatt"],
+.team-profile img[alt="Lisa Mayatt"]{
+  object-position:center 12%!important;
+}
+.clinician-row img[alt="Dr Joseph Chukwu"],
+.team-profile img[alt="Dr Joseph Chukwu"]{
+  object-position:center 16%!important;
+}
+.clinician-row img[alt="Dr Aimee Hayter"],
+.team-profile img[alt="Dr Aimee Hayter"]{
+  object-position:center 20%!important;
+}
+.clinician-row img[alt="Dr Gopal Venkat"],
+.team-profile img[alt="Dr Gopal Venkat"]{
+  object-position:center 14%!important;
+}
+.clinician-row img[alt="Karen Cooper"],
+.team-profile img[alt="Karen Cooper"]{
+  object-position:center 14%!important;
+}
+.team-profile img[alt="Jess Wilson"]{object-position:center 14%!important}
+.team-profile img[alt="Beccy Muggeridge"]{object-position:center 14%!important}
+.team-profile img[alt="Sarah Grieve"]{object-position:center 16%!important}
+.team-profile img[alt="Deepika Sharma"]{object-position:center 14%!important}
+
+/* Homepage hero: tighten title-to-copy spacing */
+.mock-hero .hero-copy h1{
+  margin-bottom:10px!important;
+}
+.mock-hero .hero-copy > p:first-of-type{
+  margin-top:0!important;
+  margin-bottom:7px!important;
+}
+.mock-hero .hero-wait{
+  margin-top:0!important;
+  margin-bottom:14px!important;
+}
+
+/* Global bottom CTA: tighter title/copy rhythm */
+.global-start-cta h2{
+  margin-bottom:5px!important;
+}
+.global-start-cta p{
+  margin-top:0!important;
+  margin-bottom:18px!important;
+}
+
+/* Make Get in touch visibly interactive */
+.global-start-cta .btn.btn-outline{
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease!important;
+}
+.global-start-cta .btn.btn-outline:hover{
+  background:#d7a62d!important;
+  color:#11386B!important;
+  border-color:#d7a62d!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 7px 18px rgba(17,56,107,.12)!important;
+}
+
+/* Modern, restrained depth on boxed content */
+.card,
+.info-card,
+.specialist-card,
+.action-card,
+.soft-panel,
+.google-review-card,
+.clinician-row > div{
+  box-shadow:0 7px 22px rgba(17,56,107,.07)!important;
+  transition:box-shadow .22s ease,transform .22s ease!important;
+}
+a.info-card:hover,
+a.specialist-card:hover,
+.action-card:hover,
+.card:hover,
+.google-review-card:hover,
+.clinician-row > div:hover{
+  box-shadow:0 12px 30px rgba(17,56,107,.11)!important;
+  transform:translateY(-2px);
+}
+
+/* Keep large horizontal team rows flatter than cards */
+.team-profile{
+  box-shadow:none!important;
+}
+
+/* Mobile clinician portrait consistency */
+@media(max-width:760px){
+  .clinician-row img{
+    aspect-ratio:5/6!important;
+    height:auto!important;
+  }
+  .team-profile img{
+    width:100%!important;
+    max-width:360px!important;
+    height:auto!important;
+    aspect-ratio:5/6!important;
+  }
+}
