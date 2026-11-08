@@ -40,7 +40,44 @@ const child=`${header('Autism & ADHD Assessments for Children and Young People',
     <div class="card"><span class="tag">Age 5+</span><h3>Combined Autism + ADHD<br>Assessment</h3><p>Explore Autism and ADHD together within one integrated assessment pathway for children and young people.</p><a class="inline" href="/combined-child-autism-adhd-assessment" data-link>Combined Child Assessment</a></div>
     <div class="card"><span class="tag">Specialist area</span><h3>PDA / Demand-Avoidant<br>Presentation</h3><p>Explore demand-avoidant presentation and how this may be considered within the wider Autism assessment.</p><a class="inline" href="/pda-demand-avoidant-presentation" data-link>Learn about PDA</a></div>
   </div></section><section class="section alt"><div class="split"><div class="photo-panel"><img src="https://static.wixstatic.com/media/1e4c48_9664c65ab8164b88af06e5d6bd150ab1~mv2.jpg" alt=""></div><div><div class="eyebrow">What happens first?</div><h2>Complete the Child / Young Person form</h2><p>Lisa reviews the information manually and will respond with the most appropriate next step.</p><a class="btn" href="${childForm}" target="_blank">Complete Child / Young Person Form</a></div></div></section><section class="section"><div class="split"><div><h2>A flexible, low-demand approach</h2><p>The clinic can discuss reasonable adjustments for sensory, anxiety or communication needs and asks families what may help a child feel more comfortable before the appointment.</p></div><div class="soft-panel"><h3>School & professional information</h3><p>Information from school and other professionals can be incorporated where relevant as part of the assessment process.</p><p><strong>Typical availability:</strong> around 1–3 weeks, subject to clinician and pathway availability.</p></div></div></section><section class="section assessment-clinic-space"><div class="split clinic-space-split"><div class="photo-panel clinic-space-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Autism Assessments Farnham clinic"></div><div><div class="eyebrow">Our clinic</div><h2>We provide a calm and safe space</h2><p>Our clinic is within a tranquil setting in South Farnham with plenty of parking. The space is within an annexe and has a homely feel, with a large waiting room, outdoor seating area and toilet facilities.</p><p>Please tell the clinic in advance about sensory, communication, anxiety or access needs that may make the process more comfortable.</p></div></div></section>${cta()}`;
-const genericAssessment=(title,intro,form,age,price)=>`${header(title,intro)}<section class="section"><div class="split"><div><h2>What the assessment may include</h2><div class="steps"><div class="step"><div><h3>Pre-assessment information</h3><p>Initial information and questionnaires appropriate to the selected pathway.</p></div></div><div class="step"><div><h3>Clinical assessment</h3><p>Relevant interviews, observations and/or recognised tools completed by appropriately trained clinicians.</p></div></div><div class="step"><div><h3>Multi-disciplinary review</h3><p>The team considers the information together using the clinic’s agreed clinical process and professional judgement.</p></div></div><div class="step"><div><h3>Report & next steps</h3><p>A comprehensive report with recommendations and feedback as appropriate.</p></div></div></div></div><div><div class="soft-panel"><h3>First step</h3><p>Complete the relevant pre-booking form. Lisa reviews the information manually and will advise on the most appropriate next step.</p><a class="btn" href="${form}" target="_blank">Complete pre-booking form</a></div><div class="soft-panel" style="margin-top:18px"><h3>Age & availability</h3><p><strong>${age}</strong></p><p>Typical availability around 1–3 weeks, subject to clinician and pathway availability.</p><p><strong>Price:</strong> ${price}</p></div></div></div></section><section class="section assessment-clinic-space"><div class="split clinic-space-split"><div class="photo-panel clinic-space-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Autism Assessments Farnham clinic"></div><div><div class="eyebrow">Our clinic</div><h2>We provide a calm and safe space</h2><p>Our clinic is within a tranquil setting in South Farnham with plenty of parking. The space is within an annexe and has a homely feel, with a large waiting room, outdoor seating area and toilet facilities.</p><p>Please tell the clinic in advance about sensory, communication, anxiety or access needs that may make the process more comfortable.</p></div></div></section>${cta()}`;
+const genericAssessment=(title,intro,form,age,price)=>`${header(title,intro)}
+<section class="section assessment-detail-main">
+  <div class="section-lead assessment-detail-lead">
+    <div class="eyebrow">Your assessment pathway</div>
+    <h2>What the assessment may include</h2>
+    <p>The exact process varies by pathway, but assessments typically move through five clear stages.</p>
+  </div>
+
+  <div class="assessment-five-steps">
+    <div class="assessment-step"><div class="assessment-step-number">1</div><div><h3>Pre-assessment information</h3><p>Initial information and questionnaires appropriate to the selected pathway.</p></div></div>
+    <div class="assessment-step"><div class="assessment-step-number">2</div><div><h3>Clinical consultation</h3><p>Relevant background information is explored with the individual and/or family.</p></div></div>
+    <div class="assessment-step"><div class="assessment-step-number">3</div><div><h3>Assessment appointments</h3><p>Relevant interviews, observations and/or recognised tools are completed by appropriately trained clinicians.</p></div></div>
+    <div class="assessment-step"><div class="assessment-step-number">4</div><div><h3>Multi-disciplinary review</h3><p>The team considers the information together using the clinic’s agreed clinical process and professional judgement.</p></div></div>
+    <div class="assessment-step"><div class="assessment-step-number">5</div><div><h3>Report & next steps</h3><p>A comprehensive report with recommendations and feedback is provided as appropriate.</p></div></div>
+  </div>
+
+  <div class="assessment-detail-panels">
+    <div class="assessment-detail-card">
+      <img src="https://static.wixstatic.com/media/1e4c48_a9c89c4ca40149bda7b52846b60470a5~mv2.jpg" alt="Assessment consultation">
+      <div class="assessment-detail-card-copy">
+        <div class="eyebrow">First step</div>
+        <h3>Start with the pre-booking form</h3>
+        <p>Lisa reviews the information manually and will advise on the most appropriate next step.</p>
+        <a class="btn" href="${form}" target="_blank">Complete pre-booking form</a>
+      </div>
+    </div>
+    <div class="assessment-detail-card">
+      <img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Calm Autism Assessments Farnham clinic">
+      <div class="assessment-detail-card-copy">
+        <div class="eyebrow">Age, fee & availability</div>
+        <h3>${age}</h3>
+        <p>Typical availability around 1–3 weeks, subject to clinician and pathway availability.</p>
+        <p class="assessment-detail-price"><strong>${price}</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section assessment-clinic-space"><div class="split clinic-space-split"><div class="photo-panel clinic-space-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Autism Assessments Farnham clinic"></div><div><div class="eyebrow">Our clinic</div><h2>We provide a calm and safe space</h2><p>Our clinic is within a tranquil setting in South Farnham with plenty of parking. The space is within an annexe and has a homely feel, with a large waiting room, outdoor seating area and toilet facilities.</p><p>Please tell the clinic in advance about sensory, communication, anxiety or access needs that may make the process more comfortable.</p></div></div></section>${cta()}`;
 const combined=(a)=>genericAssessment(a?'Combined Autism & ADHD Assessment for Adults':'Combined Autism & ADHD Assessment for Children and Young People','Where both Autism and ADHD are being considered, a combined pathway allows the clinical team to consider overlapping or co-occurring needs within one integrated assessment process.',a?adultForm:childForm,'From age 5+','£2,950');
 const how=`${header('How Our Autism & ADHD Assessment Process Works','The exact pathway depends on whether the assessment is for Autism, ADHD or both, and whether it is for an adult or a child / young person. The first step is always the relevant pre-booking form.')}
 <section class="section how-page">
