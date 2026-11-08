@@ -1960,3 +1960,55 @@ a.specialist-card:hover,
 .consultation-call-box ul{
   margin-top:0!important;
 }
+
+/* FINAL clinician portrait normalisation using original Wix files */
+.clinician-row img,
+.team-profile img{
+  aspect-ratio:4/5!important;
+  object-fit:cover!important;
+  background:#f3f6f0!important;
+  object-position:center 16%!important;
+}
+
+/* Homepage clinician cards */
+.clinician-row img{
+  width:100%!important;
+  height:auto!important;
+  display:block!important;
+}
+
+/* Meet the Team portraits */
+.team-profile img{
+  width:250px!important;
+  height:auto!important;
+  display:block!important;
+}
+
+/* Individual focal-point corrections for consistent head/shoulders */
+.clinician-row img[alt="Lisa Mayatt"],
+.team-profile img[alt="Lisa Mayatt"]{object-position:center 10%!important}
+
+.clinician-row img[alt="Dr Joseph Chukwu"],
+.team-profile img[alt="Dr Joseph Chukwu"]{object-position:center 14%!important}
+
+.clinician-row img[alt="Dr Aimee Hayter"],
+.team-profile img[alt="Dr Aimee Hayter"]{object-position:center 23%!important}
+
+.clinician-row img[alt="Dr Gopal Venkat"],
+.team-profile img[alt="Dr Gopal Venkat"]{object-position:center 13%!important}
+
+.clinician-row img[alt="Karen Cooper"],
+.team-profile img[alt="Karen Cooper"]{object-position:center 13%!important}
+
+.team-profile img[alt="Jess Wilson"]{object-position:center 14%!important}
+.team-profile img[alt="Beccy Muggeridge"]{object-position:center 14%!important}
+.team-profile img[alt="Sarah Grieve"]{object-position:center 15%!important}
+.team-profile img[alt="Deepika Sharma"]{object-position:center 13%!important}
+
+@media(max-width:760px){
+  .team-profile img{
+    width:100%!important;
+    max-width:360px!important;
+    aspect-ratio:4/5!important;
+  }
+}
