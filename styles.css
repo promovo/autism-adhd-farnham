@@ -2591,3 +2591,21 @@ a.specialist-card:hover,
   transform:translateY(-2px)!important;
   transition:background .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease!important;
 }
+
+
+/* Meet the Team — Dr Chukwu portrait same size/crop box as all other clinicians */
+.team-profile img[alt="Dr Joseph Chukwu"]{
+  transform:none!important;
+  transform-origin:center!important;
+  width:250px!important;
+  height:auto!important;
+  aspect-ratio:4/5!important;
+  object-fit:cover!important;
+  object-position:center 18%!important;
+}
+@media(max-width:760px){
+  .team-profile img[alt="Dr Joseph Chukwu"]{
+    width:100%!important;
+    max-width:360px!important;
+  }
+}
