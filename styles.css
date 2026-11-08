@@ -2497,3 +2497,14 @@ a.specialist-card:hover,
 .pda-section{
   padding-bottom:36px!important;
 }
+
+/* Hero CTA hover — ensure visible change despite homepage gold override */
+.mock-hero .btn:hover,
+.mock-hero a.btn:hover,
+.mock-hero .btn.btn-outline:hover{
+  background:#faf8f2!important;
+  border-color:#11386B!important;
+  color:#11386B!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 8px 20px rgba(17,56,107,.12)!important;
+}
