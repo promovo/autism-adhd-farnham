@@ -1458,3 +1458,13 @@ main > .mock-hero{
 .team-profile:first-child{
   padding-top:34px!important;
 }
+
+/* Meet the Team: give Lisa the same visual breathing room as rows below */
+.team-page .team-profile:first-child{
+  padding-top:52px!important;
+}
+@media(max-width:760px){
+  .team-page .team-profile:first-child{
+    padding-top:38px!important;
+  }
+}
