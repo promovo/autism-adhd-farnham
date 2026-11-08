@@ -1534,3 +1534,22 @@ main > .mock-hero{
 .assessment-clinic-space .clinic-space-split{
   align-items:center!important;
 }
+
+/* PDA page: make image span the full height of the three left cards */
+.pda-split{
+  align-items:stretch!important;
+}
+.pda-photo{
+  min-height:100%!important;
+  max-height:none!important;
+  height:100%!important;
+  align-self:stretch!important;
+}
+.pda-photo img{
+  width:100%!important;
+  height:100%!important;
+  min-height:100%!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
