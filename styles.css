@@ -1174,3 +1174,68 @@ main > .mock-hero{
     padding:28px 7vw!important;
   }
 }
+
+/* Coordinated November refinement */
+.mock-hero .hero-trust > div:nth-child(4){transform:translateX(-22px)!important}
+
+/* Keep Why Choose and clinicians visually distinct */
+.why-section{background:#eef4e9!important}
+.clinicians-home,.clinicians-home .mock-section{background:#dfeadd!important}
+
+/* Overview page */
+.overview-age-cards .card,.overview-service-cards .card{display:flex;flex-direction:column}
+.overview-age-cards .card .btn,.overview-service-cards .card .btn{margin-top:auto;align-self:flex-start}
+.overview-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:auto}
+
+/* Contact cards align all buttons */
+.contact-start-cards{align-items:stretch!important}
+.contact-start-cards .card{display:flex;flex-direction:column;height:100%}
+.contact-start-cards .card p{min-height:3.2em}
+.contact-start-cards .card .btn{margin-top:auto;align-self:flex-start}
+
+/* Final CTA get-in-touch uses standard outline style */
+.global-start-cta .btn.btn-outline{
+  background:#fff!important;
+  border-color:#cfd7ce!important;
+  color:#11386B!important;
+}
+
+/* Consultation flow */
+.consultation-form-cards .card{display:flex;flex-direction:column}
+.consultation-form-cards .card .btn{margin-top:auto;align-self:flex-start}
+.consultation-first{background:#eef4e9!important}
+.consultation-second{background:#dfeadd!important}
+.consultation-third{background:#eef4e9!important}
+
+/* PDA: smaller image and tighter cards */
+.pda-split{grid-template-columns:1.15fr .85fr!important;align-items:start!important}
+.pda-cards{grid-template-columns:1fr!important;gap:12px!important}
+.pda-cards .card{padding:20px!important}
+.pda-photo{min-height:250px!important;max-height:300px!important}
+.pda-photo img{min-height:250px!important;height:300px!important;object-fit:contain!important;background:#e3eddf!important}
+
+/* Post-assessment alternating tones */
+.post-one{background:#eef4e9!important}
+.post-two{background:#dfeadd!important}
+.post-three{background:#eef4e9!important}
+
+/* Pre-booking pages */
+.prebooking-main{background:#eef4e9!important}
+.prebooking-next{background:#dfeadd!important}
+.prebooking-panel{max-width:780px;margin:auto;text-align:center}
+
+/* Footer expanded */
+.footer{grid-template-columns:1.25fr repeat(4,1fr)!important;gap:26px!important;padding-bottom:22px!important}
+.footer-bottom{grid-column:1/-1;border-top:1px solid rgba(17,56,107,.18);padding-top:18px;margin-top:6px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-bottom span{margin:0!important}
+.footer-bottom a{display:inline!important;margin:0!important;text-decoration:underline!important}
+
+@media(max-width:1050px){
+  .footer{grid-template-columns:repeat(2,1fr)!important}
+  .footer-bottom{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .pda-split{grid-template-columns:1fr!important}
+  .footer{grid-template-columns:1fr!important}
+  .footer-bottom{grid-column:1}
+}

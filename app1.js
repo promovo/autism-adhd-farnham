@@ -9,7 +9,7 @@ const home=`
     <p class="hero-wait"><strong>Typical wait time: 1–3 weeks.</strong></p>
     <div class="hero-actions">
       <a class="btn" href="/free-consultation" data-link>Pre-booking first</a>
-      <a class="btn btn-outline" href="/adult-assessments" data-link>Choose Your Assessment</a>
+      <a class="btn btn-outline" href="/choose-your-assessment" data-link>Choose Your Assessment</a>
       <a class="btn btn-outline" href="/contact" data-link>Contact Us</a>
     </div>
     <div class="hero-trust">
@@ -80,9 +80,4 @@ const home=`
   </div>
 </section>
 
-<section class="mock-bottom-bar">
-  <strong>Not sure where to start? Book a 15-minute consultation or get in touch.</strong>
-  <a class="bottom-email" href="mailto:lisa@autismassessmentsfarnham.co.uk"><span class="bottom-email-icon" aria-hidden="true">✉</span> lisa@autismassessmentsfarnham.co.uk</a>
-  <a href="tel:+447387697876">☎ 07387 697876</a>
-</section>
 `;
