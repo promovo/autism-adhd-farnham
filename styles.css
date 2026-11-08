@@ -2609,3 +2609,53 @@ a.specialist-card:hover,
     max-width:360px!important;
   }
 }
+
+
+/* =========================================================
+   SITE-WIDE CARD HOVER — match Post-Assessment support cards
+   ========================================================= */
+.card,
+.soft-panel,
+.gold-panel,
+.info-card,
+.specialist-card,
+.action-card,
+.assessment-detail-card,
+.visual-age-cards .card,
+.contact-start-cards .card{
+  transition:background .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease!important;
+}
+
+/* Interactive content cards only */
+.card:hover,
+.info-card:hover,
+.specialist-card:hover,
+.action-card:hover,
+.assessment-detail-card:hover,
+.visual-age-cards .card:hover,
+.contact-start-cards .card:hover{
+  background:#fff8e8!important;
+  border-color:#d7a62d!important;
+  box-shadow:0 10px 26px rgba(17,56,107,.10)!important;
+  transform:translateY(-2px)!important;
+}
+
+/* Keep nested/icon surfaces coherent on hover */
+.card:hover .support-icon,
+.info-card:hover .line-icon,
+.specialist-card:hover .specialist-icon,
+.action-card:hover .action-icon{
+  transition:background .22s ease,color .22s ease,border-color .22s ease,transform .22s ease!important;
+}
+
+/* Do not animate structural / clinical / legal blocks */
+.team-profile,
+.person,
+.notice,
+.faq details,
+.prebooking-panel,
+.consultation-call-box,
+.privacy-page .soft-panel,
+.privacy-page .card{
+  transform:none!important;
+}
