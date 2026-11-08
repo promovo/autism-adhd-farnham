@@ -855,3 +855,15 @@ body{
 .footer-brand{
   color:#11386B!important;
 }
+
+/* Bottom contact strip: larger email icon only */
+.mock-bottom-bar .bottom-email{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+}
+.mock-bottom-bar .bottom-email-icon{
+  font-size:1.55em!important;
+  line-height:1;
+  display:inline-block;
+}

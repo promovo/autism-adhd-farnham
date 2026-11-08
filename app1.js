@@ -83,7 +83,7 @@ const home=`
 
 <section class="mock-bottom-bar">
   <strong>Not sure where to start? Book a 15-minute consultation or get in touch.</strong>
-  <a href="mailto:lisa@autismassessmentsfarnham.co.uk">✉ lisa@autismassessmentsfarnham.co.uk</a>
+  <a class="bottom-email" href="mailto:lisa@autismassessmentsfarnham.co.uk"><span class="bottom-email-icon" aria-hidden="true">✉</span> lisa@autismassessmentsfarnham.co.uk</a>
   <a href="tel:+447387697876">☎ 07387 697876</a>
 </section>
 `;
