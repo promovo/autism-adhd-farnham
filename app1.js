@@ -43,7 +43,7 @@ const home=`
 </section>
 
 <section class="homepage-post-support">
-  <div class="post-support-image"><img src="https://static.wixstatic.com/media/1e4c48_7df6eca563f94309bfeff7afc643af30~mv2.jpg" alt="Calm clinic consultation setting"></div><div class="post-support-copy">
+  <div class="post-support-image"><img src="/assets/post-assessment-clipboard.jpg" alt="Clipboard, laptop and coffee in a calm green consultation setting"></div><div class="post-support-copy">
     <div class="eyebrow">After your assessment</div>
     <h2>Post-Assessment Support</h2>
     <h3>Post-Assessment Advice Sessions</h3>
