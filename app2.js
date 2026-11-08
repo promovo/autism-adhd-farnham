@@ -1,9 +1,9 @@
 const assessmentOverview=`${header('Choose Your Assessment','Explore all Autism, ADHD and Combined assessment routes for adults, children and young people. Start with the age group that applies, then choose the pathway that best fits what you are exploring.')}
 <section class="section assessment-overview intro-tone">
   <div class="section-lead"><div class="eyebrow">All assessment routes</div><h2>Choose where to start</h2><p>If you are unsure whether Autism, ADHD or a Combined assessment is most appropriate, choose Adult or Child / Young Person below. The relevant overview page explains each route clearly.</p></div>
-  <div class="cards two overview-age-cards">
-    <div class="card"><h3>Adult Assessments</h3><p>Autism, ADHD, Combined Autism + ADHD and information about female presentation, masking and later recognition.</p><a class="btn" href="/adult-assessments" data-link>Explore Adult Assessments</a></div>
-    <div class="card"><h3>Child & Young Person Assessments</h3><p>Autism, ADHD, Combined Autism + ADHD and information about PDA / demand-avoidant presentations.</p><a class="btn" href="/child-young-person-assessments" data-link>Explore Child & Young Person</a></div>
+  <div class="cards two overview-age-cards visual-age-cards">
+    <div class="card"><img class="overview-card-image" src="https://static.wixstatic.com/media/1e4c48_a9c89c4ca40149bda7b52846b60470a5~mv2.jpg" alt="Adult assessment consultation"><h3>Adult Assessments</h3><p>Autism, ADHD, Combined Autism + ADHD and information about female presentation, masking and later recognition.</p><a class="btn" href="/adult-assessments" data-link>Explore Adult Assessments</a></div>
+    <div class="card"><img class="overview-card-image" src="https://static.wixstatic.com/media/1e4c48_9664c65ab8164b88af06e5d6bd150ab1~mv2.jpg" alt="Child and young person assessment"><h3>Child & Young Person Assessments</h3><p>Autism, ADHD, Combined Autism + ADHD and information about PDA / demand-avoidant presentations.</p><a class="btn" href="/child-young-person-assessments" data-link>Explore Child & Young Person</a></div>
   </div>
 </section>
 <section class="section alt assessment-overview">
@@ -21,6 +21,7 @@ const assessmentOverview=`${header('Choose Your Assessment','Explore all Autism,
     <div class="card"><h3>PDA / Demand Avoidance</h3><p>Demand-avoidant presentations considered within the wider Autism assessment where relevant.</p><a class="inline" href="/pda-demand-avoidant-presentation" data-link>Learn more</a></div>
     <div class="card"><h3>Post-Assessment Support</h3><p>Optional practical advice sessions after assessment where clinically appropriate.</p><a class="inline" href="/post-assessment-advice" data-link>Learn more</a></div>
   </div>
+  <div class="assessment-overview-visual"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Calm clinic environment"></div>
 </section>`;
 const adult=`${header('Adult Autism & ADHD Assessments in Farnham, Surrey','If you are exploring whether autism, ADHD or both may help explain long-standing experiences, Autism Assessments Farnham offers private adult assessment pathways with an experienced multi-disciplinary clinical team.')}<section class="section"><div class="section-lead"><div class="eyebrow">Which pathway is right for me?</div><h2>Adult assessment pathways</h2></div><div class="cards four adult-pathway-grid">
     <div class="card"><h3>Adult Autism<br>Assessment</h3><p>Explore long-standing differences in communication, sensory processing, routines and everyday social demands.</p><a class="inline" href="/adult-autism-assessment" data-link>Adult Autism Assessment</a></div>
