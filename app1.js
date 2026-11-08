@@ -42,6 +42,14 @@ const home=`
   </div>
 </section>
 
+<section class="mock-section homepage-post-support">
+  <div class="mock-heading"><h2>Post-Assessment Support</h2><span></span></div>
+  <div class="post-support-card">
+    <div class="post-support-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 10h28v22H22l-8 7v-7h-4z"/><path d="M16 18h16M16 24h11"/></svg></div>
+    <div><h3>Post-Assessment Advice Sessions</h3><p>Optional one-to-one advice and strategy sessions are available after assessment where clinically appropriate. Sessions can focus on sensory processing, communication preferences, executive functioning, self-advocacy and workplace or educational adaptations.</p><p><strong>£180 per session</strong>, including a follow-up email with key support strategies and tailored signposting discussed during the session.</p><a class="btn btn-outline" href="/post-assessment-advice" data-link>Learn about post-assessment support</a></div>
+  </div>
+</section>
+
 <section class="mock-section action-grid">
   <div class="action-card">
     <div class="action-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="11" width="34" height="30" rx="2"/><path d="M14 6v10M34 6v10M7 20h34M14 27h4M22 27h4M30 27h4M14 34h4M22 34h4"/></svg></div>

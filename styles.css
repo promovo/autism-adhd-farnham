@@ -968,3 +968,11 @@ main > .mock-hero{
 .mock-hero .hero-trust > div:nth-child(4){
   transform:none!important;
 }
+
+/* Homepage Post-Assessment Support */
+.homepage-post-support{background:#e3eddf!important}
+.post-support-card{display:grid;grid-template-columns:72px minmax(0,1fr);gap:22px;align-items:start;max-width:1050px;margin:0 auto;background:#eef4e9;border:1px solid #d3dfcf;padding:30px}
+.post-support-icon svg{width:58px;height:58px;fill:none;stroke:#5e7654;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.post-support-card h3{margin-top:0!important;font-weight:600!important}
+.post-support-card p{font-size:calc(1rem + 1px)!important;line-height:1.65}
+@media(max-width:760px){.post-support-card{grid-template-columns:1fr}}
