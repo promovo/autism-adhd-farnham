@@ -1043,3 +1043,18 @@ main > .mock-hero{
   .post-support-image,.post-support-image img{min-height:300px}
   .post-support-copy{padding:40px 7vw}
 }
+
+/* Final 'Not sure where to start?' band */
+.global-start-cta{
+  background:#f7f1e4!important;
+  color:#11386B!important;
+}
+.global-start-cta h2,
+.global-start-cta p{
+  color:#11386B!important;
+}
+.global-start-cta .btn.btn-outline{
+  background:#fffaf0!important;
+  color:#11386B!important;
+  border-color:#11386B!important;
+}
