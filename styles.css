@@ -2217,3 +2217,83 @@ a.specialist-card:hover,
   object-position:center 8%!important;
   aspect-ratio:4/5!important;
 }
+
+/* =========================================================
+   UNIFIED NUMBERED STEPS — site-wide consistency
+   ========================================================= */
+.unified-steps{
+  position:relative!important;
+  display:grid!important;
+  gap:0!important;
+}
+.unified-steps::before{
+  content:"";
+  position:absolute;
+  left:21px;
+  top:22px;
+  bottom:22px;
+  width:2px;
+  background:linear-gradient(#d7a62d,#b9cfb2)!important;
+  z-index:0;
+}
+.unified-steps .step{
+  position:relative!important;
+  z-index:1!important;
+  grid-template-columns:52px minmax(0,1fr)!important;
+  gap:18px!important;
+  padding:0 0 26px!important;
+  align-items:start!important;
+}
+.unified-steps .step:last-child{
+  padding-bottom:0!important;
+}
+.unified-steps .step:before{
+  width:44px!important;
+  height:44px!important;
+  background:#d7a62d!important;
+  color:#11386B!important;
+  border:0!important;
+  box-shadow:0 0 0 6px #eef4e9!important;
+  font-size:1rem!important;
+  font-weight:700!important;
+  z-index:2!important;
+}
+.unified-steps .step > div{
+  background:#f8fbf6!important;
+  border:1px solid #d4e0d0!important;
+  box-shadow:0 7px 22px rgba(17,56,107,.06)!important;
+  padding:18px 22px!important;
+}
+.unified-steps .step h3{
+  margin:0 0 6px!important;
+}
+.unified-steps .step p{
+  margin:0!important;
+}
+@media(max-width:760px){
+  .unified-steps::before{left:20px}
+  .unified-steps .step{
+    grid-template-columns:44px minmax(0,1fr)!important;
+    gap:14px!important;
+  }
+  .unified-steps .step:before{
+    width:40px!important;
+    height:40px!important;
+  }
+}
+
+/* Post-assessment page hero visual */
+.post-advice-visual{
+  width:100%;
+  background:#eef4e9;
+}
+.post-advice-visual img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  object-position:center 48%;
+  display:block;
+}
+@media(max-width:760px){
+  .post-advice-visual img{height:240px}
+}
