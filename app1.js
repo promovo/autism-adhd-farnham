@@ -76,7 +76,7 @@ const home=`
       <div><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
       <div><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></div>
     </div>
-    <div class="clinicians-cta"><a class="btn btn-outline" href="/our-team" data-link>Read more</a></div>
+    <div class="clinicians-cta"><a class="btn" href="/our-team" data-link>Read more</a></div>
   </div>
 </section>
 

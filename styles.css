@@ -1846,3 +1846,117 @@ a.specialist-card:hover,
     aspect-ratio:5/6!important;
   }
 }
+
+/* =========================================================
+   VISUAL CONSISTENCY PASS — NOV 2026
+   ========================================================= */
+
+/* Home clinicians CTA */
+.clinicians-cta .btn{
+  background:#d7a62d!important;
+  border-color:#d7a62d!important;
+  color:#11386B!important;
+}
+.clinicians-cta .btn:hover{
+  background:#faf8f2!important;
+  color:#11386B!important;
+  border-color:#d7a62d!important;
+}
+
+/* Choose Your Assessment */
+.assessment-overview .eyebrow,
+.assessment-overview .tag{
+  color:#d7a62d!important;
+}
+.assessment-overview .card{
+  background:#eef4e9!important;
+  padding-top:34px!important;
+}
+.assessment-overview .card h3{
+  margin-top:8px!important;
+  margin-bottom:6px!important;
+}
+.assessment-overview .card p{
+  margin-top:0!important;
+  margin-bottom:12px!important;
+}
+.assessment-overview .section-lead h2{
+  margin-bottom:8px!important;
+}
+.assessment-overview .section-lead p{
+  margin-top:0!important;
+}
+.assessment-overview .overview-links{
+  margin-top:4px!important;
+}
+
+/* Google reviews CTA */
+.google-review-link{
+  background:#d7a62d!important;
+  border-color:#d7a62d!important;
+  color:#11386B!important;
+}
+.google-review-link:hover{
+  background:#faf8f2!important;
+  border-color:#d7a62d!important;
+  color:#11386B!important;
+}
+
+/* Footer brand block sits slightly lower */
+.footer-brand-block{
+  padding-top:10px!important;
+}
+
+/* Adult pathway cards: more air above title, tighter title-copy-link rhythm */
+.adult-pathway-grid .card{
+  padding-top:34px!important;
+}
+.adult-pathway-grid .card h3{
+  margin-top:8px!important;
+  margin-bottom:6px!important;
+}
+.adult-pathway-grid .card p{
+  margin-top:0!important;
+  margin-bottom:8px!important;
+}
+.adult-pathway-grid .card a.inline{
+  margin-top:0!important;
+}
+
+/* Why choose the clinic — infographic treatment */
+.adult-why-grid .card{
+  text-align:center!important;
+  padding-top:28px!important;
+}
+.adult-why-icon{
+  display:flex!important;
+  justify-content:center!important;
+  margin-bottom:12px!important;
+}
+.adult-why-icon svg{
+  width:44px!important;
+  height:44px!important;
+  fill:none!important;
+  stroke:#5e7654!important;
+  stroke-width:2.2!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+}
+
+/* Free Consultation */
+.consultation-first .eyebrow,
+.consultation-second .eyebrow,
+.consultation-third .eyebrow,
+.consultation-booking .eyebrow{
+  color:#d7a62d!important;
+}
+.consultation-call-box{
+  background:#eef4e9!important;
+}
+.consultation-call-box h2{
+  margin-bottom:8px!important;
+}
+.consultation-call-box p,
+.consultation-call-box ul{
+  margin-top:0!important;
+}
