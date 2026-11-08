@@ -1453,3 +1453,8 @@ main > .mock-hero{
   object-fit:cover!important;
   object-position:center!important;
 }
+
+/* Meet the Team: keep Lisa profile spacing consistent with all other clinicians */
+.team-profile:first-child{
+  padding-top:34px!important;
+}
