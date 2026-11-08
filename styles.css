@@ -1590,3 +1590,133 @@ main > .mock-hero{
   border-color:#e2b542!important;
   color:#11386B!important;
 }
+
+/* =========================================================
+   SITE-WIDE TYPOGRAPHY SYSTEM — NOV 2026
+   Consolidates visual font sizing across all page templates.
+   ========================================================= */
+:root{
+  --type-body:1rem;
+  --type-small:.875rem;
+  --type-label:.8rem;
+  --type-card-title:1.25rem;
+  --type-section-title:clamp(2rem,3.1vw,3rem);
+  --type-page-title:clamp(2.65rem,5vw,4.75rem);
+  --type-hero-title:clamp(3.4rem,5.8vw,5.8rem);
+  --type-lead:1.125rem;
+}
+
+/* Base reading size */
+body,
+p,
+li,
+details,
+summary,
+input,
+textarea,
+select{
+  font-size:var(--type-body)!important;
+  line-height:1.6;
+}
+
+/* Labels / eyebrow text */
+.eyebrow,
+.tag,
+.booking-note,
+small{
+  font-size:var(--type-label)!important;
+  line-height:1.35!important;
+}
+
+/* Page and section headings */
+.mock-hero h1{
+  font-size:var(--type-hero-title)!important;
+  line-height:1.02!important;
+}
+.page-hero h1,
+.hero h1{
+  font-size:var(--type-page-title)!important;
+  line-height:1.06!important;
+}
+.section h2,
+.section-lead h2,
+.mock-section .mock-heading h2,
+.specialist-wrap .mock-heading h2,
+.global-start-cta h2,
+.post-support-copy h2,
+.fees-current h2,
+.clinic-space-split h2{
+  font-size:var(--type-section-title)!important;
+  line-height:1.12!important;
+}
+
+/* Card titles / supporting headings */
+.card h3,
+.step h3,
+.soft-panel h3,
+.team-profile-copy h3,
+.post-support-copy h3,
+.footer h3{
+  font-size:var(--type-card-title)!important;
+  line-height:1.28!important;
+}
+
+/* Team names retain clear hierarchy */
+.team-profile-copy h2{
+  font-size:clamp(1.75rem,2.4vw,2.2rem)!important;
+  line-height:1.15!important;
+}
+
+/* Lead and intro copy */
+.section-lead p,
+.hero p,
+.mock-hero p,
+.global-start-cta p{
+  font-size:var(--type-lead)!important;
+  line-height:1.55!important;
+}
+
+/* Prices use site hierarchy, not a separate oversized style */
+.fee-card .price{
+  font-size:1.75rem!important;
+  line-height:1.1!important;
+}
+.fee-card .support-price{
+  font-size:1.5rem!important;
+}
+
+/* Buttons and links */
+.btn,
+button{
+  font-size:.95rem!important;
+  line-height:1.2!important;
+}
+.inline,
+.footer a,
+.nav a{
+  font-size:.95rem;
+}
+
+/* Footer intentionally compact */
+.footer-brand{
+  font-size:.95rem!important;
+}
+.footer,
+.footer p,
+.footer a,
+.footer-bottom{
+  font-size:.875rem!important;
+  line-height:1.45!important;
+}
+
+/* Mobile scale */
+@media(max-width:760px){
+  :root{
+    --type-body:.98rem;
+    --type-card-title:1.18rem;
+    --type-section-title:clamp(1.8rem,7vw,2.35rem);
+    --type-page-title:clamp(2.2rem,10vw,3.3rem);
+    --type-hero-title:clamp(2.65rem,11vw,3.8rem);
+    --type-lead:1.05rem;
+  }
+}
