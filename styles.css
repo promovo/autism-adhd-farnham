@@ -930,3 +930,41 @@ body{
   .google-reviews-head{align-items:flex-start;flex-direction:column}
   .google-review-grid{grid-template-columns:1fr}
 }
+
+/* Alternate the soft-green tones across page sections */
+:root{
+  --pale-green-1:#eef4e9;
+  --pale-green-2:#e3eddf;
+}
+main > .section:nth-of-type(odd),
+main > .mock-section:nth-of-type(odd),
+main > .specialist-wrap:nth-of-type(odd),
+main > .clinicians-home:nth-of-type(odd){
+  background:var(--pale-green-1)!important;
+}
+main > .section:nth-of-type(even),
+main > .mock-section:nth-of-type(even),
+main > .specialist-wrap:nth-of-type(even),
+main > .clinicians-home:nth-of-type(even){
+  background:var(--pale-green-2)!important;
+}
+main > .page-hero,
+main > .mock-hero{
+  background-color:var(--pale-green-1)!important;
+}
+
+/* Keep global reviews and final CTA visually distinct */
+.google-reviews-section{background:#e3eddf!important}
+.global-start-cta{
+  background:#d8e6d3!important;
+  margin:0!important;
+}
+.footer{background:#cbd9c7!important}
+
+/* Female presentation further left; keep Typical wait time fixed */
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-38px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}

@@ -1,6 +1,6 @@
 const adultForm='https://forms.gle/BvebqKidJGUEtRzd6';const childForm='https://forms.gle/ned64UXpE2USEa1p7';
 const header=(t,i,e='Autism & ADHD Assessments Farnham')=>`<section class="page-hero"><div class="breadcrumbs"><a href="/" data-link>Home</a> / ${t}</div><div class="eyebrow">${e}</div><h1>${t}</h1><p>${i}</p></section>`;
-const cta=()=>`<section class="section dark center start-cta"><h2>Not sure where to start?</h2><p>Complete the relevant pre-booking form, arrange a free 15-minute consultation, or contact Lisa.</p><div class="cta-row" style="justify-content:center"><a class="btn" href="${adultForm}" target="_blank">Adult pre-booking form</a><a class="btn" href="${childForm}" target="_blank">Child / young person form</a><a class="btn btn-light" href="/free-consultation" data-link>Free consultation</a></div></section>`;
+const cta=()=>``;
 const home=`
 <section class="mock-hero">
   <div class="hero-copy">
