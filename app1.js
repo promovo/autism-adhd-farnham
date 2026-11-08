@@ -42,23 +42,17 @@ const home=`
   </div>
 </section>
 
-<section class="mock-section homepage-post-support">
-  <div class="mock-heading"><h2>Post-Assessment Support</h2><span></span></div>
-  <div class="post-support-card">
-    <div class="post-support-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 10h28v22H22l-8 7v-7h-4z"/><path d="M16 18h16M16 24h11"/></svg></div>
-    <div><h3>Post-Assessment Advice Sessions</h3><p>Optional one-to-one advice and strategy sessions are available after assessment where clinically appropriate. Sessions can focus on sensory processing, communication preferences, executive functioning, self-advocacy and workplace or educational adaptations.</p><p><strong>£180 per session</strong>, including a follow-up email with key support strategies and tailored signposting discussed during the session.</p><a class="btn btn-outline" href="/post-assessment-advice" data-link>Learn about post-assessment support</a></div>
+<section class="homepage-post-support">
+  <div class="post-support-image">
+    <img src="/assets/serene-green-healthcare-consultation-workspace.png" alt="Calm consultation workspace with forms, notebook and plants">
   </div>
-</section>
-
-<section class="mock-section action-grid">
-  <div class="action-card">
-    <div class="action-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="11" width="34" height="30" rx="2"/><path d="M14 6v10M34 6v10M7 20h34M14 27h4M22 27h4M30 27h4M14 34h4M22 34h4"/></svg></div>
-    <div class="action-copy"><h3>Book a 15-Minute Consultation</h3><p>A quick, no-obligation call to discuss your needs and answer questions.</p><ul><li>Easy online booking</li><li>Choose a time that suits you</li><li>Linked to Lisa’s calendar once tested</li></ul><a class="btn" href="/free-consultation" data-link>Book Now</a></div>
-    <div class="calendar-mini"><b>Availability</b><span>Mon Tue Wed Thu Fri</span><strong>1–3 weeks</strong><small>Typical current wait time</small></div>
-  </div>
-  <div class="action-card screening-card">
-    <div class="action-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="2"/><path d="M16 15h16M16 23h16M16 31h10"/><path d="m31 32 3 3 6-7"/></svg></div>
-    <div class="action-copy"><h3>Adult / Child Pre-Booking Forms</h3><p>Complete the appropriate short form so Lisa can review your information and advise on the next step.</p><ul><li>Takes around 10–15 minutes</li><li>Reviewed manually by Lisa</li><li>No automated diagnosis or result</li></ul><div class="dual-buttons"><a class="btn btn-green" href="${adultForm}" target="_blank">Adult Form</a><a class="btn btn-outline" href="${childForm}" target="_blank">Child Form</a></div></div>
+  <div class="post-support-copy">
+    <div class="eyebrow">After your assessment</div>
+    <h2>Post-Assessment Support</h2>
+    <h3>Post-Assessment Advice Sessions</h3>
+    <p>Optional one-to-one advice and strategy sessions are available after assessment where clinically appropriate. Sessions can focus on sensory processing, communication preferences, executive functioning, self-advocacy and workplace or educational adaptations.</p>
+    <div class="post-support-price"><strong>£180 per session</strong><span>Includes a follow-up email with key support strategies and tailored signposting discussed during the session.</span></div>
+    <a class="btn" href="/post-assessment-advice" data-link>Learn about post-assessment support</a>
   </div>
 </section>
 
