@@ -1408,3 +1408,48 @@ main > .mock-hero{
 .adult-pathway-grid .card a.inline{
   margin-top:auto!important;
 }
+
+/* Child / Young Person assessment cards */
+.child-pathway-grid{align-items:stretch!important}
+.child-pathway-grid .card{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+}
+.child-pathway-grid .card h3{
+  min-height:3.25em!important;
+  line-height:1.2!important;
+}
+.child-pathway-grid .card p{
+  min-height:5.2em!important;
+  flex:1 1 auto!important;
+}
+.child-pathway-grid .card a.inline{
+  margin-top:auto!important;
+}
+
+/* Google Reviews: stronger contrast on every page */
+.google-reviews-section{
+  background:#cbdcc5!important;
+  border-top:1px solid #b7cbb0!important;
+  border-bottom:1px solid #b7cbb0!important;
+}
+.google-review-card{
+  background:#f8fbf6!important;
+  border-color:#c5d3c0!important;
+}
+
+/* Clinic space */
+.clinic-space-section{background:#dfeadd!important}
+.contact-clinic-space{background:#dfeadd!important}
+.clinic-space-split{align-items:center!important}
+.clinic-space-photo{
+  min-height:320px!important;
+  max-height:380px!important;
+}
+.clinic-space-photo img{
+  min-height:320px!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
