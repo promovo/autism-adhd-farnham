@@ -813,3 +813,45 @@ button.btn.btn-green,
 .faq-group details + h3{
   margin-top:46px!important;
 }
+
+/* Restore original soft pale-green site background in place of cream */
+:root{
+  --cream:#eef4e9!important;
+  --green-soft:#e8f0e3!important;
+}
+body{
+  background:#eef4e9!important;
+}
+.section.alt,
+.soft-panel,
+.mock-section,
+.specialist-wrap,
+.clinicians-home,
+.fee-card,
+.card,
+.person,
+.team-profile{
+  background:#eef4e9;
+}
+.section:not(.dark):not(.start-cta){
+  background-color:#eef4e9;
+}
+.mock-hero{
+  background-color:#eef4e9!important;
+}
+.page-hero{
+  background-color:#eef4e9!important;
+}
+.start-cta{
+  background:#dfe9dc!important;
+}
+.footer{
+  background:#d3dfcf!important;
+  color:#11386B!important;
+}
+.footer a,
+.footer span,
+.footer strong,
+.footer-brand{
+  color:#11386B!important;
+}
