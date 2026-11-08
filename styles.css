@@ -1058,3 +1058,57 @@ main > .mock-hero{
   color:#11386B!important;
   border-color:#11386B!important;
 }
+
+/* Final CTA: faded woodland image using real site typography/buttons */
+.global-start-cta{
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(247,250,242,.78),rgba(247,250,242,.78)),
+    url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center 46%/cover no-repeat!important;
+  padding:64px 7vw!important;
+}
+.global-start-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,.08);
+  pointer-events:none;
+  z-index:-1;
+}
+.global-start-cta h2{
+  font-family:'Brandon Grotesque','Brandon Text','Avenir Next',Montserrat,Arial,sans-serif!important;
+  font-size:clamp(2.2rem,4vw,3.8rem)!important;
+  font-weight:500!important;
+  color:#11386B!important;
+  margin-bottom:12px!important;
+}
+.global-start-cta p{
+  font-size:clamp(1rem,1.8vw,1.28rem)!important;
+  color:#11386B!important;
+  margin-bottom:26px!important;
+}
+.global-start-cta .btn{
+  min-width:220px!important;
+  padding:13px 24px!important;
+  background:#d7a62d!important;
+  border:1px solid #d7a62d!important;
+  color:#fff!important;
+  border-radius:2px!important;
+  font-weight:700!important;
+}
+.global-start-cta .btn.btn-outline{
+  background:rgba(250,248,242,.92)!important;
+  border:1.5px solid #11386B!important;
+  color:#11386B!important;
+}
+.global-start-cta .cta-row{gap:14px!important}
+
+/* Hero trust positioning: move Female presentation further left only */
+.mock-hero .hero-trust > div:nth-child(3){
+  transform:translateX(-52px)!important;
+}
+.mock-hero .hero-trust > div:nth-child(4){
+  transform:none!important;
+}
