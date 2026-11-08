@@ -23,6 +23,7 @@ const seoMeta={
 '/local-resources':{title:'Autism & ADHD Resources and Signposting | Farnham',description:'Useful Autism and ADHD resources, support and local signposting for individuals and families around Farnham and Surrey.',canonical:'/local-resources'},
 '/privacy-policy':{title:'Privacy Policy | Autism & ADHD Assessments Farnham',description:'Privacy and data handling information for Autism & ADHD Assessments Farnham.',canonical:'/privacy-policy'},
 '/contact':{title:'Contact Autism & ADHD Assessments Farnham | Surrey',description:'Contact Autism & ADHD Assessments Farnham in South Farnham, Surrey about Autism, ADHD and combined assessment pathways.',canonical:'/contact'},
+'/ehcp-expert-witness-reports':{title:'EHCP & Expert Witness Reports | Farnham, Surrey',description:'Information about EHCP and expert witness report support linked to Autism & ADHD Assessments Farnham in Surrey.',canonical:'/ehcp-expert-witness-reports'},
 '/adult-pre-booking':{title:'Adult Autism & ADHD Pre-Booking Form | Farnham',description:'Start an adult Autism, ADHD or combined assessment enquiry with the pre-booking form for Autism & ADHD Assessments Farnham.',canonical:'/adult-pre-booking'},
 '/child-pre-booking':{title:'Child Autism & ADHD Pre-Booking Form | Farnham',description:'Start a child or young person Autism, ADHD or combined assessment enquiry with the pre-booking form.',canonical:'/child-pre-booking'}
 };
@@ -109,4 +110,4 @@ function bind(){
 }
 document.querySelector('.menu-toggle').onclick=()=>document.querySelector('.nav').classList.toggle('open');
 window.onpopstate=()=>render(location.pathname);
-render(location.pathname);render(location.pathname);
+render(location.pathname);
