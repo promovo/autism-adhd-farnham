@@ -2297,3 +2297,60 @@ a.specialist-card:hover,
 @media(max-width:760px){
   .post-advice-visual img{height:240px}
 }
+
+/* =========================================================
+   ORIGINAL WIX LOGO ARTWORK — preserve metallic gold depth
+   ========================================================= */
+.brand-logo-svg,
+.footer-logo-svg{
+  display:none!important;
+}
+
+.original-logo-crop{
+  display:block;
+  position:relative;
+  overflow:hidden;
+  background:#f3f6ee;
+}
+
+.original-logo-crop img{
+  position:absolute;
+  display:block;
+  max-width:none!important;
+  width:640px!important;
+  height:640px!important;
+  left:-14px;
+  top:-10px;
+}
+
+/* Crop the top-left finished logo directly from the Wix brand artwork */
+.header-logo-crop{
+  width:292px;
+  height:132px;
+}
+.footer-original-logo-crop{
+  width:245px;
+  height:112px;
+}
+.footer-original-logo-crop img{
+  width:548px!important;
+  height:548px!important;
+  left:-12px;
+  top:-9px;
+}
+
+.site-header .brand{
+  background:transparent!important;
+  overflow:hidden;
+}
+.site-header{
+  min-height:116px;
+}
+@media(max-width:1050px){
+  .header-logo-crop{width:250px;height:114px}
+  .header-logo-crop img{width:548px!important;height:548px!important;left:-12px;top:-9px}
+}
+@media(max-width:760px){
+  .header-logo-crop{width:220px;height:100px}
+  .header-logo-crop img{width:482px!important;height:482px!important;left:-10px;top:-8px}
+}
