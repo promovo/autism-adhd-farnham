@@ -2209,3 +2209,11 @@ a.specialist-card:hover,
   .assessment-step{grid-template-columns:44px minmax(0,1fr);gap:14px}
   .assessment-step-number{width:44px;height:44px}
 }
+
+/* Correct Dr Chukwu homepage portrait only */
+.clinician-row img[alt="Dr Joseph Chukwu"]{
+  transform:none!important;
+  object-fit:cover!important;
+  object-position:center 8%!important;
+  aspect-ratio:4/5!important;
+}
