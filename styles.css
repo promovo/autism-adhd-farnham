@@ -1340,3 +1340,71 @@ main > .mock-hero{
 .consultation-booking .section-lead p{margin-bottom:20px}
 .consultation-booking-btn{min-width:260px}
 .booking-note{display:block;margin-top:10px;color:#5f6c64;font-size:.8rem}
+
+/* Post-assessment image: exact section depth, no gap */
+.homepage-post-support{
+  align-items:stretch!important;
+}
+.homepage-post-support .post-support-image{
+  min-height:0!important;
+  max-height:none!important;
+  height:auto!important;
+}
+.homepage-post-support .post-support-image img{
+  min-height:0!important;
+  max-height:none!important;
+  height:100%!important;
+  width:100%!important;
+  object-fit:cover!important;
+}
+.homepage-post-support .post-support-copy{
+  min-height:320px!important;
+}
+
+/* Google Reviews: site-wide contrasting section */
+.google-reviews-section{
+  background:#d4e2cf!important;
+  border-top:1px solid #c3d3bd!important;
+  border-bottom:1px solid #c3d3bd!important;
+}
+.google-review-card{
+  background:#f7faf4!important;
+}
+
+/* Footer logo/home link */
+.footer-brand-block{min-width:0}
+.footer-logo-link{
+  display:block!important;
+  margin:0 0 12px!important;
+  max-width:270px;
+}
+.footer-logo-svg{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.footer-brand{
+  display:inline-block!important;
+  text-decoration:none!important;
+  margin-bottom:8px!important;
+}
+.footer-brand:hover{text-decoration:underline!important}
+
+/* Adult assessment pathway cards */
+.adult-pathway-grid{align-items:stretch!important}
+.adult-pathway-grid .card{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+}
+.adult-pathway-grid .card h3{
+  min-height:3.1em!important;
+  line-height:1.2!important;
+}
+.adult-pathway-grid .card p{
+  min-height:5.1em!important;
+  flex:1 1 auto!important;
+}
+.adult-pathway-grid .card a.inline{
+  margin-top:auto!important;
+}
