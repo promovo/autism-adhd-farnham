@@ -95,18 +95,33 @@ function updateSeo(path){
 function render(path){
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
   updateSeo(path);
-  window.scrollTo(0,0);
   bind();
+  if(location.hash){
+    requestAnimationFrame(()=>{
+      const target=document.querySelector(location.hash);
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  }else{
+    window.scrollTo(0,0);
+  }
 }
 function bind(){
   document.querySelectorAll('[data-link]').forEach(a=>a.onclick=e=>{
     const u=new URL(a.href);
     if(u.origin===location.origin){
       e.preventDefault();
-      history.pushState({},'',u.pathname);
+      history.pushState({},'',u.pathname+u.hash);
       render(u.pathname);
     }
-  })
+  });
+  const carousel=document.querySelector('.clinician-carousel');
+  const prev=document.querySelector('.clinician-carousel-prev');
+  const next=document.querySelector('.clinician-carousel-next');
+  if(carousel&&prev&&next){
+    const step=()=>Math.max(260,Math.round(carousel.clientWidth*.78));
+    prev.onclick=()=>carousel.scrollBy({left:-step(),behavior:'smooth'});
+    next.onclick=()=>carousel.scrollBy({left:step(),behavior:'smooth'});
+  }
 }
 document.querySelector('.menu-toggle').onclick=()=>document.querySelector('.nav').classList.toggle('open');
 window.onpopstate=()=>render(location.pathname);
