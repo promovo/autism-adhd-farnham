@@ -125,12 +125,14 @@ if(menuToggle&&nav){
     e.stopPropagation();
     const isOpen=nav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded',String(isOpen));
+    menuToggle.setAttribute('aria-label',isOpen?'Close menu':'Open menu');
   };
   nav.addEventListener('click',e=>e.stopPropagation());
   document.addEventListener('click',()=>{
     if(nav.classList.contains('open')){
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded','false');
+      menuToggle.setAttribute('aria-label','Open menu');
     }
   });
 }
