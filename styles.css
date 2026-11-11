@@ -3548,3 +3548,13 @@ small{
   border-color:#d9dfd6!important;
   box-shadow:none!important;
 }
+
+
+/* Hamburger icon: transparent, borderless */
+@media(max-width:1050px){
+  .menu-toggle{
+    border:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+}
