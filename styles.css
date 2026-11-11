@@ -2789,3 +2789,15 @@ a.specialist-card:hover,
   .clinician-carousel-arrow{width:34px;height:34px}
   .team-profile{scroll-margin-top:120px}
 }
+
+
+/* Carousel control click reliability */
+.clinician-carousel-shell{isolation:isolate}
+.clinician-carousel-arrow{
+  pointer-events:auto!important;
+  touch-action:manipulation;
+  user-select:none;
+}
+.clinician-carousel{
+  overscroll-behavior-inline:contain;
+}
