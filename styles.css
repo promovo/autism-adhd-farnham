@@ -3059,3 +3059,114 @@ a.specialist-card:hover,
 @media(max-width:1050px){
   .mobile-home-link{display:block}
 }
+
+
+/* =========================================================
+   CONSISTENT FEES + ADULT/CHILD ASSESSMENT CARDS
+   ========================================================= */
+.fees-current-actions .btn{
+  min-width:220px!important;
+  text-align:center!important;
+}
+
+@media(max-width:760px){
+  /* Fees page typography scaled to match the rest of the site */
+  .fee-card{
+    padding:20px!important;
+  }
+  .fee-card h3{
+    font-size:1.05rem!important;
+    line-height:1.22!important;
+    margin:0 0 8px!important;
+  }
+  .fee-card p:not(.price){
+    font-size:.88rem!important;
+    line-height:1.5!important;
+  }
+  .fee-card .price{
+    font-size:1.45rem!important;
+    line-height:1.1!important;
+    margin:10px 0 12px!important;
+  }
+  .fee-card .support-price{
+    font-size:1.35rem!important;
+  }
+  .fee-card .tag{
+    font-size:.62rem!important;
+  }
+
+  /* Availability buttons: equal width */
+  .fees-current-actions{
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .fees-current-actions .btn{
+    width:100%!important;
+    min-width:0!important;
+    text-align:center!important;
+  }
+
+  /* Adult + child assessment pathway cards */
+  .adult-pathway-grid .card,
+  .adult-why-grid .card,
+  .child-pathway-grid .card,
+  .child-route-grid .card{
+    background:#fffaf0!important;
+    border:1px solid #d7a62d!important;
+    box-shadow:0 5px 16px rgba(17,56,107,.06)!important;
+    padding:20px!important;
+    transition:background .14s ease,border-color .14s ease,box-shadow .14s ease,transform .14s ease!important;
+  }
+
+  .adult-pathway-grid .card h3,
+  .adult-why-grid .card h3,
+  .child-pathway-grid .card h3,
+  .child-route-grid .card h3{
+    font-size:1.02rem!important;
+    line-height:1.22!important;
+    margin:0 0 8px!important;
+  }
+
+  .adult-pathway-grid .card p,
+  .adult-why-grid .card p,
+  .child-pathway-grid .card p,
+  .child-route-grid .card p{
+    font-size:.88rem!important;
+    line-height:1.5!important;
+    margin-bottom:10px!important;
+  }
+
+  .adult-pathway-grid .card a.inline,
+  .child-pathway-grid .card a.inline,
+  .child-route-grid .card a.inline{
+    font-size:.82rem!important;
+  }
+
+  .adult-pathway-grid .card:active,
+  .adult-why-grid .card:active,
+  .child-pathway-grid .card:active,
+  .child-route-grid .card:active{
+    background:#fff4d9!important;
+    box-shadow:0 8px 20px rgba(17,56,107,.10)!important;
+    transform:translateY(-1px)!important;
+  }
+
+  /* Keep soft information panels visually consistent too */
+  .adult-pathway-grid + *,
+  .child-pathway-grid + *{
+    --assessment-card-bg:#fffaf0;
+  }
+}
+
+/* Desktop hover consistency for adult/child pathway cards */
+.adult-pathway-grid .card:hover,
+.adult-why-grid .card:hover,
+.child-pathway-grid .card:hover,
+.child-route-grid .card:hover{
+  background:#fff8e8!important;
+  border-color:#d7a62d!important;
+  box-shadow:0 10px 26px rgba(17,56,107,.10)!important;
+  transform:translateY(-2px)!important;
+}
