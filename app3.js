@@ -1,46 +1,46 @@
 const team=`${header('Meet Our Multi-Disciplinary Clinical Team','Autism Assessments Farnham brings together experienced professionals from paediatrics, psychology, speech and language therapy and occupational therapy. Lisa Mayatt is the main point of contact throughout the assessment journey.')}
 <section class="section team-page">
-  <div class="team-profile">
+  <div class="team-profile" id="lisa-mayatt">
     <img src="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg" alt="Lisa Mayatt">
     <div class="team-profile-copy"><div class="eyebrow">Founder & Clinical Director</div><h2>Lisa Mayatt</h2><h3>Highly Specialist Speech and Language Therapist</h3><p>Lisa founded Autism Assessments Farnham and remains the main point of contact for families throughout the assessment process. Her background includes extensive NHS and Local Authority work, ADOS-2 assessment since 2016, and training in ADI-R, 3Di and ACE. Her specialist interests include PDA and autism presentations in girls and young women. She also undertakes expert-witness and education work.</p></div>
   </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu">
-    <div class="team-profile-copy"><h2>Dr Joseph Chukwu</h2><h3>Consultant Neurodevelopmental Paediatrician</h3><p>Joseph is an NHS community paediatrician with extensive Autism and ADHD assessment experience. He is trained in ADOS-2, ADI-R and 3Di and has worked with Autism Assessments Farnham since its launch in 2022. He supports under-18 Autism and ADHD assessment pathways.</p></div>
-  </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter">
-    <div class="team-profile-copy"><h2>Dr Aimee Hayter</h2><h3>Clinical Psychologist</h3><p>Aimee has around 20 years of experience across academia, the NHS and private practice, working with neurodivergent people across the lifespan. She specialises in neuropsychology and provides psychological assessment, including ADOS-2, alongside consultation and intervention.</p></div>
-  </div>
-  <div class="team-profile">
+  <div class="team-profile" id="dr-gopal-venkat">
     <img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat">
     <div class="team-profile-copy"><h2>Dr Gopal Venkat, MD, FRCPCH</h2><h3>Consultant Neurodevelopmental Paediatrician</h3><p>Dr Gopal has more than 20 years of clinical experience in neurodevelopmental paediatrics, paediatric neurology and epilepsy. His work includes Autism, ADHD and developmental coordination difficulties. He is ADOS-2 trained and provides multidisciplinary assessments for children and young people, with a neuro-affirming and evidence-based approach.</p></div>
   </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper">
-    <div class="team-profile-copy"><h2>Karen Cooper</h2><h3>Highly Specialist Speech and Language Therapist & Autism Specialist</h3><p>Karen has around 25 years of experience across specialist education, the NHS and Local Authority services, including two decades in diagnostic multidisciplinary teams. She is trained in ADOS-2, ADI-R and ACE and supports joint autism assessments with children and young adults.</p></div>
+  <div class="team-profile" id="dr-joseph-chukwu">
+    <img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu">
+    <div class="team-profile-copy"><h2>Dr Joseph Chukwu</h2><h3>Consultant Neurodevelopmental Paediatrician</h3><p>Joseph is an NHS community paediatrician with extensive Autism and ADHD assessment experience. He is trained in ADOS-2, ADI-R and 3Di and has worked with Autism Assessments Farnham since its launch in 2022. He supports under-18 Autism and ADHD assessment pathways.</p></div>
   </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/1e4c48_42f988def9b6480ea93fbf16296e70a0~mv2.jpg" alt="Jess Wilson">
-    <div class="team-profile-copy"><h2>Jess Wilson</h2><h3>Occupational Therapist</h3><p>Jess specialises in neurodevelopmental needs, sensory processing and the impact of trauma. Her experience spans mainstream and specialist schools, clinics, homes and community settings. She has contributed to NHS autism diagnostic services and supports multidisciplinary ADOS-2 assessment work.</p></div>
+  <div class="team-profile" id="dr-aimee-hayter">
+    <img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter">
+    <div class="team-profile-copy"><h2>Dr Aimee Hayter</h2><h3>Clinical Psychologist</h3><p>Aimee has around 20 years of experience across academia, the NHS and private practice, working with neurodivergent people across the lifespan. She specialises in neuropsychology and provides psychological assessment, including ADOS-2, alongside consultation and intervention.</p></div>
   </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/1e4c48_9944b909556a40e9bf73b4cc3ea38282~mv2.jpeg" alt="Beccy Muggeridge">
-    <div class="team-profile-copy"><h2>Beccy Muggeridge</h2><h3>Highly Specialist Speech and Language Therapist</h3><p>Beccy specialises in Autism and brain injury and has broad experience across Surrey education settings, specialist services, the NHS and multidisciplinary teams. Her roles have included The Children’s Trust, Great Ormond Street Hospital and Evelina London’s community autism assessment service.</p></div>
-  </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/1e4c48_766d102855fe4181b93bdd44b35c4a95~mv2.jpg" alt="Sarah Grieve">
-    <div class="team-profile-copy"><h2>Sarah Grieve</h2><h3>Specialist Speech and Language Therapy Assistant & Clinical Administrator</h3><p>Sarah combines clinical administration with speech and language therapy support, helping coordinate appointments, documentation and the assessment process. She brings NHS and Local Authority experience and supports a calm, organised and neurodiversity-affirming service.</p></div>
-  </div>
-  <div class="team-profile">
-    <img src="https://static.wixstatic.com/media/1e4c48_f78a79dd001343fda7bd1c16c190e542~mv2.png" alt="Deepika Sharma">
-    <div class="team-profile-copy"><h2>Deepika Sharma</h2><h3>Specialist Occupational Therapist</h3><p>Deepika has more than 20 years of clinical experience supporting children and young people with neurodevelopmental and developmental needs. She is ADOS-2 trained, works within the multidisciplinary team, and is developing further expertise in sensory integration.</p></div>
-  </div>
-  <div class="team-profile">
+  <div class="team-profile" id="dr-daniela-di-basilio">
     <img src="https://static.wixstatic.com/media/1e4c48_872f3d3716324c9f8dea44e262e15468~mv2.png" alt="Dr Daniela Di Basilio">
     <div class="team-profile-copy"><h2>Dr Daniela Di Basilio</h2><h3>Clinical Psychologist and Cognitive Behavioural Therapist</h3><p>Daniela has extensive experience in the assessment and treatment of a wide range of psychological and neurodevelopmental conditions. She is a qualified ADHD assessor and trained in the administration of ADOS-2 and ADI-R. Daniela jointly conducts comprehensive neurodevelopmental assessments and diagnostic formulations for children, adolescents and adults, integrating developmental history, clinical interviews and standardised assessment measures.</p><p>Alongside her clinical practice, Daniela is a Clinical Supervisor at the Priory and a Lecturer in Clinical Psychology at Lancaster University, where she teaches and supervises doctoral trainees. She is registered with the HCPC as a Practitioner Psychologist and is an accredited EMDR practitioner.</p><p>Daniela's clinical approach is evidence-based, collaborative and compassionate, with an emphasis on thorough assessment, individualised formulation and interventions tailored to each person's needs.</p></div>
   </div>
-  <div class="team-profile team-profile-placeholder">
+  <div class="team-profile" id="karen-cooper">
+    <img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper">
+    <div class="team-profile-copy"><h2>Karen Cooper</h2><h3>Highly Specialist Speech and Language Therapist & Autism Specialist</h3><p>Karen has around 25 years of experience across specialist education, the NHS and Local Authority services, including two decades in diagnostic multidisciplinary teams. She is trained in ADOS-2, ADI-R and ACE and supports joint autism assessments with children and young adults.</p></div>
+  </div>
+  <div class="team-profile" id="beccy-muggeridge">
+    <img src="https://static.wixstatic.com/media/1e4c48_9944b909556a40e9bf73b4cc3ea38282~mv2.jpeg" alt="Beccy Muggeridge">
+    <div class="team-profile-copy"><h2>Beccy Muggeridge</h2><h3>Highly Specialist Speech and Language Therapist</h3><p>Beccy specialises in Autism and brain injury and has broad experience across Surrey education settings, specialist services, the NHS and multidisciplinary teams. Her roles have included The Children’s Trust, Great Ormond Street Hospital and Evelina London’s community autism assessment service.</p></div>
+  </div>
+  <div class="team-profile" id="deepika-sharma">
+    <img src="https://static.wixstatic.com/media/1e4c48_f78a79dd001343fda7bd1c16c190e542~mv2.png" alt="Deepika Sharma">
+    <div class="team-profile-copy"><h2>Deepika Sharma</h2><h3>Specialist Occupational Therapist</h3><p>Deepika has more than 20 years of clinical experience supporting children and young people with neurodevelopmental and developmental needs. She is ADOS-2 trained, works within the multidisciplinary team, and is developing further expertise in sensory integration.</p></div>
+  </div>
+  <div class="team-profile" id="jess-wilson">
+    <img src="https://static.wixstatic.com/media/1e4c48_42f988def9b6480ea93fbf16296e70a0~mv2.jpg" alt="Jess Wilson">
+    <div class="team-profile-copy"><h2>Jess Wilson</h2><h3>Occupational Therapist</h3><p>Jess specialises in neurodevelopmental needs, sensory processing and the impact of trauma. Her experience spans mainstream and specialist schools, clinics, homes and community settings. She has contributed to NHS autism diagnostic services and supports multidisciplinary ADOS-2 assessment work.</p></div>
+  </div>
+  <div class="team-profile" id="sarah-grieve">
+    <img src="https://static.wixstatic.com/media/1e4c48_766d102855fe4181b93bdd44b35c4a95~mv2.jpg" alt="Sarah Grieve">
+    <div class="team-profile-copy"><h2>Sarah Grieve</h2><h3>Specialist Speech and Language Therapy Assistant & Clinical Administrator</h3><p>Sarah combines clinical administration with speech and language therapy support, helping coordinate appointments, documentation and the assessment process. She brings NHS and Local Authority experience and supports a calm, organised and neurodiversity-affirming service.</p></div>
+  </div>
+  <div class="team-profile team-profile-placeholder" id="new-clinician-coming-soon">
     <div class="clinician-placeholder" aria-hidden="true"><span>+</span></div>
     <div class="team-profile-copy"><div class="eyebrow">New team member</div><h2>New clinician coming soon</h2><h3>Details to follow</h3><p>Another clinician will be joining the team. Their name, role, photograph and profile will be added here once confirmed.</p></div>
   </div>
