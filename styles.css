@@ -2692,3 +2692,100 @@ a.specialist-card:hover,
     max-width:360px;
   }
 }
+
+
+/* =========================================================
+   HOMEPAGE CLINICIAN CAROUSEL
+   ========================================================= */
+.clinician-carousel-shell{
+  position:relative;
+  width:100%;
+  padding:0 46px;
+}
+.clinician-row.clinician-carousel{
+  display:flex!important;
+  grid-template-columns:none!important;
+  gap:14px!important;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  padding:4px 2px 14px;
+}
+.clinician-row.clinician-carousel::-webkit-scrollbar{display:none}
+.clinician-card{
+  flex:0 0 calc((100% - 56px)/5);
+  min-width:190px;
+  scroll-snap-align:start;
+  border:1px solid var(--line);
+  background:#fff;
+  text-align:center;
+  padding:8px;
+  text-decoration:none;
+  color:inherit;
+  transition:background .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.clinician-card:hover,
+.clinician-card:focus-visible{
+  background:#fff8e8;
+  border-color:#d7a62d;
+  box-shadow:0 10px 26px rgba(17,56,107,.10);
+  transform:translateY(-2px);
+  outline:none;
+}
+.clinician-card img{
+  width:100%!important;
+  aspect-ratio:4/5!important;
+  height:auto!important;
+  object-fit:cover!important;
+  display:block!important;
+}
+.clinician-card h4{
+  font-size:.72rem;
+  margin:8px 0 3px;
+  color:#11386B;
+}
+.clinician-card p{
+  font-size:.57rem;
+  margin:0;
+  color:#676f68;
+}
+.clinician-carousel-arrow{
+  position:absolute;
+  top:42%;
+  transform:translateY(-50%);
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  border:1px solid #d7a62d;
+  background:#fff8e8;
+  color:#11386B;
+  font-size:1.7rem;
+  line-height:1;
+  display:grid;
+  place-items:center;
+  z-index:3;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(17,56,107,.10);
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.clinician-carousel-arrow:hover{
+  background:#11386B;
+  color:#fff;
+  transform:translateY(-50%) scale(1.05);
+}
+.clinician-carousel-prev{left:0}
+.clinician-carousel-next{right:0}
+.team-profile{
+  scroll-margin-top:145px;
+}
+@media(max-width:1050px){
+  .clinician-card{flex-basis:calc((100% - 28px)/3)}
+}
+@media(max-width:760px){
+  .clinician-carousel-shell{padding:0 38px}
+  .clinician-card{flex-basis:78%;min-width:220px}
+  .clinician-carousel-arrow{width:34px;height:34px}
+  .team-profile{scroll-margin-top:120px}
+}
