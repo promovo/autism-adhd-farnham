@@ -2892,3 +2892,108 @@ a.specialist-card:hover,
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* =========================================================
+   MOBILE REFINEMENTS — post-support, clinicians, How It Works
+   ========================================================= */
+@media(max-width:760px){
+  /* Homepage Post-Assessment Support: image first, shallow, title scaled to mobile */
+  .homepage-post-support{
+    display:flex!important;
+    flex-direction:column!important;
+    min-height:0!important;
+  }
+  .homepage-post-support .post-support-image{
+    order:1!important;
+    width:100%!important;
+    height:180px!important;
+    min-height:180px!important;
+    max-height:180px!important;
+    flex:none!important;
+  }
+  .homepage-post-support .post-support-image img{
+    width:100%!important;
+    height:180px!important;
+    min-height:180px!important;
+    max-height:180px!important;
+    object-fit:cover!important;
+    object-position:center 42%!important;
+  }
+  .homepage-post-support .post-support-copy{
+    order:2!important;
+    min-height:0!important;
+    padding:24px 6vw 30px!important;
+  }
+  .homepage-post-support .post-support-copy h2{
+    font-size:1.65rem!important;
+    line-height:1.08!important;
+    margin:0 0 10px!important;
+  }
+  .homepage-post-support .post-support-copy p{
+    font-size:.9rem!important;
+    line-height:1.55!important;
+  }
+  .homepage-post-support .post-support-price strong{
+    font-size:1rem!important;
+  }
+  .homepage-post-support .post-support-price span{
+    font-size:.86rem!important;
+  }
+
+  /* Homepage clinicians: smaller cards so roughly 2.4 are visible */
+  .clinician-carousel-shell{
+    padding:0 34px!important;
+  }
+  .clinician-row.clinician-carousel{
+    gap:10px!important;
+  }
+  .clinician-card{
+    flex:0 0 40%!important;
+    min-width:138px!important;
+    padding:6px!important;
+  }
+  .clinician-card img{
+    aspect-ratio:4/5!important;
+    height:auto!important;
+  }
+  .clinician-card h4{
+    font-size:.68rem!important;
+    line-height:1.2!important;
+    margin:7px 0 3px!important;
+  }
+  .clinician-card p{
+    font-size:.53rem!important;
+    line-height:1.3!important;
+  }
+  .clinician-carousel-arrow{
+    width:32px!important;
+    height:32px!important;
+    font-size:1.45rem!important;
+  }
+
+  /* How It Works: match normal mobile site typography */
+  .process-steps .step > div,
+  .unified-steps .step > div{
+    padding:15px 16px!important;
+  }
+  .process-steps .step > div h3,
+  .unified-steps .step h3{
+    min-height:0!important;
+    font-size:1rem!important;
+    line-height:1.25!important;
+    margin:0 0 6px!important;
+  }
+  .process-steps .step > div p,
+  .unified-steps .step p{
+    font-size:.88rem!important;
+    line-height:1.5!important;
+    margin:0!important;
+  }
+}
+@media(max-width:390px){
+  .clinician-card{
+    flex-basis:46%!important;
+    min-width:128px!important;
+  }
+}
