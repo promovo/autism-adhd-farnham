@@ -69,15 +69,23 @@ const home=`
 <section class="clinicians-home">
   <div class="mock-section">
     <div class="mock-heading"><h2>Our experienced clinicians</h2><span></span></div>
-    <div class="clinician-row">
-      <div><img src="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Clinical Director & Highly Specialist SLT</p></div>
-      <div><img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
-      <div><img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></div>
-      <div><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></div>
-      <div><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></div>
-      <div><img src="https://static.wixstatic.com/media/1e4c48_872f3d3716324c9f8dea44e262e15468~mv2.png" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></div>
+    <div class="clinician-carousel-shell">
+      <button class="clinician-carousel-arrow clinician-carousel-prev" type="button" aria-label="Previous clinicians">‹</button>
+      <div class="clinician-row clinician-carousel" tabindex="0" aria-label="Clinical team">
+        <a class="clinician-card" href="/our-team#lisa-mayatt" data-link><img src="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Founder, Clinical Director & Highly Specialist SLT</p></a>
+        <a class="clinician-card" href="/our-team#dr-gopal-venkat" data-link><img src="https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
+        <a class="clinician-card" href="/our-team#dr-joseph-chukwu" data-link><img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
+        <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></a>
+        <a class="clinician-card" href="/our-team#dr-daniela-di-basilio" data-link><img src="https://static.wixstatic.com/media/1e4c48_872f3d3716324c9f8dea44e262e15468~mv2.png" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></a>
+        <a class="clinician-card" href="/our-team#karen-cooper" data-link><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></a>
+        <a class="clinician-card" href="/our-team#beccy-muggeridge" data-link><img src="https://static.wixstatic.com/media/1e4c48_9944b909556a40e9bf73b4cc3ea38282~mv2.jpeg" alt="Beccy Muggeridge"><h4>Beccy Muggeridge</h4><p>Highly Specialist Speech & Language Therapist</p></a>
+        <a class="clinician-card" href="/our-team#deepika-sharma" data-link><img src="https://static.wixstatic.com/media/1e4c48_f78a79dd001343fda7bd1c16c190e542~mv2.png" alt="Deepika Sharma"><h4>Deepika Sharma</h4><p>Specialist Occupational Therapist</p></a>
+        <a class="clinician-card" href="/our-team#jess-wilson" data-link><img src="https://static.wixstatic.com/media/1e4c48_42f988def9b6480ea93fbf16296e70a0~mv2.jpg" alt="Jess Wilson"><h4>Jess Wilson</h4><p>Occupational Therapist</p></a>
+        <a class="clinician-card" href="/our-team#sarah-grieve" data-link><img src="https://static.wixstatic.com/media/1e4c48_766d102855fe4181b93bdd44b35c4a95~mv2.jpg" alt="Sarah Grieve"><h4>Sarah Grieve</h4><p>Specialist SLT Assistant & Clinical Administrator</p></a>
+      </div>
+      <button class="clinician-carousel-arrow clinician-carousel-next" type="button" aria-label="Next clinicians">›</button>
     </div>
-    <div class="clinicians-cta"><a class="btn" href="/our-team" data-link>Read more</a></div>
+    <div class="clinicians-cta"><a class="btn" href="/our-team" data-link>Meet the full team</a></div>
   </div>
 </section>
 
