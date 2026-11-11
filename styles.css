@@ -2831,3 +2831,64 @@ a.specialist-card:hover,
     cursor:pointer!important;
   }
 }
+
+
+/* =========================================================
+   MOBILE HERO TRUST STRIP — clean 2x2 layout
+   ========================================================= */
+@media(max-width:760px){
+  .mock-hero .hero-trust{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:22px 0 0!important;
+  }
+  .mock-hero .hero-trust > div,
+  .mock-hero .hero-trust > div:nth-child(1),
+  .mock-hero .hero-trust > div:nth-child(2),
+  .mock-hero .hero-trust > div:nth-child(3),
+  .mock-hero .hero-trust > div:nth-child(4){
+    transform:none!important;
+    min-width:0!important;
+    display:grid!important;
+    grid-template-columns:34px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:9px!important;
+    padding:12px 10px!important;
+    background:rgba(255,255,255,.78)!important;
+    border:1px solid #d9dfd6!important;
+    border-radius:4px!important;
+    text-align:left!important;
+  }
+  .mock-hero .hero-trust svg{
+    width:28px!important;
+    height:28px!important;
+    margin:0!important;
+  }
+  .mock-hero .hero-trust span{
+    min-width:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    gap:1px!important;
+  }
+  .mock-hero .hero-trust strong,
+  .mock-hero .hero-trust small{
+    white-space:normal!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    line-height:1.2!important;
+  }
+  .mock-hero .hero-trust strong{
+    font-size:.72rem!important;
+  }
+  .mock-hero .hero-trust small{
+    font-size:.62rem!important;
+  }
+}
+@media(max-width:390px){
+  .mock-hero .hero-trust{
+    grid-template-columns:1fr!important;
+  }
+}
