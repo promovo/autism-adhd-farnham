@@ -3442,3 +3442,109 @@ small{
     top:calc(100% + 6px)!important;
   }
 }
+
+
+/* =========================================================
+   FINAL BOX COLOUR SYSTEM — site-wide
+   ========================================================= */
+:root{
+  --box-bg:#fffaf0;
+  --box-bg-hover:#fff4d9;
+  --box-border:#d7a62d;
+  --box-shadow:0 5px 16px rgba(17,56,107,.06);
+  --box-shadow-hover:0 10px 26px rgba(17,56,107,.10);
+}
+
+/* Standard content boxes */
+.card,
+.soft-panel,
+.info-card,
+.specialist-card,
+.action-card,
+.assessment-detail-card,
+.assessment-step > div:last-child,
+.unified-steps .step > div,
+.process-steps .step > div,
+.overview-age-cards .card,
+.overview-service-cards .card,
+.adult-pathway-grid .card,
+.adult-why-grid .card,
+.child-pathway-grid .card,
+.child-route-grid .card,
+.fee-card,
+.fees-support-grid .card,
+.contact-start-cards .card,
+.consultation-form-cards .card,
+.pda-cards .card,
+.post-one .card{
+  background:var(--box-bg)!important;
+  border:1px solid var(--box-border)!important;
+  box-shadow:var(--box-shadow)!important;
+}
+
+/* Informational notices remain visually distinct but coordinated */
+.notice{
+  background:#fff8e8!important;
+  border-left:4px solid var(--box-border)!important;
+}
+
+/* Desktop hover */
+@media(hover:hover) and (pointer:fine){
+  .card:hover,
+  .soft-panel:hover,
+  .info-card:hover,
+  .specialist-card:hover,
+  .action-card:hover,
+  .assessment-detail-card:hover,
+  .assessment-step:hover > div:last-child,
+  .unified-steps .step:hover > div,
+  .process-steps .step:hover > div,
+  .adult-pathway-grid .card:hover,
+  .adult-why-grid .card:hover,
+  .child-pathway-grid .card:hover,
+  .child-route-grid .card:hover,
+  .fee-card:hover,
+  .contact-start-cards .card:hover,
+  .consultation-form-cards .card:hover,
+  .pda-cards .card:hover,
+  .post-one .card:hover{
+    background:var(--box-bg-hover)!important;
+    border-color:var(--box-border)!important;
+    box-shadow:var(--box-shadow-hover)!important;
+  }
+}
+
+/* Mobile tap feedback */
+@media(max-width:760px){
+  .card:active,
+  .soft-panel:active,
+  .info-card:active,
+  .specialist-card:active,
+  .action-card:active,
+  .assessment-detail-card:active,
+  .assessment-step:active > div:last-child,
+  .unified-steps .step:active > div,
+  .process-steps .step:active > div,
+  .adult-pathway-grid .card:active,
+  .adult-why-grid .card:active,
+  .child-pathway-grid .card:active,
+  .child-route-grid .card:active,
+  .fee-card:active,
+  .contact-start-cards .card:active,
+  .consultation-form-cards .card:active,
+  .pda-cards .card:active,
+  .post-one .card:active{
+    background:var(--box-bg-hover)!important;
+    box-shadow:var(--box-shadow-hover)!important;
+    transform:translateY(-1px)!important;
+  }
+}
+
+/* Keep legal/structural blocks calm */
+.privacy-page .card,
+.team-profile,
+.person{
+  background:#fff!important;
+  border-color:#d9dfd6!important;
+  box-shadow:none!important;
+}
