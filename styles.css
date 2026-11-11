@@ -2659,3 +2659,36 @@ a.specialist-card:hover,
 .privacy-page .card{
   transform:none!important;
 }
+
+
+/* Daniela + future clinician placeholder */
+.clinician-row img[alt="Dr Daniela Di Basilio"],
+.team-profile img[alt="Dr Daniela Di Basilio"]{
+  object-position:center 18%!important;
+}
+.team-profile-placeholder .clinician-placeholder{
+  width:250px;
+  aspect-ratio:4/5;
+  background:var(--cream);
+  border:1px dashed #c9bb92;
+  display:grid;
+  place-items:center;
+  color:#9a7425;
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:3rem;
+}
+.team-profile-placeholder .clinician-placeholder span{
+  width:68px;
+  height:68px;
+  border:1px solid #d7a62d;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  line-height:1;
+}
+@media(max-width:760px){
+  .team-profile-placeholder .clinician-placeholder{
+    width:100%;
+    max-width:360px;
+  }
+}
