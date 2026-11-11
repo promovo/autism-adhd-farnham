@@ -3052,3 +3052,10 @@ a.specialist-card:hover,
     box-shadow:0 0 0 5px #fffaf0!important;
   }
 }
+
+
+/* Home link shown in mobile navigation only */
+.mobile-home-link{display:none}
+@media(max-width:1050px){
+  .mobile-home-link{display:block}
+}
