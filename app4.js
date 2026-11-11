@@ -114,15 +114,25 @@ function bind(){
       render(u.pathname);
     }
   });
-  const carousel=document.querySelector('.clinician-carousel');
-  const prev=document.querySelector('.clinician-carousel-prev');
-  const next=document.querySelector('.clinician-carousel-next');
-  if(carousel&&prev&&next){
-    const step=()=>Math.max(260,Math.round(carousel.clientWidth*.78));
-    prev.onclick=()=>carousel.scrollBy({left:-step(),behavior:'smooth'});
-    next.onclick=()=>carousel.scrollBy({left:step(),behavior:'smooth'});
-  }
 }
 document.querySelector('.menu-toggle').onclick=()=>document.querySelector('.nav').classList.toggle('open');
 window.onpopstate=()=>render(location.pathname);
 render(location.pathname);
+
+
+/* clinician-carousel-arrow delegated controls */
+document.addEventListener('click',e=>{
+  const btn=e.target.closest('.clinician-carousel-arrow');
+  if(!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const carousel=document.querySelector('.clinician-carousel');
+  if(!carousel) return;
+  const direction=btn.classList.contains('clinician-carousel-prev')?-1:1;
+  const firstCard=carousel.querySelector('.clinician-card');
+  const gap=parseFloat(getComputedStyle(carousel).gap)||14;
+  const cardWidth=firstCard?firstCard.getBoundingClientRect().width:260;
+  const visible=Math.max(1,Math.floor(carousel.clientWidth/(cardWidth+gap)));
+  const distance=(cardWidth+gap)*Math.max(1,visible-1);
+  carousel.scrollBy({left:direction*distance,behavior:'smooth'});
+});
