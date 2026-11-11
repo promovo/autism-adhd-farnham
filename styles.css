@@ -2997,3 +2997,58 @@ a.specialist-card:hover,
     min-width:128px!important;
   }
 }
+
+
+/* =========================================================
+   MOBILE ASSESSMENT CARDS — lighter cream + gold border
+   ========================================================= */
+@media(max-width:760px){
+  .assessment-detail-card,
+  .assessment-step > div:last-child,
+  .unified-steps .step > div,
+  .process-steps .step > div,
+  .overview-age-cards .card,
+  .overview-service-cards .card,
+  .fees-grid .card,
+  .fees-support-grid .card,
+  .consultation-form-cards .card,
+  .pda-cards .card,
+  .post-one .card,
+  .contact-start-cards .card,
+  .info-card,
+  .specialist-card,
+  .action-card{
+    background:#fffaf0!important;
+    border:1px solid #d7a62d!important;
+    box-shadow:0 5px 16px rgba(17,56,107,.06)!important;
+  }
+
+  /* Touch feedback instead of relying on desktop hover */
+  .assessment-detail-card:active,
+  .assessment-step:active > div:last-child,
+  .unified-steps .step:active > div,
+  .process-steps .step:active > div,
+  .overview-age-cards .card:active,
+  .overview-service-cards .card:active,
+  .fees-grid .card:active,
+  .fees-support-grid .card:active,
+  .consultation-form-cards .card:active,
+  .pda-cards .card:active,
+  .post-one .card:active,
+  .contact-start-cards .card:active,
+  .info-card:active,
+  .specialist-card:active,
+  .action-card:active{
+    background:#fff4d9!important;
+    box-shadow:0 8px 20px rgba(17,56,107,.10)!important;
+    transform:translateY(-1px)!important;
+    transition:background .14s ease,border-color .14s ease,box-shadow .14s ease,transform .14s ease!important;
+  }
+
+  /* Keep process number treatment coordinated */
+  .assessment-step-number,
+  .unified-steps .step:before,
+  .process-steps .step:before{
+    box-shadow:0 0 0 5px #fffaf0!important;
+  }
+}
