@@ -2801,3 +2801,33 @@ a.specialist-card:hover,
 .clinician-carousel{
   overscroll-behavior-inline:contain;
 }
+
+
+/* =========================================================
+   MOBILE HEADER — tighter green band, larger hamburger
+   ========================================================= */
+@media(max-width:760px){
+  .site-header{
+    min-height:0!important;
+    padding:3px 4vw!important;
+  }
+  .site-header .brand{
+    display:flex!important;
+    align-items:center!important;
+    line-height:0!important;
+  }
+  .brand-logo-svg{
+    width:190px!important;
+    max-width:62vw!important;
+  }
+  .menu-toggle{
+    display:grid!important;
+    place-items:center!important;
+    width:52px!important;
+    height:52px!important;
+    padding:0!important;
+    font-size:2.25rem!important;
+    line-height:1!important;
+    cursor:pointer!important;
+  }
+}
