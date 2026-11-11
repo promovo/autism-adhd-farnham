@@ -3170,3 +3170,159 @@ a.specialist-card:hover,
   box-shadow:0 10px 26px rgba(17,56,107,.10)!important;
   transform:translateY(-2px)!important;
 }
+
+
+/* =========================================================
+   FINAL TYPOGRAPHY NORMALISATION — site-wide
+   Keeps all legacy page-specific rules from overriding scale.
+   ========================================================= */
+:root{
+  --final-body:.98rem;
+  --final-small:.86rem;
+  --final-card-title:1.14rem;
+  --final-section-title:clamp(1.9rem,2.7vw,2.65rem);
+  --final-page-title:clamp(2.35rem,4.2vw,3.75rem);
+  --final-hero-title:clamp(2.9rem,5vw,4.7rem);
+  --final-lead:1.05rem;
+}
+
+body,
+.section p,
+.card p,
+.soft-panel p,
+.notice,
+.faq details,
+.faq summary,
+.team-profile-copy p,
+.post-support-copy p{
+  font-size:var(--final-body)!important;
+  line-height:1.58!important;
+}
+
+.mock-hero h1{
+  font-size:var(--final-hero-title)!important;
+  line-height:1.03!important;
+}
+.page-hero h1{
+  font-size:var(--final-page-title)!important;
+  line-height:1.07!important;
+}
+.section h2,
+.section-lead h2,
+.mock-heading h2,
+.specialist-wrap .mock-heading h2,
+.post-support-copy h2,
+.fees-current h2,
+.global-start-cta h2{
+  font-size:var(--final-section-title)!important;
+  line-height:1.12!important;
+}
+.card h3,
+.soft-panel h3,
+.step h3,
+.assessment-detail-card h3,
+.team-profile-copy h3,
+.post-support-copy h3{
+  font-size:var(--final-card-title)!important;
+  line-height:1.25!important;
+}
+.section-lead p,
+.page-hero p,
+.mock-hero p,
+.global-start-cta p{
+  font-size:var(--final-lead)!important;
+  line-height:1.55!important;
+}
+.btn,
+button{
+  font-size:.9rem!important;
+  line-height:1.2!important;
+}
+.card a.inline,
+.inline{
+  font-size:.88rem!important;
+}
+.fee-card .price{
+  font-size:1.55rem!important;
+  line-height:1.08!important;
+}
+.fee-card .support-price{
+  font-size:1.35rem!important;
+}
+
+/* Preserve intentionally compact supporting text */
+.eyebrow,
+.tag,
+.booking-note,
+small{
+  font-size:.76rem!important;
+}
+.clinician-card h4{
+  font-size:.68rem!important;
+}
+.clinician-card p{
+  font-size:.55rem!important;
+  line-height:1.3!important;
+}
+
+@media(max-width:760px){
+  :root{
+    --final-body:.9rem;
+    --final-small:.8rem;
+    --final-card-title:1rem;
+    --final-section-title:clamp(1.55rem,6.4vw,1.95rem);
+    --final-page-title:clamp(1.9rem,8.5vw,2.6rem);
+    --final-hero-title:clamp(2.15rem,9.5vw,2.9rem);
+    --final-lead:.96rem;
+  }
+
+  body,
+  .section p,
+  .card p,
+  .soft-panel p,
+  .notice,
+  .faq details,
+  .faq summary,
+  .team-profile-copy p,
+  .post-support-copy p,
+  .fee-card p:not(.price),
+  .process-steps .step > div p,
+  .unified-steps .step p,
+  .adult-pathway-grid .card p,
+  .adult-why-grid .card p,
+  .child-pathway-grid .card p,
+  .child-route-grid .card p{
+    font-size:var(--final-body)!important;
+    line-height:1.52!important;
+  }
+
+  .card h3,
+  .soft-panel h3,
+  .step h3,
+  .assessment-detail-card h3,
+  .fee-card h3,
+  .process-steps .step > div h3,
+  .unified-steps .step h3,
+  .adult-pathway-grid .card h3,
+  .adult-why-grid .card h3,
+  .child-pathway-grid .card h3,
+  .child-route-grid .card h3{
+    font-size:var(--final-card-title)!important;
+    line-height:1.23!important;
+  }
+
+  .btn,
+  button{
+    font-size:.86rem!important;
+  }
+  .card a.inline,
+  .inline{
+    font-size:.82rem!important;
+  }
+  .fee-card .price{
+    font-size:1.4rem!important;
+  }
+  .fee-card .support-price{
+    font-size:1.28rem!important;
+  }
+}
