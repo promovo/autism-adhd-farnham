@@ -23,7 +23,7 @@ const seoMeta={
 '/local-resources':{title:'Autism & ADHD Resources and Signposting | Farnham',description:'Useful Autism and ADHD resources, support and local signposting for individuals and families around Farnham and Surrey.',canonical:'/local-resources'},
 '/privacy-policy':{title:'Privacy Policy | Autism & ADHD Assessments Farnham',description:'Privacy and data handling information for Autism & ADHD Assessments Farnham.',canonical:'/privacy-policy'},
 '/contact':{title:'Contact Autism & ADHD Assessments Farnham | Surrey',description:'Contact Autism & ADHD Assessments Farnham in South Farnham, Surrey about Autism, ADHD and combined assessment pathways.',canonical:'/contact'},
-'/ehcp-expert-witness-reports':{title:'EHCP & Expert Witness Reports | Farnham, Surrey',description:'Information about EHCP and expert witness report support linked to Autism & ADHD Assessments Farnham in Surrey.',canonical:'/ehcp-expert-witness-reports'},
+'/ehcp-expert-witness-reports':{title:'Speech Therapy Farnham | EHCP & Expert Witness Support',description:'Speech Therapy Farnham specialist Speech, Language & Communication assessment, EHCP and expert witness support in Farnham, Surrey.',canonical:'/ehcp-expert-witness-reports'},
 '/adult-pre-booking':{title:'Adult Autism & ADHD Pre-Booking Form | Farnham',description:'Start an adult Autism, ADHD or combined assessment enquiry with the pre-booking form for Autism & ADHD Assessments Farnham.',canonical:'/adult-pre-booking'},
 '/child-pre-booking':{title:'Child Autism & ADHD Pre-Booking Form | Farnham',description:'Start a child or young person Autism, ADHD or combined assessment enquiry with the pre-booking form.',canonical:'/child-pre-booking'}
 };
@@ -63,7 +63,7 @@ function updateSeo(path){
   let schema=document.getElementById('seo-schema');
   if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='seo-schema';document.head.appendChild(schema)}
   const graph=[
-    {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Surrey','South East England']},
+    {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',postalCode:'GU9 8HP',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Surrey','South East England']},
     {'@type':'WebSite','@id':liveOrigin+'/#website',url:liveOrigin+'/',name:'Autism & ADHD Assessments Farnham'},
     {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':liveOrigin+'/#clinic'}},
     {'@type':'BreadcrumbList','@id':liveOrigin+data.canonical+'#breadcrumb',itemListElement:[
