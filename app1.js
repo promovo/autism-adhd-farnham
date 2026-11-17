@@ -13,16 +13,16 @@ const home=`
       <a class="btn btn-outline" href="/contact" data-link>Contact Us</a>
     </div>
     <div class="hero-trust">
-      <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7"/><path d="M10 39c1-9 6-14 14-14s13 5 14 14"/></svg><span><strong>Experienced</strong><small>NHS clinicians</small></span></div>
-  <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24c-6-9-10-12-15-12-5 0-8 4-8 12s3 12 8 12c5 0 9-3 15-12Zm0 0c6-9 10-12 15-12 5 0 8 4 8 12s-3 12-8 12c-5 0-9-3-15-12Z"/></svg><span><strong>PDA profile</strong><small>recognised</small></span></div>
-  <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 7c-9 0-15 6-15 15 0 5 2 9 6 12v7M29 13c5 2 7 6 7 11-2 1-4 3-5 6-2 5-5 7-10 7M18 42h11"/></svg><span><strong>Female presentation</strong><small>recognised</small></span></div>
+      <div><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7"/><path d="M10 39c1-9 6-14 14-14s13 5 14 14"/></svg><span><strong>Highly experienced</strong><small>NHS clinicians</small></span></div>
+  <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="6" width="30" height="36" rx="2"/><path d="M16 16h16M16 24h16M16 32h10"/><path d="m31 32 3 3 6-7"/></svg><span><strong>NICE-compliant</strong><small>assessment reports</small></span></div>
+  <div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 39c-9-6-15-12-15-20 0-5 3-9 8-9 3 0 6 2 7 5 1-3 4-5 7-5 5 0 8 4 8 9 0 8-6 14-15 20Z"/></svg><span><strong>Personalised</strong><small>pre- & post-assessment guidance</small></span></div>
   <div><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="11" width="34" height="30" rx="2"/><path d="M14 6v10M34 6v10M7 20h34M14 27h4M22 27h4M30 27h4M14 34h4M22 34h4"/></svg><span><strong>Typical wait time</strong><small>1–3 weeks</small></span></div>
     </div>
   </div>
 </section>
 
 <section class="mock-section">
-  <div class="mock-heading"><h2>Choose the right assessment pathway</h2><span></span></div>
+  <div class="mock-heading"><h2>Choose your assessment pathway</h2><span></span></div>
   <div class="pathway-grid">
     <a class="info-card" href="/adult-autism-assessment" data-link><div class="line-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7"/><path d="M10 39c1-9 6-14 14-14s13 5 14 14"/></svg></div><div><h3>Adult Autism Assessments</h3><p>Comprehensive autism assessment for adults delivered by specialist clinicians.</p><b>Learn More →</b></div></a>
     <a class="info-card" href="/adult-adhd-assessment" data-link><div class="line-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 39c-6 0-10-4-10-10 0-4 2-7 5-9-1-2-1-4 0-6 1-4 5-6 9-5 2-3 7-3 9 0 4-1 8 1 9 5 1 2 1 4 0 6 3 2 5 5 5 9 0 6-4 10-10 10"/><path d="M24 9v30M17 16c4 1 7 4 7 8M31 16c-4 1-7 4-7 8M16 31c3-3 5-4 8-4M32 31c-3-3-5-4-8-4"/></svg></div><div><h3>Adult ADHD Assessments</h3><p>ADHD assessments for adults, including detailed history and clinical review.</p><b>Learn More →</b></div></a>
@@ -77,6 +77,7 @@ const home=`
         <a class="clinician-card" href="/our-team#dr-joseph-chukwu" data-link><img src="https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
         <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></a>
         <a class="clinician-card" href="/our-team#dr-daniela-di-basilio" data-link><img src="https://static.wixstatic.com/media/1e4c48_872f3d3716324c9f8dea44e262e15468~mv2.png" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></a>
+        <a class="clinician-card clinician-card-placeholder" href="/our-team#nordette-small" data-link><div class="clinician-initials" aria-hidden="true">NS</div><h4>Nordette Small</h4><p>Highly Specialist ADHD Nurse</p></a>
         <a class="clinician-card" href="/our-team#karen-cooper" data-link><img src="https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></a>
         <a class="clinician-card" href="/our-team#beccy-muggeridge" data-link><img src="https://static.wixstatic.com/media/1e4c48_9944b909556a40e9bf73b4cc3ea38282~mv2.jpeg" alt="Beccy Muggeridge"><h4>Beccy Muggeridge</h4><p>Highly Specialist Speech & Language Therapist</p></a>
         <a class="clinician-card" href="/our-team#deepika-sharma" data-link><img src="https://static.wixstatic.com/media/1e4c48_f78a79dd001343fda7bd1c16c190e542~mv2.png" alt="Deepika Sharma"><h4>Deepika Sharma</h4><p>Specialist Occupational Therapist</p></a>
