@@ -78,13 +78,13 @@ const genericAssessment=(title,intro,form,age,price)=>`${header(title,intro)}
   </div>
 </section>
 <section class="section assessment-clinic-space"><div class="split clinic-space-split"><div class="photo-panel clinic-space-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Autism Assessments Farnham clinic"></div><div><div class="eyebrow">Our clinic</div><h2>We provide a calm and safe space</h2><p>Our clinic is within a tranquil setting in South Farnham with plenty of parking. The space is within an annexe and has a homely feel, with a large waiting room, outdoor seating area and toilet facilities.</p><p>Please tell the clinic in advance about sensory, communication, anxiety or access needs that may make the process more comfortable.</p></div></div></section>${cta()}`;
-const combined=(a)=>genericAssessment(a?'Combined Autism & ADHD Assessment for Adults':'Combined Autism & ADHD Assessment for Children and Young People','Where both Autism and ADHD are being considered, a combined pathway allows the clinical team to consider overlapping or co-occurring needs within one integrated assessment process.',a?adultForm:childForm,'From age 5+','£2,950');
+const combined=(a)=>genericAssessment(a?'Combined Autism & ADHD Assessment for Adults':'Combined Autism & ADHD Assessment for Children and Young People','Where both Autism and ADHD are being considered, a combined pathway allows the clinical team to consider overlapping or co-occurring needs within one integrated assessment process.',a?adultForm:childForm,'From age 5+','£2,995');
 const how=`${header('How Our Autism & ADHD Assessment Process Works','The exact pathway depends on whether the assessment is for Autism, ADHD or both, and whether it is for an adult or a child / young person. The first step is always the relevant pre-booking form.')}
 <section class="section how-page">
   <div class="section-lead"><div class="eyebrow">The assessment journey</div><h2>Six clear steps</h2></div>
   <div class="steps process-steps unified-steps">
-    <div class="step"><div><h3>Complete the pre-booking form</h3><p>Start with the relevant Adult or Child / Young Person pre-booking form. Lisa reviews the information manually before anything else happens.</p><div class="cta-row"><a class="btn" href="${adultForm}" target="_blank">Adult Pre-Booking Form</a><a class="btn" href="${childForm}" target="_blank">Child / Young Person Form</a></div></div></div>
-    <div class="step"><div><h3>Lisa reviews your information</h3><p>Lisa considers the information provided and advises on the most appropriate next step, including whether a free 15-minute consultation would be useful.</p></div></div>
+    <div class="step"><div><h3>Complete the pre-booking form</h3><p>Start with the relevant Adult or Child / Young Person pre-booking form. The clinical team reviews the information before anything else happens.</p><div class="cta-row"><a class="btn" href="${adultForm}" target="_blank">Adult Pre-Booking Form</a><a class="btn" href="${childForm}" target="_blank">Child / Young Person Form</a></div></div></div>
+    <div class="step"><div><h3>The clinical team reviews your information</h3><p>The clinical team considers the information provided and advises on the most appropriate next step, including whether a free 15-minute consultation would be useful.</p></div></div>
     <div class="step"><div><h3>Choose the appropriate pathway</h3><p>The clinic confirms whether the most appropriate route is Autism, ADHD or Combined, and whether the Adult or Child / Young Person pathway applies.</p></div></div>
     <div class="step"><div><h3>Assessment appointments</h3><p>The relevant interviews, observations and/or recognised assessment tools are completed by appropriately trained clinicians.</p></div></div>
     <div class="step"><div><h3>Clinical review</h3><p>The team considers the information together using the clinic’s multi-disciplinary clinical process and professional judgement.</p></div></div>
@@ -100,9 +100,9 @@ const how=`${header('How Our Autism & ADHD Assessment Process Works','The exact 
 const fees=`${header('Autism & ADHD Assessment Fees and Availability','We aim to keep fees clear so you know the expected cost before booking.')}
 <section class="section fees-page fees-prices">
   <div class="cards fees-grid">
-    <div class="card fee-card"><span class="tag">Age 2+</span><h3>Autism Assessment</h3><p>Child or adult.</p><p class="price">£1,950</p><a class="inline" href="/adult-autism-assessment" data-link>Explore Autism Assessment</a></div>
-    <div class="card fee-card"><span class="tag">Age 5+</span><h3>ADHD Assessment</h3><p>Child or adult.</p><p class="price">£1,750</p><a class="inline" href="/adult-adhd-assessment" data-link>Explore ADHD Assessment</a></div>
-    <div class="card fee-card"><span class="tag">Age 5+</span><h3>Combined Autism + ADHD</h3><p>Child or adult.</p><p class="price">£2,950</p><a class="inline" href="/combined-adult-autism-adhd-assessment" data-link>Explore Combined Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 2+</span><h3>Autism Assessment</h3><p>Child or adult.</p><p class="price">£1,995</p><a class="inline" href="/adult-autism-assessment" data-link>Explore Autism Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 5+</span><h3>ADHD Assessment</h3><p>Child or adult.</p><p class="price">£1,795</p><a class="inline" href="/adult-adhd-assessment" data-link>Explore ADHD Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 5+</span><h3>Combined Autism + ADHD</h3><p>Child or adult.</p><p class="price">£2,995</p><a class="inline" href="/combined-adult-autism-adhd-assessment" data-link>Explore Combined Assessment</a></div>
   </div>
 </section>
 <section class="section fees-current">
