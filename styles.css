@@ -3609,3 +3609,4 @@ small{
 .speech-therapy-page .soft-panel{background:#eef3ed}
 @media(max-width:1100px){.cards.five,.team-disciplines{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.cards.five,.team-disciplines{grid-template-columns:1fr}}
+\n/* Four specialist areas visible in a single desktop row */\n@media (min-width: 1000px){.specialist-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}\n
