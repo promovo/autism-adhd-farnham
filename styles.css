@@ -51,12 +51,12 @@ h1,h2,h3,h4,h5,h6,
 }
 .btn,.btn-outline,.btn-small{color:var(--brand-blue)!important}
 .section.dark{
-  background:#E9EEE5!important;
+  background:#ECEBDD!important;
   color:var(--brand-blue)!important;
 }
 .section.dark h2,.section.dark p,.section.dark a{color:var(--brand-blue)!important}
 .footer{
-  background:#E9EEE5!important;
+  background:#ECEBDD!important;
   color:var(--brand-blue)!important;
 }
 .footer a,.footer span,.footer strong,.footer .footer-brand,.footer p{
@@ -3599,14 +3599,14 @@ small{
 /* Lisa revision pass — 17 Nov 2026 */
 .mock-section{background:#F8F2E9}
 .pathway-grid .info-card,.why-grid>div{background:#FCF9F3}
-.specialist-wrap{background:#E9EEE5}
+.specialist-wrap{background:#ECEBDD}
 .clinicians-home{background:#f4f1e7}
-.clinician-card-placeholder{background:#f2f4ef;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
-.clinician-initials,.clinician-placeholder-initials{display:grid;place-items:center;background:#dfe9df;color:#294B3B;font-family:'Lora',Georgia,serif;font-weight:700}
+.clinician-card-placeholder{background:#F5F0E7;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+.clinician-initials,.clinician-placeholder-initials{display:grid;place-items:center;background:#E5E8D9;color:#294B3B;font-family:'Lora',Georgia,serif;font-weight:700}
 .clinician-initials{width:100%;aspect-ratio:4/3;font-size:2rem}
 .clinician-placeholder-initials{min-height:320px;font-size:3rem}
 .cards.five,.team-disciplines{grid-template-columns:repeat(5,1fr)}
-.speech-therapy-page .soft-panel{background:#E9EEE5}
+.speech-therapy-page .soft-panel{background:#ECEBDD}
 @media(max-width:1100px){.cards.five,.team-disciplines{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.cards.five,.team-disciplines{grid-template-columns:1fr}}
 
@@ -3620,7 +3620,7 @@ small{
 :root{
  --green:#59735D;
  --green-dark:#294B3B;
- --green-soft:#E9EEE5;
+ --green-soft:#ECEBDD;
  --gold:#B59A70;
  --cream:#F7F1E7;
  --ink:#2F4338;
@@ -3675,7 +3675,7 @@ p,li,dd,dt,label,input,textarea,select{color:inherit}
  border:1px solid #66806B!important;
  color:#294B3B!important;
 }
-.btn-outline:hover{background:#E9EEE5!important;color:#294B3B!important}
+.btn-outline:hover{background:#ECEBDD!important;color:#294B3B!important}
 .btn-light{background:#FFFDF9!important;color:#294B3B!important;border-color:#FFFDF9!important}
 .mock-hero{
  background:linear-gradient(90deg,rgba(248,242,232,.97) 0%,rgba(248,242,232,.9) 37%,rgba(248,242,232,.18) 66%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
@@ -3684,10 +3684,10 @@ p,li,dd,dt,label,input,textarea,select{color:inherit}
  background:linear-gradient(90deg,rgba(249,244,235,.99) 0%,rgba(249,244,235,.94) 54%,rgba(249,244,235,.3) 83%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
 }
 .mock-section{background:#F8F2E9!important}
-.specialist-wrap{background:#F0F1E8!important}
+.specialist-wrap{background:#F3F0E6!important}
 .clinicians-home{background:#F8F2E9!important}
 .section.alt{background:#F7F1E7!important}
-.section.sage{background:#E9EEE5!important}
+.section.sage{background:#ECEBDD!important}
 .section:not(.dark),.mock-section,.page-hero{color:#34483D}
 .micro-trust,.mock-bottom-bar{background:#FFF9F0!important}
 .section.dark,.footer{background:#294B3B!important;color:#FFF9EE!important}
@@ -3720,7 +3720,7 @@ p,li,dd,dt,label,input,textarea,select{color:inherit}
 .eyebrow{color:#806A45!important}
 .gold-panel{background:#F0E1C9!important;color:#294B3B!important;border-radius:20px!important}
 .notice{background:#F7ECDB!important;border-left-color:#B59A70!important}
-.step:before{background:#E7EDE3!important;color:#294B3B!important}
+.step:before{background:#E8E7D8!important;color:#294B3B!important}
 input,textarea,select{
  background:#FFFDF9;
  border:1px solid #D5D8C9;
@@ -3748,3 +3748,11 @@ button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media(min-width:761px){
  .specialist-wrap .specialist-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
 }
+
+/* Warmer sage refinement — remove blue/cool green cast */
+:root{--green-soft:#ECEBDD}
+.section.sage{background:#ECEBDD!important}
+.specialist-wrap{background:#F3F0E6!important}
+.speech-therapy-page .soft-panel{background:#F4F0E7!important}
+.clinician-card-placeholder{background:#F5F0E7!important}
+.clinician-initials,.clinician-placeholder-initials{background:#E5E8D9!important}
