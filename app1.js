@@ -38,13 +38,11 @@ const home=`
       <a class="specialist-card" href="/pda-demand-avoidant-presentation" data-link><div class="specialist-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M39 8C24 10 13 18 10 37c9 2 20-2 25-11 4-7 4-13 4-18Z"/><path d="M12 36c6-8 13-13 22-17"/></svg></div><div><h3>PDA Profile / Demand Avoidance</h3><p>Specialist understanding of demand-avoidant presentations and practical support strategies.</p><b>Learn More →</b></div></a>
       <a class="specialist-card" href="/autism-adhd-women" data-link><div class="specialist-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 7c-9 0-15 6-15 15 0 5 2 9 6 12v7M29 13c5 2 7 6 7 11-2 1-4 3-5 6-2 5-5 7-10 7M18 42h11"/></svg></div><div><h3>Female Presentation of Autism and ADHD</h3><p>Recognising masking, subtle presentations and later recognition in females and girls.</p><b>Learn More →</b></div></a>
       <a class="specialist-card" href="/combined-adult-autism-adhd-assessment" data-link><div class="specialist-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24c-6-9-10-12-15-12-5 0-8 4-8 12s3 12 8 12c5 0 9-3 15-12Zm0 0c6-9 10-12 15-12 5 0 8 4 8 12s-3 12-8 12c-5 0-9-3-15-12Z"/></svg></div><div><h3>Combined Autism and ADHD Assessments</h3><p>One joined-up assessment pathway where autism and ADHD may co-exist.</p><b>Learn More →</b></div></a>
+      <a class="specialist-card" href="/ehcp-expert-witness-reports" data-link><div class="specialist-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h22l6 6v26H10zM32 8v8h6M16 22h16M16 28h16M16 34h10"/></svg></div><div><h3>Speech Therapy Farnham</h3><p>Specialist speech and language support, EHCP evidence and expert witness reporting.</p><b>Learn More →</b></div></a>
     </div>
   </div>
 </section>
 
-<section class="section alt homepage-speech-therapy" aria-labelledby="speech-therapy-home-title">
-  <div class="split"><div><div class="eyebrow">Additional specialist services</div><h2 id="speech-therapy-home-title">Speech Therapy Farnham</h2><p>Specialist Speech, Language &amp; Communication assessment, EHCP evidence and expert witness reporting for children and young people.</p><p>This is a separate service from our Autism and ADHD assessment pathways, with enquiries handled by Speech Therapy Farnham.</p><a class="btn" href="/ehcp-expert-witness-reports" data-link>Explore Speech Therapy Farnham</a></div><div class="soft-panel"><h3>EHCP &amp; Expert Witness Support</h3><p>Find out about specialist speech and language reporting and how to make an enquiry.</p><a class="inline" href="/ehcp-expert-witness-reports" data-link>See the service details</a></div></div>
-</section>
 <section class="homepage-post-support">
   <div class="post-support-image"><img src="https://static.wixstatic.com/media/9df129_2c0f16c9196b4758ae81172ece8199a6~mv2.jpg" alt="Calm consultation setting"></div><div class="post-support-copy">
     <div class="eyebrow">After your assessment</div>
