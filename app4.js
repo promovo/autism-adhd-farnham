@@ -93,6 +93,7 @@ function updateSeo(path){
   schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
 }
 function render(path){
+  path = path.replace(/\/+$/, '') || '/';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
   updateSeo(path);
   bind();
