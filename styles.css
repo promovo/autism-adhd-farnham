@@ -3787,3 +3787,74 @@ html,body{background:#F7F0E5!important}
   background:linear-gradient(rgba(245,233,218,.92),rgba(245,233,218,.94)),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important
  }
 }
+
+/* Lightened ivory, high-contrast forest copy and revived muted gold — 18 Nov */
+:root{
+  --cream:#F8F4EC;
+  --box-bg:#FCF9F3;
+  --box-bg-hover:#F6F1E7;
+  --white:#FFFCF7;
+  --gold:#C6A44F;
+  --ink:#183B2B;
+  --green-dark:#234B35;
+  --navy:#234B35;
+}
+html,body{background:#FBF8F2!important;color:#193B2B!important}
+body p,body li,body small,body label,body blockquote,body summary,
+.section:not(.dark) p,.card p,.info-card p,.specialist-card p,
+.action-card p,.person p,.team-profile p,.step p,
+.micro-trust small,.clinician-row p,.clinician-card p{
+  color:#244534!important;
+}
+h1,h2,h3,h4,h5,h6,
+.hero h1,.page-hero h1,.section h2,.mock-heading h2,
+.info-card h3,.specialist-card h3,.card h3,.action-card h3,
+.person h3,.price,.faq summary,.nav a:not(.btn),
+.section:not(.dark) strong,.card strong{
+ color:#173A2A!important;
+}
+.section.dark p,.section.dark li,.section.dark h1,.section.dark h2,.section.dark h3,
+.footer p,.footer a,.footer span,.footer strong,.footer h2,.footer h3{
+ color:#FFFAF0!important;
+}
+.mock-section,.clinicians-home{background:#F8F3EA!important}
+.section.alt{background:#F8F4EC!important}
+.specialist-wrap{background:#F5F1E8!important}
+.micro-trust,.mock-bottom-bar{background:#FFFBF4!important}
+.site-header{background:rgba(255,252,247,.98)!important}
+.card,.soft-panel,.info-card,.specialist-card,.action-card,
+.assessment-detail-card,.fee-card{
+ background:#FCF9F3!important;
+ border-color:#E2D9CA!important;
+}
+.gold-panel{background:#F3E6CA!important}
+.mock-hero{
+ background:linear-gradient(90deg,rgba(250,246,237,.98) 0%,rgba(250,246,237,.91) 37%,rgba(250,246,237,.17) 66%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+}
+.page-hero{
+ background:linear-gradient(90deg,rgba(250,246,237,.98) 0%,rgba(250,246,237,.94) 54%,rgba(250,246,237,.26) 83%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+}
+.btn:not(.btn-outline):not(.btn-light),.nav .btn,
+.nav .btn:not(.btn-outline){
+ background:#C6A44F!important;
+ border-color:#C6A44F!important;
+ color:#173A2A!important;
+}
+.btn:not(.btn-outline):not(.btn-light):hover,.nav .btn:hover{
+ background:#B79337!important;
+ border-color:#B79337!important;
+ color:#173A2A!important;
+}
+.btn-outline{background:#FFFCF7!important;border-color:#234B35!important;color:#173A2A!important}
+.btn-outline:hover{background:#EDF0E7!important;color:#173A2A!important}
+.eyebrow,.specialist-card b,.info-card b,.card a.inline,.mock-heading span{
+ color:#82691D!important;
+}
+.mock-heading span{background:#C6A44F!important}
+.action-icon{border-color:#C6A44F!important;color:#987A26!important}
+.notice{border-left-color:#C6A44F!important}
+@media(max-width:760px){
+ .mock-hero{
+ background:linear-gradient(rgba(250,246,237,.93),rgba(250,246,237,.95)),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
+ }
+}
