@@ -3756,3 +3756,34 @@ button:focus-visible,input:focus-visible,textarea:focus-visible{
 .speech-therapy-page .soft-panel{background:#F4F0E7!important}
 .clinician-card-placeholder{background:#F5F0E7!important}
 .clinician-initials,.clinician-placeholder-initials{background:#E5E8D9!important}
+
+/* Warm oatmeal cream refinement — 18 Nov 2026 */
+:root{
+ --cream:#F1E7D8;
+ --box-bg:#F8F0E5;
+ --box-bg-hover:#F1E3D1;
+ --white:#FFFAF2;
+}
+html,body{background:#F7F0E5!important}
+.mock-section,.clinicians-home{background:#F3E9DC!important}
+.section.alt{background:#F1E7D8!important}
+.section.sage{background:#ECEBDD!important}
+.specialist-wrap{background:#F2EBDD!important}
+.micro-trust,.mock-bottom-bar{background:#FAF1E4!important}
+.site-header{background:rgba(255,250,243,.97)!important}
+.card,.soft-panel,.info-card,.specialist-card,.action-card,.assessment-detail-card,.fee-card{
+ background:#F8F0E5!important;
+ border-color:#DCCDB9!important;
+}
+.gold-panel{background:#EAD6B8!important}
+.mock-hero{
+ background:linear-gradient(90deg,rgba(245,233,218,.97) 0%,rgba(245,233,218,.9) 37%,rgba(245,233,218,.18) 66%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important
+}
+.page-hero{
+ background:linear-gradient(90deg,rgba(245,233,218,.98) 0%,rgba(245,233,218,.93) 54%,rgba(245,233,218,.3) 83%),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important
+}
+@media(max-width:760px){
+ .mock-hero{
+  background:linear-gradient(rgba(245,233,218,.92),rgba(245,233,218,.94)),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important
+ }
+}
