@@ -42,6 +42,9 @@ const home=`
   </div>
 </section>
 
+<section class="section alt homepage-speech-therapy" aria-labelledby="speech-therapy-home-title">
+  <div class="split"><div><div class="eyebrow">Additional specialist services</div><h2 id="speech-therapy-home-title">Speech Therapy Farnham</h2><p>Specialist Speech, Language &amp; Communication assessment, EHCP evidence and expert witness reporting for children and young people.</p><p>This is a separate service from our Autism and ADHD assessment pathways, with enquiries handled by Speech Therapy Farnham.</p><a class="btn" href="/ehcp-expert-witness-reports" data-link>Explore Speech Therapy Farnham</a></div><div class="soft-panel"><h3>EHCP &amp; Expert Witness Support</h3><p>Find out about specialist speech and language reporting and how to make an enquiry.</p><a class="inline" href="/ehcp-expert-witness-reports" data-link>See the service details</a></div></div>
+</section>
 <section class="homepage-post-support">
   <div class="post-support-image"><img src="https://static.wixstatic.com/media/9df129_2c0f16c9196b4758ae81172ece8199a6~mv2.jpg" alt="Calm consultation setting"></div><div class="post-support-copy">
     <div class="eyebrow">After your assessment</div>
