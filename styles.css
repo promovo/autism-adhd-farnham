@@ -3879,3 +3879,33 @@ h1,h2,h3,h4,h5,h6,
  .site-header .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)!important}
 }
 @media(max-width:1050px){.site-header .nav a{white-space:nowrap!important}}
+
+/* Unified CTA buttons — match the header gold and lighten typography */
+a.btn,button.btn,input[type="submit"],.nav a.btn,
+.mock-hero a.btn,.hero-actions a.btn,.cta-row a.btn,
+.clinicians-cta a.btn,.fees-current-actions a.btn,
+.global-start-cta a.btn,.section.dark a.btn{
+  background:#C6A44F!important;
+  border:1px solid #C6A44F!important;
+  color:#173A2A!important;
+  font-family:'Nunito Sans',Arial,sans-serif!important;
+  font-size:.84rem!important;
+  font-weight:500!important;
+  letter-spacing:.005em!important;
+  text-transform:none!important;
+  text-decoration:none!important;
+  border-radius:999px!important;
+  box-shadow:none!important;
+}
+a.btn:hover,button.btn:hover,input[type="submit"]:hover,.nav a.btn:hover,
+.mock-hero a.btn:hover,.hero-actions a.btn:hover,.cta-row a.btn:hover,
+.clinicians-cta a.btn:hover,.fees-current-actions a.btn:hover,
+.global-start-cta a.btn:hover,.section.dark a.btn:hover{
+  background:#B79337!important;
+  border-color:#B79337!important;
+  color:#173A2A!important;
+}
+a.btn:focus-visible,button.btn:focus-visible,input[type="submit"]:focus-visible{
+  outline:3px solid #234B35!important;
+  outline-offset:3px!important;
+}
