@@ -3909,3 +3909,40 @@ a.btn:focus-visible,button.btn:focus-visible,input[type="submit"]:focus-visible{
   outline:3px solid #234B35!important;
   outline-offset:3px!important;
 }
+
+/* Lighter uppercase CTA type — warm ivory on a deeper antique gold for legibility */
+a.btn,button.btn,input[type="submit"],button[type="submit"],
+.nav a.btn,.site-header .nav .btn,
+.mock-hero a.btn,.hero-actions a.btn,.cta-row a.btn,
+.clinicians-cta a.btn,.fees-current-actions a.btn,
+.global-start-cta a.btn,.section.dark a.btn,
+.btn:not(.btn-outline):not(.btn-light){
+  background:#84651F!important;
+  border-color:#84651F!important;
+  color:#FFF9EA!important;
+  font-family:'Nunito Sans',Arial,sans-serif!important;
+  font-weight:500!important;
+  font-size:.81rem!important;
+  letter-spacing:.075em!important;
+  text-transform:uppercase!important;
+}
+a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:hover,
+.nav a.btn:hover,.site-header .nav .btn:hover,
+.mock-hero a.btn:hover,.hero-actions a.btn:hover,.cta-row a.btn:hover,
+.clinicians-cta a.btn:hover,.fees-current-actions a.btn:hover,
+.global-start-cta a.btn:hover,.section.dark a.btn:hover,
+.btn:not(.btn-outline):not(.btn-light):hover{
+  background:#6F541B!important;
+  border-color:#6F541B!important;
+  color:#FFF9EA!important;
+}
+.btn.btn-outline,.btn.btn-light{
+  background:#84651F!important;
+  border-color:#84651F!important;
+  color:#FFF9EA!important;
+}
+.btn.btn-outline:hover,.btn.btn-light:hover{
+  background:#6F541B!important;
+  border-color:#6F541B!important;
+  color:#FFF9EA!important;
+}
