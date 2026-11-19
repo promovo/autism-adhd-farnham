@@ -4115,3 +4115,156 @@ h1,h2,h3,h4,h5,h6,
   background:linear-gradient(rgba(248,239,224,.93),rgba(248,239,224,.95)),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
  }
 }
+
+/* Restore original blue-era hero benefits geometry; keep current warm colours */
+@media(min-width:1101px){
+ .mock-hero .hero-trust{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  column-gap:18px!important;
+  row-gap:0!important;
+  width:760px!important;
+  max-width:calc(100vw - 8vw)!important;
+  margin:19px 0 0!important;
+  align-items:start!important;
+ }
+ .mock-hero .hero-trust>div,
+ .mock-hero .hero-trust>div:nth-child(3),
+ .mock-hero .hero-trust>div:nth-child(4){
+  display:flex!important;
+  flex-direction:row!important;
+  transform:none!important;
+  padding:0!important;
+  min-width:0!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  text-align:left!important;
+  gap:8px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+ }
+ .mock-hero .hero-trust svg{
+  flex:0 0 24px!important;width:24px!important;height:24px!important;
+  margin:0!important;
+ }
+ .mock-hero .hero-trust span{
+  display:flex!important;flex-direction:column!important;
+  min-width:0!important;gap:2px!important;
+ }
+ .mock-hero .hero-trust strong{
+  font-size:.77rem!important;font-weight:600!important;line-height:1.2!important;
+ }
+ .mock-hero .hero-trust small{
+  font-size:.72rem!important;line-height:1.32!important;
+ }
+}
+@media(min-width:761px) and (max-width:1100px){
+ .mock-hero .hero-trust{width:min(590px,90vw)!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:15px 20px!important}
+ .mock-hero .hero-trust>div{padding:0!important;transform:none!important}
+}
+@media(max-width:760px){
+ .mock-hero .hero-trust{gap:14px!important}
+ .mock-hero .hero-trust>div{padding:3px!important}
+}
+/* Sage labels and interactive links; remove residual brown */
+.eyebrow,.google-kicker,.tag,.booking-note,
+.section:not(.dark) .eyebrow,.consultation-first .eyebrow,
+.consultation-second .eyebrow,.consultation-third .eyebrow,
+.consultation-booking .eyebrow{
+ color:#637552!important;
+}
+.info-card b,.specialist-card b,.action-card b,
+.mock-section a:not(.btn) b,.specialist-wrap a:not(.btn) b,
+.card a.inline,.inline{
+ color:#45644F!important;
+}
+a:not(.btn):hover,.footer a:hover,
+.info-card:hover b,.specialist-card:hover b,
+.action-card:hover b,.card a.inline:hover{
+ color:#355C43!important;
+}
+.eyebrow a:hover,.google-kicker a:hover{color:#355C43!important}
+/* Restore a calm, visible hover state to Why Choose cards */
+@media(hover:hover) and (pointer:fine){
+ .why-section .why-grid>div{
+  transition:background-color .22s ease,border-color .22s ease,
+  box-shadow .22s ease,transform .22s ease!important;
+ }
+ .why-section .why-grid>div:hover{
+  background:#EAEBDD!important;
+  border-color:#9DAF96!important;
+  box-shadow:0 14px 32px rgba(41,75,59,.105)!important;
+  transform:translateY(-4px)!important;
+ }
+}
+/* Meet Our Clinicians: spacious, readable biography rows */
+.team-page{
+ box-sizing:border-box!important;
+ width:min(1300px,100%)!important;
+ max-width:1300px!important;
+ margin:0 auto!important;
+ padding:62px clamp(24px,5vw,72px) 90px!important;
+}
+.team-page .team-profile{
+ display:grid!important;
+ grid-template-columns:clamp(210px,22vw,275px) minmax(0,1fr)!important;
+ gap:clamp(32px,4vw,58px)!important;
+ align-items:start!important;
+ width:100%!important;
+ padding:36px 28px!important;
+ margin:0 0 26px!important;
+ border:1px solid #E0D8C9!important;
+ border-radius:20px!important;
+ background:#FFFBF4!important;
+ box-shadow:0 6px 24px rgba(41,75,59,.045)!important;
+}
+.team-page .team-profile img{
+ display:block!important;
+ width:100%!important;
+ max-width:275px!important;
+ height:auto!important;
+ aspect-ratio:4/5!important;
+ object-fit:cover!important;
+ object-position:center top!important;
+ border-radius:14px!important;
+}
+.team-page .team-profile-copy{
+ min-width:0!important;
+ width:100%!important;
+ max-width:none!important;
+ padding:4px 0 0!important;
+}
+.team-page .team-profile-copy h2{
+ font-size:clamp(1.5rem,2.1vw,2rem)!important;
+ line-height:1.25!important;
+ margin:0 0 12px!important;
+}
+.team-page .team-profile-copy h3{
+ font-size:1.05rem!important;
+ line-height:1.45!important;
+ margin:0 0 20px!important;
+}
+.team-page .team-profile-copy .eyebrow{margin:0 0 12px!important}
+.team-page .team-profile-copy p{
+ max-width:78ch!important;
+ font-size:1rem!important;
+ line-height:1.82!important;
+ margin:0 0 14px!important;
+}
+.team-page .team-profile-copy p:last-child{margin-bottom:0!important}
+@media(max-width:760px){
+ .team-page{padding:40px 5vw 64px!important}
+ .team-page .team-profile{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:22px!important;
+  padding:24px 20px 30px!important;
+  margin-bottom:22px!important;
+ }
+ .team-page .team-profile img{width:100%!important;max-width:320px!important;aspect-ratio:4/5!important;height:auto!important}
+ .team-page .team-profile-copy{padding:0!important}
+ .team-page .team-profile-copy h2{font-size:1.5rem!important;margin-bottom:10px!important}
+ .team-page .team-profile-copy h3{font-size:.99rem!important;margin-bottom:16px!important}
+ .team-page .team-profile-copy p{font-size:.94rem!important;line-height:1.72!important}
+}
