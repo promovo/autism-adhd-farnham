@@ -4595,3 +4595,47 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
    rgba(250,249,244,.28) 100%)!important;
  }
 }
+
+/* Branded infographic library: consistent 24-unit geometry and golden outlines */
+.mock-hero .hero-trust svg.brand-icon,
+.pathway-grid .line-icon svg.brand-icon,
+.specialist-grid .specialist-icon svg.brand-icon,
+.why-section .why-grid svg.brand-icon{
+ fill:none!important;
+ stroke:#D5AD33!important;
+ stroke-width:1.8!important;
+ stroke-linecap:round!important;
+ stroke-linejoin:round!important;
+ color:#D5AD33!important;
+ overflow:visible!important;
+ display:block!important;
+ flex-shrink:0!important;
+}
+.mock-hero .hero-trust svg.brand-icon{width:27px!important;height:27px!important;flex-basis:27px!important}
+.pathway-grid .line-icon svg.brand-icon,
+.specialist-grid .specialist-icon svg.brand-icon{width:44px!important;height:44px!important}
+.why-section .why-grid svg.brand-icon{width:43px!important;height:43px!important;margin:0 0 14px!important}
+.pathway-grid .line-icon,.specialist-grid .specialist-icon{
+ display:flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ width:66px!important;
+ height:66px!important;
+ min-width:66px!important;
+ border-radius:18px!important;
+ background:#F7F4E6!important;
+ border:1px solid #E9DFB6!important;
+}
+@media(hover:hover) and (pointer:fine){
+ .pathway-grid .info-card:hover .line-icon,
+ .specialist-grid .specialist-card:hover .specialist-icon{
+  background:#F0ECD6!important;
+  border-color:#D5AD33!important;
+ }
+ .why-section .why-grid>div:hover svg.brand-icon{stroke:#D5AD33!important}
+}
+@media(max-width:760px){
+ .mock-hero .hero-trust svg.brand-icon{width:25px!important;height:25px!important;flex-basis:25px!important}
+ .pathway-grid .line-icon,.specialist-grid .specialist-icon{width:58px!important;height:58px!important;min-width:58px!important}
+ .pathway-grid .line-icon svg.brand-icon,.specialist-grid .specialist-icon svg.brand-icon{width:38px!important;height:38px!important}
+}
