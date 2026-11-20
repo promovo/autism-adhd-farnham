@@ -4802,3 +4802,94 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
  .why-section .why-grid h4{font-size:1rem!important}
  .why-section .why-grid p{font-size:.94rem!important}
 }
+
+/* 20 November — internal page hero photography, not the homepage */
+body[data-page="inner"]{
+ --forest-banner:url('https://images.unsplash.com/photo-1759520570181-859ad3bb11c5?auto=format&fit=crop&w=2400&q=85');
+}
+body[data-page="inner"][data-woodland="birch"]{
+ --forest-banner:url('https://images.unsplash.com/photo-1758818248575-0ef54d6e2d62?auto=format&fit=crop&w=2400&q=85');
+}
+body[data-page="inner"][data-woodland="canopy"]{
+ --forest-banner:url('https://images.unsplash.com/photo-1771470474213-78e9a2ba012e?auto=format&fit=crop&w=2400&q=85');
+}
+body[data-page="inner"] .page-hero{
+ filter:none!important;
+ background-color:#FAF9F4!important;
+ background-image:
+ linear-gradient(90deg,
+  rgba(250,249,244,.98) 0%,
+  rgba(250,249,244,.96) 24%,
+  rgba(250,249,244,.83) 39%,
+  rgba(250,249,244,.44) 53%,
+  rgba(250,249,244,.09) 64%,
+  rgba(250,249,244,0) 70%),
+ var(--forest-banner)!important;
+ background-position:center,center right!important;
+ background-repeat:no-repeat!important;
+ background-size:cover!important;
+}
+body[data-page="inner"] .page-hero::before{
+ background:transparent!important;
+ opacity:0!important;
+}
+/* Gold icon rules shared by all interior pages; consistent with homepage gold line art */
+body[data-page="inner"] .adult-why-icon,
+body[data-page="inner"] .support-icon,
+body[data-page="inner"] .assessment-step-number,
+body[data-page="inner"] .visual-age-cards .line-icon,
+body[data-page="inner"] .assessment-overview .line-icon,
+body[data-page="inner"] .assessment-overview .specialist-icon{
+ color:#D5AD33!important;
+ border-color:#E5D6A0!important;
+}
+body[data-page="inner"] .adult-why-icon svg,
+body[data-page="inner"] .support-icon svg,
+body[data-page="inner"] .visual-age-cards svg,
+body[data-page="inner"] .assessment-overview svg,
+body[data-page="inner"] .process-steps svg,
+body[data-page="inner"] .unified-steps svg,
+body[data-page="inner"] .step svg,
+body[data-page="inner"] .line-icon svg,
+body[data-page="inner"] .specialist-icon svg{
+ stroke:#D5AD33!important;
+ fill:none!important;
+ stroke-width:1.8!important;
+ stroke-linecap:round!important;
+ stroke-linejoin:round!important;
+ color:#D5AD33!important;
+}
+body[data-page="inner"] .adult-why-icon,
+body[data-page="inner"] .support-icon{
+ background:#FAF7ED!important;
+ border:1px solid #E9DFB6!important;
+ border-radius:16px!important;
+ display:grid!important;
+ place-items:center!important;
+}
+body[data-page="inner"] .assessment-step-number,
+body[data-page="inner"] .unified-steps .step:before,
+body[data-page="inner"] .process-steps .step:before{
+ background:#D5AD33!important;
+ color:#173A2A!important;
+ border-color:#D5AD33!important;
+}
+body[data-page="inner"] .assessment-step:hover .assessment-step-number,
+body[data-page="inner"] .unified-steps .step:hover:before,
+body[data-page="inner"] .process-steps .step:hover:before{
+ background:#E7BE4A!important;
+ color:#173A2A!important;
+ border-color:#E7BE4A!important;
+}
+@media(max-width:760px){
+ body[data-page="inner"] .page-hero{
+  background-image:
+   linear-gradient(90deg,
+    rgba(250,249,244,.97) 0%,
+    rgba(250,249,244,.92) 42%,
+    rgba(250,249,244,.67) 71%,
+    rgba(250,249,244,.20) 100%),
+   var(--forest-banner)!important;
+  background-position:center,65% center!important;
+ }
+}
