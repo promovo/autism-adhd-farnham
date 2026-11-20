@@ -4947,3 +4947,39 @@ body[data-page="home"] .mock-hero + .mock-section,
  background-color:#9FBC96!important;
  background-image:none!important;
 }
+
+/* Fine-tune homepage assessment backdrop and compact clinician portrait rows */
+.mock-hero + .mock-section:not(.why-section){
+ background:#AEC8A5!important;
+ background-color:#AEC8A5!important;
+ background-image:none!important;
+}
+/* Shorter image area, preserve the original portraits without zooming/cropping.
+   Keep established clinician name / role font sizes untouched. */
+.clinicians-home .clinician-carousel .clinician-card img{
+ width:100%!important;
+ height:190px!important;
+ max-height:190px!important;
+ min-height:0!important;
+ aspect-ratio:auto!important;
+ object-fit:contain!important;
+ object-position:center center!important;
+ transform:none!important;
+ background:#F3F5EE!important;
+ display:block!important;
+}
+.clinicians-home .clinician-carousel .clinician-card .clinician-initials{
+ height:190px!important;
+ min-height:0!important;
+ aspect-ratio:auto!important;
+ display:grid!important;
+ place-items:center!important;
+}
+@media(max-width:760px){
+ .clinicians-home .clinician-carousel .clinician-card img{
+  height:166px!important;max-height:166px!important;
+ }
+ .clinicians-home .clinician-carousel .clinician-card .clinician-initials{
+  height:166px!important;
+ }
+}
