@@ -4550,3 +4550,48 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
    url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
  }
 }
+
+/* Clearer, more vivid woodland hero — tint image independently from text */
+.mock-hero{
+ position:relative!important;
+ isolation:isolate!important;
+ overflow:hidden!important;
+ filter:none!important;
+ background:#FAF9F4!important;
+}
+.mock-hero::before{
+ content:""!important;
+ position:absolute!important;
+ inset:0!important;
+ display:block!important;
+ z-index:-2!important;
+ pointer-events:none!important;
+ background:url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+ filter:brightness(1.14) saturate(1.23) contrast(1.07)!important;
+}
+.mock-hero::after{
+ content:""!important;
+ position:absolute!important;
+ inset:0!important;
+ z-index:-1!important;
+ pointer-events:none!important;
+ background:linear-gradient(90deg,
+  rgba(250,249,244,.98) 0%,
+  rgba(250,249,244,.94) 20%,
+  rgba(250,249,244,.76) 29%,
+  rgba(250,249,244,.36) 38%,
+  rgba(250,249,244,.07) 47%,
+  rgba(250,249,244,0) 54%)!important;
+}
+.mock-hero>.hero-copy{position:relative!important;z-index:1!important}
+@media(max-width:760px){
+ .mock-hero{background:#FAF9F4!important}
+ .mock-hero::before{background-position:65% center!important;filter:brightness(1.13) saturate(1.2) contrast(1.06)!important}
+ .mock-hero::after{
+  background:linear-gradient(90deg,
+   rgba(250,249,244,.95) 0%,
+   rgba(250,249,244,.86) 44%,
+   rgba(250,249,244,.5) 77%,
+   rgba(250,249,244,.28) 100%)!important;
+ }
+}
