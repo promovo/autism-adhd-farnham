@@ -94,10 +94,6 @@ function updateSeo(path){
 }
 function render(path){
   path = path.replace(/\/+$/, '') || '/';
-  // Rotate coordinated woodland perspectives across interior page heroes.
-  const forestBeech=new Set(['/choose-your-assessment','/adult-assessments','/adult-autism-assessment','/adult-adhd-assessment','/combined-adult-autism-adhd-assessment','/adult-pre-booking','/fees']);
-  const forestBirch=new Set(['/child-young-person-assessments','/child-autism-assessment','/child-adhd-assessment','/combined-child-autism-adhd-assessment','/child-pre-booking','/how-assessments-work','/faq']);
-  document.body.dataset.forestHero=forestBeech.has(path)?'beech':forestBirch.has(path)?'birch':'oak';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
   updateSeo(path);
   bind();
