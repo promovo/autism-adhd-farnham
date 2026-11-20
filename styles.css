@@ -4470,3 +4470,83 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
 .eyebrow a:hover,.google-kicker a:hover,
 .info-card:hover b,.specialist-card:hover b,.action-card:hover b,
 .card a.inline:hover{color:#365C44!important}
+
+/* Homepage and gold consistency refinements — 20 November 2026 */
+/* Cream specialist area rather than another sage section */
+.specialist-wrap,.specialist-wrap>.mock-section{
+ background:#FBF8F1!important;
+ background-color:#FBF8F1!important;
+}
+/* Warm logo gold for every Learn More text link */
+.pathway-grid .info-card b,.specialist-grid .specialist-card b,
+.info-card b,.specialist-card b,.action-card b,
+.mock-section a:not(.btn) b,.specialist-wrap a:not(.btn) b{
+ color:#C29A1A!important;
+}
+.pathway-grid .info-card:hover b,.specialist-grid .specialist-card:hover b,
+.info-card:hover b,.specialist-card:hover b,.action-card:hover b{
+ color:#AA8210!important;
+}
+/* Larger, more relaxed Why Choose Us copy */
+.why-section .why-grid h4{
+ font-size:1.18rem!important;
+ line-height:1.36!important;
+ font-weight:500!important;
+ margin:14px 0 11px!important;
+}
+.why-section .why-grid p{
+ font-size:1rem!important;
+ line-height:1.68!important;
+}
+.why-section .why-grid>div{padding:30px 24px!important}
+/* Gold rating stars, including stars inside individual review cards */
+.google-reviews-section .google-stars,
+.google-reviews-section .google-review-card .google-stars,
+.google-reviews-section [class*="star"]{
+ color:#D5AD33!important;
+ fill:#D5AD33!important;
+}
+/* Woodland image should show clearly, with only a light readability veil */
+.global-start-cta{
+ background:
+  linear-gradient(rgba(246,249,242,.30),rgba(246,249,242,.38)),
+  url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center 46%/cover no-repeat!important;
+}
+.global-start-cta::before{background:transparent!important}
+/* Footer categories, uppercase but with calm readable tracking */
+.footer>div>strong,.footer-brand-block+.footer>strong,
+.footer .footer-brand-block~div>strong{
+ text-transform:uppercase!important;
+ font-family:'DM Sans',Arial,sans-serif!important;
+ font-size:.81rem!important;
+ font-weight:600!important;
+ letter-spacing:.075em!important;
+}
+/* Gold circles on the six assessment steps and on all other numbered processes */
+.assessment-step-number,
+.unified-steps .step:before,.process-steps .step:before,
+.steps .step:before,.assessment-step:before{
+ background:#D5AD33!important;
+ background-color:#D5AD33!important;
+ border-color:#D5AD33!important;
+ color:#173A2A!important;
+}
+.assessment-step:hover .assessment-step-number,
+.unified-steps .step:hover:before,.process-steps .step:hover:before,
+.steps .step:hover:before{
+ background:#E3BB42!important;
+ border-color:#E3BB42!important;
+ color:#173A2A!important;
+}
+/* Decorative ring/accent colours are gold, never dull brown */
+.action-icon,.mock-heading span,.assessment-detail-number,
+.notice{border-color:#D5AD33!important}
+@media(max-width:760px){
+ .why-section .why-grid h4{font-size:1.07rem!important}
+ .why-section .why-grid p{font-size:.94rem!important;line-height:1.6!important}
+ .why-section .why-grid>div{padding:23px 20px!important}
+ .global-start-cta{
+  background:linear-gradient(rgba(246,249,242,.40),rgba(246,249,242,.48)),
+   url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
+ }
+}
