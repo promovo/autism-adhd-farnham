@@ -4311,3 +4311,56 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
 .mock-heading span{background:#D5AD33!important}
 .action-icon{border-color:#D5AD33!important;color:#A57C08!important}
 .notice{border-left-color:#D5AD33!important}
+
+/* 20 Nov — airy ivory and more warm sage, keeping approved gold / Outfit */
+:root{
+ --cream:#FAF7F0;
+ --white:#FFFDF8;
+ --box-bg:#FFFCF7;
+ --box-bg-hover:#F0F3E9;
+ --green-soft:#E4EAD9;
+}
+html,body{background:#FBFAF6!important}
+.site-header{background:rgba(255,253,249,.98)!important}
+.mock-hero{
+ background:
+  linear-gradient(90deg,rgba(250,249,244,.97) 0%,rgba(250,249,244,.92) 25%,rgba(250,249,244,.63) 38%,rgba(250,249,244,.12) 51%,rgba(250,249,244,0) 60%),
+  url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+}
+.mock-section{background:#FBFAF6!important}
+.specialist-wrap,.specialist-wrap>.mock-section{background:#E4EAD9!important}
+.homepage-post-support,.homepage-post-support .post-support-copy{background:#F7F8F1!important}
+.why-section{background:#E9ECDD!important}
+.clinicians-home,.clinicians-home>.mock-section{background:#F7F9F1!important}
+.micro-trust,.mock-bottom-bar{background:#F7F9F1!important}
+.card,.soft-panel,.info-card,.specialist-card,.action-card,
+.assessment-detail-card,.fee-card{background:#FFFCF7!important}
+.why-section .why-grid>div{background:#F8FAF3!important;border-color:#D9E1CE!important}
+.specialist-card,.info-card{border-color:#DAE1D1!important}
+.global-start-cta{
+ background:
+  linear-gradient(rgba(233,239,225,.56),rgba(233,239,225,.62)),
+  url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center 46%/cover no-repeat!important;
+}
+.page-hero{
+ background:
+  linear-gradient(90deg,rgba(250,249,244,.98) 0%,rgba(250,249,244,.93) 54%,rgba(250,249,244,.26) 83%),
+  url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+}
+.section.alt{background:#EFF2E7!important}
+.section.sage{background:#E4EAD9!important}
+@media(hover:hover) and (pointer:fine){
+ .why-section .why-grid>div:hover,.specialist-card:hover,.info-card:hover{
+  background:#E9EFE1!important;border-color:#A7B99C!important;
+ }
+}
+@media(max-width:760px){
+ .mock-hero{
+  background:linear-gradient(rgba(250,249,244,.92),rgba(250,249,244,.95)),
+   url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
+ }
+ .global-start-cta{
+  background:linear-gradient(rgba(233,239,225,.66),rgba(233,239,225,.72)),
+   url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
+ }
+}
