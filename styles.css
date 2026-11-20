@@ -4394,3 +4394,10 @@ body h1,body h2,body h3,body h4,body h5,body h6,
   border-color:#97B28C!important;
  }
 }
+
+/* Visual match adjustment: richer sage for pathway and Why Choose sections */
+.mock-hero + .mock-section,
+.mock-section.why-section{
+ background-color:#B9D0B0!important;
+ background-image:none!important;
+}
