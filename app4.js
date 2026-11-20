@@ -94,6 +94,11 @@ function updateSeo(path){
 }
 function render(path){
   path = path.replace(/\/+$/, '') || '/';
+  // Inner-page woodland variants only. The homepage hero is deliberately untouched.
+  const adultWoodland=new Set(['/adult-assessments','/adult-autism-assessment','/adult-adhd-assessment','/combined-adult-autism-adhd-assessment','/adult-pre-booking','/fees']);
+  const childWoodland=new Set(['/child-young-person-assessments','/child-autism-assessment','/child-adhd-assessment','/combined-child-autism-adhd-assessment','/child-pre-booking','/how-assessments-work']);
+  document.body.dataset.page=path==='/'?'home':'inner';
+  document.body.dataset.woodland=adultWoodland.has(path)?'sunlight':childWoodland.has(path)?'birch':'canopy';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
   updateSeo(path);
   bind();
