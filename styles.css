@@ -4401,3 +4401,72 @@ body h1,body h2,body h3,body h4,body h5,body h6,
  background-color:#B9D0B0!important;
  background-image:none!important;
 }
+
+/* 20 Nov: unify brand-gold captions, CTA buttons, infographic icons and hovers */
+:root{--gold:#D5AD33;--brand-icon-gold:#D5AD33;--brand-caption-gold:#9B7710;--brand-button-gold:#C29A1A}
+.eyebrow,.google-kicker,.tag,.booking-note,
+.section:not(.dark) .eyebrow,
+.consultation-first .eyebrow,.consultation-second .eyebrow,
+.consultation-third .eyebrow,.consultation-booking .eyebrow,
+.assessment-overview .eyebrow,.assessment-overview .tag,
+.post-support-copy .eyebrow,.global-start-cta .eyebrow,
+.page-hero .eyebrow,.team-profile .eyebrow,
+.fee-card .tag{
+ color:#9B7710!important;
+}
+/* Match graphic strokes and circles to the lighter gold of the identity */
+.hero-trust svg,.mock-hero .hero-trust svg,
+.why-grid svg,.why-section .why-grid svg,
+.info-card .line-icon svg,.specialist-card .specialist-icon svg,
+.action-card .action-icon svg,.line-icon svg,.specialist-icon svg,
+.process-steps svg,.unified-steps svg,
+.support-icon svg,.step svg{
+ stroke:#D5AD33!important;
+ color:#D5AD33!important;
+}
+.info-card .line-icon,.specialist-card .specialist-icon,
+.action-card .action-icon,.support-icon{
+ color:#D5AD33!important;
+ border-color:#D5AD33!important;
+}
+.mock-heading span,.gold-rule,.gold-divider{background:#D5AD33!important}
+.step:before,.process-steps .step:before,.unified-steps .step:before{
+ color:#9B7710!important;
+}
+/* Lighter golden buttons, preserving ivory lettering and uppercase type */
+a.btn,button.btn,input[type="submit"],button[type="submit"],
+.nav a.btn,.site-header .nav .btn,
+.mock-hero a.btn,.hero-actions a.btn,.cta-row a.btn,
+.clinicians-cta a.btn,.fees-current-actions a.btn,
+.global-start-cta a.btn,.section.dark a.btn,
+.btn:not(.btn-outline):not(.btn-light),
+.btn.btn-outline,.btn.btn-light{
+ background:#C29A1A!important;
+ border-color:#C29A1A!important;
+ color:#FFF9E8!important;
+}
+a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:hover,
+.nav a.btn:hover,.site-header .nav .btn:hover,.mock-hero a.btn:hover,
+.hero-actions a.btn:hover,.cta-row a.btn:hover,.clinicians-cta a.btn:hover,
+.fees-current-actions a.btn:hover,.global-start-cta a.btn:hover,
+.section.dark a.btn:hover,.btn:not(.btn-outline):not(.btn-light):hover,
+.btn.btn-outline:hover,.btn.btn-light:hover{
+ background:#C29A1A!important;
+ border-color:#C29A1A!important;
+ color:#FFF9E8!important;
+}
+/* Remove remaining brown hover accents from visual cards and links */
+@media(hover:hover) and (pointer:fine){
+ .info-card:hover .line-icon,.specialist-card:hover .specialist-icon,
+ .action-card:hover .action-icon,.card:hover .support-icon{
+  border-color:#D5AD33!important;
+  color:#D5AD33!important;
+ }
+ .info-card:hover svg,.specialist-card:hover svg,
+ .action-card:hover svg,.why-grid>div:hover svg{
+  stroke:#D5AD33!important;
+ }
+}
+.eyebrow a:hover,.google-kicker a:hover,
+.info-card:hover b,.specialist-card:hover b,.action-card:hover b,
+.card a.inline:hover{color:#365C44!important}
