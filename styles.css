@@ -4364,3 +4364,15 @@ html,body{background:#FBFAF6!important}
    url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
  }
 }
+
+/* 20 Nov — deepen green heading text by one shade while retaining light headings on dark panels */
+body h1,body h2,body h3,body h4,body h5,body h6,
+.mock-hero h1,.page-hero h1,.mock-heading h2,
+.info-card h3,.specialist-card h3,.action-card h3,
+.why-grid h4,.clinician-card h4,.team-profile-copy h2,
+.team-profile-copy h3,.section:not(.dark) h2,.section:not(.dark) h3,
+.homepage-post-support h2,.global-start-cta h2{
+ color:#102E20!important;
+}
+.section.dark h1,.section.dark h2,.section.dark h3,.section.dark h4,
+.footer h1,.footer h2,.footer h3,.footer h4{color:#FFFAF0!important}
