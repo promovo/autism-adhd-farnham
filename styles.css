@@ -4639,3 +4639,166 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
  .pathway-grid .line-icon,.specialist-grid .specialist-icon{width:58px!important;height:58px!important;min-width:58px!important}
  .pathway-grid .line-icon svg.brand-icon,.specialist-grid .specialist-icon svg.brand-icon{width:38px!important;height:38px!important}
 }
+
+/* 20 Nov homepage layout correction: consistent cards, upper-case box headings and legible hero */
+@media(min-width:761px){
+ .mock-hero::after{
+  background:linear-gradient(90deg,
+   rgba(250,249,244,.99) 0%,
+   rgba(250,249,244,.97) 24%,
+   rgba(250,249,244,.88) 37%,
+   rgba(250,249,244,.64) 49%,
+   rgba(250,249,244,.28) 59%,
+   rgba(250,249,244,.05) 69%,
+   rgba(250,249,244,0) 77%)!important;
+ }
+}
+@media(max-width:760px){
+ .mock-hero::after{
+  background:linear-gradient(90deg,
+   rgba(250,249,244,.98) 0%,
+   rgba(250,249,244,.94) 43%,
+   rgba(250,249,244,.75) 72%,
+   rgba(250,249,244,.46) 100%)!important;
+ }
+}
+/* Each homepage assessment and specialist card has one consistent icon rail,
+   with heading, body and link aligned as a single text column. */
+.pathway-grid,.specialist-wrap .specialist-grid{
+ align-items:stretch!important;
+ gap:18px!important;
+}
+.pathway-grid>.info-card,.specialist-grid>.specialist-card{
+ box-sizing:border-box!important;
+ display:grid!important;
+ grid-template-columns:66px minmax(0,1fr)!important;
+ align-items:start!important;
+ column-gap:20px!important;
+ min-width:0!important;
+ height:100%!important;
+ padding:26px 22px!important;
+ border-radius:18px!important;
+ text-align:left!important;
+}
+.pathway-grid>.info-card>div:last-child,
+.specialist-grid>.specialist-card>div:last-child{
+ display:flex!important;
+ flex-direction:column!important;
+ align-items:flex-start!important;
+ text-align:left!important;
+ min-width:0!important;
+ height:100%!important;
+}
+.pathway-grid>.info-card h3,.specialist-grid>.specialist-card h3,
+.why-section .why-grid h4{
+ font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+ font-weight:500!important;
+ text-transform:uppercase!important;
+ letter-spacing:.055em!important;
+ color:#102E20!important;
+}
+.pathway-grid>.info-card h3,.specialist-grid>.specialist-card h3{
+ font-size:1rem!important;
+ line-height:1.42!important;
+ margin:0 0 12px!important;
+ width:100%!important;
+ overflow-wrap:break-word!important;
+}
+.pathway-grid>.info-card p,.specialist-grid>.specialist-card p{
+ font-size:.96rem!important;
+ line-height:1.64!important;
+ margin:0 0 17px!important;
+ text-align:left!important;
+ flex:1 1 auto!important;
+ width:100%!important;
+}
+.pathway-grid>.info-card b,.specialist-grid>.specialist-card b{
+ display:block!important;
+ font-size:.87rem!important;
+ margin-top:auto!important;
+ line-height:1.4!important;
+ font-weight:600!important;
+}
+.pathway-grid>.info-card>.line-icon,
+.specialist-grid>.specialist-card>.specialist-icon{
+ box-sizing:border-box!important;
+ margin:0!important;
+ align-self:start!important;
+ flex-shrink:0!important;
+}
+/* Six reasons: the same typographic treatment and exact centred alignment */
+.why-section .why-grid{
+ display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ gap:20px!important;
+ align-items:stretch!important;
+}
+.why-section .why-grid>div{
+ display:flex!important;
+ flex-direction:column!important;
+ align-items:center!important;
+ justify-content:flex-start!important;
+ text-align:center!important;
+ min-width:0!important;
+ height:100%!important;
+ padding:32px 24px!important;
+}
+.why-section .why-grid svg.brand-icon{
+ margin:0 auto 18px!important;
+ flex-shrink:0!important;
+}
+.why-section .why-grid h4{
+ font-size:1.05rem!important;
+ line-height:1.45!important;
+ margin:0 0 12px!important;
+ width:100%!important;
+ text-align:center!important;
+}
+.why-section .why-grid p{
+ font-size:1rem!important;
+ line-height:1.62!important;
+ margin:0!important;
+ text-align:center!important;
+ width:100%!important;
+}
+/* Give the Why Choose background the richer sage the user requested */
+.mock-section.why-section{
+ background:#ACC8A3!important;
+ background-color:#ACC8A3!important;
+}
+/* Soft tree imagery in the Specialist Areas while keeping cream tone and legibility */
+.specialist-wrap,.specialist-wrap>.mock-section{
+ background-color:#FBF8F1!important;
+ background-image:linear-gradient(rgba(251,248,241,.91),rgba(251,248,241,.94)),
+ url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg')!important;
+ background-size:cover!important;
+ background-position:center 40%!important;
+ background-repeat:no-repeat!important;
+}
+@media(min-width:761px) and (max-width:1100px){
+ .pathway-grid>.info-card,.specialist-grid>.specialist-card{
+  grid-template-columns:62px minmax(0,1fr)!important;
+  gap:16px!important;
+ }
+ .why-section .why-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:760px){
+ .pathway-grid,.specialist-wrap .specialist-grid,.why-section .why-grid{
+  grid-template-columns:1fr!important;
+  gap:16px!important;
+ }
+ .pathway-grid>.info-card,.specialist-grid>.specialist-card{
+  grid-template-columns:58px minmax(0,1fr)!important;
+  column-gap:15px!important;
+  padding:22px 17px!important;
+ }
+ .pathway-grid>.info-card h3,.specialist-grid>.specialist-card h3{
+  font-size:.91rem!important;line-height:1.4!important;
+ }
+ .pathway-grid>.info-card p,.specialist-grid>.specialist-card p{
+  font-size:.92rem!important;line-height:1.6!important;
+ }
+ .why-section .why-grid>div{padding:24px 20px!important}
+ .why-section .why-grid h4{font-size:1rem!important}
+ .why-section .why-grid p{font-size:.94rem!important}
+}
