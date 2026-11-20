@@ -4950,8 +4950,8 @@ body[data-page="home"] .mock-hero + .mock-section,
 
 /* Fine-tune homepage assessment backdrop and compact clinician portrait rows */
 .mock-hero + .mock-section:not(.why-section){
- background:#AEC8A5!important;
- background-color:#AEC8A5!important;
+ background:#C3D7BC!important;
+ background-color:#C3D7BC!important;
  background-image:none!important;
 }
 /* Shorter image area, preserve the original portraits without zooming/cropping.
