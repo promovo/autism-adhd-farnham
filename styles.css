@@ -4893,3 +4893,49 @@ body[data-page="inner"] .process-steps .step:hover:before{
   background-position:center,65% center!important;
  }
 }
+
+/* Why Choose Us — identical icon frames and linework to Specialist Areas above */
+.why-section .why-grid .why-icon-frame{
+ box-sizing:border-box!important;
+ display:flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ width:66px!important;
+ height:66px!important;
+ min-width:66px!important;
+ min-height:66px!important;
+ padding:0!important;
+ margin:0 auto 18px!important;
+ border:1px solid #E9DFB6!important;
+ border-radius:18px!important;
+ background:#F7F4E6!important;
+ box-shadow:none!important;
+ flex-shrink:0!important;
+ color:#D5AD33!important;
+}
+.why-section .why-grid .why-icon-frame svg.brand-icon{
+ width:44px!important;
+ height:44px!important;
+ display:block!important;
+ margin:0!important;
+ fill:none!important;
+ stroke:#D5AD33!important;
+ stroke-width:1.8!important;
+ stroke-linecap:round!important;
+ stroke-linejoin:round!important;
+}
+@media(hover:hover) and (pointer:fine){
+ .why-section .why-grid>div:hover .why-icon-frame{
+  background:#F0ECD6!important;
+  border-color:#D5AD33!important;
+ }
+}
+@media(max-width:760px){
+ .why-section .why-grid .why-icon-frame{
+  width:58px!important;height:58px!important;
+  min-width:58px!important;min-height:58px!important;
+ }
+ .why-section .why-grid .why-icon-frame svg.brand-icon{
+  width:38px!important;height:38px!important;
+ }
+}
