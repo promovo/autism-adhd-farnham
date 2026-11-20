@@ -4769,7 +4769,7 @@ a.btn:hover,button.btn:hover,input[type="submit"]:hover,button[type="submit"]:ho
 /* Soft tree imagery in the Specialist Areas while keeping cream tone and legibility */
 .specialist-wrap,.specialist-wrap>.mock-section{
  background-color:#FBF8F1!important;
- background-image:linear-gradient(rgba(251,248,241,.91),rgba(251,248,241,.94)),
+ background-image:linear-gradient(rgba(251,248,241,.58),rgba(251,248,241,.64)),
  url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg')!important;
  background-size:cover!important;
  background-position:center 40%!important;
