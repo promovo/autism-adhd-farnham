@@ -4939,3 +4939,11 @@ body[data-page="inner"] .process-steps .step:hover:before{
   width:38px!important;height:38px!important;
  }
 }
+
+/* Richer green specifically behind homepage Choose Your Assessment Pathway cards */
+body[data-page="home"] .mock-hero + .mock-section,
+.mock-hero + .mock-section:not(.why-section){
+ background:#9FBC96!important;
+ background-color:#9FBC96!important;
+ background-image:none!important;
+}
