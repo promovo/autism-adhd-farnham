@@ -4376,3 +4376,21 @@ body h1,body h2,body h3,body h4,body h5,body h6,
 }
 .section.dark h1,.section.dark h2,.section.dark h3,.section.dark h4,
 .footer h1,.footer h2,.footer h3,.footer h4{color:#FFFAF0!important}
+
+/* Match the Google Reviews warm green on selected homepage sections */
+.mock-hero + .mock-section,
+.mock-section.why-section{
+ background:#CBDCC5!important;
+}
+.mock-hero + .mock-section .info-card,
+.mock-section.why-section .why-grid>div{
+ background:#FFFCF7!important;
+ border-color:#B7CBB0!important;
+}
+@media(hover:hover) and (pointer:fine){
+ .mock-hero + .mock-section .info-card:hover,
+ .mock-section.why-section .why-grid>div:hover{
+  background:#F1F6EC!important;
+  border-color:#97B28C!important;
+ }
+}
