@@ -138,7 +138,14 @@ for name,slug,url in PEOPLE:
     scene.alpha_composite(tint)
     subject=rgb.convert("RGBA")
     subject.putalpha(amask)
-    scene.alpha_composite(subject,(ox,oy))
+    # Alpha-composite the portion inside the canvas; extreme selfie crops may
+    # deliberately place parts of the original source outside the frame.
+    x0=max(0,-ox); y0=max(0,-oy)
+    x1=min(subject.width,W-ox);y1=min(subject.height,H-oy)
+    if x1<=x0 or y1<=y0:
+        raise ValueError("No visible foreground for "+name)
+    visible=subject.crop((x0,y0,x1,y1))
+    scene.alpha_composite(visible,(max(0,ox),max(0,oy)))
     out=scene.convert("RGB")
     out.save(f"images/clinicians/{slug}.webp","WEBP",quality=91,method=6)
     md={"name":name,"slug":slug,"source_size":original.size,
