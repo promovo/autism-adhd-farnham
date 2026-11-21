@@ -43,16 +43,13 @@ jobs:
           rgb=tuple(int(statistics.median([pix[i] for pix in vals])) for i in range(3))
           print('Lisa background edge samples',vals,'median',rgb,flush=True)
           # Smooth, natural studio backdrop, softly blending towards a warm neutral.
-          blend=tuple(round(rgb[i]*.55+(233,235,225)[i]*.45) for i in range(3))
+          # Use the actual soft-focus garden foliage from the top-right of Lisa's
+          # portrait. It is free of people and preserves her natural woodland look.
           W,H=720,900
-          bg=Image.new('RGB',(W,H))
-          pixels=bg.load()
-          for y in range(H):
-              shade=.055*((y/H)-.4)
-              for x in range(W):
-                  vign=.045*abs(x/W-.5)*2
-                  factor=1-shade-vign
-                  pixels[x,y]=tuple(max(0,min(255,round(c*factor+(255-c)*.05))) for c in blend)
+          garden=lisa.crop((int(w*.73),int(h*.015),w,int(h*.36)))
+          bg=ImageOps.fit(garden,(W,H),method=Image.Resampling.LANCZOS)
+          bg=bg.filter(ImageFilter.GaussianBlur(5))
+          bg=Image.blend(bg,Image.new('RGB',(W,H),(100,125,77)),.11)
           session=new_session('u2net_human_seg')
           os.makedirs('images/clinicians',exist_ok=True)
           errors=[]
