@@ -8,7 +8,7 @@ import requests, cv2
 from PIL import Image, ImageOps, ImageFilter, ImageDraw, ImageFont
 from rembg import new_session, remove
 
-W,H=720,900
+W,H=600,750
 LISA="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg"
 PEOPLE=[
  ("Lisa Mayatt","lisa-mayatt",LISA),
@@ -50,30 +50,15 @@ os.makedirs("images/clinicians",exist_ok=True)
 session=new_session("u2net_human_seg")
 lisa=download(LISA)
 lisa_mask=human_alpha(lisa,session)
-# Remove Lisa from her own *real garden photo* so the background remains the same
-# foliage, depth of field, colours and highlights, not a small upscaled crop.
-# Inpainting only replaces pixels hidden by Lisa; surrounding authentic garden stays.
-try:
-    from simple_lama_inpainting import SimpleLama
-    binary=(np.array(lisa_mask)>70).astype(np.uint8)*255
-    dilated=cv2.dilate(binary,np.ones((31,31),np.uint8),iterations=1)
-    background=SimpleLama()(lisa,Image.fromarray(dilated,"L"))
-    print("LaMa inpainting successful",lisa.size,flush=True)
-except Exception as exc:
-    print("LaMa fallback due to",repr(exc),flush=True)
-    # Never show Lisa ghosted behind clinicians if the generative inpainting
-    # library is inaccessible: tile two authentic unoccupied garden borders.
-    lw,lh=lisa.size
-    left=lisa.crop((0,0,max(100,int(lw*.23)),lh))
-    right=lisa.crop((min(lw-100,int(lw*.78)),0,lw,lh))
-    halves=Image.new("RGB",lisa.size)
-    halves.paste(ImageOps.fit(left,(lw//2,lh)),(0,0))
-    halves.paste(ImageOps.fit(right,(lw-lw//2,lh)),(lw//2,0))
-    background=halves.filter(ImageFilter.GaussianBlur(32))
-# Match the original lens blur; this is the same garden, not another artificial scene.
-garden=ImageOps.fit(background,(W,H),method=Image.Resampling.LANCZOS,centering=(.50,.44))
-garden=garden.filter(ImageFilter.GaussianBlur(4))
-garden.save("images/clinicians/lisa-garden-backdrop.webp","WEBP",quality=90)
+# Permanent seamless garden backdrop, restored from Lisa's original photograph.
+# The original burgundy shrub, yellow-green flowers and full foliage remain.
+# Using the saved photographic plate avoids model smudges and human silhouettes.
+backdrop_path="images/clinicians/lisa-garden-clean.webp"
+if not os.path.exists(backdrop_path):
+    raise FileNotFoundError("Permanent Lisa garden reference missing: "+backdrop_path)
+garden=ImageOps.fit(Image.open(backdrop_path).convert("RGB"),(W,H),method=Image.Resampling.LANCZOS)
+os.makedirs("images/clinicians",exist_ok=True)
+
 metadata=[]
 for name,slug,url in PEOPLE:
     original=lisa if slug=="lisa-mayatt" else download(url)
@@ -87,23 +72,23 @@ for name,slug,url in PEOPLE:
     face=find_face(original)
     if face:
         fx,fy,fw,fh=face
-        base_scale=207/fw
+        base_scale=320/fw
         face_ok=True
     else:
         # Fallback from top third of foreground width; report the approximation.
         width_at_head=max(50,bbox[2]-bbox[0])
-        base_scale=280/max(width_at_head*.65,55)
+        base_scale=345/max(width_at_head*.65,55)
         face_ok=False
         fx=original.width//2;fy=bbox[1];fw=fh=0
     # At same head size, all portraits share the same crown margin and similar
     # chest/shoulder coverage. Do not shrink faces just to fit full torsos.
     base_scale=min(max(base_scale,.25),4.2)
     subject_h=bbox[3]-bbox[1]
-    cover_scale=(H-128)/max(subject_h,1)
-    scale=max(base_scale,min(cover_scale,base_scale*1.13))
+    cover_scale=(H-85)/max(subject_h,1)
+    scale=max(base_scale,min(cover_scale,base_scale*1.12))
     # Use crown instead of image top so tall selfies (Daniela/Sarah) no longer
     # have huge empty space above heads.
-    top=112
+    top=85
     left=(W/2 - (fx+fw/2)*scale) if face else (W/2 - (bbox[0]+bbox[2])/2*scale)
     origin_y=top-bbox[1]*scale
     neww=max(1,round(original.width*scale))
