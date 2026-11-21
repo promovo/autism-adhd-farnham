@@ -13,10 +13,10 @@
       502
     ],
     "face_detected": true,
-    "scale": 0.466,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 736
+    "scale": 0.637,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 939
   },
   {
     "name": "Dr Gopal Venkat",
@@ -32,10 +32,10 @@
       296
     ],
     "face_detected": true,
-    "scale": 0.699,
-    "head_top_px": 112,
-    "target_face_width": 207.0,
-    "subject_bottom_px": 967
+    "scale": 1.081,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 1407
   },
   {
     "name": "Dr Joseph Chukwu",
@@ -51,10 +51,10 @@
       153
     ],
     "face_detected": true,
-    "scale": 1.529,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 560
+    "scale": 2.27,
+    "head_top_px": 85,
+    "target_face_width": 347.3,
+    "subject_bottom_px": 750
   },
   {
     "name": "Dr Aimee Hayter",
@@ -70,10 +70,10 @@
       316
     ],
     "face_detected": true,
-    "scale": 0.74,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 704
+    "scale": 1.013,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 895
   },
   {
     "name": "Dr Daniela Di Basilio",
@@ -89,10 +89,10 @@
       279
     ],
     "face_detected": true,
-    "scale": 0.838,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 823
+    "scale": 1.147,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 1058
   },
   {
     "name": "Karen Cooper",
@@ -108,10 +108,10 @@
       534
     ],
     "face_detected": true,
-    "scale": 0.438,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 722
+    "scale": 0.599,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 920
   },
   {
     "name": "Beccy Muggeridge",
@@ -127,10 +127,10 @@
       353
     ],
     "face_detected": true,
-    "scale": 0.663,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 816
+    "scale": 0.907,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 1049
   },
   {
     "name": "Deepika Sharma",
@@ -146,10 +146,10 @@
       388
     ],
     "face_detected": true,
-    "scale": 0.603,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 749
+    "scale": 0.825,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 956
   },
   {
     "name": "Jess Wilson",
@@ -165,10 +165,10 @@
       565
     ],
     "face_detected": true,
-    "scale": 0.414,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 684
+    "scale": 0.566,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 867
   },
   {
     "name": "Sarah Grieve",
@@ -184,9 +184,9 @@
       485
     ],
     "face_detected": true,
-    "scale": 0.482,
-    "head_top_px": 112,
-    "target_face_width": 233.9,
-    "subject_bottom_px": 669
+    "scale": 0.66,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 846
   }
 ]
