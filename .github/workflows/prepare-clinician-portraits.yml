@@ -1,0 +1,92 @@
+name: Prepare consistent clinician portraits
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/prepare-clinician-portraits.yml
+permissions:
+  contents: write
+jobs:
+  create-portraits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install portrait processor
+        run: pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests
+      - name: Isolate originals and match Lisa's background palette
+        env:
+          U2NET_HOME: ${{ github.workspace }}/.model-cache
+        run: |
+          import os, io, requests, statistics
+          from PIL import Image, ImageOps, ImageFilter, ImageDraw
+          from rembg import remove, new_session
+          LISA='https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg'
+          ENTRIES=[["Dr Gopal Venkat","dr-gopal-venkat","https://static.wixstatic.com/media/1e4c48_85c609d40029400d87679d95036e22c7~mv2.jpg"],["Dr Joseph Chukwu","dr-joseph-chukwu","https://static.wixstatic.com/media/1e4c48_03e654c846ed44c1b51be1b54df8c0cc~mv2.jpg"],["Dr Aimee Hayter","dr-aimee-hayter","https://static.wixstatic.com/media/9df129_ca30c81c50864685b8b236e5c12ed353~mv2.jpg"],["Dr Daniela Di Basilio","dr-daniela-di-basilio","https://static.wixstatic.com/media/1e4c48_872f3d3716324c9f8dea44e262e15468~mv2.png"],["Karen Cooper","karen-cooper","https://static.wixstatic.com/media/aed9b4_5026a174c60f4660984df19c00fde9ee~mv2.jpg"],["Beccy Muggeridge","beccy-muggeridge","https://static.wixstatic.com/media/1e4c48_9944b909556a40e9bf73b4cc3ea38282~mv2.jpeg"],["Deepika Sharma","deepika-sharma","https://static.wixstatic.com/media/1e4c48_f78a79dd001343fda7bd1c16c190e542~mv2.png"],["Jess Wilson","jess-wilson","https://static.wixstatic.com/media/1e4c48_42f988def9b6480ea93fbf16296e70a0~mv2.jpg"],["Sarah Grieve","sarah-grieve","https://static.wixstatic.com/media/1e4c48_766d102855fe4181b93bdd44b35c4a95~mv2.jpg"]]
+          HEADERS={'User-Agent':'Mozilla/5.0'}
+          def download(url):
+              r=requests.get(url,headers=HEADERS,timeout=45)
+              r.raise_for_status()
+              print('Downloaded',url.rsplit('/',1)[-1], len(r.content),r.headers.get('content-type'),flush=True)
+              return Image.open(io.BytesIO(r.content)).convert('RGB')
+          lisa=download(LISA)
+          w,h=lisa.size
+          # Corners sample genuine Lisa photo background and serve as palette reference.
+          coords=[(.04,.04),(.96,.04),(.04,.25),(.96,.25),(.04,.54),(.96,.54)]
+          vals=[lisa.getpixel((min(w-1,int(x*w)),min(h-1,int(y*h)))) for x,y in coords]
+          rgb=tuple(int(statistics.median([pix[i] for pix in vals])) for i in range(3))
+          print('Lisa background edge samples',vals,'median',rgb,flush=True)
+          # Smooth, natural studio backdrop, softly blending towards a warm neutral.
+          blend=tuple(round(rgb[i]*.55+(233,235,225)[i]*.45) for i in range(3))
+          W,H=720,900
+          bg=Image.new('RGB',(W,H))
+          pixels=bg.load()
+          for y in range(H):
+              shade=.055*((y/H)-.4)
+              for x in range(W):
+                  vign=.045*abs(x/W-.5)*2
+                  factor=1-shade-vign
+                  pixels[x,y]=tuple(max(0,min(255,round(c*factor+(255-c)*.05))) for c in blend)
+          session=new_session('u2net_human_seg')
+          os.makedirs('images/clinicians',exist_ok=True)
+          errors=[]
+          for name,slug,url in ENTRIES:
+              try:
+                  portrait=download(url)
+                  portrait.thumbnail((1100,1400))
+                  rgba=remove(portrait,session=session).convert('RGBA')
+                  # Fit portrait to consistent head-and-shoulder canvas without stretching.
+                  alpha=rgba.getchannel('A')
+                  bb=alpha.getbbox()
+                  if not bb: raise RuntimeError('empty subject extraction')
+                  cut=rgba.crop(bb)
+                  # Subject fills most of portrait's width and height, with consistent shoulders.
+                  max_width=int(W*.92); max_height=int(H*.94)
+                  ratio=min(max_width/cut.width,max_height/cut.height)
+                  cut=cut.resize((max(1,round(cut.width*ratio)),max(1,round(cut.height*ratio))),Image.Resampling.LANCZOS)
+                  scene=bg.copy().convert('RGBA')
+                  x=(W-cut.width)//2
+                  y=H-cut.height-5
+                  scene.alpha_composite(cut,(x,y))
+                  scene=scene.convert('RGB')
+                  path=f'images/clinicians/{slug}.webp'
+                  scene.save(path,'WEBP',quality=86,method=6)
+                  print(name,portrait.size,'mask',bb,'output',os.path.getsize(path),path,flush=True)
+              except Exception as exc:
+                  errors.append((name,str(exc)))
+          if errors:
+              print('ERRORS',errors)
+              raise SystemExit(1)
+          
+      - name: Store completed portraits in website
+        run: |
+          git config user.name "promovo-review-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/clinicians/*.webp
+          git diff --cached --quiet || git commit -m "Add consistent clinician portrait backgrounds matching Lisa"
+          git push
