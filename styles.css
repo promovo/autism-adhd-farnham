@@ -5877,3 +5877,12 @@ body[data-page="home"] .specialist-wrap .mock-heading .home-section-kicker{
 body[data-page="home"] .specialist-wrap .specialist-grid .specialist-card{
   background:#FFFCF7!important;
 }
+
+/* 21 Nov 2026 — lighten only the HOME 'Choose your assessment pathway' backdrop.
+   Keep the assessment cards ivory and all other sections unchanged. */
+body[data-page="home"] #app > .mock-hero + .mock-section,
+body[data-page="home"] .mock-hero + .mock-section:not(.why-section){
+  background:#E5EFDE!important;
+  background-color:#E5EFDE!important;
+  background-image:none!important;
+}
