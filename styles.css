@@ -4984,3 +4984,57 @@ body[data-page="home"] .mock-hero + .mock-section,
  .why-section .why-grid .why-card-photo{height:174px!important;min-height:174px!important;max-height:174px!important}
  .why-section .why-grid>div{padding:16px 16px 25px!important}
 }
+
+/* 21 Nov 2026 — hero benefits alignment + refined typography only.
+   Keep approved woodland imagery and the rest of the home design untouched. */
+.mock-hero .hero-copy > h1 .hero-title-amp{
+ font-family:Georgia,'Times New Roman',serif!important;
+ font-style:italic!important;
+ font-weight:400!important;
+ font-size:.84em!important;
+ line-height:1!important;
+ letter-spacing:-.045em!important;
+ vertical-align:.025em!important;
+ white-space:nowrap!important;
+}
+@media(min-width:1101px){
+ .mock-hero .hero-copy .hero-trust{
+  width:699px!important;
+  max-width:min(699px,calc(100vw - 8vw))!important;
+  grid-template-columns:162px 156px 185px 166px!important;
+  gap:0 10px!important;
+  justify-content:start!important;
+  justify-items:start!important;
+  align-items:start!important;
+ }
+ .mock-hero .hero-copy .hero-trust>div{
+  transform:none!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:9px!important;
+  width:100%!important;
+  min-width:0!important;
+  padding:0!important;
+  text-align:left!important;
+ }
+ .mock-hero .hero-copy .hero-trust>div:nth-child(3),
+ .mock-hero .hero-copy .hero-trust>div:nth-child(4){
+  transform:none!important;
+  margin-left:0!important;
+ }
+ .mock-hero .hero-copy .hero-trust span{
+  min-width:0!important;
+  max-width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+ }
+ .mock-hero .hero-copy .hero-trust strong,
+ .mock-hero .hero-copy .hero-trust small{
+  white-space:normal!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  text-align:left!important;
+ }
+}
