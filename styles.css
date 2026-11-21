@@ -5914,3 +5914,19 @@ body .team-page .team-profile img{
   object-fit:cover!important;
   object-position:center top!important;
 }
+
+/* 21 Nov 2026 — final clinician photography: all assets are consistent 4:5,
+   so show their full intended head-and-shoulders composition without cropping. */
+body .clinicians-home .clinician-card img,
+body .team-page .team-profile img,
+body .clinician-row img[alt="Dr Daniela Di Basilio"],
+body .team-profile img[alt="Dr Daniela Di Basilio"]{
+  aspect-ratio:4 / 5!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  filter:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+}
