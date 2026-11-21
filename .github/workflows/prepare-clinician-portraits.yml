@@ -23,6 +23,7 @@ jobs:
         env:
           U2NET_HOME: ${{ github.workspace }}/.model-cache
         run: |
+          python - <<'PY'
           import os, io, requests, statistics
           from PIL import Image, ImageOps, ImageFilter, ImageDraw
           from rembg import remove, new_session
