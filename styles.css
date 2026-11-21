@@ -5475,3 +5475,116 @@ body .footer a:hover{color:#FFF0DC!important}
     row-gap:14px!important;
   }
 }
+
+/* 21 Nov 2026 — compact hero, left-balanced benefits, readable wider navigation */
+.mock-hero .hero-copy > h1{
+  /* 10% smaller than the previous 2.884 / 4.973vw / 4.674 sizing */
+  font-size:clamp(2.5956rem,4.4757vw,4.2066rem)!important;
+}
+.mock-hero .hero-copy .hero-trust{margin-top:16px!important}
+@media(min-width:1281px){
+  .mock-hero{
+    min-height:0!important;
+    height:auto!important;
+    padding:clamp(28px,2.4vw,38px) 4vw clamp(30px,2.5vw,40px)!important;
+  }
+  /* The last two benefits begin 25–30px earlier, without overlapping neighbours. */
+  .mock-hero .hero-copy .hero-trust{
+    width:808px!important;
+    max-width:calc(100vw - 8vw)!important;
+    grid-template-columns:185px 185px 205px 185px!important;
+    column-gap:16px!important;
+    row-gap:14px!important;
+    justify-items:start!important;
+  }
+  .mock-hero .hero-copy .hero-trust > div:nth-child(3),
+  .mock-hero .hero-copy .hero-trust > div:nth-child(4){
+    transform:none!important;
+    margin-left:0!important;
+  }
+}
+@media(min-width:761px) and (max-width:1280px){
+  .mock-hero{
+    min-height:0!important;
+    height:auto!important;
+    padding:34px 4vw 36px!important;
+  }
+  .mock-hero .hero-copy .hero-trust{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px 20px!important;
+  }
+}
+@media(max-width:760px){
+  .mock-hero{
+    min-height:0!important;
+    height:auto!important;
+    padding:23px 5vw 27px!important;
+  }
+  .mock-hero .hero-copy > h1{
+    font-size:clamp(1.9242rem,8.5032vw,2.5956rem)!important;
+  }
+  .mock-hero .hero-copy .hero-trust{
+    margin-top:16px!important;
+    gap:14px 12px!important;
+  }
+}
+/* Spread the desktop header words apart without crowding the consultation button.
+   The nav occupies the space to the right of the logo, with breathing room at the edge. */
+@media(min-width:1501px){
+  .site-header{
+    padding-left:1.5vw!important;
+    padding-right:clamp(40px,5vw,86px)!important;
+    gap:clamp(10px,1vw,16px)!important;
+  }
+  .site-header .brand{
+    flex:0 0 210px!important;
+    width:210px!important;
+    min-width:0!important;
+  }
+  .site-header .brand-logo-svg{
+    width:210px!important;
+    max-width:100%!important;
+  }
+  .site-header .nav{
+    flex:1 1 auto!important;
+    min-width:0!important;
+    justify-content:space-between!important;
+    gap:clamp(9px,.9vw,18px)!important;
+    margin:0!important;
+  }
+  .site-header .nav .btn{
+    flex-shrink:0!important;
+    margin-left:6px!important;
+  }
+}
+/* Warmer and deeper ivory, rather than the near-white of the existing footer. */
+body .footer{color:#E2CFB6!important}
+body .footer a,
+body .footer p,
+body .footer span,
+body .footer li{
+  color:#E1CFB6!important;
+}
+body .footer .footer-brand,
+body .footer strong,
+body .footer h2,
+body .footer h3,
+body .footer h4{
+  color:#EBD5B7!important;
+}
+body .footer .footer-bottom,
+body .footer .footer-bottom span,
+body .footer .footer-bottom a{
+  color:#CEB89A!important;
+}
+/* Clearer woodland photograph, retaining sufficient contrast for warm cream text. */
+.section.global-start-cta{
+  background:
+    linear-gradient(rgba(24,52,37,.37),rgba(24,52,37,.43)),
+    url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center/cover no-repeat!important;
+}
+body .section.global-start-cta h2,
+body .section.global-start-cta p{
+  color:#EBD6B8!important;
+  text-shadow:0 2px 5px rgba(11,31,20,.68)!important;
+}
