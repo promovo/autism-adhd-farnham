@@ -4,6 +4,7 @@ const cta=()=>``;
 const home=`
 <section class="mock-hero">
   <div class="hero-copy">
+    <div class="eyebrow home-section-kicker">Private Autism &amp; ADHD Assessments in Farnham, Surrey</div>
     <h1>Autism &amp; ADHD Assessments for Adults, Children &amp; Young People</h1>
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
     <p class="hero-wait"><strong>Typical wait time: 1–3 weeks.</strong></p>
@@ -22,7 +23,7 @@ const home=`
 </section>
 
 <section class="mock-section">
-  <div class="mock-heading"><h2>Choose your assessment pathway</h2><span></span></div>
+  <div class="mock-heading"><div class="eyebrow home-section-kicker">Find the right assessment</div><h2>Choose your assessment pathway</h2><span></span></div>
   <div class="pathway-grid">
     <a class="info-card" href="/adult-autism-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M17 5h4M19 3v4"/></svg></div><div><h3>Adult Autism Assessments</h3><p>Comprehensive autism assessment for adults delivered by specialist clinicians.</p><b>LEARN MORE →</b></div></a>
     <a class="info-card" href="/adult-adhd-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 4a4 4 0 0 0-7 3 4.5 4.5 0 0 0-1 7 4 4 0 0 0 6.5 5.5L12 18V5a4 4 0 0 1 7 2 4.5 4.5 0 0 1 1 7 4 4 0 0 1-6.5 5.5L12 18"/><path d="M8 9c2 0 3 1 3 3M16 9c-2 0-3 1-3 3"/></svg></div><div><h3>Adult ADHD Assessments</h3><p>ADHD assessments for adults, including detailed history and clinical review.</p><b>LEARN MORE →</b></div></a>
@@ -33,7 +34,7 @@ const home=`
 
 <section class="specialist-wrap">
   <div class="mock-section">
-    <div class="mock-heading"><h2>Our specialist areas</h2><span></span></div>
+    <div class="mock-heading"><div class="eyebrow home-section-kicker">Tailored clinical expertise</div><h2>Our specialist areas</h2><span></span></div>
     <div class="specialist-grid">
       <a class="specialist-card" href="/pda-demand-avoidant-presentation" data-link><div class="specialist-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4c-9 0-15 4-16 14 9 2 16-3 16-14Z"/><path d="M4 20c3-6 7-9 12-11"/></svg></div><div><h3>PDA Profile / Demand Avoidance</h3><p>Specialist understanding of demand-avoidant presentations and practical support strategies.</p><b>LEARN MORE →</b></div></a>
       <a class="specialist-card" href="/autism-adhd-women" data-link><div class="specialist-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c.5-5 3.5-8 8-8s7.5 3 8 8"/><path d="m17 5 1.5-1.5M7 5 5.5 3.5"/></svg></div><div><h3>Female Presentation of Autism and ADHD</h3><p>Recognising masking, subtle presentations and later recognition in females and girls.</p><b>LEARN MORE →</b></div></a>
@@ -55,7 +56,7 @@ const home=`
 </section>
 
 <section class="mock-section why-section">
-  <div class="mock-heading"><h2>Why choose Autism Assessments Farnham?</h2><span></span></div>
+  <div class="mock-heading"><div class="eyebrow home-section-kicker">Our approach to assessment</div><h2>Why choose Autism Assessments Farnham?</h2><span></span></div>
   <div class="why-grid">
     <div><img class="why-card-photo" src="/images/why-choose/highly-specialist-professionals.webp" alt="Psychology qualifications and specialist clinical books" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1675684110324-4c3fba42903d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85'"><span class="why-icon-frame"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="12" cy="7" r="3"/><path d="m18 5 1 1 2-2"/></svg></span><h4>Highly specialist professionals</h4><p>Our clinicians have advanced training and experience.</p></div>
     <div><img class="why-card-photo" src="/images/why-choose/extensive-nhs-experience.webp" alt="NHS sign framed by natural greenery" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a?auto=format&amp;fit=crop&amp;w=1000&amp;q=85'"><span class="why-icon-frame"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V7l-8-4Z"/><path d="M9 12h6M12 9v6"/></svg></span><h4>Extensive NHS experience</h4><p>Years of specialist clinical practice.</p></div>
@@ -69,7 +70,7 @@ const home=`
 
 <section class="clinicians-home">
   <div class="mock-section">
-    <div class="mock-heading"><h2>Our experienced clinicians</h2><span></span></div>
+    <div class="mock-heading"><div class="eyebrow home-section-kicker">Meet the clinical team</div><h2>Our experienced clinicians</h2><span></span></div>
     <div class="clinician-carousel-shell">
       <button class="clinician-carousel-arrow clinician-carousel-prev" type="button" aria-label="Previous clinicians">‹</button>
       <div class="clinician-row clinician-carousel" tabindex="0" aria-label="Clinical team">
