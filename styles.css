@@ -5852,3 +5852,28 @@ body[data-page="inner"] .section:not(.dark) .step:before{
     font-size:.71rem!important;
   }
 }
+
+/* 21 November 2026 — specialist woodland visibility */
+body[data-page="home"] .specialist-wrap{
+  background-color:#234332!important;
+  background-image:linear-gradient(rgba(17,39,29,.23),rgba(17,39,29,.30)),url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg')!important;
+  background-position:center 42%!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+}
+body[data-page="home"] .specialist-wrap > .mock-section{
+  background:transparent!important;
+  background-image:none!important;
+  background-color:transparent!important;
+}
+body[data-page="home"] .specialist-wrap .mock-heading h2{
+  color:#F6E9D5!important;
+  text-shadow:0 2px 10px rgba(15,37,26,.40)!important;
+}
+body[data-page="home"] .specialist-wrap .mock-heading .home-section-kicker{
+  color:#F0D7A5!important;
+  text-shadow:0 1px 5px rgba(15,37,26,.38)!important;
+}
+body[data-page="home"] .specialist-wrap .specialist-grid .specialist-card{
+  background:#FFFCF7!important;
+}
