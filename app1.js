@@ -4,7 +4,7 @@ const cta=()=>``;
 const home=`
 <section class="mock-hero">
   <div class="hero-copy">
-    <h1>Autism & ADHD Assessments for Adults, Children & Young People</h1>
+    <h1>Autism <span class="hero-title-amp">&amp;</span> ADHD Assessments for Adults, Children <span class="hero-title-amp">&amp;</span> Young People</h1>
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
     <p class="hero-wait"><strong>Typical wait time: 1–3 weeks.</strong></p>
     <div class="hero-actions">
