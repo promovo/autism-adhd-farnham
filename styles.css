@@ -5588,3 +5588,267 @@ body .section.global-start-cta p{
   color:#EBD6B8!important;
   text-shadow:0 2px 5px rgba(11,31,20,.68)!important;
 }
+
+/* 21 Nov 2026 — finish homepage hero spacing and shared site consistency.
+   Inner pages use the same REAL woodland photograph already approved on Home.
+   Preserve all existing route text, page content and page interactions. */
+
+/* Give the upper location label and the lower benefit row more breathing room. */
+@media(min-width:1281px){
+  .mock-hero{
+    padding-top:clamp(60px,5vw,82px)!important;
+    padding-bottom:clamp(64px,5.3vw,86px)!important;
+  }
+}
+@media(min-width:761px) and (max-width:1280px){
+  .mock-hero{padding-top:56px!important;padding-bottom:60px!important}
+}
+@media(max-width:760px){
+  .mock-hero{padding-top:43px!important;padding-bottom:49px!important}
+}
+
+/* Footer logo lettering uses exactly the same warm cream as the footer's headings. */
+body .footer .footer-logo-svg text{
+  fill:#EBD5B7!important;
+}
+body .footer .footer-logo-svg line{
+  stroke:#EBD5B7!important;
+}
+/* Match both bottom "Get in touch" CTAs to the site's established gold buttons. */
+body .why-cta > a.btn,
+body .global-start-cta .cta-row > a.btn.btn-outline{
+  background:#C29A1A!important;
+  background-color:#C29A1A!important;
+  border:1px solid #C29A1A!important;
+  color:#FFF5E6!important;
+  font-family:'Nunito Sans',Arial,sans-serif!important;
+  font-size:.82rem!important;
+  font-weight:500!important;
+  letter-spacing:.075em!important;
+  border-radius:999px!important;
+  box-shadow:none!important;
+}
+body .why-cta > a.btn:hover,
+body .global-start-cta .cta-row > a.btn.btn-outline:hover{
+  background:#A98214!important;
+  background-color:#A98214!important;
+  border-color:#A98214!important;
+  color:#FFF5E6!important;
+}
+
+/* The entire inner-page collection now shares the homepage's authentic woodland. */
+body[data-page="inner"],
+body[data-page="inner"][data-woodland="sunlight"],
+body[data-page="inner"][data-woodland="birch"],
+body[data-page="inner"][data-woodland="canopy"]{
+  --forest-banner:url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg');
+  --inner-cream:#FBFAF6;
+  --inner-sage:#E4EAD9;
+  --inner-pale-sage:#F0F3E9;
+  --inner-forest:#102E20;
+  --inner-gold:#C29A1A;
+}
+
+/* Every non-home hero: genuine woodland, clear on the right, readable on the left. */
+body[data-page="inner"] .page-hero{
+  box-sizing:border-box!important;
+  isolation:isolate!important;
+  background:#FAF9F4!important;
+  background-image:
+    linear-gradient(90deg,
+      rgba(250,249,244,.98) 0%,
+      rgba(250,249,244,.94) 27%,
+      rgba(250,249,244,.82) 43%,
+      rgba(250,249,244,.42) 59%,
+      rgba(250,249,244,.06) 78%,
+      rgba(250,249,244,0) 100%),
+    var(--forest-banner)!important;
+  background-position:center,75% center!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  filter:none!important;
+  min-height:360px!important;
+  height:auto!important;
+  padding:48px 6vw 58px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+}
+body[data-page="inner"][data-woodland="sunlight"] .page-hero{
+  background-position:center,62% center!important;
+}
+body[data-page="inner"][data-woodland="birch"] .page-hero{
+  background-position:center,83% center!important;
+}
+body[data-page="inner"][data-woodland="canopy"] .page-hero{
+  background-position:center,71% center!important;
+}
+body[data-page="inner"] .page-hero::before{
+  display:none!important;
+  content:none!important;
+}
+body[data-page="inner"] .page-hero .breadcrumbs{
+  max-width:100%!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  color:#566D56!important;
+  font-size:.8rem!important;
+  letter-spacing:.005em!important;
+  line-height:1.4!important;
+  margin:0 0 17px!important;
+  white-space:normal!important;
+}
+body[data-page="inner"] .page-hero .eyebrow{
+  font-family:'Nunito Sans',Arial,sans-serif!important;
+  font-size:calc(.65rem + 2.5px)!important;
+  text-transform:uppercase!important;
+  letter-spacing:.11em!important;
+  line-height:1.35!important;
+  font-weight:700!important;
+  color:#9B7710!important;
+  max-width:100%!important;
+  margin:0 0 11px!important;
+}
+body[data-page="inner"] .page-hero h1{
+  font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+  font-weight:400!important;
+  font-style:normal!important;
+  font-size:clamp(2.2rem,4.2vw,4.15rem)!important;
+  line-height:1.08!important;
+  letter-spacing:-.028em!important;
+  text-wrap:balance!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:break-word!important;
+  max-width:min(850px,75vw)!important;
+  width:auto!important;
+  min-width:0!important;
+  margin:0 0 15px!important;
+  color:#102E20!important;
+}
+body[data-page="inner"] .page-hero p{
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:clamp(.96rem,1.25vw,1.08rem)!important;
+  font-weight:400!important;
+  line-height:1.58!important;
+  color:#294B3B!important;
+  max-width:min(690px,74vw)!important;
+  margin:0!important;
+  overflow-wrap:break-word!important;
+}
+
+/* Bring all interior panels into the homepage's ivory, warm sage and gold system. */
+body[data-page="inner"] .section:not(.dark):not(.alt):not(.sage){
+  background:#FBFAF6!important;
+}
+body[data-page="inner"] .section.alt{
+  background:#F0F3E9!important;
+}
+body[data-page="inner"] .section.sage{
+  background:#E4EAD9!important;
+}
+body[data-page="inner"] .section.intro-tone,
+body[data-page="inner"] .section.assessment-overview.intro-tone{
+  background:#E4EAD9!important;
+}
+body[data-page="inner"] .section:not(.dark) h2,
+body[data-page="inner"] .section:not(.dark) h3,
+body[data-page="inner"] .section:not(.dark) h4,
+body[data-page="inner"] .section-lead h2,
+body[data-page="inner"] .team-profile-copy h2{
+  font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+  color:#102E20!important;
+  letter-spacing:-.025em!important;
+  overflow-wrap:break-word!important;
+  white-space:normal!important;
+  word-break:normal!important;
+}
+body[data-page="inner"] .section:not(.dark) h2,
+body[data-page="inner"] .section-lead h2{
+  font-weight:400!important;
+  line-height:1.13!important;
+}
+body[data-page="inner"] .section:not(.dark) h3,
+body[data-page="inner"] .section:not(.dark) h4{
+  font-weight:500!important;
+  line-height:1.25!important;
+}
+body[data-page="inner"] .section:not(.dark) p,
+body[data-page="inner"] .section:not(.dark) li{
+  font-family:'DM Sans','Nunito Sans',Arial,sans-serif!important;
+  color:#294B3B!important;
+  line-height:1.65!important;
+}
+body[data-page="inner"] .section:not(.dark) .eyebrow,
+body[data-page="inner"] .section:not(.dark) .google-kicker{
+  font-family:'Nunito Sans',Arial,sans-serif!important;
+  text-transform:uppercase!important;
+  color:#9B7710!important;
+  letter-spacing:.11em!important;
+}
+body[data-page="inner"] .section:not(.dark) .card,
+body[data-page="inner"] .section:not(.dark) .soft-panel,
+body[data-page="inner"] .section:not(.dark) .fee-card,
+body[data-page="inner"] .section:not(.dark) .assessment-detail-card,
+body[data-page="inner"] .section:not(.dark) .assessment-step>div:last-child,
+body[data-page="inner"] .section:not(.dark) .team-profile{
+  background:#FFFCF7!important;
+  border-color:#D9E1D2!important;
+}
+body[data-page="inner"] .section:not(.dark) .tag,
+body[data-page="inner"] .section:not(.dark) .notice{
+  background:#F0F3E9!important;
+  border-color:#D5AD33!important;
+}
+body[data-page="inner"] .section:not(.dark) a.inline,
+body[data-page="inner"] .section:not(.dark) .learn-more-link{
+  color:#45644F!important;
+  font-weight:500!important;
+}
+body[data-page="inner"] .section:not(.dark) .assessment-step-number,
+body[data-page="inner"] .section:not(.dark) .step:before{
+  background:#D5AD33!important;
+  border-color:#D5AD33!important;
+}
+
+/* A genuinely usable small-screen hero: woodland stays visible, long headings wrap. */
+@media(min-width:761px) and (max-width:1100px){
+  body[data-page="inner"] .page-hero{
+    min-height:330px!important;
+    padding:44px 5vw 50px!important;
+  }
+  body[data-page="inner"] .page-hero h1{
+    max-width:84vw!important;
+    font-size:clamp(2.1rem,4.8vw,3.5rem)!important;
+  }
+  body[data-page="inner"] .page-hero p{max-width:82vw!important}
+}
+@media(max-width:760px){
+  body[data-page="inner"] .page-hero{
+    min-height:0!important;
+    padding:32px 5vw 39px!important;
+    background-image:
+      linear-gradient(90deg,
+        rgba(250,249,244,.97) 0%,
+        rgba(250,249,244,.91) 55%,
+        rgba(250,249,244,.63) 83%,
+        rgba(250,249,244,.42) 100%),
+      var(--forest-banner)!important;
+    background-position:center,66% center!important;
+    background-size:cover!important;
+  }
+  body[data-page="inner"] .page-hero h1{
+    max-width:100%!important;
+    font-size:clamp(1.85rem,7.7vw,2.85rem)!important;
+    line-height:1.12!important;
+    text-wrap:wrap!important;
+  }
+  body[data-page="inner"] .page-hero p{
+    max-width:100%!important;
+    font-size:.97rem!important;
+  }
+  body[data-page="inner"] .page-hero .breadcrumbs{
+    font-size:.71rem!important;
+  }
+}
