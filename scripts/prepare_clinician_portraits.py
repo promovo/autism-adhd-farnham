@@ -130,10 +130,12 @@ for name,slug,url in PEOPLE:
     shadownp=np.array(shadow).astype(np.float32)*.22
     # Shadows less dominant on lower shoulder edges; no harsh cutout halos.
     shadow=Image.fromarray(np.uint8(np.clip(shadownp,0,255)))
+    shifted=Image.new("L",(W,H),0)
+    shifted.paste(shadow,(7,4))
     tint=Image.new("RGBA",(W,H),(22,43,24,0))
-    tint.putalpha(shadow)
+    tint.putalpha(shifted)
     scene=garden.convert("RGBA")
-    scene.alpha_composite(tint,(7,4))
+    scene.alpha_composite(tint)
     subject=rgb.convert("RGBA")
     subject.putalpha(amask)
     scene.alpha_composite(subject,(ox,oy))
