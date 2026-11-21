@@ -19,7 +19,10 @@ jobs:
           python-version: '3.11'
       - name: Install image and portrait restoration tools
         run: |
-          pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests "simple-lama-inpainting==0.1.2"
+          pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests
+          pip install --no-deps "simple-lama-inpainting==0.1.2"
+          pip install fire==0.5.0
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
       - name: Restore genuine Lisa garden and match all head-and-shoulder framing
         env:
           U2NET_HOME: ${{ github.workspace }}/.model-cache
