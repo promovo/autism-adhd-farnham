@@ -5104,3 +5104,59 @@ body[data-page="home"] .mock-hero + .mock-section,
   background-color:#B2C9AB!important;
   background-image:none!important;
 }
+
+/* 21 Nov 2026 — requested hero type and desktop navigation refinement.
+   DM Sans uses a conventional upright ampersand in the same face as the title. */
+.mock-hero .hero-copy > h1{
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:clamp(3.393rem,5.85vw,5.499rem)!important;
+  font-weight:400!important;
+  font-style:normal!important;
+  letter-spacing:-.028em!important;
+}
+@media(max-width:760px){
+  .mock-hero .hero-copy > h1{
+    font-size:clamp(2.5155rem,11.115vw,3.393rem)!important;
+  }
+}
+/* On wider desktops, let the nav start nearer the logo and gain breathing room,
+   while keeping the button and all labels on a single row. */
+@media(min-width:1501px){
+  .site-header{
+    justify-content:flex-start!important;
+    gap:clamp(12px,1.1vw,20px)!important;
+    padding-left:2vw!important;
+    padding-right:1.3vw!important;
+  }
+  .site-header .brand{
+    flex:0 0 225px!important;
+    min-width:0!important;
+    width:225px!important;
+  }
+  .site-header .brand-logo-svg{
+    width:225px!important;
+    max-width:100%!important;
+  }
+  .site-header .nav{
+    flex:1 1 auto!important;
+    justify-content:flex-start!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    gap:clamp(8px,.75vw,13px)!important;
+  }
+  .site-header .nav a:not(.btn){
+    font-size:.75rem!important;
+    letter-spacing:.045em!important;
+  }
+  .site-header .nav .btn{
+    font-size:.75rem!important;
+    letter-spacing:.045em!important;
+    padding:10px 13px!important;
+  }
+}
+@media(min-width:761px) and (max-width:1500px){
+  .site-header .nav a:not(.btn),
+  .site-header .nav .btn{
+    font-size:.78rem!important;
+  }
+}
