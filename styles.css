@@ -5330,3 +5330,13 @@ body .footer a:hover{color:#FFF0DC!important}
   color:#294B3B!important;
   border-radius:12px!important;
 }
+
+/* Visible matching neutral photo surround on every clinician image.
+   This harmonises unlike source backdrops without altering clinicians' faces. */
+.clinicians-home .clinician-card img,
+.team-page .team-profile img,
+.clinicians-home .clinician-initials,
+.team-page .team-profile-placeholder .clinician-placeholder{
+  border:6px solid #E5E8DF!important;
+  box-sizing:border-box!important;
+}
