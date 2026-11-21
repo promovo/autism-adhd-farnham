@@ -5886,3 +5886,31 @@ body[data-page="home"] .mock-hero + .mock-section:not(.why-section){
   background-color:#E5EFDE!important;
   background-image:none!important;
 }
+
+/* 21 Nov 2026 — softer sage navigation, richer assessment pathway, portraits */
+body .site-header,
+body .site-header.site-header{
+  background:#E1EDDB!important;
+  background-color:#E1EDDB!important;
+  background-image:none!important;
+}
+/* Pathway is now a shade deeper than the last pale-sage adjustment, but
+   remains much softer than the original darker green. */
+body[data-page="home"] #app > .mock-hero + .mock-section,
+body[data-page="home"] .mock-hero + .mock-section:not(.why-section){
+  background:#C8DDBC!important;
+  background-color:#C8DDBC!important;
+  background-image:none!important;
+}
+/* Display the newly processed clinician photos directly, without the
+   previous desaturating filter and thick secondary grey border. */
+body .clinicians-home .clinician-card img,
+body .team-page .team-profile img{
+  filter:none!important;
+  background:#9FAA97!important;
+  border:0!important;
+  border-radius:10px!important;
+  box-shadow:none!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+}
