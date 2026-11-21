@@ -19,14 +19,9 @@ jobs:
           python-version: '3.11'
       - name: Install image and portrait restoration tools
         run: |
-          pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests
-          pip install --no-deps "simple-lama-inpainting==0.1.2"
-          pip install fire==0.5.0
-          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-          pip uninstall -y opencv-python opencv-python-headless || true
-          pip install --force-reinstall "opencv-python-headless==4.12.0.88" "numpy>=2.0,<2.3"
+          pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests "opencv-python-headless==4.12.0.88" "numpy>=2.0,<2.3"
           python -c "import cv2; print('OpenCV',cv2.__version__); assert hasattr(cv2,'CascadeClassifier')"
-      - name: Restore genuine Lisa garden and match all head-and-shoulder framing
+      - name: Assemble photos onto restored Lisa garden with consistent head and shoulder proportions
         env:
           U2NET_HOME: ${{ github.workspace }}/.model-cache
         run: python scripts/prepare_clinician_portraits.py
