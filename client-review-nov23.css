@@ -938,3 +938,44 @@ body[data-page="home"] #app .clinicians-home .portrait-frame{
   border:0!important;
   box-shadow:none!important;
 }
+
+/* 23 Nov — ensure the first section after EVERY hero is green.
+   Contrast with warm cream hero veil; use the approved Google Reviews sage.
+   Keep the hero itself and all photographic panels untouched. */
+body[data-page="inner"][data-review-path] #app > .page-hero + .section:not(.dark):not(.global-start-cta),
+body[data-page="home"] #app > .mock-hero + .mock-section{
+  background:var(--site-sage-light)!important;
+  background-color:var(--site-sage-light)!important;
+  background-image:none!important;
+}
+/* Free Consultation: larger gold uppercase labels, consistent across both cards. */
+body[data-page="inner"][data-review-path="/free-consultation"] #app .consultation-form-cards .card > .tag{
+  display:inline-block!important;
+  align-self:flex-start!important;
+  background:transparent!important;
+  background-color:transparent!important;
+  color:#A77B12!important;
+  text-transform:uppercase!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:clamp(.82rem,1.08vw,.95rem)!important;
+  line-height:1.32!important;
+  font-weight:750!important;
+  letter-spacing:.075em!important;
+  padding:0!important;
+  margin:0 0 14px!important;
+}
+body[data-page="inner"][data-review-path="/free-consultation"] #app .consultation-form-cards .card h3{
+  font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+  font-size:clamp(1.24rem,1.45vw,1.56rem)!important;
+  font-weight:600!important;
+  line-height:1.23!important;
+}
+/* Retain the required note directly within Step 2; no orphan notice band. */
+body[data-page="inner"][data-review-path="/free-consultation"] #app .consultation-second .consultation-important-note{
+  margin-top:clamp(22px,3vw,36px)!important;
+  padding:17px 22px!important;
+  background:var(--site-ivory)!important;
+  border-left:4px solid #C29A1A!important;
+  border-radius:8px!important;
+  box-shadow:var(--review-shadow)!important;
+}
