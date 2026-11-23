@@ -76,6 +76,8 @@ jobs:
                     contactCardGaps:[...document.querySelectorAll('.contact-start-cards .card')].map(e=>{const h=e.querySelector('h3')?.getBoundingClientRect(),p=e.querySelector('p')?.getBoundingClientRect();return {title:e.querySelector('h3')?.textContent,gap:h&&p?Math.round(p.top-h.bottom):null}}),
                     childPathwayCardGaps:[...document.querySelectorAll('.child-pathway-grid .card')].map(e=>{const h=e.querySelector('h3'),p=e.querySelector('p');if(!h||!p)return null;const a=h.getBoundingClientRect(),b=p.getBoundingClientRect(),q=getComputedStyle(h);return {title:h.textContent.replace(/\\s+/g,' ').trim(),gap:Math.round(b.top-a.bottom),titleHeight:Math.round(a.height),minHeight:q.minHeight,bodyTop:Math.round(b.top)}}),
                     postIcons:[...document.querySelectorAll('.post-one .support-icon')].map(e=>({width:getComputedStyle(e).width,height:getComputedStyle(e).height,background:getComputedStyle(e).backgroundColor,svgWidth:getComputedStyle(e.querySelector('svg')).width,stroke:getComputedStyle(e.querySelector('svg')).stroke})),
+                    buttonTypography:[...document.querySelectorAll('.btn')].filter(e=>e.getBoundingClientRect().height>0).map(e=>{const t=getComputedStyle(e);return {text:e.textContent.trim().slice(0,60),fontFamily:t.fontFamily,fontSize:t.fontSize,fontWeight:t.fontWeight,textTransform:t.textTransform,letterSpacing:t.letterSpacing}}),
+                    teamDisciplineCards:[...document.querySelectorAll('.team-disciplines > .card')].map(e=>{const h=e.querySelector('h3'),p=e.querySelector('p'),a=e.getBoundingClientRect(),b=h.getBoundingClientRect(),c=p.getBoundingClientRect(),ps=getComputedStyle(p);return {title:h.textContent.trim(),paragraph:p.textContent.trim(),paragraphLines:Math.round(c.height/parseFloat(ps.lineHeight)),titleToTextGap:Math.round(c.top-b.bottom),blankBottom:Math.round(a.bottom-c.bottom),cardHeight:Math.round(a.height),minTitleHeight:getComputedStyle(h).minHeight}}),
                     cliniciansBand:css('.clinicians-home'),
                     cliniciansInner:css('.clinicians-home > .mock-section'),
                     cliniciansCarousel:css('.clinicians-home .clinician-row.clinician-carousel'),
@@ -144,6 +146,12 @@ jobs:
                 }
                 if(route==='/' && (data.homeSpecialistDescriptions.length!==4 || Math.max(...data.homeSpecialistDescriptions.map(x=>x.length))-Math.min(...data.homeSpecialistDescriptions.map(x=>x.length))>20)){
                   paletteViolations.push('HOME SPECIALIST PARAGRAPHS UNBALANCED '+JSON.stringify(data.homeSpecialistDescriptions));
+                }
+                if(data.buttonTypography.some(x=>x.fontSize!=='13px'||x.fontWeight!=='700'||x.textTransform!=='uppercase'||!x.fontFamily.includes('DM Sans'))){
+                  paletteViolations.push('BUTTON FONT MISMATCH '+route+' '+JSON.stringify(data.buttonTypography.filter(x=>x.fontSize!=='13px'||x.fontWeight!=='700'||x.textTransform!=='uppercase'||!x.fontFamily.includes('DM Sans'))));
+                }
+                if(route==='/our-team' && (data.teamDisciplineCards.length!==5||data.teamDisciplineCards.some(x=>x.titleToTextGap>11||x.minTitleHeight!=='0px'))){
+                  paletteViolations.push('TEAM CARD SPACING ISSUE '+JSON.stringify(data.teamDisciplineCards));
                 }
                 if(data.titleColours.some(t=>t.color!=='rgb(16, 46, 32)'))paletteViolations.push('TITLE COLOUR INCONSISTENCY '+route+' '+JSON.stringify(data.titleColours.filter(t=>t.color!=='rgb(16, 46, 32)')));
                 if(route==='/contact' && (data.contactGoldButtons.length!==3 || data.contactGoldButtons.some(x=>x.color!=='rgb(255, 249, 232)'||x.background!=='rgb(194, 154, 26)')))paletteViolations.push('CONTACT BUTTON COLOUR FAIL '+JSON.stringify(data.contactGoldButtons));
