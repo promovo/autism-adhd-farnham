@@ -1779,3 +1779,13 @@ body .google-reviews-section a.btn,body .global-start-cta a.btn{
   letter-spacing:.065em!important;
   text-transform:uppercase!important;
 }
+
+/* 23 Nov 2026 — give the hero buttons breathing room before the three benefits */
+body[data-page="home"] .mock-hero .hero-copy .hero-trust.three-items {
+  margin-top: 40px !important;
+}
+@media (max-width: 760px) {
+  body[data-page="home"] .mock-hero .hero-copy .hero-trust.three-items {
+    margin-top: 32px !important;
+  }
+}
