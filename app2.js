@@ -112,21 +112,33 @@ const how=`${header('How Our Autism & ADHD Assessment Process Works','The exact 
 const fees=`${header('Autism & ADHD Assessment Fees and Availability','We aim to keep fees clear so you know the expected cost before booking.')}
 <section class="section fees-page fees-prices">
   <div class="cards fees-grid">
-    <div class="card fee-card"><span class="tag">Age 2+</span><h3>Autism Assessment</h3><p>Child or adult.</p><p class="price">£1,995</p><a class="inline" href="/adult-autism-assessment" data-link>Explore Autism Assessment</a></div>
-    <div class="card fee-card"><span class="tag">Age 5+</span><h3>ADHD Assessment</h3><p>Child or adult.</p><p class="price">£1,795</p><a class="inline" href="/adult-adhd-assessment" data-link>Explore ADHD Assessment</a></div>
-    <div class="card fee-card"><span class="tag">Age 5+</span><h3>Combined Autism + ADHD</h3><p>Child or adult.</p><p class="price">£2,995</p><a class="inline" href="/combined-adult-autism-adhd-assessment" data-link>Explore Combined Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 2+</span><h3>Autism Assessment</h3><p>Child or adult.</p><p class="price">£1,995</p><a class="btn fees-card-cta" href="/adult-autism-assessment" data-link>Explore Autism Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 5+</span><h3>ADHD Assessment</h3><p>Child or adult.</p><p class="price">£1,795</p><a class="btn fees-card-cta" href="/adult-adhd-assessment" data-link>Explore ADHD Assessment</a></div>
+    <div class="card fee-card"><span class="tag">Age 5+</span><h3>Combined Autism + ADHD</h3><p>Child or adult.</p><p class="price">£2,995</p><a class="btn fees-card-cta" href="/combined-adult-autism-adhd-assessment" data-link>Explore Combined Assessment</a></div>
+  </div>
+  <div class="fees-included-panel">
+    <div class="fees-included-intro">
+      <div class="eyebrow">Included in every assessment fee</div>
+      <h2>What your fee includes</h2>
+      <p>The 30-minute diagnostic feedback call is part of your assessment, not a separate post-assessment support session.</p>
+    </div>
+    <ul class="fees-included-list">
+      <li><strong>At least one face-to-face session</strong><span>At our Farnham clinic</span></li>
+      <li><strong>A detailed diagnostic report</strong><span>With findings and recommendations</span></li>
+      <li><strong>30-minute online feedback call</strong><span>Included in the assessment fee</span></li>
+    </ul>
   </div>
 </section>
 <section class="section fees-current">
   <div class="fees-current-inner">
-    <div><div class="eyebrow">Current availability</div><h2>Typically 1–3 weeks from enquiry to the in-person clinic assessment</h2><p>From initial enquiry to the face-to-face clinic assessment, subject to clinician and pathway availability.</p></div>
-    <div class="fees-current-actions"><a class="btn" href="${adultForm}" target="_blank">Adult Pre-Booking Form</a><a class="btn" href="${childForm}" target="_blank">Child / Young Person Form</a></div>
+    <div><div class="eyebrow">Current availability</div><h2>Typically 1–3 weeks</h2><p>From enquiry to your in-person clinic appointment, subject to clinician and pathway availability.</p></div>
+    <div class="fees-current-actions"><a class="btn fees-booking-cta" href="${adultForm}" target="_blank">Adult Pre-Booking Form</a><a class="btn fees-booking-cta" href="${childForm}" target="_blank">Child / Young Person Form</a></div>
   </div>
 </section>
 <section class="section fees-support">
   <div class="cards two fees-support-grid">
-    <div class="card fee-card"><h3>Free Initial Telephone Consultation</h3><p>A free 15-minute telephone consultation after the relevant pre-booking form has been completed and reviewed by our clinical team.</p><p class="price support-price">Free</p><a class="inline" href="/free-consultation" data-link>See how the consultation works</a></div>
-    <div class="card fee-card"><h3>Post-Assessment Advice Session</h3><p>After your included 30-minute diagnostic feedback call, optional £180 sessions add file review, a 60-minute online appointment and written strategies and/or resources.</p><p class="price support-price">£180</p><a class="inline" href="/post-assessment-advice" data-link>Post-assessment support</a></div>
+    <div class="card fee-card"><h3>Free Initial Telephone Consultation</h3><p>A free 15-minute telephone consultation may be offered after the clinical team reviews your pre-booking form.</p><p class="price support-price">Free</p><a class="btn fees-card-cta" href="/free-consultation" data-link>See how the consultation works</a></div>
+    <div class="card fee-card"><h3>Post-Assessment Advice Session</h3><p>Optional support includes a file review, a 60-minute online appointment and written strategies or resources, beyond your included feedback call.</p><p class="price support-price">£180</p><a class="btn fees-card-cta" href="/post-assessment-advice" data-link>Post-assessment support</a></div>
   </div>
 </section>`;
 const adultAutism=`${header('Adult Autism Assessment in Farnham, Surrey','Autism can be recognised at any stage of life. For some adults, assessment provides a clearer understanding of long-standing differences in communication, sensory processing, routines, relationships, social interaction or the way everyday demands are experienced.')}<section class="section"><div class="split"><div><div class="eyebrow">Why might an adult consider assessment?</div><h2>Understanding your whole developmental picture</h2><p>You may have recognised autistic traits in yourself, begun to consider autism after a family member’s diagnosis, or spent years finding certain social, sensory or everyday demands more effortful than they appear for other people.</p><p>Assessment is not about fitting a stereotype; it considers developmental history, current experiences, strengths and needs as a whole.</p></div><div class="photo-panel"><img src="https://static.wixstatic.com/media/1e4c48_a9c89c4ca40149bda7b52846b60470a5~mv2.jpg" alt=""></div></div></section><section class="section alt"><div class="section-lead"><h2>What may the assessment include?</h2></div><div class="steps unified-steps"><div class="step"><div><h3>Pre-assessment information</h3><p>Questionnaires and relevant background information.</p></div></div><div class="step"><div><h3>Developmental history</h3><p>A recognised interview such as 3Di or ADI-R where clinically appropriate.</p></div></div><div class="step"><div><h3>ADOS-2 observation</h3><p>Observational assessment with appropriately trained diagnosticians. At least one assessment appointment takes place face to face at our Farnham clinic.</p></div></div><div class="step"><div><h3>Multi-disciplinary review</h3><p>Clinical information is considered together by the team. Where clinically appropriate, PDA profiling is included at no additional charge within the autism assessment.</p></div></div><div class="step"><div><h3>Report & feedback</h3><p>A detailed diagnostic report and a 30-minute online diagnostic feedback call are included in the assessment fee. Optional £180 post-assessment support is separate.</p></div></div></div></section><section class="section"><div class="cards two"><div class="card"><h3>A flexible, person-centred approach</h3><p>Tell the clinic about sensory, communication or anxiety-related adjustments that could make the process more comfortable.</p></div><div class="card"><h3>Women, masking & later recognition</h3><p>Autism may be less obvious when someone has developed ways of masking or compensating.</p><a class="inline" href="/autism-adhd-women" data-link>Explore this area</a></div></div><div class="soft-panel" style="margin-top:24px"><h3>First step</h3><p>Complete the Adult Pre-Booking Form. We review it and advise on the most appropriate next step.</p><p><strong>Availability:</strong> typically 1–3 weeks from enquiry to the in-person clinic assessment, subject to clinician and pathway availability.</p><p><strong>Price:</strong> £1,995.</p><a class="btn" href="${adultForm}" target="_blank">Complete Adult Pre-Booking Form</a></div></section>${cta()}`;
