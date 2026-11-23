@@ -183,7 +183,7 @@ jobs:
                   }
                 }
                 map[route]=data;
-                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
+                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/faq','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
                 if(capture.has(route)){
                   await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
                 }
