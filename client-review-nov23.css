@@ -401,3 +401,28 @@ body[data-page="home"] #app > .mock-hero + .mock-section .pathway-grid .info-car
   background:#F5E9D9!important;
   box-shadow:var(--review-shadow)!important;
 }
+
+/* 23 Nov: Home card colour reconciliation.
+   Midway between the previous deeper cream (#F5E9D9) and pale ivory
+   (#FFFCF7) = #FAF2E8. Keep the lighter sage SECTION background intact. */
+body[data-page="home"] #app .pathway-grid .info-card,
+body[data-page="home"] #app .specialist-wrap .specialist-grid .specialist-card,
+body[data-page="home"] #app .why-section .why-grid > div,
+body[data-page="home"] #app .clinicians-home .clinician-card,
+body[data-page="home"] #app .clinicians-home .clinician-card-placeholder,
+body[data-page="home"] .google-reviews-section .google-review-card{
+  background:#FAF2E8!important;
+  background-color:#FAF2E8!important;
+  box-shadow:var(--review-shadow)!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body[data-page="home"] #app .pathway-grid .info-card:hover,
+  body[data-page="home"] #app .specialist-wrap .specialist-grid .specialist-card:hover,
+  body[data-page="home"] #app .why-section .why-grid > div:hover,
+  body[data-page="home"] #app .clinicians-home .clinician-card:hover,
+  body[data-page="home"] .google-reviews-section .google-review-card:hover{
+    background:#FAF2E8!important;
+    background-color:#FAF2E8!important;
+    box-shadow:var(--review-shadow-hover)!important;
+  }
+}
