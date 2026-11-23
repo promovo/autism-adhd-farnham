@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Full Website Review Checklist | Autism &amp; ADHD Assessments Farnham</title>
+<style>
+:root{--ink:#244537;--mid:#53705c;--gold:#bda059;--cream:#fcfaf5;--line:#dce5db;--sage:#e5efe1;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.5}
+.wrap{max-width:1190px;padding:0 22px;margin:auto}
+header{background:#dceada;border-bottom:1px solid #c5d6c1;padding:37px 0 30px}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-weight:700;font-size:12px;color:#587059;margin:0 0 12px}
+h1{font-size:clamp(27px,4vw,42px);letter-spacing:-.035em;line-height:1.13;margin:0 0 14px;font-weight:650}
+header p{max-width:760px;margin:0 0 13px}
+.muted{color:#5b6d62}.bar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.pill{display:inline-flex;align-items:center;gap:7px;border-radius:99px;padding:8px 15px;background:white;border:1px solid #c5d6c1;font-weight:600}
+button,.action{font:inherit;border-radius:8px;padding:10px 16px;font-weight:650;cursor:pointer}
+button.primary{background:var(--ink);color:white;border:1px solid var(--ink)}
+button.secondary{color:var(--ink);background:#fff;border:1px solid #a2b8a4}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #d3ad49;outline-offset:2px}
+main{padding:28px 0 75px}.tip{padding:16px 18px;background:#edf4e8;border-left:4px solid #a9bd8f;border-radius:0 8px 8px 0;margin:0 0 24px}
+h2{font-size:24px;letter-spacing:-.02em;line-height:1.2;margin:35px 0 7px}
+.subtitle{margin:0 0 15px;color:#5b7060}
+.page{display:grid;grid-template-columns:minmax(230px,2fr) minmax(160px,.9fr) minmax(220px,2fr);gap:17px;align-items:center;padding:14px 16px;background:var(--white);border:1px solid var(--line);border-bottom:0}
+.page:first-of-type{border-radius:10px 10px 0 0}
+.group .page:last-child{border-bottom:1px solid var(--line);border-radius:0 0 10px 10px}
+.name{font-weight:700;font-size:15px;margin:0 0 4px}
+.url{display:block;font-size:12px;color:#77877b;margin-bottom:10px;word-break:break-word}
+.view{color:#225a41;font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;gap:5px}
+.status label,.notes label{display:block;font-size:12px;color:#546a58;font-weight:700;margin:0 0 5px}
+select,textarea{font:inherit;font-size:13px;max-width:100%;width:100%;border-radius:6px;border:1px solid #bfcdbf;background:#fff;color:#244537;padding:9px}
+textarea{min-height:57px;resize:vertical}
+select[data-value="approved"]{background:#e4f3e5;border-color:#91bc99}
+select[data-value="changes"]{background:#fff1df;border-color:#d4a679}
+.progress{height:8px;border-radius:8px;background:#c8d8c4;overflow:hidden;width:min(380px,100%);margin:10px 0 0}
+.progress span{display:block;height:100%;width:0;background:#39654a;transition:width .2s ease}
+.summary-box{display:none;margin-top:20px;background:#fff;border:1px solid var(--line);padding:18px;border-radius:10px}
+.summary-box textarea{min-height:150px;font-family:ui-monospace,monospace}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:13px;color:#5d7161}
+footer a{color:#2c6045}
+@media(max-width:750px){.wrap{padding:0 13px}.page{grid-template-columns:1fr 1fr;gap:10px}.page .titlecell{grid-column:1/-1}.notes{grid-column:1/-1}.status{grid-column:1/-1}.page{padding:13px}header{padding-top:25px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<p class="kicker">Development preview • not the live Wix website</p>
+<h1>Full website review checklist</h1>
+<p>Review all <strong>24 main website pages</strong>. Each <strong>Open page</strong> link is designed to work directly on this Render preview. Record approval or required changes for each page.</p>
+<div class="bar"><span class="pill"><span id="doneCount">0</span> / 24 reviewed</span><span class="pill"><span id="approvedCount">0</span> approved</span><span class="pill"><span id="changesCount">0</span> need changes</span></div>
+<div class="progress" aria-label="Review progress"><span id="progressFill"></span></div>
+<div class="bar">
+<button class="primary" id="copySummary">Copy review notes</button>
+<button class="secondary" id="downloadSummary">Download review notes</button>
+<a class="action" href="/" style="color:#244537">Preview homepage</a>
+</div><p class="muted" id="actionMessage" aria-live="polite"></p></div></header>
+<main><div class="wrap">
+<div class="tip"><strong>What to check:</strong> Text and accuracy • fonts, colours and spacing • photos and their framing • buttons, forms and links • mobile layout. Open each page in a new tab, then return here to mark its status. Your selections and notes are saved in this browser.</div>
+<div id="groups"></div>
+<div class="summary-box" id="summaryBox"><h2>Review notes</h2><p>If copying is blocked by your browser, select and copy this text instead.</p><textarea id="summaryText" readonly aria-label="Compiled notes"></textarea></div>
+<h2>Extra review links</h2><p class="subtitle">These are not additional main content pages.</p>
+<p><a class="view" href="/clinician-photo-check-23nov.html" target="_blank" rel="noopener">Clinician photo comparison</a> — direct photo review page.</p>
+<p class="muted">3 legacy URLs are also recognised by the site's navigation: <a href="/?review=%2Fservices" target="_blank">/services</a>, <a href="/?review=%2Fcopy-of-faq" target="_blank">/copy-of-faq</a>, and <a href="/?review=%2Frecommended-services" target="_blank">/recommended-services</a>. These duplicate existing page content and are not included in the 24-page count.</p>
+</div></main>
+<footer><div class="wrap">Autism &amp; ADHD Assessments Farnham — review only. No changes to the public Wix site.</div></footer>
+<script type="application/json" id="reviewData">[{"name":"Main pages","description":"Core navigation and clinic information","pages":[["Home","/"],["Choose Your Assessment","/choose-your-assessment"],["How Assessments Work","/how-assessments-work"],["Fees","/fees"],["Meet the Team","/our-team"],["Frequently Asked Questions","/faq"],["Contact Us","/contact"]]},{"name":"Adult assessments","description":"Assessment options and specialist presentations for adults","pages":[["Adult Assessments Overview","/adult-assessments"],["Adult Autism Assessment","/adult-autism-assessment"],["Adult ADHD Assessment","/adult-adhd-assessment"],["Combined Adult Autism & ADHD","/combined-adult-autism-adhd-assessment"],["Autism & ADHD in Women / Girls","/autism-adhd-women"]]},{"name":"Child and young person assessments","description":"Information for parents, children and young people","pages":[["Child & Young Person Overview","/child-young-person-assessments"],["Child Autism Assessment","/child-autism-assessment"],["Child ADHD Assessment","/child-adhd-assessment"],["Combined Child Autism & ADHD","/combined-child-autism-adhd-assessment"]]},{"name":"Specialist information and support","description":"Specialist advice, resources and follow-on services","pages":[["PDA / Demand-Avoidant Presentation","/pda-demand-avoidant-presentation"],["Post-Assessment Support","/post-assessment-advice"],["Local Resources","/local-resources"],["Speech Therapy / EHCP & Expert Witness Reports","/ehcp-expert-witness-reports"]]},{"name":"Enquiries, booking and policies","description":"Forms, appointments and legal information","pages":[["Adult Pre-Booking","/adult-pre-booking"],["Child / Young Person Pre-Booking","/child-pre-booking"],["Free 15-Minute Consultation","/free-consultation"],["Privacy Policy","/privacy-policy"]]}]</script>
+<script>
+(function(){
+const groups=JSON.parse(document.getElementById('reviewData').textContent);
+const prefix='aaf-site-review-20261123:';
+const root=document.getElementById('groups');
+const state={};
+try{Object.assign(state,JSON.parse(localStorage.getItem(prefix+'all')||'{}'))}catch(e){}
+function save(){try{localStorage.setItem(prefix+'all',JSON.stringify(state))}catch(e){}updateCounts()}
+function updateCounts(){
+ let done=0,approved=0,changes=0;
+ groups.forEach(g=>g.pages.forEach(p=>{const x=state[p[1]]||{};if(x.status && x.status!=='pending')done++;if(x.status==='approved')approved++;if(x.status==='changes')changes++}));
+ document.getElementById('doneCount').textContent=done;
+ document.getElementById('approvedCount').textContent=approved;
+ document.getElementById('changesCount').textContent=changes;
+ document.getElementById('progressFill').style.width=(done/24*100)+'%';
+}
+function node(tag,cls,text){
+ const e=document.createElement(tag);
+ if(cls)e.className=cls;
+ if(text!==undefined)e.textContent=text;
+ return e;
+}
+groups.forEach(g=>{
+ const wrap=node('section','group');
+ const h=node('h2','',g.name);wrap.appendChild(h);
+ wrap.appendChild(node('p','subtitle',g.description+' — '+g.pages.length+' pages'));
+ g.pages.forEach(([name,path])=>{
+  const row=node('div','page');
+  const head=node('div','titlecell');
+  head.appendChild(node('p','name',name));
+  head.appendChild(node('span','url',path));
+  const link=node('a','view','Open page ↗');
+  link.href=path==='/'?'/':'/?review='+encodeURIComponent(path);
+  link.target='_blank';link.rel='noopener';link.setAttribute('aria-label','Open '+name+' in a new tab');
+  head.appendChild(link);
+  const sc=node('div','status');
+  const lbl=node('label','', 'Review status');const select=node('select');
+  select.setAttribute('aria-label','Review status for '+name);
+  [['pending','Not checked'],['approved','Approved ✓'],['changes','Needs changes']].forEach(([v,n])=>{
+   const o=node('option','',n);o.value=v;select.appendChild(o);
+  });
+  select.value=(state[path]||{}).status||'pending';select.dataset.value=select.value;
+  select.addEventListener('change',()=>{
+   if(!state[path])state[path]={};
+   state[path].status=select.value;
+   select.dataset.value=select.value;
+   save();
+  });
+  sc.appendChild(lbl);sc.appendChild(select);
+  const notes=node('div','notes');
+  const nlabel=node('label','','Notes / changes required');notes.appendChild(nlabel);
+  const area=node('textarea');
+  area.placeholder='Add page-specific feedback…';
+  area.value=(state[path]||{}).notes||'';
+  area.setAttribute('aria-label','Review notes for '+name);
+  area.addEventListener('input',()=>{
+   if(!state[path])state[path]={};
+   state[path].notes=area.value;save();
+  });
+  notes.appendChild(area);
+  row.appendChild(head);row.appendChild(sc);row.appendChild(notes);wrap.appendChild(row);
+ });
+ root.appendChild(wrap);
+});
+function report(){
+ const lines=['AUTISM & ADHD ASSESSMENTS FARNHAM — WEBSITE REVIEW','24 main pages',''];
+ groups.forEach(g=>{
+  lines.push('=== '+g.name+' ===');
+  g.pages.forEach(([name,path])=>{
+   const d=state[path]||{};
+   const status=d.status==='approved'?'APPROVED':d.status==='changes'?'NEEDS CHANGES':'NOT CHECKED';
+   lines.push(name+' ('+path+') — '+status);
+   if(d.notes&&d.notes.trim())lines.push('  Feedback: '+d.notes.trim().replace(/\n/g,'\n  '));
+  });
+  lines.push('');
+ });
+ return lines.join('\n');
+}
+function expose(text){document.getElementById('summaryText').value=text;document.getElementById('summaryBox').style.display='block';}
+document.getElementById('copySummary').onclick=async()=>{
+ const text=report();expose(text);
+ try{await navigator.clipboard.writeText(text);document.getElementById('actionMessage').textContent='Copied review notes. Paste them into ChatGPT or your review document.'}
+ catch(e){document.getElementById('actionMessage').textContent='Your review notes are shown below. Select the text to copy them.'}
+};
+document.getElementById('downloadSummary').onclick=()=>{
+ const text=report();const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');
+ a.href=url;a.download='autism-assessments-farnham-website-review.txt';document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+ document.getElementById('actionMessage').textContent='Review notes prepared as a text file.';
+};
+updateCounts();
+})();
+</script></body></html>
