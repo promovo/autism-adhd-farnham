@@ -111,16 +111,33 @@ function render(path){
     window.scrollTo(0,0);
   }
 }
+/* Render review hosts have no SPA rewrite configured. Keep preview navigation
+   shareable through the physical root page until the host-level rewrite is set. */
+function getReviewRoute(){
+  const previewPath=new URLSearchParams(location.search).get('review');
+  if(previewPath && Object.prototype.hasOwnProperty.call(routes,previewPath)) return previewPath;
+  return location.pathname;
+}
+function reviewUrl(path,hash=''){
+  return path==='/'?'/'+hash:'/?review='+encodeURIComponent(path)+hash;
+}
 function bind(){
-  document.querySelectorAll('[data-link]').forEach(a=>a.onclick=e=>{
-    const u=new URL(a.href);
-    if(u.origin===location.origin){
+  document.querySelectorAll('[data-link]').forEach(a=>{
+    const u=new URL(a.href,location.origin);
+    if(u.origin!==location.origin) return;
+    const path=u.searchParams.get('review')||u.pathname;
+    if(!Object.prototype.hasOwnProperty.call(routes,path)) return;
+    // Modify the real anchor, not just JS click handling. This also fixes
+    // cmd-click, open-in-new-tab, copying a link, and keyboard navigation.
+    a.setAttribute('href',reviewUrl(path,u.hash));
+    a.onclick=e=>{
+      if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
       e.preventDefault();
       document.querySelector('.nav')?.classList.remove('open');
       document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');
-      history.pushState({},'',u.pathname+u.hash);
-      render(u.pathname);
-    }
+      history.pushState({},'',a.getAttribute('href'));
+      render(path);
+    };
   });
 }
 const menuToggle=document.querySelector('.menu-toggle');
@@ -142,8 +159,8 @@ if(menuToggle&&nav){
     }
   });
 }
-window.onpopstate=()=>render(location.pathname);
-render(location.pathname);
+window.onpopstate=()=>render(getReviewRoute());
+render(getReviewRoute());
 
 
 /* clinician-carousel-arrow delegated controls */
