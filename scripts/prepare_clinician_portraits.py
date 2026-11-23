@@ -84,7 +84,8 @@ def find_face(im):
 os.makedirs("images/clinicians",exist_ok=True)
 session=new_session("isnet-general-use")
 lisa=download(LISA)
-lisa_mask=human_alpha(lisa,session)
+# Lisa's real, original garden portrait remains uncut and unchanged.
+lisa_mask=None
 # Permanent seamless garden backdrop, restored from Lisa's original photograph.
 # The original burgundy shrub, yellow-green flowers and full foliage remain.
 # Using the saved photographic plate avoids model smudges and human silhouettes.
