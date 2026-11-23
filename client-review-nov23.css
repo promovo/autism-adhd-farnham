@@ -1035,3 +1035,14 @@ body[data-page="inner"] #app .section .soft-panel a.btn{
     --site-card-body-size:16px;
   }
 }
+
+/* Typography QA reconciliation: Choose Assessment still had a more-specific
+   21.924px/19.2px override. Use the same approved card tokens here too. */
+body[data-page="inner"][data-review-path="/choose-your-assessment"] #app .section.assessment-overview .card h3,
+body[data-page="inner"][data-review-path="/choose-your-assessment"] #app .assessment-overview .card h3{
+  font-size:var(--site-card-heading-size)!important;
+  font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+  font-weight:600!important;
+  line-height:1.27!important;
+  letter-spacing:-.018em!important;
+}
