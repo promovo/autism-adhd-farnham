@@ -12,6 +12,10 @@ on:
       - 'navigation-review.js'
   workflow_dispatch:
 
+concurrency:
+  group: client-review-qa-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -70,6 +74,7 @@ jobs:
                     contactGoldButtons:[...document.querySelectorAll('.contact-start-cards a.btn')].map(e=>({text:e.textContent,color:getComputedStyle(e).color,background:getComputedStyle(e).backgroundColor})),
                     adultWhyIcons:[...document.querySelectorAll('.adult-why-grid .adult-why-icon')].map(e=>({width:Math.round(e.getBoundingClientRect().width),height:Math.round(e.getBoundingClientRect().height),cardWidth:Math.round(e.closest('.card').getBoundingClientRect().width),svgWidth:Math.round(e.querySelector('svg').getBoundingClientRect().width)})),
                     contactCardGaps:[...document.querySelectorAll('.contact-start-cards .card')].map(e=>{const h=e.querySelector('h3')?.getBoundingClientRect(),p=e.querySelector('p')?.getBoundingClientRect();return {title:e.querySelector('h3')?.textContent,gap:h&&p?Math.round(p.top-h.bottom):null}}),
+                    childPathwayCardGaps:[...document.querySelectorAll('.child-pathway-grid .card')].map(e=>{const h=e.querySelector('h3'),p=e.querySelector('p');if(!h||!p)return null;const a=h.getBoundingClientRect(),b=p.getBoundingClientRect(),q=getComputedStyle(h);return {title:h.textContent.replace(/\\s+/g,' ').trim(),gap:Math.round(b.top-a.bottom),titleHeight:Math.round(a.height),minHeight:q.minHeight,bodyTop:Math.round(b.top)}}),
                     postIcons:[...document.querySelectorAll('.post-one .support-icon')].map(e=>({width:getComputedStyle(e).width,height:getComputedStyle(e).height,background:getComputedStyle(e).backgroundColor,svgWidth:getComputedStyle(e.querySelector('svg')).width,stroke:getComputedStyle(e.querySelector('svg')).stroke})),
                     cliniciansBand:css('.clinicians-home'),
                     cliniciansInner:css('.clinicians-home > .mock-section'),
@@ -148,6 +153,9 @@ jobs:
                 if(route==='/contact' && (data.contactCardGaps.length!==3||data.contactCardGaps.some(x=>x.gap>10||x.gap<0))){
                   paletteViolations.push('CONTACT TITLE TO BODY GAP STILL TOO LARGE '+JSON.stringify(data.contactCardGaps));
                 }
+                if(route==='/child-young-person-assessments' && (data.childPathwayCardGaps.length!==4||data.childPathwayCardGaps.some(x=>!x||x.gap>10||x.gap<0||x.minHeight!=='0px'))){
+                  paletteViolations.push('CHILD PATHWAY TITLE TO BODY GAP TOO LARGE '+JSON.stringify(data.childPathwayCardGaps));
+                }
                 if(route!=='/' && data.bands.some((band,i)=>i>0&&band.background===data.bands[i-1].background)){
                   paletteViolations.push('ADJACENT CONTENT SECTIONS SAME COLOUR '+route+': '+JSON.stringify(data.bands));
                 }
@@ -210,7 +218,7 @@ jobs:
                   }
                 }
                 map[route]=data;
-                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/faq','/adult-assessments','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
+                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/faq','/adult-assessments','/child-young-person-assessments','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
                 if(capture.has(route)){
                   await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
                 }
@@ -253,4 +261,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add qa/site-review/
-          git diff --cached --quiet || (git commit -m "Capture rendered site review pages and computed styles" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Capture rendered site review pages and computed styles"
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase -X ours origin/main || { git rebase --abort; exit 1; }
+              git push origin HEAD:main && exit 0
+              sleep 2
+            done
+            exit 1
+          fi
