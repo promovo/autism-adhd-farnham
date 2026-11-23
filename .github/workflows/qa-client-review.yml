@@ -60,6 +60,12 @@ jobs:
                     navItems:[...document.querySelectorAll('.nav-dropdown-menu a')].slice(0,8).map(e=>({text:e.textContent,style:getComputedStyle(e).textTransform})),
                     paletteSections:[...document.querySelectorAll('#app > section,#app > section > section,.google-reviews-section,.site-header,.footer')].map(e=>{const x=getComputedStyle(e);return {name:e.tagName+'.'+e.className,background:x.backgroundColor,hasImage:x.backgroundImage!=='none',visible:e.getBoundingClientRect().height>0}}),
                     reviewBand:css('.google-reviews-section'),
+                    cliniciansBand:css('.clinicians-home'),
+                    cliniciansInner:css('.clinicians-home > .mock-section'),
+                    cliniciansCarousel:css('.clinicians-home .clinician-row.clinician-carousel'),
+                    cliniciansPortraitFrame:css('.clinicians-home .portrait-frame'),
+                    cliniciansCard:css('.clinicians-home .clinician-card'),
+                    personalNameInPageCopy:(document.querySelector('#app')?.innerText||'').replace(/lisa@autismassessmentsfarnham\\.co\\.uk/gi,'').match(/\\bLisa\\b/g)?.length||0,
                     homeChooseButton:css('.why-section .why-cta a[href="/choose-your-assessment"],.why-section .why-cta a[href*="%2Fchoose-your-assessment"]'),
                     homeCombinedButtons:[...document.querySelectorAll('.pathway-extra-actions a')].map(e=>({text:e.textContent,background:getComputedStyle(e).backgroundColor})),
                     consoleErrorCount:window.__qaErrors||0
@@ -95,7 +101,16 @@ jobs:
                 const invalid=data.paletteSections.filter(x=>x.visible && !x.hasImage && x.background!=='rgba(0, 0, 0, 0)' && !approvedBackgrounds.has(x.background));
                 if(invalid.length)paletteViolations.push('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
                 if(data.reviewBand?.background!=='rgb(226, 236, 218)')paletteViolations.push('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
+                if(route!=='/' && route!=='/our-team' && data.personalNameInPageCopy!==0){
+                  paletteViolations.push('UNWANTED PERSONAL NAME IN SERVICE COPY: '+route+' count='+data.personalNameInPageCopy);
+                }
                 if(route==='/'){
+                  if(data.cliniciansBand?.background!=='rgb(253, 249, 243)' || data.cliniciansInner?.background!=='rgb(253, 249, 243)'){
+                    paletteViolations.push('MISMATCHED HOME CLINICIAN BAND: '+JSON.stringify({outer:data.cliniciansBand?.background,inner:data.cliniciansInner?.background}));
+                  }
+                  if(data.cliniciansCarousel?.background!=='rgba(0, 0, 0, 0)'){
+                    paletteViolations.push('CLINICIAN CAROUSEL HAS ADDITIONAL BACKING: '+data.cliniciansCarousel?.background);
+                  }
                   if(data.homeChooseButton?.background!=='rgb(194, 154, 26)'){
                     paletteViolations.push('HOME CHOOSE ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeChooseButton));
                   }
@@ -107,6 +122,12 @@ jobs:
                 const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
                 if(capture.has(route)){
                   await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
+                }
+                if(route==='/'){
+                  const clinicianSection=await page.$('.clinicians-home');
+                  if(clinicianSection){
+                    await clinicianSection.screenshot({path:'qa/site-review/clinicians-detail.jpg',type:'jpeg',quality:86});
+                  }
                 }
                 console.log(route,data.heading,JSON.stringify({hero:data.hero,card:data.card,link:data.link,team:data.team,pdaPhoto:data.pdaPhoto,reviewText:data.reviewText}));
                 await page.close();
