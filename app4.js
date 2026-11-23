@@ -92,6 +92,32 @@ function updateSeo(path){
   }
   schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
 }
+/* FAQ topic groups: give each existing heading and its related questions a
+ * distinct approved cream/sage surface. No transition strips or animation.
+ * Existing <details> elements and open/closed state remain native. */
+function groupFaqTopics(){
+  const faq=document.querySelector('#app > section.faq');
+  if(!faq || faq.dataset.topicGrouped==='yes')return;
+  const topicShades=['light','cream','deep','cream','light','deep'];
+  let group=null,index=-1;
+  [...faq.children].forEach(node=>{
+    if(node.tagName==='H2'){
+      index++;
+      group=document.createElement('div');
+      group.className='faq-topic-group faq-tone-'+topicShades[index%topicShades.length];
+      const id='faq-topic-'+(index+1);
+      node.id=id;
+      group.setAttribute('role','group');
+      group.setAttribute('aria-labelledby',id);
+      faq.insertBefore(group,node);
+      group.appendChild(node);
+    }else if(group && node.tagName==='DETAILS'){
+      group.appendChild(node);
+    }
+  });
+  faq.dataset.topicGrouped='yes';
+}
+
 /* Shared real hover/focus behaviour for every gold CTA.
  * Legacy !important colour rules on some old routes can override :hover CSS,
  * so apply one accessible, explicitly defined interaction across the preview. */
@@ -105,6 +131,13 @@ function wireBrandButtons(){
       button.style.setProperty('background-color',bg,'important');
       button.style.setProperty('border-color',bg,'important');
       button.style.setProperty('color','#FFF9E8','important');
+      button.style.setProperty('font-family',"'DM Sans',Arial,sans-serif",'important');
+      button.style.setProperty('font-size','13px','important');
+      button.style.setProperty('font-weight','700','important');
+      button.style.setProperty('font-style','normal','important');
+      button.style.setProperty('letter-spacing','.065em','important');
+      button.style.setProperty('line-height','1.35','important');
+      button.style.setProperty('text-transform','uppercase','important');
       button.style.setProperty('box-shadow',hover?'0 7px 18px rgba(35,66,45,.17)':'0 3px 10px rgba(35,66,45,.10)','important');
       button.style.setProperty('transform',hover?'translateY(-2px)':'translateY(0)','important');
     };
@@ -188,6 +221,7 @@ function render(path){
   document.body.dataset.woodland=adultWoodland.has(path)?'sunlight':childWoodland.has(path)?'birch':'canopy';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
   appendClinicallyReviewedDetails(path);
+  if(path==='/faq')groupFaqTopics();
   // Enforce a genuine sequence of contrasting site sections. Older per-page
   // selectors made neighbouring sections the same light green even though
   // they had different classes. Give the actual rendered sections band classes.
