@@ -2,7 +2,7 @@
   "/": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/",
     "heading": "Autism & ADHD Assessments for Adults, Children & Young People",
-    "mainLength": 3811,
+    "mainLength": 4672,
     "cardCounts": 22,
     "navDropdowns": 4,
     "hero": {
@@ -15,7 +15,7 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 658.265625
+      "height": 703.71875
     },
     "heroBefore": {
       "display": "block",
@@ -420,7 +420,7 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 563.5
+      "height": 781.0625
     },
     "consultationTagStyles": [],
     "typography": {},
@@ -1240,7 +1240,7 @@
   "/fees": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Ffees",
     "heading": "Autism & ADHD Assessment Fees and Availability",
-    "mainLength": 1134,
+    "mainLength": 1763,
     "cardCounts": 8,
     "navDropdowns": 4,
     "hero": {
@@ -1428,6 +1428,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-fees-summary site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -1502,6 +1508,11 @@
         "name": "section fees-support site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
         "image": "none"
+      },
+      {
+        "name": "section clinical-fees-summary site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "image": "none"
       }
     ],
     "titleColours": [
@@ -1531,6 +1542,10 @@
       },
       {
         "title": "Post-Assessment Advice Session",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Your appointment and feedback",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -1594,6 +1609,15 @@
         "letterSpacing": "0.7488px",
         "color": "rgb(167, 123, 18)"
       },
+      ".section-lead h2": {
+        "fontSize": "40.824px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "46.1311px",
+        "letterSpacing": "-1.0206px",
+        "color": "rgb(16, 46, 32)"
+      },
       ".card h3": {
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
@@ -1637,7 +1661,7 @@
   "/our-team": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Four-team",
     "heading": "Meet Our Multi-Disciplinary Clinical Team",
-    "mainLength": 6342,
+    "mainLength": 6347,
     "cardCounts": 8,
     "navDropdowns": 4,
     "hero": {
@@ -1913,7 +1937,7 @@
         "color": "rgb(16, 46, 32)"
       },
       {
-        "title": "Clinical Psychologist",
+        "title": "Clinical Neuropsychologist",
         "color": "rgb(16, 46, 32)"
       },
       {
@@ -2452,7 +2476,7 @@
   "/faq": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Ffaq",
     "heading": "Frequently Asked Questions",
-    "mainLength": 5595,
+    "mainLength": 6358,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
@@ -2699,8 +2723,8 @@
   "/adult-assessments": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-assessments",
     "heading": "Adult Autism & ADHD Assessments in Farnham, Surrey",
-    "mainLength": 2125,
-    "cardCounts": 11,
+    "mainLength": 3109,
+    "cardCounts": 13,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -2882,6 +2906,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -2953,6 +2983,16 @@
         "text": "Current availability",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -2975,6 +3015,11 @@
       {
         "name": "section assessment-clinic-space site-band-cream",
         "background": "rgb(253, 249, 243)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -3029,6 +3074,18 @@
       },
       {
         "title": "We provide a calm and safe space",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -3124,8 +3181,8 @@
   "/adult-autism-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-autism-assessment",
     "heading": "Adult Autism Assessment in Farnham, Surrey",
-    "mainLength": 1865,
-    "cardCounts": 5,
+    "mainLength": 2999,
+    "cardCounts": 7,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -3301,6 +3358,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -3347,6 +3410,16 @@
         "text": "First step",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -3364,6 +3437,11 @@
       {
         "name": "section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -3410,6 +3488,18 @@
       },
       {
         "title": "First step",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -3480,8 +3570,8 @@
   "/adult-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-adhd-assessment",
     "heading": "Adult ADHD Assessment in Farnham, Surrey",
-    "mainLength": 1482,
-    "cardCounts": 3,
+    "mainLength": 2645,
+    "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -3515,7 +3605,18 @@
     },
     "pathway": null,
     "assessmentCard": null,
-    "card": null,
+    "card": {
+      "background": "rgb(253, 249, 243)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 323.140625
+    },
     "team": null,
     "reviews": {
       "background": "rgb(253, 249, 243)",
@@ -3631,6 +3732,12 @@
       {
         "name": "SECTION.section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "hasImage": false,
         "visible": true
       },
@@ -3676,6 +3783,16 @@
         "text": "First step",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -3693,6 +3810,11 @@
       {
         "name": "section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -3715,6 +3837,18 @@
       },
       {
         "title": "First step",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -3741,7 +3875,35 @@
       "height": 496
     },
     "consultationTagStyles": [],
-    "typography": {},
+    "typography": {
+      ".section-lead h2": {
+        "fontSize": "40.824px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "46.1311px",
+        "letterSpacing": "-1.0206px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card h3": {
+        "fontSize": "20px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "lineHeight": "25.4px",
+        "letterSpacing": "-0.36px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card p": {
+        "fontSize": "16px",
+        "fontFamily": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "color": "rgb(41, 75, 59)"
+      }
+    },
     "consultationBookingVisible": false,
     "consultationNoteInStep2": false,
     "personalNameInPageCopy": 0,
@@ -3757,8 +3919,8 @@
   "/combined-adult-autism-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fcombined-adult-autism-adhd-assessment",
     "heading": "Combined Autism & ADHD Assessment for Adults",
-    "mainLength": 1162,
-    "cardCounts": 3,
+    "mainLength": 2519,
+    "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -3792,7 +3954,18 @@
     },
     "pathway": null,
     "assessmentCard": null,
-    "card": null,
+    "card": {
+      "background": "rgb(253, 249, 243)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 323.140625
+    },
     "team": null,
     "reviews": {
       "background": "rgb(253, 249, 243)",
@@ -3912,6 +4085,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -3948,6 +4127,16 @@
         "text": "One integrated process",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -3965,6 +4154,11 @@
       {
         "name": "section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -4004,6 +4198,18 @@
       {
         "title": "Report & next steps",
         "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
+        "color": "rgb(16, 46, 32)"
       }
     ],
     "contactGoldButtons": [],
@@ -4038,6 +4244,24 @@
         "lineHeight": "46.1311px",
         "letterSpacing": "-1.0206px",
         "color": "rgb(16, 46, 32)"
+      },
+      ".card h3": {
+        "fontSize": "20px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "lineHeight": "25.4px",
+        "letterSpacing": "-0.36px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card p": {
+        "fontSize": "16px",
+        "fontFamily": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "color": "rgb(41, 75, 59)"
       }
     },
     "consultationBookingVisible": false,
@@ -4297,8 +4521,8 @@
   "/child-young-person-assessments": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-young-person-assessments",
     "heading": "Autism & ADHD Assessments for Children and Young People",
-    "mainLength": 2155,
-    "cardCounts": 7,
+    "mainLength": 3740,
+    "cardCounts": 9,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -4480,6 +4704,18 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-sage",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section early-years-feature site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -4536,6 +4772,16 @@
         "text": "School & professional information",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -4557,6 +4803,16 @@
       },
       {
         "name": "section assessment-clinic-space site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-sage",
+        "background": "rgb(226, 236, 218)",
+        "image": "none"
+      },
+      {
+        "name": "section early-years-feature site-band-cream",
         "background": "rgb(253, 249, 243)",
         "image": "none"
       }
@@ -4600,6 +4856,22 @@
       },
       {
         "title": "We provide a calm and safe space",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Joint face-to-face assessment for under-fives",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -4708,8 +4980,8 @@
   "/child-autism-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-autism-assessment",
     "heading": "Child Autism Assessment in Farnham, Surrey",
-    "mainLength": 1442,
-    "cardCounts": 5,
+    "mainLength": 3177,
+    "cardCounts": 7,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -4885,6 +5157,18 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section early-years-feature site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -4931,6 +5215,16 @@
         "text": "Age, availability & first step",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -4947,6 +5241,16 @@
       },
       {
         "name": "section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "image": "none"
+      },
+      {
+        "name": "section early-years-feature site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
         "image": "none"
       }
@@ -4994,6 +5298,22 @@
       },
       {
         "title": "Age, availability & first step",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Joint face-to-face assessment for under-fives",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -5064,8 +5384,8 @@
   "/child-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-adhd-assessment",
     "heading": "Child ADHD Assessment in Farnham, Surrey",
-    "mainLength": 1292,
-    "cardCounts": 3,
+    "mainLength": 2455,
+    "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -5099,7 +5419,18 @@
     },
     "pathway": null,
     "assessmentCard": null,
-    "card": null,
+    "card": {
+      "background": "rgb(253, 249, 243)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 323.140625
+    },
     "team": null,
     "reviews": {
       "background": "rgb(253, 249, 243)",
@@ -5215,6 +5546,12 @@
       {
         "name": "SECTION.section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "hasImage": false,
         "visible": true
       },
@@ -5260,6 +5597,16 @@
         "text": "Autism + ADHD overlap",
         "size": "20px",
         "caps": "uppercase"
+      },
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
       }
     ],
     "reviewTopBorder": "0px",
@@ -5277,6 +5624,11 @@
       {
         "name": "section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -5299,6 +5651,18 @@
       },
       {
         "title": "Autism + ADHD overlap",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -5325,7 +5689,35 @@
       "height": 496
     },
     "consultationTagStyles": [],
-    "typography": {},
+    "typography": {
+      ".section-lead h2": {
+        "fontSize": "40.824px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "46.1311px",
+        "letterSpacing": "-1.0206px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card h3": {
+        "fontSize": "20px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "lineHeight": "25.4px",
+        "letterSpacing": "-0.36px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card p": {
+        "fontSize": "16px",
+        "fontFamily": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "color": "rgb(41, 75, 59)"
+      }
+    },
     "consultationBookingVisible": false,
     "consultationNoteInStep2": false,
     "personalNameInPageCopy": 0,
@@ -5341,8 +5733,8 @@
   "/combined-child-autism-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fcombined-child-autism-adhd-assessment",
     "heading": "Combined Autism & ADHD Assessment for Children and Young People",
-    "mainLength": 1012,
-    "cardCounts": 3,
+    "mainLength": 2369,
+    "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
@@ -5376,7 +5768,18 @@
     },
     "pathway": null,
     "assessmentCard": null,
-    "card": null,
+    "card": {
+      "background": "rgb(253, 249, 243)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 323.140625
+    },
     "team": null,
     "reviews": {
       "background": "rgb(253, 249, 243)",
@@ -5496,6 +5899,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -5527,7 +5936,18 @@
       "background": null,
       "photo": false
     },
-    "otherCardHeadings": [],
+    "otherCardHeadings": [
+      {
+        "text": "Included in your assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Enquiry and next steps",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -5543,6 +5963,11 @@
       {
         "name": "section site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section clinical-inclusions-section site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -5578,6 +6003,18 @@
       {
         "title": "Multi-disciplinary review",
         "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Face-to-face assessment and diagnostic feedback",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Included in your assessment",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "Enquiry and next steps",
+        "color": "rgb(16, 46, 32)"
       }
     ],
     "contactGoldButtons": [],
@@ -5612,6 +6049,24 @@
         "lineHeight": "46.1311px",
         "letterSpacing": "-1.0206px",
         "color": "rgb(16, 46, 32)"
+      },
+      ".card h3": {
+        "fontSize": "20px",
+        "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "lineHeight": "25.4px",
+        "letterSpacing": "-0.36px",
+        "color": "rgb(16, 46, 32)"
+      },
+      ".card p": {
+        "fontSize": "16px",
+        "fontFamily": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+        "fontWeight": "400",
+        "textTransform": "none",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "color": "rgb(41, 75, 59)"
       }
     },
     "consultationBookingVisible": false,
@@ -5629,7 +6084,7 @@
   "/pda-demand-avoidant-presentation": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fpda-demand-avoidant-presentation",
     "heading": "PDA Profile & Demand-Avoidant Presentations",
-    "mainLength": 855,
+    "mainLength": 1146,
     "cardCounts": 6,
     "navDropdowns": 4,
     "hero": {
@@ -5794,8 +6249,14 @@
         "visible": true
       },
       {
-        "name": "SECTION.section pda-next-step site-band-cream",
+        "name": "SECTION.section pda-included site-band-cream",
         "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section pda-next-step site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -5856,8 +6317,13 @@
         "image": "none"
       },
       {
-        "name": "section pda-next-step site-band-cream",
+        "name": "section pda-included site-band-cream",
         "background": "rgb(253, 249, 243)",
+        "image": "none"
+      },
+      {
+        "name": "section pda-next-step site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -5876,6 +6342,10 @@
       },
       {
         "title": "Safety",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "PDA profiling is included where appropriate",
         "color": "rgb(16, 46, 32)"
       },
       {
@@ -5941,7 +6411,7 @@
   "/post-assessment-advice": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fpost-assessment-advice",
     "heading": "Post-Assessment Support from Experts",
-    "mainLength": 1564,
+    "mainLength": 1962,
     "cardCounts": 9,
     "navDropdowns": 4,
     "hero": {
@@ -7475,7 +7945,7 @@
   "/free-consultation": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Ffree-consultation",
     "heading": "Free 15-Minute Consultation",
-    "mainLength": 1416,
+    "mainLength": 1548,
     "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
