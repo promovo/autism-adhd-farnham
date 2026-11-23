@@ -894,3 +894,10 @@ body[data-page="home"] #app .pathway-extra-actions > a.btn.btn-outline:hover{
   border-color:#A98214!important;
   color:#FFF5E6!important;
 }
+
+/* Keep the full split Post-Assessment Support section within the ivory system,
+   while preserving its real photograph on the left. */
+body[data-page="home"] #app > .homepage-post-support{
+  background-color:var(--site-ivory)!important;
+  background-image:none!important;
+}
