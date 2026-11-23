@@ -101,6 +101,20 @@ function render(path){
   document.body.dataset.reviewPath=path;
   document.body.dataset.woodland=adultWoodland.has(path)?'sunlight':childWoodland.has(path)?'birch':'canopy';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
+  // Enforce a genuine sequence of contrasting site sections. Older per-page
+  // selectors made neighbouring sections the same light green even though
+  // they had different classes. Give the actual rendered sections band classes.
+  const contentBands=[...document.querySelectorAll('#app > section.section:not(.dark):not(.global-start-cta)')];
+  if(path!=='/'){
+    contentBands.forEach((band,index)=>{
+      band.classList.toggle('site-band-sage',index%2===0);
+      band.classList.toggle('site-band-cream',index%2===1);
+      band.classList.toggle('site-band-deep-sage',index>0 && index%4===2);
+    });
+  }
+  // If the last content band is sage and the next section is the sage Google
+  // Reviews, insert a cream visual transition so greens never touch.
+  document.body.dataset.reviewCreamTransition=(path!=='/'&&contentBands.length%2===1)?'yes':'no';
   updateSeo(path);
   bind();
   if(location.hash){
