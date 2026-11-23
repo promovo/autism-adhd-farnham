@@ -30,6 +30,10 @@ const home=`
     <a class="info-card" href="/child-autism-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M8 21l1-6 3-2 3 2 1 6M9 15l-4 2M15 15l4 2"/><path d="M4.5 5.5 6 4l1.5 1.5M16.5 5.5 18 4l1.5 1.5"/></svg></div><div><h3>Child Autism Assessments</h3><p>Autism assessments for children and young people with a complete approach.</p><b class="learn-more-link">LEARN MORE <span class="learn-more-arrow" aria-hidden="true">→</span></b></div></a>
     <a class="info-card" href="/child-adhd-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3.4 3.4 0 0 0-3.4 3.4 3.8 3.8 0 0 0-4.1 5.4 3.7 3.7 0 0 0 3.2 6.4 3.2 3.2 0 0 0 4.3 1.4 3.2 3.2 0 0 0 4.3-1.4 3.7 3.7 0 0 0 3.2-6.4 3.8 3.8 0 0 0-4.1-5.4A3.4 3.4 0 0 0 12 3Z"/><path d="M12 6v12M8.5 9.5l2 1.5M15.5 9.5l-2 1.5"/></svg></div><div><h3>Child ADHD Assessments</h3><p>ADHD assessments for children and young people, tailored to individual needs.</p><b class="learn-more-link">LEARN MORE <span class="learn-more-arrow" aria-hidden="true">→</span></b></div></a>
   </div>
+  <div class="pathway-extra-actions cta-row" aria-label="Combined assessment pathways">
+    <a class="btn" href="/combined-adult-autism-adhd-assessment" data-link>Combined Adult Autism &amp; ADHD Assessment</a>
+    <a class="btn btn-outline" href="/combined-child-autism-adhd-assessment" data-link>Combined Child Autism &amp; ADHD Assessment</a>
+  </div>
 </section>
 
 <section class="specialist-wrap">
@@ -65,7 +69,7 @@ const home=`
     <div><img class="why-card-photo" src="/images/why-choose/personalised-process.webp" alt="Child completing an individual activity with clinician guidance" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1531346479518-1ddeedc3ff77?auto=format&amp;fit=crop&amp;w=1000&amp;q=85'"><span class="why-icon-frame"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-8-5-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 6-8 11-8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span><h4>Personalised process</h4><p>Flexible, calm and centred around the individual.</p></div>
     <div><img class="why-card-photo" src="/images/why-choose/clear-reports-next-steps.webp" alt="Assessment report and next steps being reviewed" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1664735245380-75ad87571bca?auto=format&amp;fit=crop&amp;w=1000&amp;q=85'"><span class="why-icon-frame"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM15 3v4h4"/><path d="M8 12h7M8 16h4"/><path d="m14 17 2 2 4-4"/></svg></span><h4>Clear reports and next steps</h4><p>Detailed recommendations and tailored signposting.</p></div>
   </div>
-  <div class="why-cta"><a class="btn" href="/contact" data-link>Get in touch</a></div>
+  <div class="why-cta"><a class="btn" href="/contact" data-link>Get in touch</a><a class="btn btn-outline" href="/choose-your-assessment" data-link>Choose Your Assessment</a></div>
 </section>
 
 <section class="clinicians-home">
