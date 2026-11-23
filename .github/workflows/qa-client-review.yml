@@ -68,6 +68,8 @@ jobs:
                     bands:[...document.querySelectorAll('#app > section.section:not(.dark):not(.global-start-cta)')].map(e=>({name:e.className,background:getComputedStyle(e).backgroundColor,image:getComputedStyle(e).backgroundImage})),
                     titleColours:[...document.querySelectorAll('#app h1,#app h2,#app h3,#app h4,#app h5,#app h6')].filter(e=>e.getBoundingClientRect().height>0 && !e.closest('.specialist-wrap,.dark,.global-start-cta')).map(e=>({title:e.textContent.trim().slice(0,85),color:getComputedStyle(e).color})),
                     contactGoldButtons:[...document.querySelectorAll('.contact-start-cards a.btn')].map(e=>({text:e.textContent,color:getComputedStyle(e).color,background:getComputedStyle(e).backgroundColor})),
+                    adultWhyIcons:[...document.querySelectorAll('.adult-why-grid .adult-why-icon')].map(e=>({width:Math.round(e.getBoundingClientRect().width),height:Math.round(e.getBoundingClientRect().height),cardWidth:Math.round(e.closest('.card').getBoundingClientRect().width),svgWidth:Math.round(e.querySelector('svg').getBoundingClientRect().width)})),
+                    contactCardGaps:[...document.querySelectorAll('.contact-start-cards .card')].map(e=>{const h=e.querySelector('h3')?.getBoundingClientRect(),p=e.querySelector('p')?.getBoundingClientRect();return {title:e.querySelector('h3')?.textContent,gap:h&&p?Math.round(p.top-h.bottom):null}}),
                     postIcons:[...document.querySelectorAll('.post-one .support-icon')].map(e=>({width:getComputedStyle(e).width,height:getComputedStyle(e).height,background:getComputedStyle(e).backgroundColor,svgWidth:getComputedStyle(e.querySelector('svg')).width,stroke:getComputedStyle(e.querySelector('svg')).stroke})),
                     cliniciansBand:css('.clinicians-home'),
                     cliniciansInner:css('.clinicians-home > .mock-section'),
@@ -140,6 +142,18 @@ jobs:
                 }
                 if(data.titleColours.some(t=>t.color!=='rgb(16, 46, 32)'))paletteViolations.push('TITLE COLOUR INCONSISTENCY '+route+' '+JSON.stringify(data.titleColours.filter(t=>t.color!=='rgb(16, 46, 32)')));
                 if(route==='/contact' && (data.contactGoldButtons.length!==3 || data.contactGoldButtons.some(x=>x.color!=='rgb(255, 249, 232)'||x.background!=='rgb(194, 154, 26)')))paletteViolations.push('CONTACT BUTTON COLOUR FAIL '+JSON.stringify(data.contactGoldButtons));
+                if(route==='/adult-assessments' && (data.adultWhyIcons.length!==4||data.adultWhyIcons.some(x=>x.width!==66||x.height!==66||x.svgWidth!==44||x.cardWidth<180))){
+                  paletteViolations.push('ADULT INFOGRAPHIC BOX OVERSIZED '+JSON.stringify(data.adultWhyIcons));
+                }
+                if(route==='/contact' && (data.contactCardGaps.length!==3||data.contactCardGaps.some(x=>x.gap>10||x.gap<0))){
+                  paletteViolations.push('CONTACT TITLE TO BODY GAP STILL TOO LARGE '+JSON.stringify(data.contactCardGaps));
+                }
+                if(route!=='/' && data.bands.some((band,i)=>i>0&&band.background===data.bands[i-1].background)){
+                  paletteViolations.push('ADJACENT CONTENT SECTIONS SAME COLOUR '+route+': '+JSON.stringify(data.bands));
+                }
+                if(route!=='/'&&data.bands.length&&data.bands.at(-1).background===data.reviewBand?.background){
+                  paletteViolations.push('LAST CONTENT SECTION SAME COLOUR AS REVIEWS '+route);
+                }
                 if(route==='/post-assessment-advice' && (data.postIcons.length!==6 || data.postIcons.some(x=>x.width!=='66px'||x.height!=='66px'||x.svgWidth!=='44px'||x.stroke!=='rgb(213, 173, 51)')))paletteViolations.push('POST-ASSESSMENT ICON STYLE FAIL '+JSON.stringify(data.postIcons));
                 if(data.firstSection?.background!==(data.bands.length===1?'rgb(199, 221, 190)':'rgb(226, 236, 218)')){
                   paletteViolations.push('FIRST SECTION NOT APPROVED GREEN: '+route+' value='+JSON.stringify(data.firstSection));
@@ -196,7 +210,7 @@ jobs:
                   }
                 }
                 map[route]=data;
-                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/faq','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
+                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/faq','/adult-assessments','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
                 if(capture.has(route)){
                   await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
                 }
