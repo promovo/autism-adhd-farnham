@@ -1789,3 +1789,10 @@ body[data-page="home"] .mock-hero .hero-copy .hero-trust.three-items {
     margin-top: 32px !important;
   }
 }
+
+/* 23 Nov — close the oversized gap before the Personalised hero infographic on desktop. */
+@media (min-width: 1281px) {
+  body[data-page="home"] .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3) {
+    transform: translateX(-28px) !important;
+  }
+}
