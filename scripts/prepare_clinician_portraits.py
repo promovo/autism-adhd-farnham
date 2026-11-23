@@ -132,6 +132,16 @@ for name,slug,url in PEOPLE:
     top=85
     left=(W/2 - (fx+fw/2)*scale) if face else (W/2 - (bbox[0]+bbox[2])/2*scale)
     origin_y=top-bbox[1]*scale
+    # Segmentation can occasionally treat the original photograph's
+    # background as subject near its top edge. Anchor to the *real detected
+    # face* if that would otherwise push the head down and out of frame.
+    if face:
+        projected_face_top=fy*scale+origin_y
+        if projected_face_top>260 or projected_face_top<65:
+            origin_y=155-fy*scale
+            print("FACE-FRAME SAFETY CORRECTION", name,
+                  "previous_face_top",round(projected_face_top),
+                  "corrected_face_top",155,flush=True)
     neww=max(1,round(original.width*scale))
     newh=max(1,round(original.height*scale))
     # Crop source before resize: keep only the pixels which will appear in output.
