@@ -2,21 +2,7 @@
   {
     "name": "Lisa Mayatt",
     "slug": "lisa-mayatt",
-    "source_size": [
-      1200,
-      1600
-    ],
-    "face": [
-      253,
-      423,
-      502,
-      502
-    ],
-    "face_detected": true,
-    "scale": 0.637,
-    "head_top_px": 85,
-    "target_face_width": 320.0,
-    "subject_bottom_px": 939
+    "source": "original unretouched garden photo"
   },
   {
     "name": "Dr Gopal Venkat",
@@ -35,7 +21,7 @@
     "scale": 1.081,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1407
+    "subject_bottom_px": 1815
   },
   {
     "name": "Dr Joseph Chukwu",
@@ -51,9 +37,9 @@
       153
     ],
     "face_detected": true,
-    "scale": 2.27,
+    "scale": 2.277,
     "head_top_px": 85,
-    "target_face_width": 347.3,
+    "target_face_width": 348.4,
     "subject_bottom_px": 750
   },
   {
@@ -73,7 +59,7 @@
     "scale": 1.013,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 895
+    "subject_bottom_px": 920
   },
   {
     "name": "Dr Daniela Di Basilio",
@@ -92,7 +78,7 @@
     "scale": 1.147,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1058
+    "subject_bottom_px": 1206
   },
   {
     "name": "Karen Cooper",
@@ -111,7 +97,7 @@
     "scale": 0.599,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 920
+    "subject_bottom_px": 1026
   },
   {
     "name": "Beccy Muggeridge",
@@ -130,7 +116,7 @@
     "scale": 0.907,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1049
+    "subject_bottom_px": 1051
   },
   {
     "name": "Deepika Sharma",
@@ -149,7 +135,7 @@
     "scale": 0.825,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 956
+    "subject_bottom_px": 957
   },
   {
     "name": "Jess Wilson",
@@ -168,7 +154,7 @@
     "scale": 0.566,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 867
+    "subject_bottom_px": 888
   },
   {
     "name": "Sarah Grieve",
@@ -187,6 +173,6 @@
     "scale": 0.66,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 846
+    "subject_bottom_px": 856
   }
 ]
