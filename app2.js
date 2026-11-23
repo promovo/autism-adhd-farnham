@@ -17,11 +17,23 @@ const assessmentOverview=`${header('Choose Your Assessment','Explore all Autism,
 <section class="section assessment-overview specialist-overview">
   <div class="section-lead"><h2>Specialist areas & support</h2></div>
   <div class="cards three">
-    <div class="card"><h3>Women / Female Presentation</h3><p>Masking, subtle presentation and later recognition.</p><a class="inline learn-more-link" href="/autism-adhd-women" data-link>LEARN MORE</a></div>
-    <div class="card"><h3>PDA / Demand Avoidance</h3><p>Demand-avoidant presentations considered within the wider Autism assessment where relevant.</p><a class="inline learn-more-link" href="/pda-demand-avoidant-presentation" data-link>LEARN MORE</a></div>
-    <div class="card"><h3>Post-Assessment Support</h3><p>Optional practical advice sessions after assessment where clinically appropriate.</p><a class="inline learn-more-link" href="/post-assessment-advice" data-link>LEARN MORE</a></div>
+    <div class="card"><h3>Women / Female Presentation</h3><p>Recognising masking and less obvious autism or ADHD presentations, including later identification.</p><a class="inline learn-more-link" href="/autism-adhd-women" data-link>LEARN MORE</a></div>
+    <div class="card"><h3>PDA / Demand Avoidance</h3><p>Considering demand-avoidant presentations within a wider autism assessment when appropriate.</p><a class="inline learn-more-link" href="/pda-demand-avoidant-presentation" data-link>LEARN MORE</a></div>
+    <div class="card"><h3>Post-Assessment Support</h3><p>Practical, tailored advice sessions following assessment, where clinically appropriate and helpful.</p><a class="inline learn-more-link" href="/post-assessment-advice" data-link>LEARN MORE</a></div>
   </div>
-  <div class="assessment-overview-visual"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Calm clinic environment"></div>
+</section>
+<section class="section assessment-clinic-feature">
+  <div class="assessment-clinic-feature-inner">
+    <div class="assessment-clinic-feature-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="The welcoming clinic environment at Autism Assessments Farnham" loading="lazy"></div>
+    <div class="assessment-clinic-feature-copy">
+      <div class="eyebrow">Our Farnham clinic</div>
+      <h2>A calm, welcoming space for your assessment</h2>
+      <p>Our clinic is based in a quiet setting in South Farnham, within an annexe designed to feel comfortable and welcoming.</p>
+      <p>There is a spacious waiting room, outdoor seating, toilet facilities and parking available, helping make your visit as straightforward as possible.</p>
+      <p class="assessment-clinic-feature-address"><strong>Find us:</strong> The Annexe, 3 Leigh Lane, Farnham, Surrey, GU9 8HP.</p>
+      <a class="btn" href="/contact" data-link>Contact our clinic</a>
+    </div>
+  </div>
 </section>`;
 const adult=`${header('Adult Autism & ADHD Assessments in Farnham, Surrey','If you are exploring whether autism, ADHD or both may help explain long-standing experiences, Autism Assessments Farnham offers private adult assessment pathways with an experienced multi-disciplinary clinical team.')}<section class="section"><div class="section-lead"><div class="eyebrow">Which pathway is right for me?</div><h2>Adult assessment pathways</h2></div><div class="cards four adult-pathway-grid">
     <div class="card"><h3>Adult Autism<br>Assessment</h3><p>Explore long-standing differences in communication, sensory processing, routines and everyday social demands.</p><a class="inline" href="/adult-autism-assessment" data-link>Adult Autism Assessment</a></div>
