@@ -21,7 +21,7 @@
     "scale": 1.081,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1815
+    "subject_bottom_px": 1393
   },
   {
     "name": "Dr Joseph Chukwu",
@@ -78,7 +78,7 @@
     "scale": 1.147,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1206
+    "subject_bottom_px": 1020
   },
   {
     "name": "Karen Cooper",
@@ -97,7 +97,7 @@
     "scale": 0.599,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1026
+    "subject_bottom_px": 874
   },
   {
     "name": "Beccy Muggeridge",
@@ -116,7 +116,7 @@
     "scale": 0.907,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1051
+    "subject_bottom_px": 712
   },
   {
     "name": "Deepika Sharma",
