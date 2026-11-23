@@ -1046,3 +1046,168 @@ body[data-page="inner"][data-review-path="/choose-your-assessment"] #app .assess
   line-height:1.27!important;
   letter-spacing:-.018em!important;
 }
+
+/* 23 NOV — CROSS-SITE BRAND CONSISTENCY: HEADINGS, BUTTONS AND SUPPORT ICONS
+ * One dark-green heading ink on light backgrounds; retain cream lettering
+ * on photographic/dark sections. Replaces legacy black/near-black overrides. */
+:root{
+  --site-heading-ink:#102E20;
+  --site-button-gold:#C29A1A;
+  --site-button-hover:#A98214;
+  --site-button-ink:#FFF9E8;
+}
+body[data-page="home"] #app > .mock-hero :is(h1,h2,h3,h4),
+body[data-page="inner"] #app > .page-hero :is(h1,h2,h3,h4),
+body[data-page] #app > .section:not(.dark):not(.global-start-cta) :is(h1,h2,h3,h4,h5,h6),
+body[data-page="home"] #app > .mock-section :is(h1,h2,h3,h4,h5,h6),
+body[data-page="home"] #app > .clinicians-home :is(h1,h2,h3,h4,h5,h6),
+body[data-page="home"] #app > .homepage-post-support :is(h1,h2,h3,h4,h5,h6){
+  color:var(--site-heading-ink)!important;
+}
+body[data-page="home"] #app > .specialist-wrap .mock-heading h2,
+body[data-page] .section.global-start-cta :is(h1,h2,h3,h4,h5,h6),
+body[data-page] #app > .section.dark :is(h1,h2,h3,h4,h5,h6){
+  color:var(--site-button-ink)!important;
+}
+/* A single gold-button system, including outlined button variants.
+   Hover colour, shadow and movement now match regardless of page. */
+body[data-page] #app a.btn,
+body[data-page] #app button.btn,
+body[data-page] .site-header .nav a.btn,
+body[data-page] .section.global-start-cta a.btn{
+  background:var(--site-button-gold)!important;
+  background-color:var(--site-button-gold)!important;
+  border:1px solid var(--site-button-gold)!important;
+  color:var(--site-button-ink)!important;
+  text-decoration:none!important;
+  box-shadow:0 3px 10px rgba(35,66,45,.10)!important;
+  transform:translateY(0)!important;
+  transition:background-color .2s ease,border-color .2s ease,
+    box-shadow .2s ease,transform .2s ease,color .2s ease!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body[data-page] #app a.btn:hover,
+  body[data-page] #app button.btn:hover,
+  body[data-page] .site-header .nav a.btn:hover,
+  body[data-page] .section.global-start-cta a.btn:hover{
+    background:var(--site-button-hover)!important;
+    background-color:var(--site-button-hover)!important;
+    border-color:var(--site-button-hover)!important;
+    color:var(--site-button-ink)!important;
+    box-shadow:0 7px 18px rgba(35,66,45,.17)!important;
+    transform:translateY(-2px)!important;
+  }
+}
+body[data-page] #app a.btn:focus-visible,
+body[data-page] #app button.btn:focus-visible,
+body[data-page] .site-header .nav a.btn:focus-visible{
+  outline:3px solid #D5AD33!important;
+  outline-offset:3px!important;
+}
+body[data-page] #app a.btn:active,
+body[data-page] #app button.btn:active,
+body[data-page] .site-header .nav a.btn:active{
+  transform:translateY(0)!important;
+  background:var(--site-button-hover)!important;
+  border-color:var(--site-button-hover)!important;
+  color:var(--site-button-ink)!important;
+}
+/* Contact previously used gold background with dark-green letters.
+   Explicitly override the old route-specific rule in both resting/hover states. */
+body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards .card a.btn,
+body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards .card a.btn.btn-outline{
+  background:#C29A1A!important;
+  background-color:#C29A1A!important;
+  border-color:#C29A1A!important;
+  color:#FFF9E8!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards .card a.btn:hover,
+  body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards .card a.btn.btn-outline:hover{
+    background:#A98214!important;
+    background-color:#A98214!important;
+    border-color:#A98214!important;
+    color:#FFF9E8!important;
+    box-shadow:0 7px 18px rgba(35,66,45,.17)!important;
+    transform:translateY(-2px)!important;
+  }
+}
+/* Post-assessment support infographics: same rounded 66px frame and
+   44px light-gold line artwork as the Home pathway/specialist icons.
+   Match Home's left icon / right copy presentation on desktop. */
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards > .card{
+  display:grid!important;
+  grid-template-columns:66px minmax(0,1fr)!important;
+  grid-template-rows:auto 1fr!important;
+  column-gap:18px!important;
+  row-gap:5px!important;
+  align-content:start!important;
+  align-items:start!important;
+  text-align:left!important;
+}
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > .support-icon{
+  width:66px!important;
+  height:66px!important;
+  min-width:66px!important;
+  min-height:66px!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  grid-column:1!important;
+  grid-row:1/span 2!important;
+  margin:0!important;
+  padding:10px!important;
+  border:1px solid #E9DFB6!important;
+  border-radius:18px!important;
+  color:#D5AD33!important;
+  background:#F7F4E6!important;
+}
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > .support-icon svg{
+  width:44px!important;
+  height:44px!important;
+  flex:0 0 44px!important;
+  display:block!important;
+  fill:none!important;
+  stroke:#D5AD33!important;
+  stroke-width:1.8!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+  transform:none!important;
+}
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > h3{
+  grid-column:2!important;
+  grid-row:1!important;
+  margin:0 0 5px!important;
+}
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > p{
+  grid-column:2!important;
+  grid-row:2!important;
+  margin:0!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card:hover > .support-icon{
+    background:#F0ECD6!important;
+    border-color:#D5AD33!important;
+    color:#D5AD33!important;
+  }
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards > .card{
+    grid-template-columns:58px minmax(0,1fr)!important;
+    column-gap:14px!important;
+  }
+  body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > .support-icon{
+    width:58px!important;
+    height:58px!important;
+    min-width:58px!important;
+    min-height:58px!important;
+    border-radius:16px!important;
+    padding:8px!important;
+  }
+  body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .cards .card > .support-icon svg{
+    width:38px!important;
+    height:38px!important;
+    flex-basis:38px!important;
+  }
+}
