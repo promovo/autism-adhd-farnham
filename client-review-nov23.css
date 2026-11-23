@@ -681,3 +681,44 @@ body[data-page="inner"][data-review-path="/our-team"] #app > .section.team-page{
     padding:34px 5vw 56px!important;
   }
 }
+
+/* 23 NOV: SINGLE SOURCE OF TRUTH FOR ALL HERO OVERLAYS.
+   Uses the same actual forest photo, same gradient stops, same origin and
+   same background positioning so inner pages cannot retain a different veil.
+   Both selectors override legacy page-specific hero backgrounds. */
+:root{
+  --site-hero-overlay:linear-gradient(90deg,
+    rgba(240,225,205,.98) 0%,
+    rgba(240,225,205,.94) 25%,
+    rgba(240,225,205,.81) 44%,
+    rgba(240,225,205,.51) 59%,
+    rgba(240,225,205,.10) 81%,
+    rgba(240,225,205,0) 100%);
+  --site-hero-image:url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg');
+}
+body[data-page="home"] #app > .mock-hero,
+body[data-page="inner"] #app > .page-hero{
+  background-color:#F0E1CD!important;
+  background-image:var(--site-hero-overlay),var(--site-hero-image)!important;
+  background-position:center center,center right!important;
+  background-repeat:no-repeat,no-repeat!important;
+  background-size:cover,cover!important;
+  background-attachment:scroll,scroll!important;
+  background-blend-mode:normal,normal!important;
+}
+body[data-page="inner"] #app > .page-hero::before,
+body[data-page="inner"] #app > .page-hero::after{
+  /* Prevent stale overlays from older templates stacking another tint. */
+  background-image:none!important;
+}
+@media(max-width:760px){
+  body[data-page="home"] #app > .mock-hero,
+  body[data-page="inner"] #app > .page-hero{
+    background-image:linear-gradient(90deg,
+      rgba(240,225,205,.96) 0%,
+      rgba(240,225,205,.91) 55%,
+      rgba(240,225,205,.84) 100%),
+      var(--site-hero-image)!important;
+    background-position:center center,66% center!important;
+  }
+}
