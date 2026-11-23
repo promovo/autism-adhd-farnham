@@ -665,3 +665,19 @@ body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards .
   color:#312409!important;
   font-weight:700!important;
 }
+
+/* Team background must span the WHOLE viewport, not only the old
+   max-width:1300px biography container; preserve the content column. */
+body[data-page="inner"][data-review-path="/our-team"] #app > .section.team-page{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  padding:clamp(38px,5vw,66px) max(5vw,calc((100% - 1180px)/2)) clamp(58px,6vw,90px)!important;
+  background:#D3E6CC!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/our-team"] #app > .section.team-page{
+    padding:34px 5vw 56px!important;
+  }
+}
