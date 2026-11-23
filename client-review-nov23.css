@@ -1696,3 +1696,86 @@ body[data-page="inner"] #app .pda-included .soft-panel{
   max-width:1100px;
   margin-inline:auto;
 }
+
+/* 23 Nov — FAQ questions grouped under their own clearly differentiated
+   headings, using only existing approved sage/cream section shades.
+   These are content groups, not transition strips. */
+body[data-page="inner"][data-review-path="/faq"] #app > section.faq{
+  padding-top:clamp(24px,3.5vw,48px)!important;
+  padding-bottom:clamp(34px,4.4vw,58px)!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group{
+  max-width:1120px!important;
+  margin:0 auto 18px!important;
+  padding:clamp(21px,3vw,34px) clamp(19px,3.5vw,45px)!important;
+  border-radius:14px!important;
+  border:1px solid rgba(56,89,61,.12)!important;
+  box-shadow:0 4px 12px rgba(29,65,42,.055)!important;
+  transition:none!important;
+  animation:none!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-light{
+  background:#E2ECDA!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-cream{
+  background:#FDF9F3!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-deep{
+  background:#C7DDBE!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group > h2{
+  color:#102E20!important;
+  font-family:'Outfit','DM Sans',Arial,sans-serif!important;
+  font-size:clamp(1.45rem,2.2vw,2.1rem)!important;
+  line-height:1.25!important;
+  font-weight:600!important;
+  text-align:left!important;
+  margin:0 0 13px!important;
+  padding:0 0 12px!important;
+  border-bottom:1px solid rgba(56,89,61,.22)!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details{
+  margin:0!important;
+  padding:15px 0!important;
+  border-bottom:1px solid rgba(56,89,61,.18)!important;
+  background:transparent!important;
+  transition:none!important;
+  animation:none!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details:last-child{
+  padding-bottom:4px!important;
+  border-bottom:0!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group summary{
+  color:#102E20!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:16px!important;
+  font-weight:700!important;
+  line-height:1.45!important;
+  cursor:pointer!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details p{
+  max-width:960px!important;
+  margin:10px 0 0!important;
+  line-height:1.65!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group{
+    border-radius:12px!important;
+    margin-bottom:13px!important;
+  }
+  body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group > h2{
+    font-size:1.42rem!important;
+  }
+}
+/* Ensure all buttons styled as .btn, including shared review calls-to-action,
+   use one type hierarchy; inline authoritative values are also set on render. */
+body a.btn,body button.btn,body .site-header a.btn,
+body .google-reviews-section a.btn,body .global-start-cta a.btn{
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:700!important;
+  line-height:1.35!important;
+  letter-spacing:.065em!important;
+  text-transform:uppercase!important;
+}
