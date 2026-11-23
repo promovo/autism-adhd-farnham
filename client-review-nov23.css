@@ -1249,3 +1249,55 @@ body[data-page="inner"][data-review-path="/faq"] #app > section.section.faq{
   background-color:#C7DDBE!important;
   background-image:none!important;
 }
+
+/* 23 Nov: no transition effects on Fees or Local Resources.
+   Only direct solid colour changes between sections; no animated fades,
+   gradients, card lifts or transient hover/background changes.
+   Normal gold button interactions are preserved. */
+body[data-page="inner"][data-review-path="/local-resources"] #app > section.section,
+body[data-page="inner"][data-review-path="/fees"] #app > section.section{
+  transition:none!important;
+  animation:none!important;
+  background-image:none!important;
+  margin-block:0!important;
+  border-top:0!important;
+  border-bottom:0!important;
+}
+body[data-page="inner"][data-review-path="/local-resources"] #app > section.section{
+  background-color:#C7DDBE!important;
+}
+body[data-page="inner"][data-review-path="/fees"] #app > section.section.fees-prices{
+  background-color:#E2ECDA!important;
+}
+body[data-page="inner"][data-review-path="/fees"] #app > section.section.fees-current{
+  background-color:#FDF9F3!important;
+}
+body[data-page="inner"][data-review-path="/fees"] #app > section.section.fees-support{
+  background-color:#C7DDBE!important;
+}
+body[data-page="inner"][data-review-path="/local-resources"] #app .card,
+body[data-page="inner"][data-review-path="/fees"] #app .card,
+body[data-page="inner"][data-review-path="/fees"] #app .fee-card,
+body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner{
+  background-color:#FDF9F3!important;
+  box-shadow:var(--review-shadow)!important;
+  border-color:rgba(151,128,87,.23)!important;
+  transition:none!important;
+  animation:none!important;
+  transform:none!important;
+}
+body[data-page="inner"][data-review-path="/local-resources"] #app .card:hover,
+body[data-page="inner"][data-review-path="/fees"] #app .card:hover,
+body[data-page="inner"][data-review-path="/fees"] #app .fee-card:hover,
+body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner:hover{
+  background-color:#FDF9F3!important;
+  box-shadow:var(--review-shadow)!important;
+  transform:none!important;
+}
+/* Support icons have the exact geometry of the Home line-art system. */
+body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-one .support-icon svg.brand-icon{
+  stroke-width:1.8!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+  fill:none!important;
+}
