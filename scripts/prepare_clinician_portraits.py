@@ -134,10 +134,10 @@ for name,slug,url in PEOPLE:
     origin_y=top-bbox[1]*scale
     # Segmentation can occasionally treat the original photograph's
     # background as subject near its top edge. Anchor to the *real detected
-    # face* if that would otherwise push the head down and out of frame.
+    # face* if that would otherwise push the head down and out of frame.\n    # Do not use low face boxes to reframe: one original portrait has a\n    # false positive on clothing, but its existing crown framing is correct.
     if face:
         projected_face_top=fy*scale+origin_y
-        if projected_face_top>260 or projected_face_top<65:
+        if projected_face_top>260:
             origin_y=155-fy*scale
             print("FACE-FRAME SAFETY CORRECTION", name,
                   "previous_face_top",round(projected_face_top),
