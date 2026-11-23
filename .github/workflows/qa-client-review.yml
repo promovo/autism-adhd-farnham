@@ -29,7 +29,7 @@ jobs:
           const puppeteer=require(process.cwd()+'/node_modules/puppeteer-core');
           const fs=require('fs');
           const url='https://autism-adhd-farnham-review-v2.onrender.com/';
-          const routes=['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/contact','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/adult-pre-booking','/child-young-person-assessments'];
+          const routes=["/","/choose-your-assessment","/how-assessments-work","/fees","/our-team","/contact","/faq","/adult-assessments","/adult-autism-assessment","/adult-adhd-assessment","/combined-adult-autism-adhd-assessment","/autism-adhd-women","/child-young-person-assessments","/child-autism-assessment","/child-adhd-assessment","/combined-child-autism-adhd-assessment","/pda-demand-avoidant-presentation","/post-assessment-advice","/local-resources","/ehcp-expert-witness-reports","/adult-pre-booking","/child-pre-booking","/free-consultation","/privacy-policy"];
           const map={};
           (async()=>{
             const browser=await puppeteer.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox','--disable-dev-shm-usage'],headless:true});
@@ -38,7 +38,7 @@ jobs:
                 const page=await browser.newPage();
                 await page.setViewport({width:1512,height:1000,deviceScaleFactor:1});
                 await page.goto(url+(route==='/'?'':'?review='+encodeURIComponent(route)),{waitUntil:'domcontentloaded',timeout:40000});
-                await new Promise(r=>setTimeout(r,1200));
+                await new Promise(r=>setTimeout(r,900));
                 const key=route==='/'?'home':route.slice(1);
                 const data=await page.evaluate(()=>{
                   const css=(sel)=>{const el=document.querySelector(sel);if(!el)return null;const s=getComputedStyle(el);return {background:s.backgroundColor,backgroundImage:s.backgroundImage.slice(0,200),color:s.color,boxShadow:s.boxShadow,font:s.fontFamily,textTransform:s.textTransform,fontWeight:s.fontWeight,height:el.getBoundingClientRect().height};};
@@ -56,8 +56,18 @@ jobs:
                     consoleErrorCount:window.__qaErrors||0
                   };
                 });
+                if(!data.heading||data.mainLength<180||data.heading.includes('Page not found')){
+                  throw Error('Page route missing or empty: '+route+JSON.stringify(data));
+                }
+                if(data.navDropdowns!==4)throw Error('Dropdown navigation unavailable on '+route);
+                if(!data.start?.backgroundImage.includes('static.wixstatic.com/media/9df129_')){
+                  throw Error('Missing woodland footer CTA on '+route);
+                }
+                if(data.reviews?.background!=='rgb(253, 249, 243)'){
+                  throw Error('Inconsistent review card background on '+route);
+                }
                 map[route]=data;
-                const capture=new Set(['/','/choose-your-assessment','/fees','/our-team','/pda-demand-avoidant-presentation','/contact']);
+                const capture=new Set(['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/free-consultation','/contact']);
                 if(capture.has(route)){
                   await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
                 }
