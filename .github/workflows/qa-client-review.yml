@@ -1,0 +1,78 @@
+name: QA client review preview screenshots
+on:
+  push:
+    paths:
+      - '.github/workflows/qa-client-review.yml'
+      - 'index.html'
+      - 'client-review-nov23.css'
+      - 'app1.js'
+      - 'app2.js'
+      - 'app3.js'
+      - 'app4.js'
+      - 'navigation-review.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  visual-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install screenshot runtime
+        run: npm install --no-save --no-package-lock puppeteer-core@24
+      - name: Capture rendered pages and styles
+        run: |
+          cat > /tmp/review-preview.cjs <<'JS'
+          const puppeteer=require(process.cwd()+'/node_modules/puppeteer-core');
+          const fs=require('fs');
+          const url='https://autism-adhd-farnham-review-v2.onrender.com/';
+          const routes=['/','/choose-your-assessment','/how-assessments-work','/fees','/our-team','/contact','/pda-demand-avoidant-presentation','/post-assessment-advice','/local-resources','/adult-pre-booking','/child-young-person-assessments'];
+          const map={};
+          (async()=>{
+            const browser=await puppeteer.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox','--disable-dev-shm-usage'],headless:true});
+            try{
+              for(const route of routes){
+                const page=await browser.newPage();
+                await page.setViewport({width:1512,height:1000,deviceScaleFactor:1});
+                await page.goto(url+(route==='/'?'':'?review='+encodeURIComponent(route)),{waitUntil:'domcontentloaded',timeout:40000});
+                await new Promise(r=>setTimeout(r,1200));
+                const key=route==='/'?'home':route.replace(/^\\//,'');
+                const data=await page.evaluate(()=>{
+                  const css=(sel)=>{const el=document.querySelector(sel);if(!el)return null;const s=getComputedStyle(el);return {background:s.backgroundColor,backgroundImage:s.backgroundImage.slice(0,200),color:s.color,boxShadow:s.boxShadow,font:s.fontFamily,textTransform:s.textTransform,fontWeight:s.fontWeight,height:el.getBoundingClientRect().height};};
+                  return {
+                    route:location.href,heading:document.querySelector('h1')?.textContent,mainLength:document.querySelector('#app')?.textContent?.length,
+                    cardCounts:document.querySelectorAll('.card,.info-card,.specialist-card,.clinician-card,.google-review-card').length,
+                    navDropdowns:document.querySelectorAll('.nav-dropdown-menu').length,
+                    hero:css('.mock-hero')||css('.page-hero'),pathway:css('.pathway-grid .info-card'),
+                    assessmentCard:css('.overview-service-cards .card'),card:css('#app .card'),team:css('.team-page'),
+                    reviews:css('.google-review-card'),reviewText:css('.google-review-card p'),
+                    start:css('.global-start-cta'),section:css('#app>.section'),
+                    fee:css('.fees-current'),pdaPhoto:css('.pda-photo'),
+                    link:css('#app .card a.inline'),homePrimaryCard:css('.why-grid>div'),
+                    navItems:[...document.querySelectorAll('.nav-dropdown-menu a')].slice(0,8).map(e=>({text:e.textContent,style:getComputedStyle(e).textTransform})),
+                    consoleErrorCount:window.__qaErrors||0
+                  };
+                });
+                map[route]=data;
+                const capture=new Set(['/','/choose-your-assessment','/fees','/our-team','/pda-demand-avoidant-presentation','/contact']);
+                if(capture.has(route)){
+                  await page.screenshot({path:'qa/site-review/'+key+'.jpg',type:'jpeg',quality:72,fullPage:true});
+                }
+                console.log(route,data.heading,JSON.stringify({hero:data.hero,card:data.card,link:data.link,team:data.team,pdaPhoto:data.pdaPhoto,reviewText:data.reviewText}));
+                await page.close();
+              }
+              fs.writeFileSync('qa/site-review/computed-styles.json',JSON.stringify(map,null,2));
+            }finally{await browser.close();}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          mkdir -p qa/site-review
+          node /tmp/review-preview.cjs
+      - name: Store visual QA only if updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add qa/site-review/
+          git diff --cached --quiet || (git commit -m "Capture rendered site review pages and computed styles" && git push)
