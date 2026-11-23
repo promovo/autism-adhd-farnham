@@ -31,6 +31,7 @@ jobs:
           const url='https://autism-adhd-farnham-review-v2.onrender.com/';
           const routes=["/","/choose-your-assessment","/how-assessments-work","/fees","/our-team","/contact","/faq","/adult-assessments","/adult-autism-assessment","/adult-adhd-assessment","/combined-adult-autism-adhd-assessment","/autism-adhd-women","/child-young-person-assessments","/child-autism-assessment","/child-adhd-assessment","/combined-child-autism-adhd-assessment","/pda-demand-avoidant-presentation","/post-assessment-advice","/local-resources","/ehcp-expert-witness-reports","/adult-pre-booking","/child-pre-booking","/free-consultation","/privacy-policy"];
           const map={};
+          const paletteViolations=[];
           (async()=>{
             const browser=await puppeteer.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox','--disable-dev-shm-usage'],headless:true});
             try{
@@ -92,14 +93,14 @@ jobs:
                 }
                 const approvedBackgrounds=new Set(['rgb(226, 236, 218)','rgb(199, 221, 190)','rgb(41, 75, 59)','rgb(253, 249, 243)']);
                 const invalid=data.paletteSections.filter(x=>x.visible && !x.hasImage && x.background!=='rgba(0, 0, 0, 0)' && !approvedBackgrounds.has(x.background));
-                if(invalid.length)throw Error('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
-                if(data.reviewBand?.background!=='rgb(226, 236, 218)')throw Error('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
+                if(invalid.length)paletteViolations.push('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
+                if(data.reviewBand?.background!=='rgb(226, 236, 218)')paletteViolations.push('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
                 if(route==='/'){
                   if(data.homeChooseButton?.background!=='rgb(194, 154, 26)'){
-                    throw Error('HOME CHOOSE ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeChooseButton));
+                    paletteViolations.push('HOME CHOOSE ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeChooseButton));
                   }
                   if(data.homeCombinedButtons.some(b=>b.background!=='rgb(194, 154, 26)')){
-                    throw Error('COMBINED ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeCombinedButtons));
+                    paletteViolations.push('COMBINED ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeCombinedButtons));
                   }
                 }
                 map[route]=data;
@@ -111,6 +112,7 @@ jobs:
                 await page.close();
               }
               fs.writeFileSync('qa/site-review/computed-styles.json',JSON.stringify(map,null,2));
+              if(paletteViolations.length)throw Error('PALETTE ISSUES ON '+paletteViolations.length+' CHECKS\\n'+paletteViolations.join('\\n'));
             }finally{await browser.close();}
           })().catch(e=>{console.error(e);process.exit(1)});
           JS
