@@ -77,6 +77,7 @@ jobs:
                     childPathwayCardGaps:[...document.querySelectorAll('.child-pathway-grid .card')].map(e=>{const h=e.querySelector('h3'),p=e.querySelector('p');if(!h||!p)return null;const a=h.getBoundingClientRect(),b=p.getBoundingClientRect(),q=getComputedStyle(h);return {title:h.textContent.replace(/\\s+/g,' ').trim(),gap:Math.round(b.top-a.bottom),titleHeight:Math.round(a.height),minHeight:q.minHeight,bodyTop:Math.round(b.top)}}),
                     postIcons:[...document.querySelectorAll('.post-one .support-icon')].map(e=>({width:getComputedStyle(e).width,height:getComputedStyle(e).height,background:getComputedStyle(e).backgroundColor,svgWidth:getComputedStyle(e.querySelector('svg')).width,stroke:getComputedStyle(e.querySelector('svg')).stroke})),
                     buttonTypography:[...document.querySelectorAll('.btn')].filter(e=>e.getBoundingClientRect().height>0).map(e=>{const t=getComputedStyle(e);return {text:e.textContent.trim().slice(0,60),fontFamily:t.fontFamily,fontSize:t.fontSize,fontWeight:t.fontWeight,textTransform:t.textTransform,letterSpacing:t.letterSpacing}}),
+                    faqTopicGroups:[...document.querySelectorAll('#app .faq-topic-group')].map(e=>({heading:e.querySelector('h2')?.textContent.trim(),color:getComputedStyle(e).backgroundColor,details:e.querySelectorAll('details').length,visible:e.getBoundingClientRect().height>0})),
                     teamDisciplineCards:[...document.querySelectorAll('.team-disciplines > .card')].map(e=>{const h=e.querySelector('h3'),p=e.querySelector('p'),a=e.getBoundingClientRect(),b=h.getBoundingClientRect(),c=p.getBoundingClientRect(),ps=getComputedStyle(p);return {title:h.textContent.trim(),paragraph:p.textContent.trim(),paragraphLines:Math.round(c.height/parseFloat(ps.lineHeight)),titleToTextGap:Math.round(c.top-b.bottom),blankBottom:Math.round(a.bottom-c.bottom),cardHeight:Math.round(a.height),minTitleHeight:getComputedStyle(h).minHeight}}),
                     cliniciansBand:css('.clinicians-home'),
                     cliniciansInner:css('.clinicians-home > .mock-section'),
@@ -146,6 +147,12 @@ jobs:
                 }
                 if(route==='/' && (data.homeSpecialistDescriptions.length!==4 || Math.max(...data.homeSpecialistDescriptions.map(x=>x.length))-Math.min(...data.homeSpecialistDescriptions.map(x=>x.length))>20)){
                   paletteViolations.push('HOME SPECIALIST PARAGRAPHS UNBALANCED '+JSON.stringify(data.homeSpecialistDescriptions));
+                }
+                if(route==='/faq'){
+                  const expected=['rgb(226, 236, 218)','rgb(253, 249, 243)','rgb(199, 221, 190)','rgb(253, 249, 243)','rgb(226, 236, 218)','rgb(199, 221, 190)'];
+                  if(data.faqTopicGroups.length!==6||data.faqTopicGroups.some((g,i)=>g.color!==expected[i]||!g.details||!g.visible)){
+                    paletteViolations.push('FAQ GROUPS NOT CONTRASTING: '+JSON.stringify(data.faqTopicGroups));
+                  }
                 }
                 if(data.buttonTypography.some(x=>x.fontSize!=='13px'||x.fontWeight!=='700'||x.textTransform!=='uppercase'||!x.fontFamily.includes('DM Sans'))){
                   paletteViolations.push('BUTTON FONT MISMATCH '+route+' '+JSON.stringify(data.buttonTypography.filter(x=>x.fontSize!=='13px'||x.fontWeight!=='700'||x.textTransform!=='uppercase'||!x.fontFamily.includes('DM Sans'))));
