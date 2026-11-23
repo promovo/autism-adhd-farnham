@@ -132,7 +132,10 @@ function render(path){
   if(path!=='/'){
     contentBands.forEach((band,index)=>{
       const isSage=index%2===0;
-      const isDeepSage=isSage&&index>0&&index%4===2;
+      // The final sage section uses the deeper approved shade rather than
+      // adding a separate cream divider before the light-sage reviews.
+      // FAQs has a single content section, so it also becomes deeper sage.
+      const isDeepSage=isSage&&((index>0&&index%4===2)||index===contentBands.length-1);
       band.classList.toggle('site-band-sage',isSage);
       band.classList.toggle('site-band-cream',!isSage);
       band.classList.toggle('site-band-deep-sage',isDeepSage);
@@ -143,15 +146,13 @@ function render(path){
       band.style.setProperty('background',colour,'important');
     });
   }
-  // The Google Reviews section is outside #app and must stay approved sage.
-  // When the last content section is green, give the two sections a cream
-  // separator instead of showing two continuous greens.
-  const needCreamDivider=path!=='/'&&contentBands.length%2===1;
-  document.body.dataset.reviewCreamTransition=needCreamDivider?'yes':'no';
+  // Google Reviews stays the approved light sage, immediately adjoining
+  // the last page section. No artificial borders, bands or transition strips.
+  delete document.body.dataset.reviewCreamTransition;
   const reviewsBand=document.querySelector('.google-reviews-section');
   if(reviewsBand){
     reviewsBand.style.setProperty('background','#E2ECDA','important');
-    reviewsBand.style.setProperty('border-top',needCreamDivider?'46px solid #FDF9F3':'0','important');
+    reviewsBand.style.setProperty('border-top','0','important');
   }
   updateSeo(path);
   bind();
