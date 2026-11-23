@@ -426,3 +426,48 @@ body[data-page="home"] .google-reviews-section .google-review-card{
     box-shadow:var(--review-shadow-hover)!important;
   }
 }
+
+/* 23 Nov: lighter ivory-cream consistently on all homepage card types. */
+body[data-page="home"] #app > .mock-hero + .mock-section .pathway-grid .info-card,
+body[data-page="home"] #app .pathway-grid .info-card,
+body[data-page="home"] #app .specialist-wrap .specialist-grid .specialist-card,
+body[data-page="home"] #app .why-section .why-grid > div,
+body[data-page="home"] #app .clinicians-home .clinician-card,
+body[data-page="home"] #app .clinicians-home .clinician-card-placeholder,
+body[data-page="home"] .google-reviews-section .google-review-card{
+  background:#FDF9F3!important;
+  background-color:#FDF9F3!important;
+  box-shadow:var(--review-shadow)!important;
+}
+@media(hover:hover) and (pointer:fine){
+  body[data-page="home"] #app > .mock-hero + .mock-section .pathway-grid .info-card:hover,
+  body[data-page="home"] #app .specialist-wrap .specialist-grid .specialist-card:hover,
+  body[data-page="home"] #app .why-section .why-grid > div:hover,
+  body[data-page="home"] #app .clinicians-home .clinician-card:hover,
+  body[data-page="home"] .google-reviews-section .google-review-card:hover{
+    background:#FDF9F3!important;
+    background-color:#FDF9F3!important;
+    box-shadow:var(--review-shadow-hover)!important;
+  }
+}
+/* Dropdown labels match the main uppercase nav; arrow sits 3px higher. */
+body .site-header .nav .nav-dropdown-menu > a,
+body .site-header .nav .nav-dropdown-menu > a:hover,
+body .site-header .nav .nav-dropdown-menu > a:focus-visible{
+  text-transform:uppercase!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  letter-spacing:.048em!important;
+  font-size:.69rem!important;
+  font-weight:550!important;
+}
+body .site-header .nav .nav-dropdown-toggle{
+  transform:translateY(-3px)!important;
+}
+body .site-header .nav .nav-item.submenu-open .nav-dropdown-toggle{
+  transform:translateY(-3px) rotate(180deg)!important;
+}
+@media(max-width:1500px){
+  body .site-header .nav .nav-dropdown-menu > a{
+    font-size:.77rem!important;
+  }
+}
