@@ -49,9 +49,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgba(0, 0, 0, 0)",
+      "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
-      "color": "rgb(41, 75, 59)",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -126,28 +126,28 @@
     },
     "pathway": null,
     "assessmentCard": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 224.4375
+      "height": 223.453125
     },
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 408.328125
+      "height": 407.34375
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -167,9 +167,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -177,14 +177,14 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(220, 234, 212)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 693.265625
+      "height": 692.28125
     },
     "fee": null,
     "pdaPhoto": null,
@@ -195,7 +195,7 @@
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
       "textTransform": "uppercase",
-      "fontWeight": "750",
+      "fontWeight": "700",
       "height": 18.46875
     },
     "homePrimaryCard": null,
@@ -256,7 +256,7 @@
     "card": null,
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -276,9 +276,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -286,7 +286,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(217, 232, 208)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -354,7 +354,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -365,7 +365,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -385,9 +385,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -395,7 +395,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(218, 232, 210)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -405,7 +405,7 @@
       "height": 355.515625
     },
     "fee": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -422,7 +422,7 @@
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
       "textTransform": "uppercase",
-      "fontWeight": "750",
+      "fontWeight": "700",
       "height": 16
     },
     "homePrimaryCard": null,
@@ -481,7 +481,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -491,7 +491,7 @@
       "height": 237.09375
     },
     "team": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(211, 230, 204)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -501,7 +501,7 @@
       "height": 5531.796875
     },
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -521,9 +521,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -531,7 +531,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(211, 230, 204)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -599,7 +599,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -610,7 +610,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -630,9 +630,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -708,7 +708,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -719,7 +719,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -739,9 +739,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -749,7 +749,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(214, 230, 206)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -826,7 +826,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -837,7 +837,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -857,9 +857,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -867,7 +867,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(213, 230, 204)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -935,7 +935,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -946,7 +946,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -966,9 +966,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -994,7 +994,7 @@
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
       "textTransform": "uppercase",
-      "fontWeight": "750",
+      "fontWeight": "700",
       "height": 16
     },
     "homePrimaryCard": null,
@@ -1055,7 +1055,7 @@
     "card": null,
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -1075,9 +1075,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -1085,7 +1085,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(251, 250, 246)",
+      "background": "rgb(214, 230, 205)",
       "backgroundImage": "none",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
@@ -1153,7 +1153,7 @@
     "pathway": null,
     "assessmentCard": null,
     "card": {
-      "background": "rgb(255, 252, 247)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -1164,7 +1164,7 @@
     },
     "team": null,
     "reviews": {
-      "background": "rgb(245, 233, 217)",
+      "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
@@ -1184,9 +1184,9 @@
       "height": 76.78125
     },
     "start": {
-      "background": "rgb(251, 250, 246)",
-      "backgroundImage": "none",
-      "color": "rgb(41, 75, 59)",
+      "background": "rgb(36, 76, 54)",
+      "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
@@ -1212,7 +1212,7 @@
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
       "textTransform": "uppercase",
-      "fontWeight": "750",
+      "fontWeight": "700",
       "height": 18.46875
     },
     "homePrimaryCard": null,
