@@ -1604,3 +1604,95 @@ body[data-page="inner"] #app > section.section:not(.dark):not(.global-start-cta)
   border-top:0!important;
   border-bottom:0!important;
 }
+
+/* 23 November clinical-review pass — one CTA type system across the site.
+   Use the same font, weight, sizing and uppercase label case regardless
+   of page, including header and the shared Google Reviews/footer CTA. */
+body a.btn,
+body button.btn,
+body .btn.btn-outline,
+body .btn.btn-small,
+body .site-header .nav a.btn,
+body .global-start-cta .btn{
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:700!important;
+  font-style:normal!important;
+  line-height:1.35!important;
+  letter-spacing:.065em!important;
+  text-transform:uppercase!important;
+}
+body a.btn span,body button.btn span{
+  font-family:inherit!important;
+  font-size:inherit!important;
+  font-weight:inherit!important;
+  text-transform:inherit!important;
+}
+/* Team disciplines — titles sit immediately above a balanced paragraph.
+   Remove inherited minimum heading heights that created an empty gap. */
+body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines{
+  align-items:stretch!important;
+}
+body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines > .card{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  align-items:stretch!important;
+  gap:0!important;
+  padding:23px 18px!important;
+}
+body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines > .card h3{
+  display:block!important;
+  flex:none!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0 0 8px!important;
+  padding:0!important;
+  font-size:20px!important;
+  line-height:1.23!important;
+}
+body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines > .card p{
+  display:block!important;
+  flex:none!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:1.52!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines > .card{
+    padding:20px!important;
+  }
+  body[data-page="inner"][data-review-path="/our-team"] #app .team-disciplines > .card h3{
+    font-size:19px!important;
+  }
+}
+/* Clinical copy blocks for new assessment details use approved site colours. */
+body[data-page="inner"] #app .clinical-inclusions-section .card p,
+body[data-page="inner"] #app .early-years-feature p,
+body[data-page="home"] #app .home-clinical-facts p{
+  line-height:1.65!important;
+}
+body[data-page="home"] #app .home-clinical-facts{
+  max-width:1120px;
+  margin:22px auto 8px;
+  padding:22px 28px;
+  background:#FDF9F3;
+  border-radius:13px;
+  box-shadow:0 4px 18px rgba(29,65,42,.10);
+  text-align:left;
+}
+body[data-page="inner"] #app .clinical-inclusions-section .clinical-clarification{
+  margin-top:20px;
+}
+body[data-page="inner"] #app .clinical-fees-summary{
+  background:#E2ECDA!important;
+}
+body[data-page="inner"] #app .early-years-feature{
+  background:#E2ECDA!important;
+}
+body[data-page="inner"] #app .pda-included .soft-panel{
+  max-width:1100px;
+  margin-inline:auto;
+}
