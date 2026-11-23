@@ -118,18 +118,18 @@ jobs:
                 if(invalid.length)paletteViolations.push('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
                 if(data.reviewBand?.background!=='rgb(226, 236, 218)')paletteViolations.push('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
                 if(route!=='/'){
-                  const expectedBands=data.bands.map((b,i)=>i%2===1?'rgb(253, 249, 243)':(i>0 && i%4===2?'rgb(199, 221, 190)':'rgb(226, 236, 218)'));
+                  const expectedBands=data.bands.map((b,i)=>i%2===1?'rgb(253, 249, 243)':((i>0&&i%4===2)||i===data.bands.length-1?'rgb(199, 221, 190)':'rgb(226, 236, 218)'));
                   data.bands.forEach((band,i)=>{
                     if(band.background!==expectedBands[i] || band.image!=='none')paletteViolations.push('SECTION ALTERNATION FAIL: '+route+' #'+i+' '+JSON.stringify(band)+' wanted '+expectedBands[i]);
                   });
-                  const wantBorder=data.bands.length%2===1?'46px':'0px';
-                  if(data.reviewTopBorder!==wantBorder)paletteViolations.push('GOOGLE REVIEWS CREAM SEPARATOR FAIL '+route+': '+data.reviewTopBorder+' expected '+wantBorder);
+                  const wantBorder='0px';
+                  if(data.reviewTopBorder!==wantBorder)paletteViolations.push('UNEXPECTED GOOGLE REVIEWS BORDER '+route+': '+data.reviewTopBorder+' expected '+wantBorder);
                 }
                 if(data.titleColours.some(t=>t.color!=='rgb(16, 46, 32)'))paletteViolations.push('TITLE COLOUR INCONSISTENCY '+route+' '+JSON.stringify(data.titleColours.filter(t=>t.color!=='rgb(16, 46, 32)')));
                 if(route==='/contact' && (data.contactGoldButtons.length!==3 || data.contactGoldButtons.some(x=>x.color!=='rgb(255, 249, 232)'||x.background!=='rgb(194, 154, 26)')))paletteViolations.push('CONTACT BUTTON COLOUR FAIL '+JSON.stringify(data.contactGoldButtons));
                 if(route==='/post-assessment-advice' && (data.postIcons.length!==6 || data.postIcons.some(x=>x.width!=='66px'||x.height!=='66px'||x.svgWidth!=='44px'||x.stroke!=='rgb(213, 173, 51)')))paletteViolations.push('POST-ASSESSMENT ICON STYLE FAIL '+JSON.stringify(data.postIcons));
-                if(data.firstSection?.background!=='rgb(226, 236, 218)'){
-                  paletteViolations.push('FIRST SECTION NOT SAGE GREEN: '+route+' value='+JSON.stringify(data.firstSection));
+                if(data.firstSection?.background!==(data.bands.length===1?'rgb(199, 221, 190)':'rgb(226, 236, 218)')){
+                  paletteViolations.push('FIRST SECTION NOT APPROVED GREEN: '+route+' value='+JSON.stringify(data.firstSection));
                 }
                 if(route==='/free-consultation'){
                   if(data.consultationBookingVisible)paletteViolations.push('UNWANTED CONSULTATION BOOKING SECTION STILL PRESENT');
