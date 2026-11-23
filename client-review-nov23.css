@@ -1465,3 +1465,103 @@ body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #a
     justify-content:flex-start!important;
   }
 }
+
+/* ADULT WHY CHOOSE: the gold icon panel was stretching to the full width
+   of each card. Give all four illustrations the same compact square frame. */
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid{
+  align-items:stretch!important;
+}
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid > .card{
+  min-width:0!important;
+  text-align:center!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  padding:24px 18px!important;
+}
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .adult-why-icon{
+  width:66px!important;
+  min-width:66px!important;
+  max-width:66px!important;
+  height:66px!important;
+  min-height:66px!important;
+  max-height:66px!important;
+  flex:0 0 66px!important;
+  align-self:center!important;
+  margin:0 auto 15px!important;
+  padding:10px!important;
+  border-radius:18px!important;
+  display:grid!important;
+  place-items:center!important;
+  box-sizing:border-box!important;
+  background:#F7F4E6!important;
+  border:1px solid #E9DFB6!important;
+}
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .adult-why-icon svg{
+  display:block!important;
+  width:44px!important;
+  height:44px!important;
+  min-width:44px!important;
+  max-width:44px!important;
+  min-height:44px!important;
+  max-height:44px!important;
+  flex:none!important;
+  fill:none!important;
+  stroke:#D5AD33!important;
+  stroke-width:1.8!important;
+  box-sizing:border-box!important;
+}
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .card h3{
+  width:100%!important;
+  margin:0 0 7px!important;
+}
+body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .card p{
+  width:100%!important;
+  margin:0!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .adult-why-icon{
+    width:58px!important;
+    min-width:58px!important;
+    max-width:58px!important;
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    flex-basis:58px!important;
+    padding:8px!important;
+  }
+  body[data-page="inner"][data-review-path="/adult-assessments"] #app .adult-why-grid .adult-why-icon svg{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    max-width:40px!important;
+    min-height:40px!important;
+    max-height:40px!important;
+  }
+}
+/* CONTACT START HERE: tighten the title-to-description gap in all 3 cards,
+   preserving equal-height cards with their gold actions along the bottom. */
+body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards > .card h3{
+  margin:0 0 6px!important;
+  padding:0!important;
+  line-height:1.25!important;
+}
+body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards > .card p{
+  margin:0 0 14px!important;
+  padding:0!important;
+  min-height:0!important;
+  line-height:1.55!important;
+}
+body[data-page="inner"][data-review-path="/contact"] #app .contact-start-cards > .card .btn{
+  margin-top:auto!important;
+  align-self:flex-start!important;
+}
+/* No separate colour-transition bands or borders between content sections.
+   Page renderer already alternates sage, deeper sage and ivory. */
+body[data-page="inner"] #app > section.section:not(.dark){
+  border-top-width:0!important;
+  border-bottom-width:0!important;
+}
+body[data-page="inner"] > .google-reviews-section{
+  border-top:0!important;
+}
