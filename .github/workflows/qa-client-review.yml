@@ -57,6 +57,10 @@ jobs:
                     fee:css('.fees-current'),pdaPhoto:css('.pda-photo'),
                     link:css('#app .card a.inline'),homePrimaryCard:css('.why-grid>div'),
                     navItems:[...document.querySelectorAll('.nav-dropdown-menu a')].slice(0,8).map(e=>({text:e.textContent,style:getComputedStyle(e).textTransform})),
+                    paletteSections:[...document.querySelectorAll('#app > section,#app > section > section,.google-reviews-section,.site-header,.footer')].map(e=>{const x=getComputedStyle(e);return {name:e.tagName+'.'+e.className,background:x.backgroundColor,hasImage:x.backgroundImage!=='none',visible:e.getBoundingClientRect().height>0}}),
+                    reviewBand:css('.google-reviews-section'),
+                    homeChooseButton:css('.why-section .why-cta a[href="/choose-your-assessment"],.why-section .why-cta a[href*="%2Fchoose-your-assessment"]'),
+                    homeCombinedButtons:[...document.querySelectorAll('.pathway-extra-actions a')].map(e=>({text:e.textContent,background:getComputedStyle(e).backgroundColor})),
                     consoleErrorCount:window.__qaErrors||0
                   };
                 });
@@ -84,6 +88,18 @@ jobs:
                     if(innerLayer?.backgroundImage!==homeLayer?.backgroundImage || innerLayer?.display!==homeLayer?.display || innerLayer?.opacity!==homeLayer?.opacity || innerLayer?.filter!==homeLayer?.filter){
                       throw Error('VISIBLE HERO LAYER MISMATCH: '+route+' '+layer+' home='+JSON.stringify(homeLayer)+' inner='+JSON.stringify(innerLayer));
                     }
+                  }
+                }
+                const approvedBackgrounds=new Set(['rgb(226, 236, 218)','rgb(199, 221, 190)','rgb(41, 75, 59)','rgb(253, 249, 243)']);
+                const invalid=data.paletteSections.filter(x=>x.visible && !x.hasImage && x.background!=='rgba(0, 0, 0, 0)' && !approvedBackgrounds.has(x.background));
+                if(invalid.length)throw Error('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
+                if(data.reviewBand?.background!=='rgb(226, 236, 218)')throw Error('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
+                if(route==='/'){
+                  if(data.homeChooseButton?.background!=='rgb(194, 154, 26)'){
+                    throw Error('HOME CHOOSE ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeChooseButton));
+                  }
+                  if(data.homeCombinedButtons.some(b=>b.background!=='rgb(194, 154, 26)')){
+                    throw Error('COMBINED ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeCombinedButtons));
                   }
                 }
                 map[route]=data;
