@@ -780,3 +780,117 @@ body[data-page="inner"] #app > .page-hero > *{
       rgba(250,249,244,.46) 100%)!important;
   }
 }
+
+/* 23 NOV | APPROVED SITE BACKGROUND PALETTE
+   Exactly THREE solid greens:
+   #E2ECDA = approved Google Reviews sage (also the header and light bands)
+   #C7DDBE = the only deeper sage, for alternating sections
+   #294B3B = the dark footer / dark section colour.
+   Warm ivory #FDF9F3 is the ONLY neutral solid section/card background.
+   Photo-led hero, specialist and woodland CTA backgrounds remain photographs.
+*/
+:root{
+  --site-sage-light:#E2ECDA;
+  --site-sage-deep:#C7DDBE;
+  --site-forest:#294B3B;
+  --site-ivory:#FDF9F3;
+}
+html,body,
+body[data-page="home"],body[data-page="inner"]{
+  background-color:var(--site-ivory)!important;
+}
+body .site-header,body .site-header.site-header{
+  background-color:var(--site-sage-light)!important;
+  background-image:none!important;
+}
+body .preview-bar,
+body .footer,
+body .section.dark{
+  background-color:var(--site-forest)!important;
+}
+/* Page sections: remove the dozens of older, conflicting sage/white shades. */
+body[data-page="inner"][data-review-path] #app > .section:not(.dark):not(.global-start-cta){
+  background-color:var(--site-ivory)!important;
+  background-image:none!important;
+}
+body[data-page="inner"][data-review-path] #app > .section.alt:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.sage:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.intro-tone:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.team-page:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.fees-prices:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.post-one:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.post-three:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.prebooking-main:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.consultation-first:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.speech-therapy-page:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.pda-page:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.how-page:not(.dark):not(.global-start-cta){
+  background-color:var(--site-sage-light)!important;
+}
+body[data-page="inner"][data-review-path] #app > .section.fees-current:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.post-two:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.consultation-second:not(.dark):not(.global-start-cta),
+body[data-page="inner"][data-review-path] #app > .section.assessment-overview.alt:not(.dark):not(.global-start-cta){
+  background-color:var(--site-sage-deep)!important;
+}
+/* The review block is the exact client-approved sage on ALL pages. */
+body .google-reviews-section,
+body[data-page="home"] .google-reviews-section,
+body[data-page="inner"] .google-reviews-section{
+  background-color:var(--site-sage-light)!important;
+  background-image:none!important;
+}
+/* Home: same palette, preserving photo-based specialist and hero sections. */
+body[data-page="home"] #app > .mock-section:not(.why-section),
+body[data-page="home"] #app > .mock-hero + .mock-section{
+  background:var(--site-sage-light)!important;
+}
+body[data-page="home"] #app > .mock-section.why-section{
+  background:var(--site-sage-light)!important;
+}
+body[data-page="home"] #app > .clinicians-home,
+body[data-page="home"] #app > .clinicians-home > .mock-section,
+body[data-page="home"] #app > .homepage-post-support .post-support-copy{
+  background:var(--site-ivory)!important;
+}
+body[data-page="home"] #app > .specialist-wrap > .mock-section{
+  background:transparent!important;
+}
+/* Use the same ivory for white or warm-cream card boxes throughout. */
+body #app .card,
+body #app .soft-panel,
+body #app .fee-card,
+body #app .assessment-detail-card,
+body #app .team-profile,
+body #app .info-card,
+body #app .specialist-card,
+body #app .why-grid > div,
+body #app .clinician-card,
+body .google-reviews-section .google-review-card{
+  background-color:var(--site-ivory)!important;
+}
+/* Keep small notices and tags within the same background palette. */
+body #app .notice,
+body #app .tag{
+  background-color:var(--site-ivory)!important;
+}
+/* Correct BOTH Home Choose Assessment actions: solid brand gold, not outline. */
+body[data-page="home"] #app .why-section .why-cta > a.btn,
+body[data-page="home"] #app .why-section .why-cta > a.btn.btn-outline,
+body[data-page="home"] #app .pathway-extra-actions > a.btn,
+body[data-page="home"] #app .pathway-extra-actions > a.btn.btn-outline{
+  background:#C29A1A!important;
+  background-color:#C29A1A!important;
+  border:1px solid #C29A1A!important;
+  color:#FFF5E6!important;
+  box-shadow:none!important;
+}
+body[data-page="home"] #app .why-section .why-cta > a.btn:hover,
+body[data-page="home"] #app .why-section .why-cta > a.btn.btn-outline:hover,
+body[data-page="home"] #app .pathway-extra-actions > a.btn:hover,
+body[data-page="home"] #app .pathway-extra-actions > a.btn.btn-outline:hover{
+  background:#A98214!important;
+  background-color:#A98214!important;
+  border-color:#A98214!important;
+  color:#FFF5E6!important;
+}
