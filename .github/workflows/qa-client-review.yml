@@ -42,11 +42,15 @@ jobs:
                 const key=route==='/'?'home':route.slice(1);
                 const data=await page.evaluate(()=>{
                   const css=(sel)=>{const el=document.querySelector(sel);if(!el)return null;const s=getComputedStyle(el);return {background:s.backgroundColor,backgroundImage:s.backgroundImage,backgroundPosition:s.backgroundPosition,backgroundSize:s.backgroundSize,color:s.color,boxShadow:s.boxShadow,font:s.fontFamily,textTransform:s.textTransform,fontWeight:s.fontWeight,height:el.getBoundingClientRect().height};};
+                  const pseudo=(sel,which)=>{const el=document.querySelector(sel);if(!el)return null;const v=getComputedStyle(el,which);return {display:v.display,content:v.content,opacity:v.opacity,zIndex:v.zIndex,backgroundImage:v.backgroundImage,backgroundPosition:v.backgroundPosition,filter:v.filter};};
                   return {
                     route:location.href,heading:document.querySelector('h1')?.textContent,mainLength:document.querySelector('#app')?.textContent?.length,
                     cardCounts:document.querySelectorAll('.card,.info-card,.specialist-card,.clinician-card,.google-review-card').length,
                     navDropdowns:document.querySelectorAll('.nav-dropdown-menu').length,
-                    hero:css('.mock-hero')||css('.page-hero'),pathway:css('.pathway-grid .info-card'),
+                    hero:css('.mock-hero')||css('.page-hero'),
+                    heroBefore:pseudo('.mock-hero','::before')||pseudo('.page-hero','::before'),
+                    heroAfter:pseudo('.mock-hero','::after')||pseudo('.page-hero','::after'),
+                    pathway:css('.pathway-grid .info-card'),
                     assessmentCard:css('.overview-service-cards .card'),card:css('#app .card'),team:css('.team-page'),
                     reviews:css('.google-review-card'),reviewText:css('.google-review-card p'),
                     start:css('.global-start-cta'),section:css('#app>.section'),
@@ -73,6 +77,13 @@ jobs:
                   }
                   if(data.hero.backgroundPosition!==baseline?.backgroundPosition){
                     throw Error('HERO IMAGE POSITION NOT MATCHED: '+route+' / home='+baseline?.backgroundPosition+' / inner='+data.hero.backgroundPosition);
+                  }
+                  for(const layer of ['heroBefore','heroAfter']){
+                    const homeLayer=map['/']?.[layer];
+                    const innerLayer=data[layer];
+                    if(innerLayer?.backgroundImage!==homeLayer?.backgroundImage || innerLayer?.display!==homeLayer?.display || innerLayer?.opacity!==homeLayer?.opacity || innerLayer?.filter!==homeLayer?.filter){
+                      throw Error('VISIBLE HERO LAYER MISMATCH: '+route+' '+layer+' home='+JSON.stringify(homeLayer)+' inner='+JSON.stringify(innerLayer));
+                    }
                   }
                 }
                 map[route]=data;
