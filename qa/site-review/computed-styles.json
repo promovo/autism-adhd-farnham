@@ -2,7 +2,7 @@
   "/": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/",
     "heading": "Autism & ADHD Assessments for Adults, Children & Young People",
-    "mainLength": 3695,
+    "mainLength": 3792,
     "cardCounts": 22,
     "navDropdowns": 4,
     "hero": {
@@ -204,6 +204,39 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [
+      {
+        "text": "Understanding demand-avoidant presentations through thoughtful assessments and practical support strategies.",
+        "length": 108,
+        "lines": 5,
+        "height": 122.8125
+      },
+      {
+        "text": "Recognising masking, subtle autism and ADHD presentations, and later identification in women and girls.",
+        "length": 103,
+        "lines": 5,
+        "height": 122.8125
+      },
+      {
+        "text": "Exploring autism and ADHD together through one joined-up assessment pathway that considers overlapping needs.",
+        "length": 109,
+        "lines": 5,
+        "height": 122.8125
+      },
+      {
+        "text": "Specialist speech and language support, including communication needs, EHCP evidence and expert reports.",
+        "length": 104,
+        "lines": 5,
+        "height": 122.8125
+      }
+    ],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [],
     "titleColours": [
@@ -423,7 +456,7 @@
   "/choose-your-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchoose-your-assessment",
     "heading": "Choose Your Assessment",
-    "mainLength": 1578,
+    "mainLength": 2109,
     "cardCounts": 11,
     "navDropdowns": 4,
     "hero": {
@@ -611,6 +644,12 @@
         "visible": true
       },
       {
+        "name": "SECTION.section assessment-clinic-feature site-band-cream",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
         "name": "SECTION.google-reviews-section",
         "background": "rgb(226, 236, 218)",
         "hasImage": false,
@@ -635,6 +674,72 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [
+      {
+        "text": "Recognising masking and less obvious autism or ADHD presentations, including later identification.",
+        "length": 98,
+        "lines": 3
+      },
+      {
+        "text": "Considering demand-avoidant presentations within a wider autism assessment when appropriate.",
+        "length": 92,
+        "lines": 3
+      },
+      {
+        "text": "Practical, tailored advice sessions following assessment, where clinically appropriate and helpful.",
+        "length": 99,
+        "lines": 3
+      }
+    ],
+    "clinicFeature": {
+      "exists": true,
+      "background": "rgb(253, 249, 243)",
+      "title": "A calm, welcoming space for your assessment",
+      "photo": true
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Adult Assessments",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Child & Young Person Assessments",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Autism Assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "ADHD Assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Autism + ADHD",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Women / Female Presentation",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "PDA / Demand Avoidance",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Post-Assessment Support",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -650,6 +755,11 @@
       {
         "name": "section assessment-overview specialist-overview site-band-sage site-band-deep-sage",
         "background": "rgb(199, 221, 190)",
+        "image": "none"
+      },
+      {
+        "name": "section assessment-clinic-feature site-band-cream",
+        "background": "rgb(253, 249, 243)",
         "image": "none"
       }
     ],
@@ -700,6 +810,10 @@
       },
       {
         "title": "Post-Assessment Support",
+        "color": "rgb(16, 46, 32)"
+      },
+      {
+        "title": "A calm, welcoming space for your assessment",
         "color": "rgb(16, 46, 32)"
       }
     ],
@@ -1012,6 +1126,14 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -1321,6 +1443,40 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Autism Assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "ADHD Assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Combined Autism + ADHD",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Free Initial Telephone Consultation",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Post-Assessment Advice Session",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -1403,7 +1559,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -1430,7 +1586,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -1664,6 +1820,40 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Paediatrics",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Psychology",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Speech & Language Therapy",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Occupational Therapy",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Mental Health Nursing",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -1837,7 +2027,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -2052,6 +2242,30 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Adult Pre-Booking",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Child / Young Person",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Free Consultation",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -2141,7 +2355,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -2168,7 +2382,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -2374,6 +2588,14 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -2650,6 +2872,55 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Adult AutismAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Adult ADHDAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Combined Autism + ADHDAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Women / FemalePresentation",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Multi-disciplinary",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Personalised",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Clear reports",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Current availability",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -2761,7 +3032,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -2992,6 +3263,30 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "A flexible, person-centred approach",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Women, masking & later recognition",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "First step",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -3090,7 +3385,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -3299,6 +3594,25 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Autism and ADHD can overlap",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "First step",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -3554,6 +3868,20 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "One integrated process",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -3823,6 +4151,20 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Autism, ADHD or both?",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -4088,6 +4430,40 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Child AutismAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Child ADHDAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Combined Autism + ADHDAssessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "PDA / Demand-AvoidantPresentation",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "School & professional information",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -4187,7 +4563,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -4427,6 +4803,30 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Helping your child feel comfortable",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "PDA / demand avoidance",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Age, availability & first step",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -4525,7 +4925,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -4734,6 +5134,25 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "School & professional information",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Autism + ADHD overlap",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -4989,6 +5408,14 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -5276,6 +5703,30 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Anxiety",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Autonomy",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Safety",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -5327,7 +5778,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -5547,6 +5998,50 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Sensory processing",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Communication",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Executive functioning",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Workplace adaptations",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Educational adaptations",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Real-world challenges",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "£180 per session",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -5684,7 +6179,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -5903,6 +6398,35 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Surrey Hills Dyslexia",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "TLC Space Ltd",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Claire Neill",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Nina Robinson",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -5958,7 +6482,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -6172,6 +6696,35 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "EHCP & Expert Witness work",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Speech & Language Assessment",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "EHCP Evidence",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Expert Witness Reports",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -6236,7 +6789,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -6439,6 +6992,14 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -6685,6 +7246,14 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -6942,6 +7511,30 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Adult Pre-Booking Form",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "Child / Young Person Pre-Booking Form",
+        "size": "20px",
+        "caps": "uppercase"
+      },
+      {
+        "text": "What the call is for",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -7028,7 +7621,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -7073,7 +7666,7 @@
         "fontSize": "20px",
         "fontFamily": "Outfit, \"DM Sans\", Arial, sans-serif",
         "fontWeight": "600",
-        "textTransform": "none",
+        "textTransform": "uppercase",
         "lineHeight": "25.4px",
         "letterSpacing": "-0.36px",
         "color": "rgb(16, 46, 32)"
@@ -7312,6 +7905,20 @@
       "fontWeight": "400",
       "height": 458.6875
     },
+    "homeSpecialistDescriptions": [],
+    "chooseSupportDescriptions": [],
+    "clinicFeature": {
+      "exists": false,
+      "background": null,
+      "photo": false
+    },
+    "otherCardHeadings": [
+      {
+        "text": "Get in Touch",
+        "size": "20px",
+        "caps": "uppercase"
+      }
+    ],
     "reviewTopBorder": "0px",
     "bands": [
       {
@@ -7402,7 +8009,7 @@
     "/free-consultation": {
       "heading": {
         "size": "19px",
-        "transform": "none",
+        "transform": "uppercase",
         "color": "rgb(16, 46, 32)"
       },
       "label": {
@@ -7436,7 +8043,7 @@
     "/fees": {
       "heading": {
         "size": "19px",
-        "transform": "none",
+        "transform": "uppercase",
         "color": "rgb(16, 46, 32)"
       },
       "label": {
