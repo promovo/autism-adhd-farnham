@@ -1211,3 +1211,36 @@ body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-o
     flex-basis:38px!important;
   }
 }
+
+/* 23 NOV • PAGE-BAND ALTERNATION (verified against actual DOM order)
+ * The first section below every cream hero is light sage. Following sections
+ * alternate ivory / sage. The third band can use the approved deeper sage.
+ * A cream transition prevents an ending sage section sitting directly
+ * against the identically coloured Google Reviews area. */
+body[data-page="inner"][data-review-path] #app > section.section.site-band-sage:not(.dark):not(.global-start-cta){
+  background:#E2ECDA!important;
+  background-color:#E2ECDA!important;
+  background-image:none!important;
+}
+body[data-page="inner"][data-review-path] #app > section.section.site-band-cream:not(.dark):not(.global-start-cta){
+  background:#FDF9F3!important;
+  background-color:#FDF9F3!important;
+  background-image:none!important;
+}
+body[data-page="inner"][data-review-path] #app > section.section.site-band-deep-sage:not(.dark):not(.global-start-cta){
+  background:#C7DDBE!important;
+  background-color:#C7DDBE!important;
+  background-image:none!important;
+}
+body[data-page="inner"][data-review-cream-transition="yes"] > .google-reviews-section{
+  border-top:46px solid #FDF9F3!important;
+}
+body[data-page="inner"][data-review-cream-transition="no"] > .google-reviews-section{
+  border-top:0!important;
+}
+body[data-page="inner"] > .google-reviews-section{
+  background:#E2ECDA!important;
+  background-color:#E2ECDA!important;
+}
+/* Preserve the review section's approved sage shade regardless of the
+   colour of the preceding content band. */
