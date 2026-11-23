@@ -92,18 +92,28 @@ lisa_mask=None
 backdrop_path="images/clinicians/lisa-garden-clean.webp"
 if not os.path.exists(backdrop_path):
     raise FileNotFoundError("Permanent Lisa garden reference missing: "+backdrop_path)
-garden=ImageOps.fit(Image.open(backdrop_path).convert("RGB"),(W,H),method=Image.Resampling.LANCZOS)
+# Optical-reframe the real garden instead of blurring artificial left/right strips.
+# The conspicuous leaves are foreground objects at both photo edges; crop beyond
+# those leaves and use the centre garden, already naturally defocused by the lens.
+# Preserve a real 4:5 camera perspective; never stretch one axis independently.
+garden_full=ImageOps.fit(Image.open(backdrop_path).convert("RGB"),(W,H),method=Image.Resampling.LANCZOS)
+garden_crop=420
+garden_crop_h=round(garden_crop*H/W)
+crop_x=90
+crop_y=round((H-garden_crop_h)/2)
+garden=garden_full.crop((crop_x,crop_y,crop_x+garden_crop,crop_y+garden_crop_h))
+garden=garden.resize((W,H),Image.Resampling.LANCZOS)
+# A tiny all-frame lens softness, not a selective blur that looks like a stripe.
+garden=garden.filter(ImageFilter.GaussianBlur(1.8))
+print("GARDEN: continuous central optical crop; foreground edge leaves excluded",flush=True)
 os.makedirs("images/clinicians",exist_ok=True)
 
 metadata=[]
 for name,slug,url in PEOPLE:
-    if slug=="lisa-mayatt":
-        # Lisa was photographed in this actual garden: retain her genuine
-        # original woodland/hair edges, rather than compositing her again.
-        metadata.append({"name":name,"slug":slug,"source":"original unretouched garden photo"})
-        continue
+    # Extract each actual clinician from their original source. Lisa is included:
+    # this lets her head be centred in the same real garden used by the team.
     original=download(url)
-    alpha=lisa_mask if slug=="lisa-mayatt" else human_alpha(original,session)
+    alpha=human_alpha(original,session)
     mask_array=np.array(alpha)
     mask_array[mask_array<5]=0
     alpha=Image.fromarray(mask_array, "L")
@@ -132,6 +142,19 @@ for name,slug,url in PEOPLE:
     top=85
     left=(W/2 - (fx+fw/2)*scale) if face else (W/2 - (bbox[0]+bbox[2])/2*scale)
     origin_y=top-bbox[1]*scale
+    # For Daniela and Karen, a little background from the original source
+    # was included in the segmentation bounds. Their *actual* crowns were
+    # placed about 100–160px too low by that false bounding box.
+    # Anchor instead to the verified detected face and natural hair allowance.
+    if face and slug in ("dr-daniela-di-basilio","karen-cooper","lisa-mayatt"):
+        crown_allowance={
+            "dr-daniela-di-basilio":0.08,
+            "karen-cooper":0.19,
+            "lisa-mayatt":0.30
+        }[slug]
+        origin_y=top-(fy-crown_allowance*fw)*scale
+        print("REAL CROWN ALIGNMENT",name,"estimated crown y",
+              round((fy-crown_allowance*fw)*scale+origin_y),flush=True)
     # Segmentation can occasionally treat the original photograph's
     # background as subject near its top edge. Anchor to the *real detected
     # face* if that would otherwise push the head down and out of frame.
