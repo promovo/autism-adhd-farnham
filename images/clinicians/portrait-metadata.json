@@ -2,7 +2,21 @@
   {
     "name": "Lisa Mayatt",
     "slug": "lisa-mayatt",
-    "source": "original unretouched garden photo"
+    "source_size": [
+      1200,
+      1600
+    ],
+    "face": [
+      253,
+      423,
+      502,
+      502
+    ],
+    "face_detected": true,
+    "scale": 0.637,
+    "head_top_px": 85,
+    "target_face_width": 320.0,
+    "subject_bottom_px": 931
   },
   {
     "name": "Dr Gopal Venkat",
@@ -78,7 +92,7 @@
     "scale": 1.147,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1206
+    "subject_bottom_px": 975
   },
   {
     "name": "Karen Cooper",
@@ -97,7 +111,7 @@
     "scale": 0.599,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1026
+    "subject_bottom_px": 864
   },
   {
     "name": "Beccy Muggeridge",
