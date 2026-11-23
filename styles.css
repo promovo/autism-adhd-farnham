@@ -5942,3 +5942,8 @@ body .team-profile img[alt="Dr Daniela Di Basilio"]{
     margin-right:0!important;
   }
 }
+
+/* Three supporting trust highlights beneath the homepage hero */
+.hero-trust.three-items{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:760px){.hero-trust.three-items{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:520px){.hero-trust.three-items{grid-template-columns:1fr!important}}
