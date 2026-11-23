@@ -174,12 +174,17 @@ function appendClinicallyReviewedDetails(path){
   if(earlyYearsRoutes.has(path)){
     const firstContent=app.querySelector('.page-hero')?.nextElementSibling;
     const underFiveSection=`<section class="section early-years-feature">
-      <div class="section-lead">
-        <div class="eyebrow">Specialist assessments for ages 2–4</div>
+      <div class="early-years-feature-card">
+        <div class="eyebrow">Specialist autism assessments · ages 2–4</div>
         <h2>Joint face-to-face assessment for under-fives</h2>
-        <p>For children aged 2–4, the autism pathway includes a joint face-to-face appointment with a paediatrician and a speech and language therapist, with wider multidisciplinary input where appropriate.</p>
-        <p>The assessment considers communication, development, strengths and support needs, with recommendations for families and early-years settings.</p>
-        <div class="cta-row"><a class="btn" href="/child-pre-booking" data-link>Child pre-booking form</a>${path==='/child-young-person-assessments'?'<a class="btn btn-outline" href="/child-autism-assessment" data-link>Explore child autism assessment</a>':''}</div>
+        <div class="early-years-feature-body">
+          <p>For children aged 2–4, our autism pathway includes a joint face-to-face appointment with a paediatrician and a speech and language therapist, with wider multidisciplinary input where appropriate.</p>
+          <p>We consider communication, development, strengths and support needs, and provide practical recommendations for families and early-years settings.</p>
+        </div>
+        <div class="cta-row early-years-feature-actions">
+          <a class="btn" href="/child-pre-booking" data-link>Child Pre-Booking Form</a>
+          ${path==='/child-young-person-assessments'?'<a class="btn btn-outline" href="/child-autism-assessment" data-link>Explore Child Autism Assessment</a>':''}
+        </div>
       </div>
     </section>`;
     (firstContent||app).insertAdjacentHTML(firstContent?'afterend':'beforeend',underFiveSection);
