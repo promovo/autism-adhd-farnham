@@ -7,7 +7,7 @@ const home=`
     <div class="eyebrow home-section-kicker">Private Autism &amp; ADHD Assessments in Farnham, Surrey</div>
     <h1>Autism &amp; ADHD Assessments for Adults, Children &amp; Young People</h1>
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
-    <p class="hero-wait"><strong>Typical wait: 1–3 weeks from enquiry to your in-person clinic assessment.</strong></p>
+    <p class="hero-wait"><strong>Typical wait: 1–3 weeks</strong></p>
     <div class="hero-actions">
       
       <a class="btn btn-outline" href="/choose-your-assessment" data-link>Choose Your Assessment</a>
