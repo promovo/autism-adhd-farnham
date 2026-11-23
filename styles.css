@@ -5930,3 +5930,15 @@ body .team-profile img[alt="Dr Daniela Di Basilio"]{
   box-shadow:none!important;
   background:transparent!important;
 }
+
+/* 23 Nov 2026: align the Free Consultation CTA's right-hand edge with
+   the brand logo's left-hand inset in the full desktop navigation.
+   Keep the compact/hamburger header layouts unchanged. */
+@media (min-width:1501px) {
+  body .site-header {
+    padding-right:1.5vw!important;
+  }
+  body .site-header .nav > a.btn:last-child {
+    margin-right:0!important;
+  }
+}
