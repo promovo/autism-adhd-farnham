@@ -1277,8 +1277,7 @@ body[data-page="inner"][data-review-path="/fees"] #app > section.section.fees-su
 }
 body[data-page="inner"][data-review-path="/local-resources"] #app .card,
 body[data-page="inner"][data-review-path="/fees"] #app .card,
-body[data-page="inner"][data-review-path="/fees"] #app .fee-card,
-body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner{
+body[data-page="inner"][data-review-path="/fees"] #app .fee-card{
   background-color:#FDF9F3!important;
   box-shadow:var(--review-shadow)!important;
   border-color:rgba(151,128,87,.23)!important;
@@ -1288,8 +1287,7 @@ body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner{
 }
 body[data-page="inner"][data-review-path="/local-resources"] #app .card:hover,
 body[data-page="inner"][data-review-path="/fees"] #app .card:hover,
-body[data-page="inner"][data-review-path="/fees"] #app .fee-card:hover,
-body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner:hover{
+body[data-page="inner"][data-review-path="/fees"] #app .fee-card:hover{
   background-color:#FDF9F3!important;
   box-shadow:var(--review-shadow)!important;
   transform:none!important;
@@ -1300,4 +1298,13 @@ body[data-page="inner"][data-review-path="/post-assessment-advice"] #app .post-o
   stroke-linecap:round!important;
   stroke-linejoin:round!important;
   fill:none!important;
+}
+
+/* Keep the current availability panel legible as a green card on a cream section. */
+body[data-page="inner"][data-review-path="/fees"] #app .fees-current-inner{
+  background-color:#E2ECDA!important;
+  background-image:none!important;
+  transition:none!important;
+  animation:none!important;
+  transform:none!important;
 }
