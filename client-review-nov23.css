@@ -1415,3 +1415,53 @@ body[data-page="inner"][data-review-path="/choose-your-assessment"] #app .assess
     min-height:0!important;
   }
 }
+
+
+/* PDA: the final section immediately above Google Reviews is a
+   genuine cream call-to-action area, NOT a transition strip. */
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app > .section.pda-next-step{
+  background:#FDF9F3!important;
+  background-color:#FDF9F3!important;
+  background-image:none!important;
+  padding-block:clamp(34px,4.2vw,58px)!important;
+}
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-inner{
+  max-width:1180px!important;
+  margin-inline:auto!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  flex-wrap:wrap!important;
+  gap:24px!important;
+}
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-inner>div:first-child{
+  flex:1 1 360px!important;
+}
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-inner h2{
+  font-size:clamp(1.5rem,2.1vw,2.25rem)!important;
+  margin:7px 0 10px!important;
+  font-weight:500!important;
+}
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-inner p{
+  max-width:550px!important;
+  margin:0!important;
+}
+body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-actions{
+  flex:0 1 auto!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  justify-content:flex-end!important;
+  margin:0!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-inner{
+    display:block!important;
+  }
+  body[data-page="inner"][data-review-path="/pda-demand-avoidant-presentation"] #app .pda-next-step-actions{
+    margin-top:22px!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-start!important;
+  }
+}
