@@ -7,7 +7,7 @@ const home=`
     <div class="eyebrow home-section-kicker">Private Autism &amp; ADHD Assessments in Farnham, Surrey</div>
     <h1>Autism &amp; ADHD Assessments for Adults, Children &amp; Young People</h1>
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
-    <p class="hero-wait"><strong>Typical wait time: 1–3 weeks.</strong></p>
+    <p class="hero-wait"><strong>Typical wait: 1–3 weeks from enquiry to your in-person clinic assessment.</strong></p>
     <div class="hero-actions">
       
       <a class="btn btn-outline" href="/choose-your-assessment" data-link>Choose Your Assessment</a>
@@ -17,7 +17,7 @@ const home=`
       <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M5.5 20v-2a6.5 6.5 0 0 1 13 0v2"/><path d="M19 4v5M16.5 6.5h5"/></svg><span><strong>Highly experienced</strong><small>NHS clinicians</small></span></div>
   <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h7l4 4v14H5V3h3"/><path d="M15 3v5h4M9 12h6M9 16h3"/><path d="m14 17 2 2 4-4"/></svg><span><strong>NICE-compliant</strong><small>assessment reports</small></span></div>
   <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.2S4 15.2 4 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 5.7-8 10.7-8 10.7Z"/><path d="M9 12h6"/></svg><span><strong>Personalised</strong><small>pre- & post-assessment guidance</small></span></div>
-  <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4M16.5 3v4M3.5 10h17"/><circle cx="12" cy="15.2" r="3.2"/><path d="M12 13.4v1.8l1.1.7"/></svg><span><strong>Typical wait time</strong><small>1–3 weeks</small></span></div>
+  <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4M16.5 3v4M3.5 10h17"/><circle cx="12" cy="15.2" r="3.2"/><path d="M12 13.4v1.8l1.1.7"/></svg><span><strong>Typical wait time</strong><small>Enquiry to face-to-face clinic visit: 1–3 weeks</small></span></div>
     </div>
   </div>
 </section>
@@ -29,6 +29,12 @@ const home=`
     <a class="info-card" href="/adult-adhd-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 4a4 4 0 0 0-7 3 4.5 4.5 0 0 0-1 7 4 4 0 0 0 6.5 5.5L12 18V5a4 4 0 0 1 7 2 4.5 4.5 0 0 1 1 7 4 4 0 0 1-6.5 5.5L12 18"/><path d="M8 9c2 0 3 1 3 3M16 9c-2 0-3 1-3 3"/></svg></div><div><h3>Adult ADHD Assessments</h3><p>ADHD assessments for adults, including detailed history and clinical review.</p><b class="learn-more-link">LEARN MORE <span class="learn-more-arrow" aria-hidden="true">→</span></b></div></a>
     <a class="info-card" href="/child-autism-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M8 21l1-6 3-2 3 2 1 6M9 15l-4 2M15 15l4 2"/><path d="M4.5 5.5 6 4l1.5 1.5M16.5 5.5 18 4l1.5 1.5"/></svg></div><div><h3>Child Autism Assessments</h3><p>Autism assessments for children and young people with a complete approach.</p><b class="learn-more-link">LEARN MORE <span class="learn-more-arrow" aria-hidden="true">→</span></b></div></a>
     <a class="info-card" href="/child-adhd-assessment" data-link><div class="line-icon"><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3.4 3.4 0 0 0-3.4 3.4 3.8 3.8 0 0 0-4.1 5.4 3.7 3.7 0 0 0 3.2 6.4 3.2 3.2 0 0 0 4.3 1.4 3.2 3.2 0 0 0 4.3-1.4 3.7 3.7 0 0 0 3.2-6.4 3.8 3.8 0 0 0-4.1-5.4A3.4 3.4 0 0 0 12 3Z"/><path d="M12 6v12M8.5 9.5l2 1.5M15.5 9.5l-2 1.5"/></svg></div><div><h3>Child ADHD Assessments</h3><p>ADHD assessments for children and young people, tailored to individual needs.</p><b class="learn-more-link">LEARN MORE <span class="learn-more-arrow" aria-hidden="true">→</span></b></div></a>
+  </div>
+  <div class="home-clinical-facts">
+    <p><strong>Included with every assessment:</strong> at least one face-to-face clinic session, a detailed diagnostic report and a 30-minute online diagnostic feedback call. The optional £180 follow-up support session is a separate service.</p>
+    <p><strong>Forms:</strong> typically reviewed within 1–2 working days, often sooner. For urgent enquiries, email <a href="mailto:lisa@autismassessmentsfarnham.co.uk">Lisa directly</a>. If a 15-minute introductory call is helpful, Lisa will email her diary link after reviewing the form.</p>
+    <p><strong>ADHD medication:</strong> we currently offer assessments and can signpost to trusted independent private prescribers; we do not prescribe medication ourselves.</p>
+    <p><strong>Combined autism + ADHD assessments:</strong> £2,995 for adults and children aged 5+.</p>
   </div>
   <div class="pathway-extra-actions cta-row" aria-label="Combined assessment pathways">
     <a class="btn" href="/combined-adult-autism-adhd-assessment" data-link>Combined Adult Autism &amp; ADHD Assessment</a>
@@ -54,7 +60,7 @@ const home=`
     <h2>Post-Assessment Support</h2>
     
     <p>Optional one-to-one advice and strategy sessions are available after assessment where clinically appropriate. Sessions can focus on sensory processing, communication preferences, executive functioning, self-advocacy and workplace or educational adaptations.</p>
-    <div class="post-support-price"><strong>£180 per session</strong><span>Includes a follow-up email with key support strategies and tailored signposting discussed during the session.</span></div>
+    <div class="post-support-price"><strong>£180 per session</strong><span>Additional to the 30-minute diagnostic feedback call included in every assessment. Each £180 support session includes file review, a 60-minute online call and follow-up written strategies and/or resources.</span></div>
     <a class="btn" href="/post-assessment-advice" data-link>Learn about post-assessment support</a>
   </div>
 </section>
@@ -81,7 +87,7 @@ const home=`
         <a class="clinician-card" href="/our-team#lisa-mayatt" data-link><img src="/images/clinicians/lisa-mayatt.webp?v=20261123depth4" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Founder, Clinical Director & Highly Specialist SLT</p></a>
         <a class="clinician-card" href="/our-team#dr-gopal-venkat" data-link><img src="/images/clinicians/dr-gopal-venkat.webp?v=20261123depth4" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
         <a class="clinician-card" href="/our-team#dr-joseph-chukwu" data-link><img src="/images/clinicians/dr-joseph-chukwu.webp?v=20261123depth4" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
-        <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="/images/clinicians/dr-aimee-hayter.webp?v=20261123depth4" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></a>
+        <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="/images/clinicians/dr-aimee-hayter.webp?v=20261123depth4" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Neuropsychologist</p></a>
         <a class="clinician-card" href="/our-team#dr-daniela-di-basilio" data-link><img src="/images/clinicians/dr-daniela-di-basilio.webp?v=20261123depth4" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></a>
         <a class="clinician-card clinician-card-placeholder" href="/our-team#nordette-small" data-link><div class="clinician-initials" aria-hidden="true">NS</div><h4>Nordette Small</h4><p>Highly Specialist ADHD Nurse</p></a>
         <a class="clinician-card" href="/our-team#karen-cooper" data-link><img src="/images/clinicians/karen-cooper.webp?v=20261123depth4" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></a>
