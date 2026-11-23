@@ -148,8 +148,8 @@ for name,slug,url in PEOPLE:
     # Anchor instead to the verified detected face and natural hair allowance.
     if face and slug in ("dr-daniela-di-basilio","karen-cooper","lisa-mayatt"):
         crown_allowance={
-            "dr-daniela-di-basilio":0.08,
-            "karen-cooper":0.19,
+            "dr-daniela-di-basilio":0.30,
+            "karen-cooper":0.35,
             "lisa-mayatt":0.30
         }[slug]
         origin_y=top-(fy-crown_allowance*fw)*scale

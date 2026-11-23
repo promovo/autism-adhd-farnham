@@ -31,8 +31,8 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           changed=0
-          old="20261123hairlines5"
-          new="20261123depth3"
+          old="20261123depth3"
+          new="20261123depth4"
           for p in [Path("app1.js"),Path("app3.js"),*Path(".").glob("**/index.html")]:
               if ".git" in p.parts or not p.is_file():
                   continue
