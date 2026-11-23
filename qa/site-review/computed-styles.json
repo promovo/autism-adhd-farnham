@@ -7,7 +7,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(25, 59, 43)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -18,6 +20,8 @@
     "pathway": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -31,6 +35,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -41,6 +47,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -51,6 +59,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -65,6 +75,8 @@
     "homePrimaryCard": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -116,7 +128,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -128,6 +142,8 @@
     "assessmentCard": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -138,6 +154,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -149,6 +167,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -159,6 +179,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -169,6 +191,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -179,6 +203,8 @@
     "section": {
       "background": "rgb(220, 234, 212)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -191,6 +217,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -243,7 +271,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -258,6 +288,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -268,6 +300,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -278,6 +312,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -288,6 +324,8 @@
     "section": {
       "background": "rgb(217, 232, 208)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -343,7 +381,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -356,6 +396,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -367,6 +409,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -377,6 +421,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -387,6 +433,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -397,6 +445,8 @@
     "section": {
       "background": "rgb(218, 232, 210)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -407,6 +457,8 @@
     "fee": {
       "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -418,6 +470,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -470,7 +524,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -483,6 +539,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -493,6 +551,8 @@
     "team": {
       "background": "rgb(211, 230, 204)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -503,6 +563,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -513,6 +575,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -523,6 +587,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -533,6 +599,8 @@
     "section": {
       "background": "rgb(211, 230, 204)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -588,7 +656,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -601,6 +671,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -612,6 +684,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -622,6 +696,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -632,6 +708,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -642,6 +720,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -697,7 +777,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -712,6 +794,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -722,6 +806,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -732,6 +818,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -742,6 +830,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -797,7 +887,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -810,6 +902,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -821,6 +915,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -831,6 +927,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -841,6 +939,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -851,6 +951,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -863,6 +965,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -915,7 +1019,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -928,6 +1034,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -939,6 +1047,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -949,6 +1059,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -959,6 +1071,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -969,6 +1083,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -981,6 +1097,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -1033,7 +1151,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1048,6 +1168,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1058,6 +1180,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1068,6 +1192,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1078,6 +1204,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1133,7 +1261,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1148,6 +1278,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1158,6 +1290,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1168,6 +1302,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1178,6 +1314,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1233,7 +1371,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1248,6 +1388,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1258,6 +1400,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1268,6 +1412,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1278,6 +1424,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1333,7 +1481,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1346,6 +1496,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1357,6 +1509,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1367,6 +1521,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1377,6 +1533,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1387,6 +1545,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1399,6 +1559,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -1451,7 +1613,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1464,6 +1628,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1475,6 +1641,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1485,6 +1653,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1495,6 +1665,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1505,6 +1677,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1517,6 +1691,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -1569,7 +1745,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1584,6 +1762,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1594,6 +1774,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1604,6 +1786,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1614,6 +1798,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1669,7 +1855,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1684,6 +1872,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1694,6 +1884,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1704,6 +1896,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1714,6 +1908,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1769,7 +1965,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1782,6 +1980,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1793,6 +1993,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1803,6 +2005,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1813,6 +2017,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1823,6 +2029,8 @@
     "section": {
       "background": "rgb(214, 230, 206)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1834,6 +2042,8 @@
     "pdaPhoto": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1887,7 +2097,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1900,6 +2112,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1911,6 +2125,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1921,6 +2137,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -1931,6 +2149,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1941,6 +2161,8 @@
     "section": {
       "background": "rgb(213, 230, 204)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -1996,7 +2218,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2009,6 +2233,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2020,6 +2246,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2030,6 +2258,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2040,6 +2270,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2050,6 +2282,8 @@
     "section": {
       "background": "rgb(212, 229, 204)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2062,6 +2296,8 @@
     "link": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(167, 123, 18)",
       "boxShadow": "none",
       "font": "\"DM Sans\", Arial, sans-serif",
@@ -2114,7 +2350,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2127,6 +2365,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2138,6 +2378,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2148,6 +2390,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2158,6 +2402,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2168,6 +2414,8 @@
     "section": {
       "background": "rgb(211, 229, 202)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2223,7 +2471,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2238,6 +2488,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2248,6 +2500,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2258,6 +2512,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2268,6 +2524,8 @@
     "section": {
       "background": "rgb(214, 230, 205)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2323,7 +2581,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2338,6 +2598,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2348,6 +2610,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2358,6 +2622,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2368,6 +2634,8 @@
     "section": {
       "background": "rgb(214, 230, 205)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2423,7 +2691,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2436,6 +2706,8 @@
     "card": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2447,6 +2719,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2457,6 +2731,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2467,6 +2743,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2477,6 +2755,8 @@
     "section": {
       "background": "rgb(217, 232, 208)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2532,7 +2812,9 @@
     "navDropdowns": 4,
     "hero": {
       "background": "rgb(240, 225, 205)",
-      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 1",
+      "backgroundImage": "linear-gradient(90deg, rgba(240, 225, 205, 0.98) 0%, rgba(240, 225, 205, 0.94) 25%, rgba(240, 225, 205, 0.81) 44%, rgba(240, 225, 205, 0.51) 59%, rgba(240, 225, 205, 0.1) 81%, rgba(240, 225, 205, 0) 100%), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 100% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2547,6 +2829,8 @@
     "reviews": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(41, 75, 59)",
       "boxShadow": "rgba(27, 56, 40, 0.13) 0px 9px 27px 0px, rgba(27, 56, 40, 0.06) 0px 2px 7px 0px",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2557,6 +2841,8 @@
     "reviewText": {
       "background": "rgba(0, 0, 0, 0)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(36, 69, 52)",
       "boxShadow": "none",
       "font": "\"Brandon Grotesque\", \"Brandon Text\", \"Avenir Next\", \"Nunito Sans\", Arial, sans-serif",
@@ -2567,6 +2853,8 @@
     "start": {
       "background": "rgb(36, 76, 54)",
       "backgroundImage": "linear-gradient(rgba(24, 52, 37, 0.39), rgba(24, 52, 37, 0.44)), url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "50% 50%, 50% 50%",
+      "backgroundSize": "cover, cover",
       "color": "rgb(245, 232, 212)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
@@ -2577,6 +2865,8 @@
     "section": {
       "background": "rgb(251, 250, 246)",
       "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
       "color": "rgb(52, 72, 61)",
       "boxShadow": "none",
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
