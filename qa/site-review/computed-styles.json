@@ -17,6 +17,24 @@
       "fontWeight": "400",
       "height": 658.265625
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": {
       "background": "rgb(253, 249, 243)",
       "backgroundImage": "none",
@@ -137,6 +155,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 360
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": {
@@ -281,6 +317,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -390,6 +444,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 360
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -534,6 +606,24 @@
       "fontWeight": "400",
       "height": 458.96875
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -666,6 +756,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -787,6 +895,24 @@
       "fontWeight": "400",
       "height": 360
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -896,6 +1022,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 472.953125
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -1029,6 +1173,24 @@
       "fontWeight": "400",
       "height": 431.671875
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -1161,6 +1323,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -1270,6 +1450,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 377.078125
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -1381,6 +1579,24 @@
       "fontWeight": "400",
       "height": 445.65625
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -1490,6 +1706,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 431.671875
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -1623,6 +1857,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -1755,6 +2007,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -1865,6 +2135,24 @@
       "fontWeight": "400",
       "height": 472.953125
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -1974,6 +2262,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 404.375
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -2107,6 +2413,24 @@
       "fontWeight": "400",
       "height": 404.375
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -2227,6 +2551,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 404.375
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -2360,6 +2702,24 @@
       "fontWeight": "400",
       "height": 360
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": {
@@ -2481,6 +2841,24 @@
       "fontWeight": "400",
       "height": 377.078125
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -2591,6 +2969,24 @@
       "fontWeight": "400",
       "height": 377.078125
     },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
+    },
     "pathway": null,
     "assessmentCard": null,
     "card": null,
@@ -2700,6 +3096,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 360
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
@@ -2821,6 +3235,24 @@
       "textTransform": "none",
       "fontWeight": "400",
       "height": 360
+    },
+    "heroBefore": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-2",
+      "backgroundImage": "url(\"https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg\")",
+      "backgroundPosition": "100% 50%",
+      "filter": "brightness(1.14) saturate(1.23) contrast(1.07)"
+    },
+    "heroAfter": {
+      "display": "block",
+      "content": "\"\"",
+      "opacity": "1",
+      "zIndex": "-1",
+      "backgroundImage": "linear-gradient(90deg, rgba(250, 249, 244, 0.99) 0%, rgba(250, 249, 244, 0.97) 24%, rgba(250, 249, 244, 0.88) 37%, rgba(250, 249, 244, 0.64) 49%, rgba(250, 249, 244, 0.28) 59%, rgba(250, 249, 244, 0.05) 69%, rgba(250, 249, 244, 0) 77%)",
+      "backgroundPosition": "0% 0%",
+      "filter": "none"
     },
     "pathway": null,
     "assessmentCard": null,
