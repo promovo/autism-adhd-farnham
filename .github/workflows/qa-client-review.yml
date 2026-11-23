@@ -122,6 +122,23 @@ jobs:
                     paletteViolations.push('CONSULTATION TOP CARD LABELS NOT GOLD UPPERCASE: '+JSON.stringify(data.consultationTagStyles));
                   }
                 }
+                const type=data.typography||{};
+                const cardHeading=type['.card h3'];
+                const cardBody=type['.card p'];
+                const cardTag=type['.card .tag'];
+                const cardButton=type['.card a.btn'];
+                if(cardHeading&&cardHeading.fontSize!=='20px'){
+                  paletteViolations.push('CARD HEADING NOT 20px: '+route+' '+JSON.stringify(cardHeading));
+                }
+                if(cardBody&&cardBody.fontSize!=='16px'){
+                  paletteViolations.push('CARD BODY NOT 16px: '+route+' '+JSON.stringify(cardBody));
+                }
+                if(cardTag&&(cardTag.fontSize!=='14px'||cardTag.textTransform!=='uppercase'||cardTag.color!=='rgb(167, 123, 18)')){
+                  paletteViolations.push('CARD KICKER NOT 14px GOLD UPPERCASE: '+route+' '+JSON.stringify(cardTag));
+                }
+                if(cardButton&&cardButton.fontSize!=='13px'){
+                  paletteViolations.push('CARD BUTTON NOT 13px: '+route+' '+JSON.stringify(cardButton));
+                }
                 if(route!=='/' && route!=='/our-team' && data.personalNameInPageCopy!==0){
                   paletteViolations.push('UNWANTED PERSONAL NAME IN SERVICE COPY: '+route+' count='+data.personalNameInPageCopy);
                 }
@@ -153,6 +170,24 @@ jobs:
                 console.log(route,data.heading,JSON.stringify({hero:data.hero,card:data.card,link:data.link,team:data.team,pdaPhoto:data.pdaPhoto,reviewText:data.reviewText}));
                 await page.close();
               }
+              // Mobile typography parity: same scale on consultation and other card pages.
+              const mobileType={};
+              for(const route of ['/free-consultation','/choose-your-assessment','/fees']){
+                const mobile=await browser.newPage();
+                await mobile.setViewport({width:390,height:844,deviceScaleFactor:1});
+                await mobile.goto(url+'?review='+encodeURIComponent(route),{waitUntil:'domcontentloaded',timeout:40000});
+                await new Promise(r=>setTimeout(r,450));
+                const results=await mobile.evaluate(()=>{
+                  const read=sel=>{const e=document.querySelector(sel);if(!e)return null;const s=getComputedStyle(e);return {size:s.fontSize,transform:s.textTransform,color:s.color}};
+                  return {heading:read('#app .card h3'),label:read('#app .card .tag'),body:read('#app .card p')};
+                });
+                mobileType[route]=results;
+                if(results.heading?.size!=='19px'||results.body?.size!=='16px'||(results.label&&(results.label.size!=='13px'||results.label.transform!=='uppercase'))){
+                  paletteViolations.push('MOBILE CARD TYPOGRAPHY INCONSISTENT: '+route+' '+JSON.stringify(results));
+                }
+                await mobile.close();
+              }
+              map['_mobileTypography']=mobileType;
               fs.writeFileSync('qa/site-review/computed-styles.json',JSON.stringify(map,null,2));
               if(paletteViolations.length)throw Error('PALETTE ISSUES ON '+paletteViolations.length+' CHECKS\\n'+paletteViolations.join('\\n'));
             }finally{await browser.close();}
