@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/prepare-clinician-portraits.yml
+      - scripts/prepare_clinician_portraits.py
 permissions:
   contents: write
 jobs:
@@ -21,7 +22,7 @@ jobs:
         run: |
           pip install "rembg[cpu]==2.0.67" "Pillow>=10" requests "opencv-python-headless==4.12.0.88" "numpy>=2.0,<2.3" "scipy>=1.11,<1.16"
           python -c "import cv2; print('OpenCV',cv2.__version__); assert hasattr(cv2,'CascadeClassifier')"
-      - name: Assemble photos onto restored Lisa garden with consistent head and shoulder proportions
+      - name: Create photographs using natural garden perspective and consistent proportions
         env:
           U2NET_HOME: ${{ github.workspace }}/.model-cache
         run: python scripts/prepare_clinician_portraits.py
@@ -30,8 +31,8 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           changed=0
-          old="20261123hairlines4"
-          new="20261123hairlines5"
+          old="20261123hairlines5"
+          new="20261123depth3"
           for p in [Path("app1.js"),Path("app3.js"),*Path(".").glob("**/index.html")]:
               if ".git" in p.parts or not p.is_file():
                   continue
@@ -49,5 +50,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images/clinicians/*.webp images/clinicians/portrait-review.jpg images/clinicians/portrait-metadata.json
           git add -u
-          git diff --cached --quiet || git commit -m "Retouch clinician hairline edges and update review-site photos"
+          git diff --cached --quiet || git commit -m "Correct natural portrait depth and clinical head-and-shoulder framing"
           git push
