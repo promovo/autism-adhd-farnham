@@ -1796,3 +1796,56 @@ body[data-page="home"] .mock-hero .hero-copy .hero-trust.three-items {
     transform: translateX(-28px) !important;
   }
 }
+
+/* FAQ layout refinement: full-width reading area, clear contrast from sage page. */
+body[data-page="inner"][data-review-path="/faq"] #app > section.section.faq{
+  padding-left:clamp(18px,3.2vw,64px)!important;
+  padding-right:clamp(18px,3.2vw,64px)!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:1600px!important;
+  padding:clamp(22px,2.6vw,38px) clamp(22px,3vw,48px)!important;
+  margin:0 auto 20px!important;
+  border:1px solid rgba(54,79,55,.19)!important;
+  box-shadow:0 5px 16px rgba(24,57,39,.075)!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-light{
+  background-color:#E8F1E3!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-cream{
+  background-color:#FFF9F1!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group.faq-tone-deep{
+  background-color:#F0E1CF!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group > h2,
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details,
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group summary,
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details p{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:none!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group summary{
+  font-size:17px!important;
+  line-height:1.5!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group details p{
+  font-size:16px!important;
+  line-height:1.7!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/faq"] #app > section.section.faq{
+    padding-left:14px!important;
+    padding-right:14px!important;
+  }
+  body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group{
+    padding:22px 18px!important;
+    margin-bottom:14px!important;
+  }
+  body[data-page="inner"][data-review-path="/faq"] #app .faq-topic-group summary{
+    font-size:16px!important;
+  }
+}
