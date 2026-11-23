@@ -2374,3 +2374,91 @@ body[data-page="inner"][data-review-path="/how-assessments-work"] #app > .clinic
   letter-spacing:-.024em!important;
   line-height:1.22!important;
 }
+
+/* 23 Nov — hold the third homepage trust message on one clean line.
+   Three genuinely sized columns replace the legacy four-column geometry. */
+@media (min-width:1281px){
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items{
+    display:grid!important;
+    grid-template-columns:175px 170px minmax(375px,1fr)!important;
+    column-gap:15px!important;
+    width:min(830px,calc(100vw - 8vw))!important;
+    max-width:100%!important;
+    justify-content:start!important;
+  }
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3){
+    transform:none!important;
+    margin:0!important;
+  }
+}
+@media (min-width:761px) and (max-width:1280px){
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3){
+    grid-column:1/-1!important;
+    transform:none!important;
+  }
+}
+@media (max-width:760px){
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3){
+    grid-column:1/-1!important;
+    transform:none!important;
+  }
+}
+body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3) small{
+  white-space:nowrap!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+}
+
+/* Contact: a quiet, full-width privacy reminder below the three CTA cards,
+   not a bulky warning in front of the contact choices. */
+body[data-page="inner"][data-review-path="/contact"] #app > section.contact-start .contact-privacy-note{
+  display:flex!important;
+  align-items:center!important;
+  gap:17px!important;
+  box-sizing:border-box!important;
+  width:100%!important;
+  margin:24px 0 0!important;
+  padding:18px 23px!important;
+  background:#FDF9F3!important;
+  border:1px solid rgba(151,128,87,.22)!important;
+  border-left:4px solid #C29A1A!important;
+  border-radius:12px!important;
+  box-shadow:0 3px 12px rgba(29,65,42,.055)!important;
+  text-align:left!important;
+}
+body[data-page="inner"][data-review-path="/contact"] #app .contact-privacy-note .contact-privacy-icon{
+  display:block!important;
+  width:26px!important;
+  height:26px!important;
+  min-width:26px!important;
+  flex:0 0 26px!important;
+  color:#52735A!important;
+  stroke:#52735A!important;
+}
+body[data-page="inner"][data-review-path="/contact"] #app .contact-privacy-note > p{
+  margin:0!important;
+  padding:0!important;
+  max-width:none!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:15px!important;
+  font-weight:400!important;
+  line-height:1.55!important;
+  color:#294B3B!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"][data-review-path="/contact"] #app > section.contact-start .contact-privacy-note{
+    align-items:flex-start!important;
+    gap:12px!important;
+    padding:16px 17px!important;
+    margin-top:18px!important;
+  }
+  body[data-page="inner"][data-review-path="/contact"] #app .contact-privacy-note .contact-privacy-icon{
+    width:22px!important;
+    height:22px!important;
+    min-width:22px!important;
+    flex-basis:22px!important;
+  }
+}
