@@ -136,6 +136,96 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.mock-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.mock-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.specialist-wrap",
+        "background": "rgb(35, 67, 50)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.homepage-post-support",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.mock-section why-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.clinicians-home",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": {
+      "background": "rgb(194, 154, 26)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(255, 245, 230)",
+      "boxShadow": "none",
+      "font": "\"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "uppercase",
+      "fontWeight": "500",
+      "height": 41.75
+    },
+    "homeCombinedButtons": [
+      {
+        "text": "Combined Adult Autism & ADHD Assessment",
+        "background": "rgb(194, 154, 26)"
+      },
+      {
+        "text": "Combined Child Autism & ADHD Assessment",
+        "background": "rgb(194, 154, 26)"
+      }
+    ],
     "consoleErrorCount": 0
   },
   "/choose-your-assessment": {
@@ -297,6 +387,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section assessment-overview intro-tone",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt assessment-overview",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section assessment-overview specialist-overview",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/how-assessments-work": {
@@ -425,6 +573,58 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section how-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt clinic-space-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/fees": {
@@ -586,6 +786,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section fees-page fees-prices",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section fees-current",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section fees-support",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/our-team": {
@@ -736,6 +994,58 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section team-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/contact": {
@@ -875,6 +1185,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section contact-start",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section contact-clinic-space",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/faq": {
@@ -1003,6 +1371,52 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section faq",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/adult-assessments": {
@@ -1153,6 +1567,70 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section assessment-clinic-space",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/adult-autism-assessment": {
@@ -1303,6 +1781,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/adult-adhd-assessment": {
@@ -1431,6 +1967,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/combined-adult-autism-adhd-assessment": {
@@ -1559,6 +2153,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/autism-adhd-women": {
@@ -1687,6 +2339,52 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/child-young-person-assessments": {
@@ -1837,6 +2535,70 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section assessment-clinic-space",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/child-autism-assessment": {
@@ -1987,6 +2749,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/child-adhd-assessment": {
@@ -2115,6 +2935,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/combined-child-autism-adhd-assessment": {
@@ -2243,6 +3121,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/pda-demand-avoidant-presentation": {
@@ -2393,6 +3329,52 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section pda-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/post-assessment-advice": {
@@ -2532,6 +3514,64 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section post-section post-one",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section post-section post-two",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section post-section post-three",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/local-resources": {
@@ -2682,6 +3722,52 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/ehcp-expert-witness-reports": {
@@ -2821,6 +3907,58 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section speech-therapy-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/adult-pre-booking": {
@@ -2949,6 +4087,58 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section prebooking-main",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt prebooking-next",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/child-pre-booking": {
@@ -3077,6 +4267,58 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section prebooking-main",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt prebooking-next",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/free-consultation": {
@@ -3216,6 +4458,70 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section consultation-first",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt consultation-second",
+        "background": "rgb(199, 221, 190)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section consultation-third",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section consultation-booking",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   },
   "/privacy-policy": {
@@ -3344,6 +4650,76 @@
         "style": "uppercase"
       }
     ],
+    "paletteSections": [
+      {
+        "name": "HEADER.site-header",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.page-hero",
+        "background": "rgb(240, 225, 205)",
+        "hasImage": true,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section privacy-page",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt privacy-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section privacy-page",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section alt privacy-page",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.section privacy-page",
+        "background": "rgb(253, 249, 243)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "SECTION.google-reviews-section",
+        "background": "rgb(226, 236, 218)",
+        "hasImage": false,
+        "visible": true
+      },
+      {
+        "name": "FOOTER.footer",
+        "background": "rgb(41, 75, 59)",
+        "hasImage": false,
+        "visible": true
+      }
+    ],
+    "reviewBand": {
+      "background": "rgb(226, 236, 218)",
+      "backgroundImage": "none",
+      "backgroundPosition": "0% 0%",
+      "backgroundSize": "auto",
+      "color": "rgb(41, 75, 59)",
+      "boxShadow": "none",
+      "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
+      "textTransform": "none",
+      "fontWeight": "400",
+      "height": 459.6875
+    },
+    "homeChooseButton": null,
+    "homeCombinedButtons": [],
     "consoleErrorCount": 0
   }
 }
