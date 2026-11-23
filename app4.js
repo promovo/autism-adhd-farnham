@@ -107,14 +107,28 @@ function render(path){
   const contentBands=[...document.querySelectorAll('#app > section.section:not(.dark):not(.global-start-cta)')];
   if(path!=='/'){
     contentBands.forEach((band,index)=>{
-      band.classList.toggle('site-band-sage',index%2===0);
-      band.classList.toggle('site-band-cream',index%2===1);
-      band.classList.toggle('site-band-deep-sage',index>0 && index%4===2);
+      const isSage=index%2===0;
+      const isDeepSage=isSage&&index>0&&index%4===2;
+      band.classList.toggle('site-band-sage',isSage);
+      band.classList.toggle('site-band-cream',!isSage);
+      band.classList.toggle('site-band-deep-sage',isDeepSage);
+      // There are multiple legacy, route-specific !important selectors.
+      // A direct important declaration is authoritative and prevents
+      // incompatible adjacent bands from retaining the same shade.
+      const colour=isDeepSage?'#C7DDBE':isSage?'#E2ECDA':'#FDF9F3';
+      band.style.setProperty('background',colour,'important');
     });
   }
-  // If the last content band is sage and the next section is the sage Google
-  // Reviews, insert a cream visual transition so greens never touch.
-  document.body.dataset.reviewCreamTransition=(path!=='/'&&contentBands.length%2===1)?'yes':'no';
+  // The Google Reviews section is outside #app and must stay approved sage.
+  // When the last content section is green, give the two sections a cream
+  // separator instead of showing two continuous greens.
+  const needCreamDivider=path!=='/'&&contentBands.length%2===1;
+  document.body.dataset.reviewCreamTransition=needCreamDivider?'yes':'no';
+  const reviewsBand=document.querySelector('.google-reviews-section');
+  if(reviewsBand){
+    reviewsBand.style.setProperty('background','#E2ECDA','important');
+    reviewsBand.style.setProperty('border-top',needCreamDivider?'46px solid #FDF9F3':'0','important');
+  }
   updateSeo(path);
   bind();
   if(location.hash){
