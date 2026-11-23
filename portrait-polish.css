@@ -71,7 +71,7 @@ body .team-page .team-profile .portrait-frame > img[alt="Lisa Mayatt"] {
 body .clinicians-home .clinician-card .portrait-frame:has(>img[alt="Lisa Mayatt"])::after,
 body .team-page .team-profile .portrait-frame:has(>img[alt="Lisa Mayatt"])::after {
   background-size:112% 112%;
-  background-position:57% center;
+  background-position:96% center;
 }
 /* Maintain the native 4:5 portrait box on desktop, tablet and mobile. */
 @media(max-width:760px) {
