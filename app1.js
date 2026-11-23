@@ -7,17 +7,17 @@ const home=`
     <div class="eyebrow home-section-kicker">Private Autism &amp; ADHD Assessments in Farnham, Surrey</div>
     <h1>Autism &amp; ADHD Assessments for Adults, Children &amp; Young People</h1>
     <p>High quality assessments delivered by highly specialist professionals with extensive NHS experience, in line with NICE guidance and using a multidisciplinary approach.</p>
-    <p class="hero-wait"><strong>Typical wait: 1–3 weeks</strong></p>
+    <p class="hero-wait"><strong>Typical wait time</strong><br>Enquiry to face-to-face clinic visit: 1–3 weeks</p>
     <div class="hero-actions">
       
       <a class="btn btn-outline" href="/choose-your-assessment" data-link>Choose Your Assessment</a>
       <a class="btn btn-outline" href="/contact" data-link>Contact Us</a>
     </div>
-    <div class="hero-trust">
+    <div class="hero-trust three-items">
       <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M5.5 20v-2a6.5 6.5 0 0 1 13 0v2"/><path d="M19 4v5M16.5 6.5h5"/></svg><span><strong>Highly experienced</strong><small>NHS clinicians</small></span></div>
   <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h7l4 4v14H5V3h3"/><path d="M15 3v5h4M9 12h6M9 16h3"/><path d="m14 17 2 2 4-4"/></svg><span><strong>NICE-compliant</strong><small>assessment reports</small></span></div>
   <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.2S4 15.2 4 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 5.7-8 10.7-8 10.7Z"/><path d="M9 12h6"/></svg><span><strong>Personalised</strong><small>pre- & post-assessment guidance</small></span></div>
-  <div><svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4M16.5 3v4M3.5 10h17"/><circle cx="12" cy="15.2" r="3.2"/><path d="M12 13.4v1.8l1.1.7"/></svg><span><strong>Typical wait time</strong><small>Enquiry to face-to-face clinic visit: 1–3 weeks</small></span></div>
+  
     </div>
   </div>
 </section>
