@@ -30,8 +30,8 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           changed=0
-          old="20261123fresh1"
-          new="20261123hairlines2"
+          old="20261123hairlines2"
+          new="20261123hairlines3"
           for p in [Path("app1.js"),Path("app3.js"),*Path(".").glob("**/index.html")]:
               if ".git" in p.parts or not p.is_file():
                   continue
@@ -39,7 +39,7 @@ jobs:
               if old in text:
                   p.write_text(text.replace(old,new),encoding="utf-8")
                   changed+=1
-          print(f"Refreshed image and script cache versions across {changed} pages/files")
+          print(f"Refreshed corrected portrait and script cache versions across {changed} pages/files")
           if changed < 3:
               raise RuntimeError("Missing expected review-site asset references")
           PY
