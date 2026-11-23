@@ -901,3 +901,40 @@ body[data-page="home"] #app > .homepage-post-support{
   background-color:var(--site-ivory)!important;
   background-image:none!important;
 }
+
+/* 23 Nov: remove the stray grey-green surround from the Home clinicians band.
+   The outer band and every nested wrapper share ONE ivory surface, rather
+   than old #F7F9F1 / #E5E8DF shades showing as a secondary strip. */
+body[data-page="home"] #app > .clinicians-home,
+body[data-page="home"] #app > .clinicians-home > .mock-section{
+  background:var(--site-ivory)!important;
+  background-color:var(--site-ivory)!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+body[data-page="home"] #app > .clinicians-home::before,
+body[data-page="home"] #app > .clinicians-home::after,
+body[data-page="home"] #app > .clinicians-home > .mock-section::before,
+body[data-page="home"] #app > .clinicians-home > .mock-section::after{
+  content:none!important;
+  display:none!important;
+}
+body[data-page="home"] #app .clinicians-home .clinician-carousel-shell,
+body[data-page="home"] #app .clinicians-home .clinician-row.clinician-carousel,
+body[data-page="home"] #app .clinicians-home .clinicians-cta{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+body[data-page="home"] #app .clinicians-home .clinician-card,
+body[data-page="home"] #app .clinicians-home .clinician-card-placeholder{
+  background:var(--site-ivory)!important;
+  border-color:#E6E2DA!important;
+  box-shadow:0 3px 12px rgba(29,65,42,.10)!important;
+}
+body[data-page="home"] #app .clinicians-home .portrait-frame{
+  background-color:var(--site-ivory)!important;
+  border:0!important;
+  box-shadow:none!important;
+}
