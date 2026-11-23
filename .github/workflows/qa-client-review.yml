@@ -39,7 +39,7 @@ jobs:
                 await page.setViewport({width:1512,height:1000,deviceScaleFactor:1});
                 await page.goto(url+(route==='/'?'':'?review='+encodeURIComponent(route)),{waitUntil:'domcontentloaded',timeout:40000});
                 await new Promise(r=>setTimeout(r,1200));
-                const key=route==='/'?'home':route.replace(/^\\//,'');
+                const key=route==='/'?'home':route.slice(1);
                 const data=await page.evaluate(()=>{
                   const css=(sel)=>{const el=document.querySelector(sel);if(!el)return null;const s=getComputedStyle(el);return {background:s.backgroundColor,backgroundImage:s.backgroundImage.slice(0,200),color:s.color,boxShadow:s.boxShadow,font:s.fontFamily,textTransform:s.textTransform,fontWeight:s.fontWeight,height:el.getBoundingClientRect().height};};
                   return {
