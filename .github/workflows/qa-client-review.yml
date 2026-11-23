@@ -65,6 +65,10 @@ jobs:
                     cliniciansCarousel:css('.clinicians-home .clinician-row.clinician-carousel'),
                     cliniciansPortraitFrame:css('.clinicians-home .portrait-frame'),
                     cliniciansCard:css('.clinicians-home .clinician-card'),
+                    firstSection:css('#app > .page-hero + .section, #app > .mock-hero + .mock-section'),
+                    consultationTagStyles:[...document.querySelectorAll('#app .consultation-form-cards .card > .tag')].map(e=>({text:e.textContent,color:getComputedStyle(e).color,textTransform:getComputedStyle(e).textTransform,fontSize:getComputedStyle(e).fontSize})),
+                    consultationBookingVisible:!!document.querySelector('#app .consultation-booking'),
+                    consultationNoteInStep2:!!document.querySelector('#app .consultation-second .consultation-important-note'),
                     personalNameInPageCopy:(document.querySelector('#app')?.innerText||'').replace(/lisa@autismassessmentsfarnham\\.co\\.uk/gi,'').match(/\\bLisa\\b/g)?.length||0,
                     homeChooseButton:css('.why-section .why-cta a[href="/choose-your-assessment"],.why-section .why-cta a[href*="%2Fchoose-your-assessment"]'),
                     homeCombinedButtons:[...document.querySelectorAll('.pathway-extra-actions a')].map(e=>({text:e.textContent,background:getComputedStyle(e).backgroundColor})),
@@ -101,6 +105,16 @@ jobs:
                 const invalid=data.paletteSections.filter(x=>x.visible && !x.hasImage && x.background!=='rgba(0, 0, 0, 0)' && !approvedBackgrounds.has(x.background));
                 if(invalid.length)paletteViolations.push('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
                 if(data.reviewBand?.background!=='rgb(226, 236, 218)')paletteViolations.push('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
+                if(data.firstSection?.background!=='rgb(226, 236, 218)'){
+                  paletteViolations.push('FIRST SECTION NOT SAGE GREEN: '+route+' value='+JSON.stringify(data.firstSection));
+                }
+                if(route==='/free-consultation'){
+                  if(data.consultationBookingVisible)paletteViolations.push('UNWANTED CONSULTATION BOOKING SECTION STILL PRESENT');
+                  if(!data.consultationNoteInStep2)paletteViolations.push('IMPORTANT NOTE NOT MOVED INTO STEP 2');
+                  if(data.consultationTagStyles.length!==2||data.consultationTagStyles.some(t=>t.color!=='rgb(167, 123, 18)'||t.textTransform!=='uppercase')){
+                    paletteViolations.push('CONSULTATION TOP CARD LABELS NOT GOLD UPPERCASE: '+JSON.stringify(data.consultationTagStyles));
+                  }
+                }
                 if(route!=='/' && route!=='/our-team' && data.personalNameInPageCopy!==0){
                   paletteViolations.push('UNWANTED PERSONAL NAME IN SERVICE COPY: '+route+' count='+data.personalNameInPageCopy);
                 }
