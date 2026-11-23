@@ -97,9 +97,9 @@ if not os.path.exists(backdrop_path):
 # those leaves and use the centre garden, already naturally defocused by the lens.
 # Preserve a real 4:5 camera perspective; never stretch one axis independently.
 garden_full=ImageOps.fit(Image.open(backdrop_path).convert("RGB"),(W,H),method=Image.Resampling.LANCZOS)
-garden_crop=420
+garden_crop=390
 garden_crop_h=round(garden_crop*H/W)
-crop_x=90
+crop_x=100
 crop_y=round((H-garden_crop_h)/2)
 garden=garden_full.crop((crop_x,crop_y,crop_x+garden_crop,crop_y+garden_crop_h))
 garden=garden.resize((W,H),Image.Resampling.LANCZOS)
