@@ -387,3 +387,17 @@ body .site-header .nav .nav-dropdown-menu>a:focus-visible{
     flex:1 1 100%!important;
   }
 }
+
+/* Review correction: Home / Choose your assessment pathway.
+   The old #C8DDBC rule made this section too dark against the cream cards. */
+body[data-page="home"] #app > .mock-hero + .mock-section,
+body[data-page="home"] .mock-hero + .mock-section:not(.why-section){
+  background:#E5EFDE!important;
+  background-color:#E5EFDE!important;
+  background-image:none!important;
+}
+body[data-page="home"] #app > .mock-hero + .mock-section .info-card,
+body[data-page="home"] #app > .mock-hero + .mock-section .pathway-grid .info-card{
+  background:#F5E9D9!important;
+  box-shadow:var(--review-shadow)!important;
+}
