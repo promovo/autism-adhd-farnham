@@ -86,8 +86,8 @@ function updateSeo(path){
     graph.push({'@type':'FAQPage',mainEntity:[
       {'@type':'Question',name:'Do you assess both children and adults?',acceptedAnswer:{'@type':'Answer',text:'Yes. Autism assessments are available from age 2+. ADHD and combined Autism and ADHD assessments are available from age 5+.'}},
       {'@type':'Question',name:'Do you recognise PDA and female presentations?',acceptedAnswer:{'@type':'Answer',text:'Yes. The clinic recognises demand-avoidant presentations and the way Autism and ADHD may present in girls and women.'}},
-      {'@type':'Question',name:'Do you prescribe ADHD medication?',acceptedAnswer:{'@type':'Answer',text:'No. The clinic assesses and diagnoses ADHD but does not prescribe medication.'}},
-      {'@type':'Question',name:'What is the current waiting time?',acceptedAnswer:{'@type':'Answer',text:'Typical availability is around 1–3 weeks, subject to clinician and pathway availability.'}}
+      {'@type':'Question',name:'Do you prescribe ADHD medication?',acceptedAnswer:{'@type':'Answer',text:'The clinic offers ADHD assessment and can signpost to trusted independent private prescribers for medication. Prescribing is not offered at this clinic.'}},
+      {'@type':'Question',name:'What is the current waiting time?',acceptedAnswer:{'@type':'Answer',text:'Typically 1–3 weeks from initial enquiry to the in-person clinic assessment, subject to clinician and pathway availability.'}}
     ]});
   }
   schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
@@ -116,6 +116,68 @@ function wireBrandButtons(){
   });
 }
 
+/* Clinical service terms approved in the 23 November client review.
+ * Shared content avoids omissions across adult/child diagnostic pathways. */
+const reviewAssessmentRoutes=new Set([
+ '/adult-assessments','/child-young-person-assessments',
+ '/adult-autism-assessment','/adult-adhd-assessment',
+ '/child-autism-assessment','/child-adhd-assessment',
+ '/combined-adult-autism-adhd-assessment','/combined-child-autism-adhd-assessment'
+]);
+const medicationRoutes=new Set([
+ '/adult-adhd-assessment','/child-adhd-assessment',
+ '/combined-adult-autism-adhd-assessment','/combined-child-autism-adhd-assessment'
+]);
+const pdaInclusiveRoutes=new Set([
+ '/adult-autism-assessment','/child-autism-assessment',
+ '/combined-adult-autism-adhd-assessment','/combined-child-autism-adhd-assessment'
+]);
+const earlyYearsRoutes=new Set(['/child-young-person-assessments','/child-autism-assessment']);
+function appendClinicallyReviewedDetails(path){
+  const app=document.getElementById('app');
+  if(!app)return;
+  if(reviewAssessmentRoutes.has(path)){
+    const combined=path.startsWith('/combined-');
+    const pda=pdaInclusiveRoutes.has(path);
+    const meds=medicationRoutes.has(path);
+    app.insertAdjacentHTML('beforeend',`<section class="section clinical-inclusions-section">
+      <div class="section-lead"><div class="eyebrow">What every assessment includes</div><h2>Face-to-face assessment and diagnostic feedback</h2></div>
+      <div class="cards two clinical-inclusions-grid">
+        <div class="card"><h3>Included in your assessment</h3>
+          <p>At least one <strong>face-to-face session at our Farnham clinic</strong>, a detailed diagnostic report and a <strong>30-minute online diagnostic feedback call</strong> are included in every assessment.</p>
+          <p>The feedback call is part of the assessment fee; it is not the optional £180 post-assessment advice session.</p>
+          ${combined?'<p class="clinical-price">Combined autism and ADHD assessment: <strong>£2,995</strong>.</p>':''}
+        </div>
+        <div class="card"><h3>Enquiry and next steps</h3>
+          <p>Our usual time from <strong>initial enquiry to in-person clinic assessment is 1–3 weeks</strong>, subject to clinician and pathway availability.</p>
+          <p>Pre-booking / triage forms are typically reviewed within <strong>1–2 working days, often sooner</strong>. For an urgent enquiry, email <a href="mailto:lisa@autismassessmentsfarnham.co.uk">lisa@autismassessmentsfarnham.co.uk</a> directly.</p>
+          <p>If a free 15-minute consultation is appropriate, Lisa will send a private link to her diary after reviewing your form; online self-booking is not open.</p>
+        </div>
+      </div>
+      ${pda?'<div class="notice clinical-clarification"><strong>PDA profiling:</strong> where clinically appropriate, PDA profiling is included at no extra charge during a full autism or combined autism and ADHD assessment.</div>':''}
+      ${meds?'<div class="notice clinical-clarification"><strong>ADHD medication:</strong> we currently provide assessment and can signpost to trusted independent private prescribers for medication. Medication prescribing is not provided by this clinic.</div>':''}
+    </section>`);
+  }
+  if(earlyYearsRoutes.has(path)){
+    app.insertAdjacentHTML('beforeend',`<section class="section early-years-feature">
+      <div class="section-lead"><div class="eyebrow">Our approach for ages 2–4</div>
+      <h2>Joint face-to-face assessment for under-fives</h2>
+      <p>For children aged 2–4, our specialist autism pathway includes a joint face-to-face appointment with a paediatrician and a speech and language therapist. Wider multidisciplinary team input is included where appropriate.</p>
+      <p>The assessment considers the child’s communication, development, strengths and support needs. The resulting report provides recommendations to help families plan appropriate support at home and in early-years settings.</p>
+      <div class="cta-row"><a class="btn" href="/child-autism-assessment" data-link>Explore child autism assessment</a><a class="btn" href="/child-pre-booking" data-link>Child pre-booking</a></div>
+      </div>
+    </section>`);
+  }
+  if(path==='/fees'){
+    app.insertAdjacentHTML('beforeend',`<section class="section clinical-fees-summary">
+      <div class="section-lead"><div class="eyebrow">Included with every fee</div><h2>Your appointment and feedback</h2>
+      <p>Every assessment includes at least one face-to-face clinic session, a diagnostic report and a 30-minute online diagnostic feedback call. This is separate from optional £180 post-assessment advice sessions.</p>
+      <p>The typical time from your initial enquiry to the in-person clinic assessment is 1–3 weeks, depending on clinical and pathway availability. Forms are usually reviewed within 1–2 working days, often sooner.</p>
+      <p>PDA profiling is included at no extra charge where clinically appropriate during a full autism or combined autism and ADHD assessment.</p></div>
+    </section>`);
+  }
+}
+
 function render(path){
   path = path.replace(/\/+$/, '') || '/';
   // Inner-page woodland variants only. The homepage hero is deliberately untouched.
@@ -125,6 +187,7 @@ function render(path){
   document.body.dataset.reviewPath=path;
   document.body.dataset.woodland=adultWoodland.has(path)?'sunlight':childWoodland.has(path)?'birch':'canopy';
   document.getElementById('app').innerHTML=routes[path]||header('Page not found','Please return to the homepage.');
+  appendClinicallyReviewedDetails(path);
   // Enforce a genuine sequence of contrasting site sections. Older per-page
   // selectors made neighbouring sections the same light green even though
   // they had different classes. Give the actual rendered sections band classes.
