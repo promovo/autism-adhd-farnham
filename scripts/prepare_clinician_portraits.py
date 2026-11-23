@@ -7,6 +7,7 @@ import numpy as np
 import requests, cv2
 from PIL import Image, ImageOps, ImageFilter, ImageDraw, ImageFont
 from rembg import new_session, remove
+from scipy.ndimage import distance_transform_edt
 
 W,H=600,750
 LISA="https://static.wixstatic.com/media/9df129_a8be2a6dcc5f44029e859d71512b9881~mv2.jpg"
@@ -31,9 +32,43 @@ def download(url):
         im.thumbnail((1300,1600))
     return im
 
-def human_alpha(rgb,session):
-    mask=remove(rgb,session=session,only_mask=True)
-    return mask.convert("L")
+def human_alpha(rgb, session):
+    """Detailed ISNet portrait matte with controlled sub-pixel feathering.
+
+    A hard cut or broad blur destroys flyaway hairs; instead refine only the
+    partially transparent boundary, leaving all interior detail untouched.
+    """
+    raw = np.asarray(remove(rgb, session=session, only_mask=True).convert("L"), dtype=np.float32) / 255.0
+    smooth = cv2.GaussianBlur(raw, (0, 0), .67)
+    transition = (raw > .025) & (raw < .97)
+    alpha = np.where(transition, raw * .76 + smooth * .24, raw)
+    alpha[alpha < .014] = 0
+    alpha[alpha > .992] = 1
+    return Image.fromarray(np.uint8(np.rint(np.clip(alpha, 0, 1) * 255)), "L")
+
+
+def edge_colour_repair(portrait, matte):
+    """Remove previous-photo background colours trapped in translucent hair.
+
+    Only alter a thin boundary band (approximately 8 pixels at final size).
+    Use nearby *real interior subject* pixels, not painted or invented hair.
+    Skin, eyes, facial expression, clothing and the full opaque portrait are
+    unmodified. Premultiplied foreground blending then avoids the grey rim.
+    """
+    pix = np.asarray(portrait.convert("RGB"), dtype=np.float32)
+    a = np.asarray(matte.convert("L"), dtype=np.float32) / 255.0
+    solid = a >= .97
+    if not np.any(solid):
+        return portrait
+    distances, indices = distance_transform_edt(~solid, return_indices=True)
+    closest = pix[indices[0], indices[1]]
+    # Leave high-opacity hair intact; reduce coloured contamination
+    # only where a source-background spill is most likely.
+    feather_weight = (np.clip((.90 - a) / .90, 0, 1) ** 1.15) * .70
+    feather_weight *= np.clip((9.0 - distances) / 9.0, 0, 1)
+    feather_weight *= (a > .025) & (a < .94)
+    corrected = pix * (1 - feather_weight[..., None]) + closest * feather_weight[..., None]
+    return Image.fromarray(np.uint8(np.rint(np.clip(corrected, 0, 255))), "RGB")
 
 def find_face(im):
     gray=cv2.cvtColor(np.asarray(im),cv2.COLOR_RGB2GRAY)
@@ -47,7 +82,7 @@ def find_face(im):
     return [x,y,w,h]
 
 os.makedirs("images/clinicians",exist_ok=True)
-session=new_session("u2net_human_seg")
+session=new_session("isnet-general-use")
 lisa=download(LISA)
 lisa_mask=human_alpha(lisa,session)
 # Permanent seamless garden backdrop, restored from Lisa's original photograph.
@@ -61,11 +96,16 @@ os.makedirs("images/clinicians",exist_ok=True)
 
 metadata=[]
 for name,slug,url in PEOPLE:
-    original=lisa if slug=="lisa-mayatt" else download(url)
+    if slug=="lisa-mayatt":
+        # Lisa was photographed in this actual garden: retain her genuine
+        # original woodland/hair edges, rather than compositing her again.
+        metadata.append({"name":name,"slug":slug,"source":"original unretouched garden photo"})
+        continue
+    original=download(url)
     alpha=lisa_mask if slug=="lisa-mayatt" else human_alpha(original,session)
     mask_array=np.array(alpha)
-    mask_array[mask_array<12]=0
-    alpha=Image.fromarray(mask_array).filter(ImageFilter.GaussianBlur(.7))
+    mask_array[mask_array<5]=0
+    alpha=Image.fromarray(mask_array, "L")
     bbox=alpha.getbbox()
     if not bbox:
         raise ValueError("No person mask: "+name)
@@ -106,17 +146,20 @@ for name,slug,url in PEOPLE:
     rw=max(1,round(section.width*scale));rh=max(1,round(section.height*scale))
     rgb=section.resize((rw,rh),Image.Resampling.LANCZOS)
     amask=asection.resize((rw,rh),Image.Resampling.LANCZOS)
+    # A very subtle feather at the final pixel scale (not a broad Gaussian).
+    amask=amask.filter(ImageFilter.GaussianBlur(.36))
+    rgb=edge_colour_repair(rgb,amask)
     ox=round(left+src_left*scale); oy=round(origin_y+src_top*scale)
     # Natural directional contact shadow projected into the real garden.
     # Only behind the hair and shoulders; transparent edges remain soft.
     projected=Image.new("L",(W,H),0)
     projected.paste(amask,(ox,oy))
-    shadow=projected.filter(ImageFilter.GaussianBlur(12))
-    shadownp=np.array(shadow).astype(np.float32)*.22
+    shadow=projected.filter(ImageFilter.GaussianBlur(19))
+    shadownp=np.array(shadow).astype(np.float32)*.13
     # Shadows less dominant on lower shoulder edges; no harsh cutout halos.
     shadow=Image.fromarray(np.uint8(np.clip(shadownp,0,255)))
     shifted=Image.new("L",(W,H),0)
-    shifted.paste(shadow,(7,4))
+    shifted.paste(shadow,(5,7))
     tint=Image.new("RGBA",(W,H),(22,43,24,0))
     tint.putalpha(shifted)
     scene=garden.convert("RGBA")
