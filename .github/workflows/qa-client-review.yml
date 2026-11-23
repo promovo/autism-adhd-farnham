@@ -60,6 +60,10 @@ jobs:
                     navItems:[...document.querySelectorAll('.nav-dropdown-menu a')].slice(0,8).map(e=>({text:e.textContent,style:getComputedStyle(e).textTransform})),
                     paletteSections:[...document.querySelectorAll('#app > section,#app > section > section,.google-reviews-section,.site-header,.footer')].map(e=>{const x=getComputedStyle(e);return {name:e.tagName+'.'+e.className,background:x.backgroundColor,hasImage:x.backgroundImage!=='none',visible:e.getBoundingClientRect().height>0}}),
                     reviewBand:css('.google-reviews-section'),
+                    homeSpecialistDescriptions:[...document.querySelectorAll('.specialist-wrap .specialist-card p')].map(el=>({text:el.textContent.trim(),length:el.textContent.trim().length,lines:Math.round(el.getBoundingClientRect().height/parseFloat(getComputedStyle(el).lineHeight)),height:el.getBoundingClientRect().height})),
+                    chooseSupportDescriptions:[...document.querySelectorAll('.specialist-overview .card p')].map(el=>({text:el.textContent.trim(),length:el.textContent.trim().length,lines:Math.round(el.getBoundingClientRect().height/parseFloat(getComputedStyle(el).lineHeight))})),
+                    clinicFeature:{exists:!!document.querySelector('.assessment-clinic-feature'),background:document.querySelector('.assessment-clinic-feature')?getComputedStyle(document.querySelector('.assessment-clinic-feature')).backgroundColor:null,title:document.querySelector('.assessment-clinic-feature h2')?.textContent,photo:!!document.querySelector('.assessment-clinic-feature img')},
+                    otherCardHeadings:[...document.querySelectorAll('#app .section .card h3,#app .section .fee-card h3,#app .section .soft-panel h3')].slice(0,15).map(el=>({text:el.textContent.replace(/\\s+/g,' ').trim(),size:getComputedStyle(el).fontSize,caps:getComputedStyle(el).textTransform})),
                     reviewTopBorder:getComputedStyle(document.querySelector('.google-reviews-section')).borderTopWidth,
                     bands:[...document.querySelectorAll('#app > section.section:not(.dark):not(.global-start-cta)')].map(e=>({name:e.className,background:getComputedStyle(e).backgroundColor,image:getComputedStyle(e).backgroundImage})),
                     titleColours:[...document.querySelectorAll('#app h1,#app h2,#app h3,#app h4,#app h5,#app h6')].filter(e=>e.getBoundingClientRect().height>0 && !e.closest('.specialist-wrap,.dark,.global-start-cta')).map(e=>({title:e.textContent.trim().slice(0,85),color:getComputedStyle(e).color})),
@@ -124,6 +128,15 @@ jobs:
                   });
                   const wantBorder='0px';
                   if(data.reviewTopBorder!==wantBorder)paletteViolations.push('UNEXPECTED GOOGLE REVIEWS BORDER '+route+': '+data.reviewTopBorder+' expected '+wantBorder);
+                }
+                if(route!=='/'&&data.otherCardHeadings.some(x=>x.size!=='20px'||x.caps!=='uppercase')){
+                  paletteViolations.push('CARD TITLE NOT 20PX UPPERCASE '+route+': '+JSON.stringify(data.otherCardHeadings.filter(x=>x.size!=='20px'||x.caps!=='uppercase')));
+                }
+                if(route==='/choose-your-assessment' && (!data.clinicFeature.exists||data.clinicFeature.background!=='rgb(253, 249, 243)'||!data.clinicFeature.photo||!data.clinicFeature.title)){
+                  paletteViolations.push('CLINIC CONTENT PANEL NOT VISIBLE '+JSON.stringify(data.clinicFeature));
+                }
+                if(route==='/' && (data.homeSpecialistDescriptions.length!==4 || Math.max(...data.homeSpecialistDescriptions.map(x=>x.length))-Math.min(...data.homeSpecialistDescriptions.map(x=>x.length))>20)){
+                  paletteViolations.push('HOME SPECIALIST PARAGRAPHS UNBALANCED '+JSON.stringify(data.homeSpecialistDescriptions));
                 }
                 if(data.titleColours.some(t=>t.color!=='rgb(16, 46, 32)'))paletteViolations.push('TITLE COLOUR INCONSISTENCY '+route+' '+JSON.stringify(data.titleColours.filter(t=>t.color!=='rgb(16, 46, 32)')));
                 if(route==='/contact' && (data.contactGoldButtons.length!==3 || data.contactGoldButtons.some(x=>x.color!=='rgb(255, 249, 232)'||x.background!=='rgb(194, 154, 26)')))paletteViolations.push('CONTACT BUTTON COLOUR FAIL '+JSON.stringify(data.contactGoldButtons));
