@@ -1,5 +1,30 @@
-const routes={'/':home,'/services':assessmentOverview,'/copy-of-faq':resources,'/recommended-services':resources,'/choose-your-assessment':assessmentOverview,'/adult-assessments':adult,'/child-young-person-assessments':child,'/adult-autism-assessment':adultAutism,'/adult-adhd-assessment':adultAdhd,'/combined-adult-autism-adhd-assessment':combinedAdult,'/child-autism-assessment':childAutism,'/child-adhd-assessment':childAdhd,'/combined-child-autism-adhd-assessment':combinedChild,'/autism-adhd-women':women,'/pda-demand-avoidant-presentation':pda,'/adult-pre-booking':`${header('Adult Autism & ADHD Pre-Booking Form','Initial information and triage for adults considering Autism, ADHD or a Combined assessment.')}<section class="section prebooking-main"><div class="soft-panel prebooking-panel"><h2>Complete the Adult Pre-Booking Form</h2><p>Our clinicians review this form manually. It is for initial triage only and is not diagnostic.</p><a class="btn" href="${adultForm}" target="_blank">Open Adult Pre-Booking Form</a></div></section><section class="section alt prebooking-next"><div class="section-lead"><h2>What happens next?</h2><p>Pre-booking forms are typically reviewed within <strong>1–2 working days, often sooner</strong>. We then advise on the most appropriate next step. If a free 15-minute telephone consultation would help, Lisa emails you a private diary link after reviewing your form; there is no public self-booking.</p><p>For an urgent enquiry, please also email <a href="mailto:lisa@autismassessmentsfarnham.co.uk">lisa@autismassessmentsfarnham.co.uk</a> directly.</p></div></section>`,
-'/child-pre-booking':`${header('Child & Young Person Autism / ADHD Pre-Booking Form','Initial information and triage for a child or young person where Autism, ADHD or a Combined assessment is being considered.')}<section class="section prebooking-main"><div class="soft-panel prebooking-panel"><h2>Complete the Child / Young Person Form</h2><p>Our clinicians review this form manually. It is for initial triage only and is not diagnostic.</p><a class="btn" href="${childForm}" target="_blank">Open Child / Young Person Form</a></div></section><section class="section alt prebooking-next"><div class="section-lead"><h2>What happens next?</h2><p>Pre-booking forms are typically reviewed within <strong>1–2 working days, often sooner</strong>. We then advise on the most appropriate next step. If a free 15-minute telephone consultation would help, Lisa emails you a private diary link after reviewing your form; there is no public self-booking.</p><p>For an urgent enquiry, please also email <a href="mailto:lisa@autismassessmentsfarnham.co.uk">lisa@autismassessmentsfarnham.co.uk</a> directly.</p></div></section>`,
+const preBookingNext=`<section class="section alt prebooking-next">
+  <div class="prebooking-next-inner">
+    <div class="prebooking-next-heading">
+      <div class="eyebrow">After you submit your form</div>
+      <h2>What happens next?</h2>
+      <p>Our clinical team reviews your information before advising on the most appropriate next step.</p>
+    </div>
+    <div class="prebooking-next-grid">
+      <article class="prebooking-next-card">
+        <div class="prebooking-next-label">01 · Clinical review</div>
+        <h3>Typically 1–2 working days</h3>
+        <p>Forms are usually reviewed within 1–2 working days, often sooner. The team then advises you on your next step.</p>
+      </article>
+      <article class="prebooking-next-card">
+        <div class="prebooking-next-label">02 · If a call would help</div>
+        <h3>A personal invitation from Lisa</h3>
+        <p>If a free 15-minute telephone consultation is appropriate, Lisa emails you a private diary link. Appointments are not publicly self-bookable.</p>
+      </article>
+    </div>
+    <div class="prebooking-next-urgent">
+      <strong>Urgent enquiry?</strong>
+      <span>Please also email Lisa directly at <a href="mailto:lisa@autismassessmentsfarnham.co.uk">lisa@autismassessmentsfarnham.co.uk</a>.</span>
+    </div>
+  </div>
+</section>`;
+const routes={'/':home,'/services':assessmentOverview,'/copy-of-faq':resources,'/recommended-services':resources,'/choose-your-assessment':assessmentOverview,'/adult-assessments':adult,'/child-young-person-assessments':child,'/adult-autism-assessment':adultAutism,'/adult-adhd-assessment':adultAdhd,'/combined-adult-autism-adhd-assessment':combinedAdult,'/child-autism-assessment':childAutism,'/child-adhd-assessment':childAdhd,'/combined-child-autism-adhd-assessment':combinedChild,'/autism-adhd-women':women,'/pda-demand-avoidant-presentation':pda,'/adult-pre-booking':`${header('Adult Autism & ADHD Pre-Booking Form','Initial information and triage for adults considering Autism, ADHD or a Combined assessment.')}<section class="section prebooking-main"><div class="soft-panel prebooking-panel"><h2>Complete the Adult Pre-Booking Form</h2><p>Our clinicians review this form manually. It is for initial triage only and is not diagnostic.</p><a class="btn" href="${adultForm}" target="_blank">Open Adult Pre-Booking Form</a></div></section>${preBookingNext}`,
+'/child-pre-booking':`${header('Child & Young Person Autism / ADHD Pre-Booking Form','Initial information and triage for a child or young person where Autism, ADHD or a Combined assessment is being considered.')}<section class="section prebooking-main"><div class="soft-panel prebooking-panel"><h2>Complete the Child / Young Person Form</h2><p>Our clinicians review this form manually. It is for initial triage only and is not diagnostic.</p><a class="btn" href="${childForm}" target="_blank">Open Child / Young Person Form</a></div></section>${preBookingNext}`,
 '/how-assessments-work':how,'/fees':fees,'/our-team':team,'/faq':faq,'/free-consultation':consultation,'/post-assessment-advice':post,'/local-resources':resources,'/privacy-policy':privacy,'/ehcp-expert-witness-reports':ehcp,'/contact':contact};
 const seoMeta={
 '/':{title:'Autism & ADHD Assessments Farnham, Surrey | Adults & Children',description:'Private Autism, ADHD and combined assessments for adults, children and young people in Farnham, Surrey. Multidisciplinary clinicians, PDA-aware and female-presentation informed.',canonical:'/'},
@@ -189,16 +214,7 @@ function appendClinicallyReviewedDetails(path){
     </section>`;
     (firstContent||app).insertAdjacentHTML(firstContent?'afterend':'beforeend',underFiveSection);
   }
-  if(path==='/fees'){
-    const prices=app.querySelector('.fees-prices');
-    if(prices) prices.insertAdjacentHTML('afterend',`<section class="section clinical-fees-summary">
-      <div class="section-lead">
-        <div class="eyebrow">Included in your assessment fee</div>
-        <h2>In-person assessment, report and feedback</h2>
-        <p>Every assessment includes at least one face-to-face session at our Farnham clinic, a detailed diagnostic report and a 30-minute online diagnostic feedback call. Optional £180 post-assessment advice sessions are separate.</p>
-      </div>
-    </section>`);
-  }
+
 }
 
 function render(path){
