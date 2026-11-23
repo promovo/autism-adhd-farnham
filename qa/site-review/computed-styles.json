@@ -1957,7 +1957,7 @@
   "/our-team": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Four-team",
     "heading": "Meet Our Multi-Disciplinary Clinical Team",
-    "mainLength": 6616,
+    "mainLength": 6672,
     "cardCounts": 8,
     "navDropdowns": 4,
     "hero": {
@@ -2376,19 +2376,19 @@
     "teamDisciplineCards": [
       {
         "title": "Paediatrics",
-        "paragraph": "Explores medical and developmental history, bringing a child health perspective to diagnostic assessment.",
-        "paragraphLines": 5,
+        "paragraph": "Explores medical and developmental history, bringing a child health perspective to diagnostic assessment and support planning.",
+        "paragraphLines": 6,
         "titleToTextGap": 8,
-        "blankBottom": 49,
+        "blankBottom": 24,
         "cardHeight": 227,
         "minTitleHeight": "0px"
       },
       {
         "title": "Psychology",
-        "paragraph": "Explores behaviour, thinking and emotional wellbeing alongside the wider neurodevelopmental picture.",
-        "paragraphLines": 5,
+        "paragraph": "Explores behaviour, thinking and emotional wellbeing alongside the wider neurodevelopmental picture to inform tailored recommendations.",
+        "paragraphLines": 6,
         "titleToTextGap": 8,
-        "blankBottom": 49,
+        "blankBottom": 24,
         "cardHeight": 227,
         "minTitleHeight": "0px"
       },
