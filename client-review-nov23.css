@@ -722,3 +722,61 @@ body[data-page="inner"] #app > .page-hero::after{
     background-position:center center,66% center!important;
   }
 }
+
+/* 23 NOV VISUAL HERO PARITY — actual cause of previous mismatch:
+   Home has a separate brightened woodland ::before and an ivory ::after veil.
+   Inner pages previously disabled ::before entirely, so identical
+   background-image values on the element NEVER looked identical.
+   Reproduce Home's two visible layers on every inner hero.
+   Homepage stays untouched. */
+body[data-page="inner"] #app > .page-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  filter:none!important;
+}
+body[data-page="inner"] #app > .page-hero::before{
+  content:""!important;
+  display:block!important;
+  opacity:1!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-2!important;
+  pointer-events:none!important;
+  background:url('https://static.wixstatic.com/media/9df129_f75ba9bd8b0c4912a56ba86336124a33~mv2.jpg') center right/cover no-repeat!important;
+  filter:brightness(1.14) saturate(1.23) contrast(1.07)!important;
+}
+body[data-page="inner"] #app > .page-hero::after{
+  content:""!important;
+  display:block!important;
+  opacity:1!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+  background:linear-gradient(90deg,
+    rgba(250,249,244,.99) 0%,
+    rgba(250,249,244,.97) 24%,
+    rgba(250,249,244,.88) 37%,
+    rgba(250,249,244,.64) 49%,
+    rgba(250,249,244,.28) 59%,
+    rgba(250,249,244,.05) 69%,
+    rgba(250,249,244,0) 77%)!important;
+}
+body[data-page="inner"] #app > .page-hero > *{
+  position:relative!important;
+  z-index:1!important;
+}
+@media(max-width:760px){
+  body[data-page="inner"] #app > .page-hero::before{
+    background-position:65% center!important;
+    filter:brightness(1.13) saturate(1.2) contrast(1.06)!important;
+  }
+  body[data-page="inner"] #app > .page-hero::after{
+    background:linear-gradient(90deg,
+      rgba(250,249,244,.98) 0%,
+      rgba(250,249,244,.94) 43%,
+      rgba(250,249,244,.75) 72%,
+      rgba(250,249,244,.46) 100%)!important;
+  }
+}
