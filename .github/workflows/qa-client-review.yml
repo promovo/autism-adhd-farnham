@@ -67,6 +67,13 @@ jobs:
                     cliniciansCard:css('.clinicians-home .clinician-card'),
                     firstSection:css('#app > .page-hero + .section, #app > .mock-hero + .mock-section'),
                     consultationTagStyles:[...document.querySelectorAll('#app .consultation-form-cards .card > .tag')].map(e=>({text:e.textContent,color:getComputedStyle(e).color,textTransform:getComputedStyle(e).textTransform,fontSize:getComputedStyle(e).fontSize})),
+                    typography:Object.fromEntries(
+                      ['.consultation-form-cards .card .tag','.consultation-form-cards .card h3','.consultation-form-cards .card p','.consultation-form-cards .card a.btn','.consultation-first .section-lead h2',
+                       '.overview-service-cards .card .tag','.overview-service-cards .card h3','.overview-service-cards .card p','.overview-service-cards .card a.inline',
+                       '.overview-age-cards .card h3','.overview-age-cards .card p','.fees-grid .fee-card .tag','.fees-grid .fee-card h3','.fees-grid .fee-card p','.fees-grid .fee-card a.inline',
+                       '.contact-start-cards .card h3','.contact-start-cards .card p','.section-lead h2','.card h3','.card .tag','.card p','.card a.btn']
+                      .map(sel=>{const el=document.querySelector('#app '+sel);if(!el)return [sel,null];const v=getComputedStyle(el);return [sel,{fontSize:v.fontSize,fontFamily:v.fontFamily,fontWeight:v.fontWeight,textTransform:v.textTransform,lineHeight:v.lineHeight,letterSpacing:v.letterSpacing,color:v.color}]}).filter(x=>x[1])
+                    ),
                     consultationBookingVisible:!!document.querySelector('#app .consultation-booking'),
                     consultationNoteInStep2:!!document.querySelector('#app .consultation-second .consultation-important-note'),
                     personalNameInPageCopy:(document.querySelector('#app')?.innerText||'').replace(/lisa@autismassessmentsfarnham\\.co\\.uk/gi,'').match(/\\bLisa\\b/g)?.length||0,
