@@ -633,9 +633,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section assessment-overview intro-tone site-band-sage",
@@ -1319,9 +1319,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section fees-page fees-prices site-band-sage",
@@ -2050,9 +2050,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section contact-start site-band-sage",
@@ -2281,7 +2281,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -2344,8 +2344,8 @@
         "visible": true
       },
       {
-        "name": "SECTION.section faq site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "SECTION.section faq site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -2372,13 +2372,13 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
-        "name": "section faq site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "section faq site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -2420,7 +2420,7 @@
     "cliniciansPortraitFrame": null,
     "cliniciansCard": null,
     "firstSection": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -2990,9 +2990,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -3297,9 +3297,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -3552,9 +3552,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -3730,7 +3730,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -3793,8 +3793,8 @@
         "visible": true
       },
       {
-        "name": "SECTION.section site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "SECTION.section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -3821,13 +3821,13 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
-        "name": "section site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -3853,7 +3853,7 @@
     "cliniciansPortraitFrame": null,
     "cliniciansCard": null,
     "firstSection": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -4425,9 +4425,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -4732,9 +4732,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -4987,9 +4987,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section site-band-sage",
@@ -5172,7 +5172,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -5246,8 +5246,8 @@
         "visible": true
       },
       {
-        "name": "SECTION.section pda-page site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "SECTION.section pda-page site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -5274,13 +5274,13 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
-        "name": "section pda-page site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "section pda-page site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -5310,7 +5310,7 @@
     "cliniciansPortraitFrame": null,
     "cliniciansCard": null,
     "firstSection": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -5545,9 +5545,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section post-section post-one site-band-sage",
@@ -5799,7 +5799,7 @@
       "height": 298.578125
     },
     "section": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -5873,8 +5873,8 @@
         "visible": true
       },
       {
-        "name": "SECTION.section site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "SECTION.section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -5901,13 +5901,13 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
-        "name": "section site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "section site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
@@ -5941,7 +5941,7 @@
     "cliniciansPortraitFrame": null,
     "cliniciansCard": null,
     "firstSection": {
-      "background": "rgb(226, 236, 218)",
+      "background": "rgb(199, 221, 190)",
       "backgroundImage": "none",
       "backgroundPosition": "0% 0%",
       "backgroundSize": "auto",
@@ -7282,8 +7282,8 @@
         "visible": true
       },
       {
-        "name": "SECTION.section privacy-page site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "SECTION.section privacy-page site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "hasImage": false,
         "visible": true
       },
@@ -7310,9 +7310,9 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 504.6875
+      "height": 458.6875
     },
-    "reviewTopBorder": "46px",
+    "reviewTopBorder": "0px",
     "bands": [
       {
         "name": "section privacy-page site-band-sage",
@@ -7335,8 +7335,8 @@
         "image": "none"
       },
       {
-        "name": "section privacy-page site-band-sage",
-        "background": "rgb(226, 236, 218)",
+        "name": "section privacy-page site-band-sage site-band-deep-sage",
+        "background": "rgb(199, 221, 190)",
         "image": "none"
       }
     ],
