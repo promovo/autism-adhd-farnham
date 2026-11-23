@@ -92,6 +92,30 @@ function updateSeo(path){
   }
   schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
 }
+/* Shared real hover/focus behaviour for every gold CTA.
+ * Legacy !important colour rules on some old routes can override :hover CSS,
+ * so apply one accessible, explicitly defined interaction across the preview. */
+function wireBrandButtons(){
+  document.querySelectorAll('a.btn,button.btn').forEach(button=>{
+    if(button.dataset.brandHoverBound==='yes') return;
+    button.dataset.brandHoverBound='yes';
+    const paint=(hover)=>{
+      const bg=hover?'#A98214':'#C29A1A';
+      button.style.setProperty('background',bg,'important');
+      button.style.setProperty('background-color',bg,'important');
+      button.style.setProperty('border-color',bg,'important');
+      button.style.setProperty('color','#FFF9E8','important');
+      button.style.setProperty('box-shadow',hover?'0 7px 18px rgba(35,66,45,.17)':'0 3px 10px rgba(35,66,45,.10)','important');
+      button.style.setProperty('transform',hover?'translateY(-2px)':'translateY(0)','important');
+    };
+    paint(false);
+    button.addEventListener('pointerenter',()=>paint(true));
+    button.addEventListener('pointerleave',()=>paint(false));
+    button.addEventListener('focus',()=>paint(true));
+    button.addEventListener('blur',()=>paint(false));
+  });
+}
+
 function render(path){
   path = path.replace(/\/+$/, '') || '/';
   // Inner-page woodland variants only. The homepage hero is deliberately untouched.
@@ -131,6 +155,7 @@ function render(path){
   }
   updateSeo(path);
   bind();
+  wireBrandButtons();
   if(location.hash){
     requestAnimationFrame(()=>{
       const target=document.querySelector(location.hash);
