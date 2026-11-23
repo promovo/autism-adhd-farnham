@@ -60,6 +60,11 @@ jobs:
                     navItems:[...document.querySelectorAll('.nav-dropdown-menu a')].slice(0,8).map(e=>({text:e.textContent,style:getComputedStyle(e).textTransform})),
                     paletteSections:[...document.querySelectorAll('#app > section,#app > section > section,.google-reviews-section,.site-header,.footer')].map(e=>{const x=getComputedStyle(e);return {name:e.tagName+'.'+e.className,background:x.backgroundColor,hasImage:x.backgroundImage!=='none',visible:e.getBoundingClientRect().height>0}}),
                     reviewBand:css('.google-reviews-section'),
+                    reviewTopBorder:getComputedStyle(document.querySelector('.google-reviews-section')).borderTopWidth,
+                    bands:[...document.querySelectorAll('#app > section.section:not(.dark):not(.global-start-cta)')].map(e=>({name:e.className,background:getComputedStyle(e).backgroundColor,image:getComputedStyle(e).backgroundImage})),
+                    titleColours:[...document.querySelectorAll('#app h1,#app h2,#app h3,#app h4,#app h5,#app h6')].filter(e=>e.getBoundingClientRect().height>0 && !e.closest('.specialist-wrap,.dark,.global-start-cta')).map(e=>({title:e.textContent.trim().slice(0,85),color:getComputedStyle(e).color})),
+                    contactGoldButtons:[...document.querySelectorAll('.contact-start-cards a.btn')].map(e=>({text:e.textContent,color:getComputedStyle(e).color,background:getComputedStyle(e).backgroundColor})),
+                    postIcons:[...document.querySelectorAll('.post-one .support-icon')].map(e=>({width:getComputedStyle(e).width,height:getComputedStyle(e).height,background:getComputedStyle(e).backgroundColor,svgWidth:getComputedStyle(e.querySelector('svg')).width,stroke:getComputedStyle(e.querySelector('svg')).stroke})),
                     cliniciansBand:css('.clinicians-home'),
                     cliniciansInner:css('.clinicians-home > .mock-section'),
                     cliniciansCarousel:css('.clinicians-home .clinician-row.clinician-carousel'),
@@ -112,6 +117,17 @@ jobs:
                 const invalid=data.paletteSections.filter(x=>x.visible && !x.hasImage && x.background!=='rgba(0, 0, 0, 0)' && !approvedBackgrounds.has(x.background));
                 if(invalid.length)paletteViolations.push('UNAPPROVED SITE BACKGROUND ON '+route+': '+JSON.stringify(invalid));
                 if(data.reviewBand?.background!=='rgb(226, 236, 218)')paletteViolations.push('REVIEWS SHADE DOES NOT MATCH APPROVED GREEN: '+route);
+                if(route!=='/'){
+                  const expectedBands=data.bands.map((b,i)=>i%2===1?'rgb(253, 249, 243)':(i>0 && i%4===2?'rgb(199, 221, 190)':'rgb(226, 236, 218)'));
+                  data.bands.forEach((band,i)=>{
+                    if(band.background!==expectedBands[i] || band.image!=='none')paletteViolations.push('SECTION ALTERNATION FAIL: '+route+' #'+i+' '+JSON.stringify(band)+' wanted '+expectedBands[i]);
+                  });
+                  const wantBorder=data.bands.length%2===1?'46px':'0px';
+                  if(data.reviewTopBorder!==wantBorder)paletteViolations.push('GOOGLE REVIEWS CREAM SEPARATOR FAIL '+route+': '+data.reviewTopBorder+' expected '+wantBorder);
+                }
+                if(data.titleColours.some(t=>t.color!=='rgb(16, 46, 32)'))paletteViolations.push('TITLE COLOUR INCONSISTENCY '+route+' '+JSON.stringify(data.titleColours.filter(t=>t.color!=='rgb(16, 46, 32)')));
+                if(route==='/contact' && (data.contactGoldButtons.length!==3 || data.contactGoldButtons.some(x=>x.color!=='rgb(255, 249, 232)'||x.background!=='rgb(194, 154, 26)')))paletteViolations.push('CONTACT BUTTON COLOUR FAIL '+JSON.stringify(data.contactGoldButtons));
+                if(route==='/post-assessment-advice' && (data.postIcons.length!==6 || data.postIcons.some(x=>x.width!=='66px'||x.height!=='66px'||x.svgWidth!=='44px'||x.stroke!=='rgb(213, 173, 51)')))paletteViolations.push('POST-ASSESSMENT ICON STYLE FAIL '+JSON.stringify(data.postIcons));
                 if(data.firstSection?.background!=='rgb(226, 236, 218)'){
                   paletteViolations.push('FIRST SECTION NOT SAGE GREEN: '+route+' value='+JSON.stringify(data.firstSection));
                 }
@@ -154,6 +170,16 @@ jobs:
                   }
                   if(data.homeCombinedButtons.some(b=>b.background!=='rgb(194, 154, 26)')){
                     paletteViolations.push('COMBINED ASSESSMENT BUTTON NOT GOLD: '+JSON.stringify(data.homeCombinedButtons));
+                  }
+                }
+                const hoverAnchor=await page.$(route==='/contact'?'.contact-start-cards a.btn':'#app a.btn');
+                if(hoverAnchor){
+                  await hoverAnchor.hover();
+                  await new Promise(r=>setTimeout(r,260));
+                  const hoverState=await hoverAnchor.evaluate(e=>{const s=getComputedStyle(e);return {background:s.backgroundColor,color:s.color,transform:s.transform}});
+                  data.buttonHover=hoverState;
+                  if(hoverState.background!=='rgb(169, 130, 20)' || hoverState.color!=='rgb(255, 249, 232)'){
+                    paletteViolations.push('GOLD BUTTON HOVER INCONSISTENCY '+route+' '+JSON.stringify(hoverState));
                   }
                 }
                 map[route]=data;
