@@ -459,7 +459,7 @@
   "/choose-your-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchoose-your-assessment",
     "heading": "Choose Your Assessment",
-    "mainLength": 2109,
+    "mainLength": 2118,
     "cardCounts": 11,
     "navDropdowns": 4,
     "hero": {
@@ -959,7 +959,7 @@
   "/how-assessments-work": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fhow-assessments-work",
     "heading": "How Our Autism & ADHD Assessment Process Works",
-    "mainLength": 1884,
+    "mainLength": 1973,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
@@ -1240,7 +1240,7 @@
   "/fees": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Ffees",
     "heading": "Autism & ADHD Assessment Fees and Availability",
-    "mainLength": 964,
+    "mainLength": 1134,
     "cardCounts": 8,
     "navDropdowns": 4,
     "hero": {
@@ -1346,7 +1346,7 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 241.40625
+      "height": 287.53125
     },
     "pdaPhoto": null,
     "link": {
@@ -1522,7 +1522,7 @@
         "color": "rgb(16, 46, 32)"
       },
       {
-        "title": "Typically around 1–3 weeks",
+        "title": "Typically 1–3 weeks from enquiry to the in-person clinic assessment",
         "color": "rgb(16, 46, 32)"
       },
       {
@@ -2699,7 +2699,7 @@
   "/adult-assessments": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-assessments",
     "heading": "Adult Autism & ADHD Assessments in Farnham, Surrey",
-    "mainLength": 2030,
+    "mainLength": 2125,
     "cardCounts": 11,
     "navDropdowns": 4,
     "hero": {
@@ -3124,7 +3124,7 @@
   "/adult-autism-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-autism-assessment",
     "heading": "Adult Autism Assessment in Farnham, Surrey",
-    "mainLength": 1842,
+    "mainLength": 1865,
     "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
@@ -3480,7 +3480,7 @@
   "/adult-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fadult-adhd-assessment",
     "heading": "Adult ADHD Assessment in Farnham, Surrey",
-    "mainLength": 1451,
+    "mainLength": 1482,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
@@ -3757,7 +3757,7 @@
   "/combined-adult-autism-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fcombined-adult-autism-adhd-assessment",
     "heading": "Combined Autism & ADHD Assessment for Adults",
-    "mainLength": 1131,
+    "mainLength": 1162,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
@@ -4297,7 +4297,7 @@
   "/child-young-person-assessments": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-young-person-assessments",
     "heading": "Autism & ADHD Assessments for Children and Young People",
-    "mainLength": 2134,
+    "mainLength": 2155,
     "cardCounts": 7,
     "navDropdowns": 4,
     "hero": {
@@ -4708,7 +4708,7 @@
   "/child-autism-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-autism-assessment",
     "heading": "Child Autism Assessment in Farnham, Surrey",
-    "mainLength": 1411,
+    "mainLength": 1442,
     "cardCounts": 5,
     "navDropdowns": 4,
     "hero": {
@@ -5064,7 +5064,7 @@
   "/child-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fchild-adhd-assessment",
     "heading": "Child ADHD Assessment in Farnham, Surrey",
-    "mainLength": 1261,
+    "mainLength": 1292,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
@@ -5341,7 +5341,7 @@
   "/combined-child-autism-adhd-assessment": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/?review=%2Fcombined-child-autism-adhd-assessment",
     "heading": "Combined Autism & ADHD Assessment for Children and Young People",
-    "mainLength": 981,
+    "mainLength": 1012,
     "cardCounts": 3,
     "navDropdowns": 4,
     "hero": {
