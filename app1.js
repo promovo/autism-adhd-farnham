@@ -74,17 +74,17 @@ const home=`
     <div class="clinician-carousel-shell">
       <button class="clinician-carousel-arrow clinician-carousel-prev" type="button" aria-label="Previous clinicians">‹</button>
       <div class="clinician-row clinician-carousel" tabindex="0" aria-label="Clinical team">
-        <a class="clinician-card" href="/our-team#lisa-mayatt" data-link><img src="/images/clinicians/lisa-mayatt.webp?v=20261123hairlines4" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Founder, Clinical Director & Highly Specialist SLT</p></a>
-        <a class="clinician-card" href="/our-team#dr-gopal-venkat" data-link><img src="/images/clinicians/dr-gopal-venkat.webp?v=20261123hairlines4" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
-        <a class="clinician-card" href="/our-team#dr-joseph-chukwu" data-link><img src="/images/clinicians/dr-joseph-chukwu.webp?v=20261123hairlines4" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
-        <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="/images/clinicians/dr-aimee-hayter.webp?v=20261123hairlines4" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></a>
-        <a class="clinician-card" href="/our-team#dr-daniela-di-basilio" data-link><img src="/images/clinicians/dr-daniela-di-basilio.webp?v=20261123hairlines4" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></a>
+        <a class="clinician-card" href="/our-team#lisa-mayatt" data-link><img src="/images/clinicians/lisa-mayatt.webp?v=20261123hairlines5" alt="Lisa Mayatt"><h4>Lisa Mayatt</h4><p>Founder, Clinical Director & Highly Specialist SLT</p></a>
+        <a class="clinician-card" href="/our-team#dr-gopal-venkat" data-link><img src="/images/clinicians/dr-gopal-venkat.webp?v=20261123hairlines5" alt="Dr Gopal Venkat"><h4>Dr Gopal Venkat</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
+        <a class="clinician-card" href="/our-team#dr-joseph-chukwu" data-link><img src="/images/clinicians/dr-joseph-chukwu.webp?v=20261123hairlines5" alt="Dr Joseph Chukwu"><h4>Dr Joseph Chukwu</h4><p>Consultant Neurodevelopmental Paediatrician</p></a>
+        <a class="clinician-card" href="/our-team#dr-aimee-hayter" data-link><img src="/images/clinicians/dr-aimee-hayter.webp?v=20261123hairlines5" alt="Dr Aimee Hayter"><h4>Dr Aimee Hayter</h4><p>Clinical Psychologist</p></a>
+        <a class="clinician-card" href="/our-team#dr-daniela-di-basilio" data-link><img src="/images/clinicians/dr-daniela-di-basilio.webp?v=20261123hairlines5" alt="Dr Daniela Di Basilio"><h4>Dr Daniela Di Basilio</h4><p>Clinical Psychologist & Cognitive Behavioural Therapist</p></a>
         <a class="clinician-card clinician-card-placeholder" href="/our-team#nordette-small" data-link><div class="clinician-initials" aria-hidden="true">NS</div><h4>Nordette Small</h4><p>Highly Specialist ADHD Nurse</p></a>
-        <a class="clinician-card" href="/our-team#karen-cooper" data-link><img src="/images/clinicians/karen-cooper.webp?v=20261123hairlines4" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></a>
-        <a class="clinician-card" href="/our-team#beccy-muggeridge" data-link><img src="/images/clinicians/beccy-muggeridge.webp?v=20261123hairlines4" alt="Beccy Muggeridge"><h4>Beccy Muggeridge</h4><p>Highly Specialist Speech & Language Therapist</p></a>
-        <a class="clinician-card" href="/our-team#deepika-sharma" data-link><img src="/images/clinicians/deepika-sharma.webp?v=20261123hairlines4" alt="Deepika Sharma"><h4>Deepika Sharma</h4><p>Specialist Occupational Therapist</p></a>
-        <a class="clinician-card" href="/our-team#jess-wilson" data-link><img src="/images/clinicians/jess-wilson.webp?v=20261123hairlines4" alt="Jess Wilson"><h4>Jess Wilson</h4><p>Occupational Therapist</p></a>
-        <a class="clinician-card" href="/our-team#sarah-grieve" data-link><img src="/images/clinicians/sarah-grieve.webp?v=20261123hairlines4" alt="Sarah Grieve"><h4>Sarah Grieve</h4><p>Specialist SLT Assistant & Clinical Administrator</p></a>
+        <a class="clinician-card" href="/our-team#karen-cooper" data-link><img src="/images/clinicians/karen-cooper.webp?v=20261123hairlines5" alt="Karen Cooper"><h4>Karen Cooper</h4><p>Highly Specialist SLT & Autism Specialist</p></a>
+        <a class="clinician-card" href="/our-team#beccy-muggeridge" data-link><img src="/images/clinicians/beccy-muggeridge.webp?v=20261123hairlines5" alt="Beccy Muggeridge"><h4>Beccy Muggeridge</h4><p>Highly Specialist Speech & Language Therapist</p></a>
+        <a class="clinician-card" href="/our-team#deepika-sharma" data-link><img src="/images/clinicians/deepika-sharma.webp?v=20261123hairlines5" alt="Deepika Sharma"><h4>Deepika Sharma</h4><p>Specialist Occupational Therapist</p></a>
+        <a class="clinician-card" href="/our-team#jess-wilson" data-link><img src="/images/clinicians/jess-wilson.webp?v=20261123hairlines5" alt="Jess Wilson"><h4>Jess Wilson</h4><p>Occupational Therapist</p></a>
+        <a class="clinician-card" href="/our-team#sarah-grieve" data-link><img src="/images/clinicians/sarah-grieve.webp?v=20261123hairlines5" alt="Sarah Grieve"><h4>Sarah Grieve</h4><p>Specialist SLT Assistant & Clinical Administrator</p></a>
       </div>
       <button class="clinician-carousel-arrow clinician-carousel-next" type="button" aria-label="Next clinicians">›</button>
     </div>

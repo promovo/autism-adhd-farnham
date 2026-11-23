@@ -78,7 +78,7 @@
     "scale": 1.147,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 1020
+    "subject_bottom_px": 1206
   },
   {
     "name": "Karen Cooper",
@@ -97,7 +97,7 @@
     "scale": 0.599,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 874
+    "subject_bottom_px": 1026
   },
   {
     "name": "Beccy Muggeridge",
@@ -116,7 +116,7 @@
     "scale": 0.907,
     "head_top_px": 85,
     "target_face_width": 320.0,
-    "subject_bottom_px": 712
+    "subject_bottom_px": 1051
   },
   {
     "name": "Deepika Sharma",
