@@ -1,9 +1,8 @@
-/* Clinician portraits: keep the entire approved 4:5 frame, no head cropping.
-   Gentle depth-of-field only at the far edges; preserve faces and hair detail. */
+/* Portraits use the actual saved 4:5 photographs. No artificial
+   left/right blur overlays, edge strips or CSS magnification. */
 body .clinicians-home .clinician-card .portrait-frame,
 body .team-page .team-profile .portrait-frame {
   position:relative;
-  isolation:isolate;
   display:block;
   width:100%;
   aspect-ratio:4/5;
@@ -14,13 +13,11 @@ body .team-page .team-profile .portrait-frame {
   padding:0;
   box-sizing:border-box;
 }
-body .team-page .team-profile .portrait-frame {
-  max-width:275px;
-}
+body .team-page .team-profile .portrait-frame {max-width:275px}
 body .clinicians-home .clinician-card .portrait-frame > img,
 body .team-page .team-profile .portrait-frame > img {
-  position:relative!important;
   display:block!important;
+  position:relative!important;
   width:100%!important;
   height:100%!important;
   min-height:0!important;
@@ -28,7 +25,7 @@ body .team-page .team-profile .portrait-frame > img {
   max-width:none!important;
   aspect-ratio:auto!important;
   object-fit:fill!important;
-  object-position:50% 50%!important;
+  object-position:center!important;
   transform:none!important;
   filter:none!important;
   margin:0!important;
@@ -38,42 +35,7 @@ body .team-page .team-profile .portrait-frame > img {
   border-radius:0!important;
   background:transparent!important;
 }
-/* The original garden contains very sharp foliage along the borders.
-   The overlay reuses the *same real photo*, softly defocused at the outside
-   while fading smoothly to untouched central pixels (including faces). */
-body .portrait-frame::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:2;
-  pointer-events:none;
-  background-image:var(--portrait-src);
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  background-position:center;
-  filter:blur(9px);
-  -webkit-mask-image:linear-gradient(to right,
-    #000 0%,rgba(0,0,0,.95) 5%,rgba(0,0,0,.38) 13%,
-    transparent 22%,transparent 78%,
-    rgba(0,0,0,.38) 87%,rgba(0,0,0,.95) 95%,#000 100%);
-  mask-image:linear-gradient(to right,
-    #000 0%,rgba(0,0,0,.95) 5%,rgba(0,0,0,.38) 13%,
-    transparent 22%,transparent 78%,
-    rgba(0,0,0,.38) 87%,rgba(0,0,0,.95) 95%,#000 100%);
-}
-/* Correct Lisa's right-shifted original composition, with a tiny safe zoom
-   to retain full-bleed background at the right-hand edge. */
-body .clinicians-home .clinician-card .portrait-frame > img[alt="Lisa Mayatt"],
-body .team-page .team-profile .portrait-frame > img[alt="Lisa Mayatt"] {
-  transform:translateX(-5.5%) scale(1.12)!important;
-  transform-origin:center center!important;
-}
-body .clinicians-home .clinician-card .portrait-frame:has(>img[alt="Lisa Mayatt"])::after,
-body .team-page .team-profile .portrait-frame:has(>img[alt="Lisa Mayatt"])::after {
-  background-size:112% 112%;
-  background-position:96% center;
-}
-/* Maintain the native 4:5 portrait box on desktop, tablet and mobile. */
+body .portrait-frame::after {content:none!important;display:none!important}
 @media(max-width:760px) {
   body .team-page .team-profile .portrait-frame {
     width:100%!important;
