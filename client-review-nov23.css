@@ -1232,15 +1232,20 @@ body[data-page="inner"][data-review-path] #app > section.section.site-band-deep-
   background-color:#C7DDBE!important;
   background-image:none!important;
 }
-body[data-page="inner"][data-review-cream-transition="yes"] > .google-reviews-section{
-  border-top:46px solid #FDF9F3!important;
-}
-body[data-page="inner"][data-review-cream-transition="no"] > .google-reviews-section{
-  border-top:0!important;
-}
 body[data-page="inner"] > .google-reviews-section{
   background:#E2ECDA!important;
   background-color:#E2ECDA!important;
 }
 /* Preserve the review section's approved sage shade regardless of the
    colour of the preceding content band. */
+
+/* 23 Nov: No transition strips between page sections and reviews.
+   FAQ is directly deeper sage (#C7DDBE) against light-sage reviews (#E2ECDA). */
+body[data-page] > .google-reviews-section{
+  border-top:0!important;
+}
+body[data-page="inner"][data-review-path="/faq"] #app > section.section.faq{
+  background:#C7DDBE!important;
+  background-color:#C7DDBE!important;
+  background-image:none!important;
+}
