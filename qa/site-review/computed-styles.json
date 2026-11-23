@@ -2,7 +2,7 @@
   "/": {
     "route": "https://autism-adhd-farnham-review-v2.onrender.com/",
     "heading": "Autism & ADHD Assessments for Adults, Children & Young People",
-    "mainLength": 4672,
+    "mainLength": 4599,
     "cardCounts": 22,
     "navDropdowns": 4,
     "hero": {
@@ -15,7 +15,7 @@
       "font": "\"DM Sans\", \"Nunito Sans\", Arial, sans-serif",
       "textTransform": "none",
       "fontWeight": "400",
-      "height": 705.734375
+      "height": 686.8125
     },
     "heroBefore": {
       "display": "block",
