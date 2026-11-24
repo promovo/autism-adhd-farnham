@@ -2777,3 +2777,20 @@ body[data-page="home"] #app .local-reach-detail a.inline{
     padding:36px 17px!important;
   }
 }
+
+/* Small phone safeguard: retain the single-line Personalised label where
+   space permits without allowing horizontal scrolling on narrow devices. */
+@media(max-width:380px){
+  body[data-page="home"] #app .mock-hero .hero-copy .hero-trust.three-items > div:nth-child(3) small{
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+  }
+}
+/* Consistent local-area supporting copy on Adult and Child overview pages. */
+body[data-page="inner"] #app .assessment-clinic-space .clinic-service-area{
+  max-width:740px!important;
+  margin-top:13px!important;
+  font-family:'DM Sans',Arial,sans-serif!important;
+  font-size:15px!important;
+  line-height:1.65!important;
+}
