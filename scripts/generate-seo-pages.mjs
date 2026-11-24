@@ -27,8 +27,9 @@ for(const m of entries){
   const type=speech?'ProfessionalService':'MedicalClinic';
   const name=speech?'Speech Therapy Farnham':'Autism & ADHD Assessments Farnham';
   const email=speech?'speechtherapyfarnham@gmail.com':'lisa@autismassessmentsfarnham.co.uk';
+  const serviceLogo='https://static.wixstatic.com/media/1e4c48_a7551843cc234d0f9cf207effe2b11f9~mv2.png';
   const schema={'@context':'https://schema.org','@graph':[
-    {'@type':type,'@id':origin+(speech?'/ehcp-expert-witness-reports#service':'/#clinic'),name,url:origin+(speech?path:'/'),telephone:'+44 7387 697876',email,address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',addressLocality:'Farnham',addressRegion:'Surrey',postalCode:'GU9 8HP',addressCountry:'GB'},areaServed:areas,...(speech?{}:{logo})},
+    {'@type':type,'@id':origin+(speech?'/ehcp-expert-witness-reports#service':'/#clinic'),name,url:origin+(speech?path:'/'),telephone:'+44 7387 697876',email,address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',addressLocality:'Farnham',addressRegion:'Surrey',postalCode:'GU9 8HP',addressCountry:'GB'},areaServed:areas,logo:speech?serviceLogo:logo},
     {'@type':'WebSite','@id':origin+'/#website',url:origin+'/',name:'Autism & ADHD Assessments Farnham'},
     {'@type':'WebPage','@id':origin+canonical+'#webpage',url:origin+canonical,name:title,description:desc,isPartOf:{'@id':origin+'/#website'}},
     {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},{'@type':'ListItem',position:2,name:heading,item:origin+canonical}]},
@@ -39,6 +40,7 @@ for(const m of entries){
   for(const [prop,value] of [['og:title',title],['og:description',desc],['og:url',origin+canonical],['og:site_name',name]]){
     html=replacement(html,new RegExp('<meta property="'+prop+'" content="[^"]*">'),'<meta property="'+prop+'" content="'+escape(value)+'">',prop);
   }
+  if(speech)html=replacement(html,/<meta property="og:image" content="[^"]*">/,'<meta property="og:image" content="'+serviceLogo+'">','Speech OG image');
   html=replacement(html,/<link rel="canonical" href="[^"]*">/,'<link rel="canonical" href="'+origin+canonical+'">','canonical');
   html=replacement(html,/<title>[^<]*<\/title>/,'<title>'+escape(title)+'</title>','title');
   html=replacement(html,/<script id="seo-schema" type="application\/ld\+json">[\s\S]*?<\/script>/,'<script id="seo-schema" type="application/ld+json">'+JSON.stringify(schema)+'</script>','schema');
