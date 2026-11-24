@@ -319,7 +319,7 @@ function getReviewRoute(){
 function reviewUrl(path,hash=''){
   // The Render preview deliberately retains its shareable query-route links.
   // The future approved live domain uses canonical, direct SEO-friendly URLs.
-  if(/\\.onrender\\.com$/i.test(location.hostname)){
+  if(/\.onrender\.com$/i.test(location.hostname)){
     return path==='/'?'/'+hash:'/?review='+encodeURIComponent(path)+hash;
   }
   return path+hash;
