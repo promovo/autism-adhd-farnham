@@ -27,15 +27,15 @@ const routes={'/':home,'/services':assessmentOverview,'/copy-of-faq':resources,'
 '/child-pre-booking':`${header('Child & Young Person Autism / ADHD Pre-Booking Form','Initial information and triage for a child or young person where Autism, ADHD or a Combined assessment is being considered.')}<section class="section prebooking-main"><div class="soft-panel prebooking-panel"><h2>Complete the Child / Young Person Form</h2><p>Our clinicians review this form manually. It is for initial triage only and is not diagnostic.</p><a class="btn" href="${childForm}" target="_blank">Open Child / Young Person Form</a></div></section>${preBookingNext}`,
 '/how-assessments-work':how,'/fees':fees,'/our-team':team,'/faq':faq,'/free-consultation':consultation,'/post-assessment-advice':post,'/local-resources':resources,'/privacy-policy':privacy,'/ehcp-expert-witness-reports':ehcp,'/contact':contact};
 const seoMeta={
-'/':{title:'Autism & ADHD Assessments Farnham, Surrey | Adults & Children',description:'Private Autism, ADHD and combined assessments for adults, children and young people in Farnham, Surrey. Multidisciplinary clinicians, PDA-aware and female-presentation informed.',canonical:'/'},
+'/':{title:'Autism & ADHD Assessments Farnham, Surrey | Adults & Children',description:'Private Autism and ADHD assessments for adults and children in Farnham, Surrey. Welcoming clients from Guildford, Godalming, Aldershot and nearby areas.',canonical:'/'},
 '/choose-your-assessment':{title:'Choose an Autism or ADHD Assessment | Farnham, Surrey',description:'Choose the right Autism, ADHD or combined assessment pathway for an adult, child or young person in Farnham, Surrey.',canonical:'/choose-your-assessment'},
-'/adult-assessments':{title:'Adult Autism & ADHD Assessments | Farnham, Surrey',description:'Adult Autism, ADHD and combined Autism + ADHD assessments in Farnham, Surrey, delivered by an experienced multidisciplinary clinical team.',canonical:'/adult-assessments'},
-'/child-young-person-assessments':{title:'Child Autism & ADHD Assessments | Farnham, Surrey',description:'Autism, ADHD and combined assessments for children and young people in Farnham, Surrey, with a calm, flexible and multidisciplinary approach.',canonical:'/child-young-person-assessments'},
-'/adult-autism-assessment':{title:'Adult Autism Assessment | Farnham, Surrey',description:'Private adult Autism assessments in Farnham, Surrey, with specialist clinicians, multidisciplinary review, clear reports and practical recommendations.',canonical:'/adult-autism-assessment'},
-'/adult-adhd-assessment':{title:'Adult ADHD Assessment | Farnham, Surrey',description:'Private adult ADHD assessments in Farnham, Surrey with specialist clinical review, clear reporting and practical next steps.',canonical:'/adult-adhd-assessment'},
+'/adult-assessments':{title:'Adult Autism & ADHD Assessments | Farnham, Surrey',description:'Private adult autism, ADHD and combined assessments in Farnham, Surrey, welcoming clients from Guildford, Godalming, Fleet and surrounding areas.',canonical:'/adult-assessments'},
+'/child-young-person-assessments':{title:'Child Autism & ADHD Assessments | Farnham, Surrey',description:'Private autism, ADHD and combined assessments for children in Farnham, Surrey, including families from Aldershot, Farnborough and Guildford.',canonical:'/child-young-person-assessments'},
+'/adult-autism-assessment':{title:'Adult Autism Assessment | Farnham, Surrey',description:'Private adult autism assessment in Farnham, Surrey. Specialist multidisciplinary clinicians, face-to-face appointments and practical reports for nearby areas.',canonical:'/adult-autism-assessment'},
+'/adult-adhd-assessment':{title:'Adult ADHD Assessment | Farnham, Surrey',description:'Private adult ADHD assessment in Farnham, Surrey with face-to-face clinic appointments, multidisciplinary review and practical reports.',canonical:'/adult-adhd-assessment'},
 '/combined-adult-autism-adhd-assessment':{title:'Combined Adult Autism & ADHD Assessment | Farnham',description:'Combined Autism and ADHD assessment for adults in Farnham, Surrey where both conditions may be relevant.',canonical:'/combined-adult-autism-adhd-assessment'},
-'/child-autism-assessment':{title:'Child Autism Assessment | Farnham, Surrey',description:'Private Autism assessments for children and young people in Farnham, Surrey from age 2+, with specialist multidisciplinary clinicians.',canonical:'/child-autism-assessment'},
-'/child-adhd-assessment':{title:'Child ADHD Assessment | Farnham, Surrey',description:'Private ADHD assessments for children and young people in Farnham, Surrey from age 5+, with specialist clinical review.',canonical:'/child-adhd-assessment'},
+'/child-autism-assessment':{title:'Child Autism Assessment | Farnham, Surrey',description:'Private child autism assessments from age 2 in Farnham, Surrey. Specialist multidisciplinary clinic welcoming families across Surrey and North Hampshire.',canonical:'/child-autism-assessment'},
+'/child-adhd-assessment':{title:'Child ADHD Assessment | Farnham, Surrey',description:'Private child ADHD assessments from age 5 at our Farnham, Surrey clinic. Experienced clinicians, clear reports and practical guidance.',canonical:'/child-adhd-assessment'},
 '/combined-child-autism-adhd-assessment':{title:'Combined Child Autism & ADHD Assessment | Farnham',description:'Combined Autism and ADHD assessments for children and young people in Farnham, Surrey from age 5+.',canonical:'/combined-child-autism-adhd-assessment'},
 '/autism-adhd-women':{title:'Autism & ADHD in Women and Girls | Farnham Assessments',description:'Specialist recognition of masking, subtle presentation and later recognition of Autism and ADHD in women and girls.',canonical:'/autism-adhd-women'},
 '/pda-demand-avoidant-presentation':{title:'PDA Profile & Demand Avoidance | Autism Assessments Farnham',description:'Information about PDA and demand-avoidant presentations within Autism assessment pathways at our Farnham clinic.',canonical:'/pda-demand-avoidant-presentation'},
@@ -47,7 +47,7 @@ const seoMeta={
 '/post-assessment-advice':{title:'Post-Assessment Autism & ADHD Support | Farnham',description:'Optional one-to-one post-assessment advice and strategy sessions following Autism or ADHD assessment in Farnham.',canonical:'/post-assessment-advice'},
 '/local-resources':{title:'Autism & ADHD Resources and Signposting | Farnham',description:'Useful Autism and ADHD resources, support and local signposting for individuals and families around Farnham and Surrey.',canonical:'/local-resources'},
 '/privacy-policy':{title:'Privacy Policy | Autism & ADHD Assessments Farnham',description:'Privacy and data handling information for Autism & ADHD Assessments Farnham.',canonical:'/privacy-policy'},
-'/contact':{title:'Contact Autism & ADHD Assessments Farnham | Surrey',description:'Contact Autism & ADHD Assessments Farnham in South Farnham, Surrey about Autism, ADHD and combined assessment pathways.',canonical:'/contact'},
+'/contact':{title:'Contact Autism & ADHD Assessments Farnham | Surrey',description:'Contact our autism and ADHD assessment clinic at The Annexe, 3 Leigh Lane, Farnham, Surrey GU9 8HP. Enquiries from surrounding Surrey and Hampshire areas welcome.',canonical:'/contact'},
 '/ehcp-expert-witness-reports':{title:'Speech Therapy Farnham | EHCP & Expert Witness Support',description:'Speech Therapy Farnham specialist Speech, Language & Communication assessment, EHCP and expert witness support in Farnham, Surrey.',canonical:'/ehcp-expert-witness-reports'},
 '/adult-pre-booking':{title:'Adult Autism & ADHD Pre-Booking Form | Farnham',description:'Start an adult Autism, ADHD or combined assessment enquiry with the pre-booking form for Autism & ADHD Assessments Farnham.',canonical:'/adult-pre-booking'},
 '/child-pre-booking':{title:'Child Autism & ADHD Pre-Booking Form | Farnham',description:'Start a child or young person Autism, ADHD or combined assessment enquiry with the pre-booking form.',canonical:'/child-pre-booking'}
@@ -88,7 +88,7 @@ function updateSeo(path){
   let schema=document.getElementById('seo-schema');
   if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='seo-schema';document.head.appendChild(schema)}
   const graph=[
-    {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',postalCode:'GU9 8HP',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Surrey','South East England']},
+    {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',postalCode:'GU9 8HP',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Guildford','Godalming','Aldershot','Farnborough','Fleet','Haslemere','Woking','Surrey','Hampshire'],hasMap:'https://www.google.com/maps/search/?api=1&query=The+Annexe+3+Leigh+Lane+Farnham+GU9+8HP',logo:'https://static.wixstatic.com/media/1e4c48_6e4874f00b294c42add7876f8644f89b~mv2.png'},
     {'@type':'WebSite','@id':liveOrigin+'/#website',url:liveOrigin+'/',name:'Autism & ADHD Assessments Farnham'},
     {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':liveOrigin+'/#clinic'}},
     {'@type':'BreadcrumbList','@id':liveOrigin+data.canonical+'#breadcrumb',itemListElement:[
@@ -105,7 +105,7 @@ function updateSeo(path){
     '/combined-child-autism-adhd-assessment':'Combined Child Autism and ADHD Assessment'
   };
   if(serviceRoutes[data.canonical]){
-    graph.push({'@type':'Service',name:serviceRoutes[data.canonical],url:liveOrigin+data.canonical,provider:{'@id':liveOrigin+'/#clinic'},areaServed:['Farnham','Surrey','South East England'],description:data.description});
+    graph.push({'@type':'Service',name:serviceRoutes[data.canonical],url:liveOrigin+data.canonical,provider:{'@id':liveOrigin+'/#clinic'},areaServed:['Farnham','Guildford','Godalming','Aldershot','Farnborough','Fleet','Haslemere','Woking','Surrey','Hampshire'],description:data.description});
   }
   if(data.canonical==='/faq'){
     graph.push({'@type':'FAQPage',mainEntity:[
@@ -222,6 +222,17 @@ function render(path){
   // Inner-page woodland variants only. The homepage hero is deliberately untouched.
   const adultWoodland=new Set(['/adult-assessments','/adult-autism-assessment','/adult-adhd-assessment','/combined-adult-autism-adhd-assessment','/adult-pre-booking','/fees']);
   const childWoodland=new Set(['/child-young-person-assessments','/child-autism-assessment','/child-adhd-assessment','/combined-child-autism-adhd-assessment','/child-pre-booking','/how-assessments-work']);
+  // Show the clinic's original logo on direct-entry assessment/fees/contact routes,
+  // the shorter Autism & ADHD Farnham mark elsewhere, and the Speech Therapy
+  // Farnham logo on that separate service's page.
+  const legacyBrandRoutes=new Set([
+    '/', '/adult-assessments', '/child-young-person-assessments',
+    '/adult-autism-assessment', '/adult-adhd-assessment',
+    '/combined-adult-autism-adhd-assessment', '/child-autism-assessment',
+    '/child-adhd-assessment', '/combined-child-autism-adhd-assessment',
+    '/fees', '/contact', '/adult-pre-booking', '/child-pre-booking'
+  ]);
+  document.body.dataset.brand=path==='/ehcp-expert-witness-reports'?'speech':legacyBrandRoutes.has(path)?'legacy':'compact';
   document.body.dataset.page=path==='/'?'home':'inner';
   document.body.dataset.reviewPath=path;
   document.body.dataset.woodland=adultWoodland.has(path)?'sunlight':childWoodland.has(path)?'birch':'canopy';
@@ -259,6 +270,7 @@ function render(path){
   }
   updateSeo(path);
   bind();
+  bindSpeechTherapyEnquiry();
   wireBrandButtons();
   if(location.hash){
     requestAnimationFrame(()=>{
@@ -269,6 +281,28 @@ function render(path){
     window.scrollTo(0,0);
   }
 }
+/* A privacy-conscious enquiry form that prepares an email in the
+ * visitor's own email application. It never sends/stores health information. */
+function bindSpeechTherapyEnquiry(){
+  const form=document.getElementById('speech-therapy-enquiry-form');
+  if(!form||form.dataset.bound==='yes')return;
+  form.dataset.bound='yes';
+  form.addEventListener('submit',event=>{
+    event.preventDefault();
+    if(!form.reportValidity())return;
+    const input=new FormData(form);
+    const name=String(input.get('name')||'').trim();
+    const email=String(input.get('email')||'').trim();
+    const service=String(input.get('service')||'').trim();
+    const message=String(input.get('message')||'').trim();
+    if(!name||!email||!service||!message)return;
+    const subject='Speech Therapy Farnham enquiry — '+service;
+    const body='Name: '+name+'\nContact email: '+email+'\nEnquiry: '+service+'\n\n'+message+
+      '\n\nSent from my own email account following the Speech Therapy Farnham website enquiry form.';
+    window.location.href='mailto:speechtherapyfarnham@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+}
+
 /* Render review hosts have no SPA rewrite configured. Keep preview navigation
    shareable through the physical root page until the host-level rewrite is set. */
 function getReviewRoute(){
