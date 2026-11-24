@@ -77,6 +77,11 @@ function updateSeo(path){
   setProperty('og:title',data.title);
   setProperty('og:description',data.description);
   setProperty('og:type','website');
+  const isSpeechService=data.canonical==='/ehcp-expert-witness-reports';
+  setProperty('og:site_name',isSpeechService?'Speech Therapy Farnham':'Autism & ADHD Assessments Farnham');
+  setProperty('og:image',isSpeechService?
+    'https://static.wixstatic.com/media/1e4c48_a7551843cc234d0f9cf207effe2b11f9~mv2.png':
+    'https://static.wixstatic.com/media/1e4c48_6e4874f00b294c42add7876f8644f89b~mv2.png');
   setProperty('og:url',liveOrigin+data.canonical);
   setMeta('twitter:card','summary_large_image');
   setMeta('twitter:title',data.title);
@@ -87,10 +92,11 @@ function updateSeo(path){
 
   let schema=document.getElementById('seo-schema');
   if(!schema){schema=document.createElement('script');schema.type='application/ld+json';schema.id='seo-schema';document.head.appendChild(schema)}
+  const providerId=liveOrigin+(isSpeechService?'/ehcp-expert-witness-reports#service':'/#clinic');
   const graph=[
-    {'@type':'MedicalClinic','@id':liveOrigin+'/#clinic',name:'Autism & ADHD Assessments Farnham',url:liveOrigin+'/',telephone:'+44 7387 697876',email:'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',postalCode:'GU9 8HP',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Guildford','Godalming','Aldershot','Farnborough','Fleet','Haslemere','Woking','Surrey','Hampshire'],hasMap:'https://www.google.com/maps/search/?api=1&query=The+Annexe+3+Leigh+Lane+Farnham+GU9+8HP',logo:'https://static.wixstatic.com/media/1e4c48_6e4874f00b294c42add7876f8644f89b~mv2.png'},
+    {'@type':isSpeechService?'ProfessionalService':'MedicalClinic','@id':providerId,name:isSpeechService?'Speech Therapy Farnham':'Autism & ADHD Assessments Farnham',url:isSpeechService?liveOrigin+'/ehcp-expert-witness-reports':liveOrigin+'/',telephone:'+44 7387 697876',email:isSpeechService?'speechtherapyfarnham@gmail.com':'lisa@autismassessmentsfarnham.co.uk',address:{'@type':'PostalAddress',streetAddress:'The Annexe, 3 Leigh Lane',postalCode:'GU9 8HP',addressLocality:'Farnham',addressRegion:'Surrey',addressCountry:'GB'},areaServed:['Farnham','Guildford','Godalming','Aldershot','Farnborough','Fleet','Haslemere','Woking','Surrey','Hampshire'],hasMap:'https://www.google.com/maps/search/?api=1&query=The+Annexe+3+Leigh+Lane+Farnham+GU9+8HP',logo:isSpeechService?'https://static.wixstatic.com/media/1e4c48_a7551843cc234d0f9cf207effe2b11f9~mv2.png':'https://static.wixstatic.com/media/1e4c48_6e4874f00b294c42add7876f8644f89b~mv2.png'},
     {'@type':'WebSite','@id':liveOrigin+'/#website',url:liveOrigin+'/',name:'Autism & ADHD Assessments Farnham'},
-    {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':liveOrigin+'/#clinic'}},
+    {'@type':'WebPage','@id':liveOrigin+data.canonical+'#webpage',url:liveOrigin+data.canonical,name:data.title,description:data.description,isPartOf:{'@id':liveOrigin+'/#website'},about:{'@id':providerId}},
     {'@type':'BreadcrumbList','@id':liveOrigin+data.canonical+'#breadcrumb',itemListElement:[
       {'@type':'ListItem',position:1,name:'Home',item:liveOrigin+'/'},
       ...(data.canonical==='/'?[]:[{'@type':'ListItem',position:2,name:data.title.split('|')[0].trim(),item:liveOrigin+data.canonical}])
@@ -311,7 +317,12 @@ function getReviewRoute(){
   return location.pathname;
 }
 function reviewUrl(path,hash=''){
-  return path==='/'?'/'+hash:'/?review='+encodeURIComponent(path)+hash;
+  // The Render preview deliberately retains its shareable query-route links.
+  // The future approved live domain uses canonical, direct SEO-friendly URLs.
+  if(/\\.onrender\\.com$/i.test(location.hostname)){
+    return path==='/'?'/'+hash:'/?review='+encodeURIComponent(path)+hash;
+  }
+  return path+hash;
 }
 function bind(){
   document.querySelectorAll('[data-link]').forEach(a=>{
