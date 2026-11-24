@@ -129,4 +129,51 @@ const contact=`${header('Contact Autism Assessments Farnham','If you are conside
     <p>Please avoid sending sensitive clinical details by ordinary email.</p>
   </div>
 </section><section class="section alt"><div class="split"><div><h2>Direct contact</h2><p><strong>Email</strong><br><a href="mailto:lisa@autismassessmentsfarnham.co.uk">lisa@autismassessmentsfarnham.co.uk</a></p><p><strong>Phone</strong><br><a href="tel:+447387697876">07387 697876</a></p><p><strong>Location</strong><br>The Annexe is part of <strong>No. 3 Leigh Lane</strong>, Farnham, Surrey, GU9 8HP.<br>Please use <strong>3 Leigh Lane, GU9 8HP</strong> for maps and directions, not a separate annexe address.<br><a href="https://www.google.com/maps/search/?api=1&amp;query=3%20Leigh%20Lane%2C%20Farnham%2C%20Surrey%20GU9%208HP" target="_blank" rel="noopener">View on Google Maps</a></p></div><div class="photo-panel"><img src="https://static.wixstatic.com/media/9df129_2c0f16c9196b4758ae81172ece8199a6~mv2.jpg" alt=""></div></div></section><section class="section contact-clinic-space"><div class="split clinic-space-split"><div class="photo-panel clinic-space-photo"><img src="https://static.wixstatic.com/media/9df129_89da401792f2406193c2bd6d42908174~mv2.jpg" alt="Autism Assessments Farnham clinic"></div><div><div class="eyebrow">Our clinic</div><h2>We provide a calm and safe space</h2><p>Our clinic is within a tranquil setting in South Farnham with plenty of parking. The space is within an annexe and has a homely feel, with a large waiting room, outdoor seating area and toilet facilities.</p></div></div></section>`;
-const ehcp=`${header('Speech Therapy Farnham','Specialist Speech, Language & Communication assessment, EHCP and expert-witness support in Farnham and the surrounding area.','Speech Therapy Farnham')}<section class="section speech-therapy-page"><div class="split"><div><div class="eyebrow">Speech Therapy Farnham</div><h2>Specialist Speech, Language & Communication support</h2><p>Speech Therapy Farnham provides specialist assessment, professional advice and reporting for children and young people where speech, language or communication needs require detailed consideration.</p><p>This service sits alongside Autism Assessments Farnham but is clearly separated from the Autism and ADHD diagnostic pathways.</p></div><div class="soft-panel"><h3>EHCP & Expert Witness work</h3><p>Specialist assessment and reporting can be provided where appropriate for Education, Health and Care Plan processes and relevant tribunal work.</p><p>No prices are listed online. Please get in touch to discuss what is needed.</p></div></div></section><section class="section alt"><div class="cards three"><div class="card"><h3>Speech & Language Assessment</h3><p>Specialist assessment of speech, language and communication needs.</p></div><div class="card"><h3>EHCP Evidence</h3><p>Professional assessment, recommendations and evidence for EHCP processes where appropriate.</p></div><div class="card"><h3>Expert Witness Reports</h3><p>Specialist professional evidence for relevant tribunal processes.</p></div></div><div class="center" style="margin-top:30px"><a class="btn" href="mailto:speechtherapyfarnham@gmail.com?subject=Speech%20Therapy%20Farnham%20Enquiry">Email Speech Therapy Farnham</a></div></section>`;
+const ehcp=`${header('Speech Therapy Farnham','Specialist Speech, Language & Communication assessment, EHCP and expert-witness support in Farnham and the surrounding area.','Speech Therapy Farnham')}
+<section class="section speech-therapy-page">
+  <div class="speech-therapy-brand-panel">
+    <div class="speech-therapy-brand-image"><img src="https://static.wixstatic.com/media/1e4c48_a7551843cc234d0f9cf207effe2b11f9~mv2.png/v1/crop/x_346,y_1330,w_4122,h_2314/fill/w_432,h_242,al_c,q_90/1e4c48_a7551843cc234d0f9cf207effe2b11f9~mv2.png" alt="Speech Therapy Farnham original logo" loading="lazy" decoding="async"></div>
+    <div><div class="eyebrow">Speech Therapy Farnham</div><h2>Specialist speech and language support in Farnham</h2><p>Led by a Highly Specialist Speech and Language Therapist, we support children and young people with speech, language and communication needs.</p></div>
+  </div>
+  <div class="split speech-therapy-services-split">
+    <div><h2>Assessment, advice and reporting</h2><p>Speech Therapy Farnham provides specialist assessment and reporting for children and young people where communication needs require detailed consideration.</p><p>We have experience supporting families, schools and local authorities with clear, practical recommendations.</p></div>
+    <div class="soft-panel"><h3>EHCP &amp; Expert Witness work</h3><p>Assessment, professional reports and evidence may support Education, Health and Care Plan processes and relevant tribunal work.</p><p>This service is separate from the clinic's Autism and ADHD diagnostic assessment pathways.</p></div>
+  </div>
+</section>
+<section class="section alt speech-therapy-services">
+  <div class="cards three speech-therapy-service-cards">
+    <div class="card"><h3>Speech &amp; Language Assessment</h3><p>Specialist assessment of speech, language and communication needs.</p></div>
+    <div class="card"><h3>EHCP Evidence</h3><p>Professional assessment, recommendations and evidence for EHCP processes.</p></div>
+    <div class="card"><h3>Expert Witness Reports</h3><p>Specialist professional evidence for relevant tribunal processes.</p></div>
+  </div>
+</section>
+<section class="section speech-therapy-contact-section">
+  <div class="speech-therapy-contact-wrap">
+    <div class="speech-therapy-contact-copy">
+      <div class="eyebrow">Speak to Speech Therapy Farnham</div>
+      <h2>Enquire about speech and language support</h2>
+      <p>Tell us briefly what type of support you are looking for. Your enquiry is directed to <a href="mailto:speechtherapyfarnham@gmail.com">speechtherapyfarnham@gmail.com</a>.</p>
+      <p>There is no online price list; we can discuss individual requirements before proceeding.</p>
+      <a class="btn btn-outline" href="mailto:speechtherapyfarnham@gmail.com?subject=Speech%20Therapy%20Farnham%20Enquiry">Email Speech Therapy Farnham</a>
+    </div>
+    <form id="speech-therapy-enquiry-form" class="speech-therapy-enquiry-form" action="mailto:speechtherapyfarnham@gmail.com" method="post" enctype="text/plain">
+      <h3>Prepare your enquiry</h3>
+      <label for="speech-name">Your name</label>
+      <input id="speech-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+      <label for="speech-email">Your email address</label>
+      <input id="speech-email" name="email" type="email" autocomplete="email" maxlength="180" required>
+      <label for="speech-service">What would you like help with?</label>
+      <select id="speech-service" name="service" required>
+        <option value="">Please choose</option>
+        <option value="Speech and language assessment">Speech and language assessment</option>
+        <option value="EHCP advice or evidence">EHCP advice or evidence</option>
+        <option value="Expert witness / tribunal report">Expert witness / tribunal report</option>
+        <option value="Other speech and language enquiry">Other enquiry</option>
+      </select>
+      <label for="speech-message">Brief message</label>
+      <textarea id="speech-message" name="message" rows="4" maxlength="1500" placeholder="A short summary is enough — please don't include sensitive clinical details." required></textarea>
+      <button class="btn" type="submit">Open email draft</button>
+      <p class="speech-form-disclaimer">This opens your email app with the details filled in. Please check and send the draft yourself; the website does not transmit the form or store your information.</p>
+    </form>
+  </div>
+</section>`;
