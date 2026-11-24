@@ -96,4 +96,26 @@ const home=`
   </div>
 </section>
 
+<section class="section local-reach-section">
+  <div class="local-reach-layout">
+    <div class="local-reach-copy">
+      <div class="eyebrow">Local, face-to-face assessments</div>
+      <h2>Autism &amp; ADHD assessments in Farnham, Surrey</h2>
+      <p>Our clinic is at <strong>The Annexe, 3 Leigh Lane, Farnham, GU9 8HP</strong>. We welcome adults, children and young people from across Surrey and North Hampshire, including Guildford, Godalming, Aldershot, Farnborough, Fleet, Haslemere and Woking.</p>
+      <p>Each assessment follows the relevant clinical pathway and includes at least one face-to-face appointment at our Farnham clinic.</p>
+      <div class="local-reach-actions">
+        <a class="btn" href="/adult-assessments" data-link>Adult Assessments</a>
+        <a class="btn btn-outline" href="/child-young-person-assessments" data-link>Child &amp; Young Person Assessments</a>
+      </div>
+    </div>
+    <div class="local-reach-detail">
+      <div class="eyebrow">Visit our Farnham clinic</div>
+      <h3>Easy to find in South Farnham</h3>
+      <p>The Annexe, 3 Leigh Lane<br>Farnham, Surrey GU9 8HP</p>
+      <p>On-site parking and a calm, homely setting. Let us know if you have access or sensory needs before attending.</p>
+      <a class="inline" href="https://www.google.com/maps/search/?api=1&amp;query=3%20Leigh%20Lane%2C%20Farnham%2C%20Surrey%20GU9%208HP" target="_blank" rel="noopener">View Farnham clinic on Google Maps</a>
+    </div>
+  </div>
+</section>
+
 `;
